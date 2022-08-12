@@ -1,4 +1,4 @@
-[![logo](https://raw.githubusercontent.com/metrico/qryn-docs/master/docs/resources/images/logo-horizontal-small.png)](/  "QRYN – LogQL for ClickHouse and beyond")
+[![logo](https://raw.githubusercontent.com/metrico/qryn-docs/master/docs/resources/images/logo-horizontal-small.png)]
 
 * **Overview**
   * [Installation](installation.md "QRYN – Installation – LogQL for ClickHouse and beyond")
