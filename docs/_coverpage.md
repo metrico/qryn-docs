@@ -12,4 +12,4 @@
 [View Docs](#start)
 [Go to GitHub](https://github.com/metrico/qryn/)
 
-![color](#f0f0f0)
+![color](#ffffff)
