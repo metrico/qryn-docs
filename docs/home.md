@@ -3,7 +3,7 @@
 </p>
 
 <p align="center">
-    LogQL and beyond for ClickHouse (formerly cLoki). Ingest and analyze logs, metrics and traces from any agent supporting Loki/LogQL, Prometheus/PromQL, OTLP/Tempo, Elastic, InfluxDB and many more!
+    Ingest and analyze logs, metrics and traces from any agent supporting Loki/LogQL, Prometheus/PromQL, OTLP/Tempo, Elastic, InfluxDB and many more!
 </p>
 
-![An example](resources/images/hero-image.png)
+![An example](https://user-images.githubusercontent.com/1423657/50496835-404e6480-0a33-11e9-87a4-aebb71a668a7.gif)
