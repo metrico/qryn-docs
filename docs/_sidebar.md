@@ -1,4 +1,4 @@
-<img src="https://user-images.githubusercontent.com/1423657/173144443-fc7ba783-d5bf-47f9-bf59-707693da5ed1.png" width=100 />
+<img src="https://github.com/metrico/qryn-docs/blob/main/docs/resources/images/qryn_logo_trans.png?raw=true" width=150 />
 
 * **Overview**
   * [Installation](installation.md "QRYN – Installation – LogQL for ClickHouse and beyond")
