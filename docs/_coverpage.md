@@ -1,5 +1,5 @@
 
-![logo](https://user-images.githubusercontent.com/1423657/173144443-fc7ba783-d5bf-47f9-bf59-707693da5ed1.png)
+![logo](https://github.com/metrico/qryn-docs/blob/main/docs/resources/images/qryn_logo_trans.png?raw=true)
 
 <p align="center">
     <h3 align="center">LogQL for ClickHouse, and beyond</h3>
