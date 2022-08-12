@@ -1,5 +1,6 @@
 <img src="https://github.com/metrico/qryn-docs/blob/main/docs/resources/images/qryn_logo_trans.png?raw=true" width=150 />
 
+* [Docs](https://metrico.github.io/qryn-docs/#/)
 * **Overview**
   * [Installation](installation.md "QRYN – Installation – LogQL for ClickHouse and beyond")
   * [Supported Protocols](support.md "QRYN – Supported Components – LogQL for ClickHouse and beyond")
