@@ -11,7 +11,7 @@ There are two types of _LogQL_ queries:
   * [Log queries](https://grafana.com/docs/loki/latest/logql/log_queries/) returning the contents of log lines as streams.
   * [Metric queries](https://grafana.com/docs/loki/latest/logql/metric_queries/) that convert logs into value matrices.
 
-**LogQL** queries combine a mandatory **Stream Selectors** _fetching all relevant logs by fingerprint_, followed by optional **Filter and Aggregation Expressions** _reducing and interpolating the returned dataset_.
+**LogQL** queries combine a mandatory **Stream Selectors** _fetching all relevant logs by fingerprint_, followed by optional **Filter Expressions** _reducing and interpolating the returned dataset_.
 
 
 <!-- tabs:start -->
