@@ -35,7 +35,8 @@ Get started using the [Metrics Ingestion](metrics/ingestion.md) section
 Get started using the [Telemetry Ingestion](telemetry/ingestion.md) section
 
 ![image](https://user-images.githubusercontent.com/1423657/184496222-ca95d80c-906f-4c77-a963-86f0b27a56b0.png ':size=100')
-![image](https://user-images.githubusercontent.com/1423657/184494381-15d20f5d-3d52-411b-9064-dfd2ccea7c1c.png ':size=100')![image](https://user-images.githubusercontent.com/1423657/184494438-17d7ceb0-a62a-4819-9b1c-43d7f0baf802.png ':size=100')
+![image](https://user-images.githubusercontent.com/1423657/184494381-15d20f5d-3d52-411b-9064-dfd2ccea7c1c.png ':size=100')
+![image](https://user-images.githubusercontent.com/1423657/184494438-17d7ceb0-a62a-4819-9b1c-43d7f0baf802.png ':size=100')
 ![image](https://avatars.githubusercontent.com/u/54801242?s=200&v=4 ':size=100')
 
 #### ** Custom **
