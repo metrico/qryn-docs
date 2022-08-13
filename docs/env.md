@@ -3,7 +3,7 @@
 
 **qryn** has no configuration files by design - just `ENV` variables
 
-?> K8s and container friendly 😉
+?> K8s and Docker container friendly 😉
 
 #### Parameters
 
