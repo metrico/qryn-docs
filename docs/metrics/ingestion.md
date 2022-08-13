@@ -87,7 +87,10 @@ In Grafana queries, use $__interval for unwrap, ie: unwrap data [$__interval]
 
 ## ** LogQL **
 * LogQL PUSH _(unwrap_metric)_
+
 ## ** Influx **
+
+![image](https://user-images.githubusercontent.com/1423657/184496174-aca323dd-f40e-489a-a584-fa7348c0eab0.png ':size=100')
 
 **qryn** implements the Influx v2 Write API subset for ingestion of Metrics _(and logs)_
 
