@@ -3,7 +3,7 @@
 Ingesting telemetry with **qryn** is easy and painless. Just pick an integration and you're set!
 
 
-### Traces
+### Telemetry Ingestion
 The following protocol APIs are supported for ingesting telemetry events:
 <!-- tabs:start -->
 ## ** Zipkin **
@@ -11,9 +11,9 @@ The following protocol APIs are supported for ingesting telemetry events:
 ![image](https://user-images.githubusercontent.com/1423657/184494381-15d20f5d-3d52-411b-9064-dfd2ccea7c1c.png ':size=100')![image](https://user-images.githubusercontent.com/1423657/184494438-17d7ceb0-a62a-4819-9b1c-43d7f0baf802.png ':size=100')
 
 
-**qryn** natively implements a json/http [Zipkin](https://zipkin.io/) receiver API endpoint to ingest tracing data
+**qryn** natively implements a json/http [Zipkin](https://zipkin.io/) API endpoint to ingest tracing spans.
 
-Tracing from any application supported by [opentelemetry](https://github.com/open-telemetry) is possible with standard zipkin libraries.
+Tracing is possible from any application supported by the [opentelemetry](https://github.com/open-telemetry) libraries.
 
 - [zipkin sender](https://github.com/open-telemetry/opentelemetry-js/blob/main/examples/tracer-web/examples/zipkin/index.js)
 
@@ -22,7 +22,7 @@ Tracing from any application supported by [opentelemetry](https://github.com/ope
 Trace from your console for testing and to support telemetry withing your bash scripts
 
 ```bash
-curl -X POST http://localhost:3100/tempo/api/push -H 'Content-Type: application/json' -d '[{
+curl -X POST http://qryn:3100/tempo/api/push -H 'Content-Type: application/json' -d '[{
  "id": "1234",
  "traceId": "d6e9329d67b6146b",
  "timestamp": '$(date +%s%N | cut -b1-16)',
@@ -38,7 +38,7 @@ curl -X POST http://localhost:3100/tempo/api/push -H 'Content-Type: application/
 }]'
 ```
 ```bash
-curl -X POST http://localhost:3100/tempo/api/push  -H 'Content-Type: application/json' -d '[{
+curl -X POST http://qryn:3100/tempo/api/push  -H 'Content-Type: application/json' -d '[{
  "id": "5678",
  "traceId": "d6e9329d67b6146b",
  "parentId": "1234",
@@ -51,6 +51,7 @@ curl -X POST http://localhost:3100/tempo/api/push  -H 'Content-Type: application
 }]'
 ```
 
+!> Replace the **qryn** URL from the example to match your actual deployment!
 
 ### Screenshot
 ##### Tempo Spans
