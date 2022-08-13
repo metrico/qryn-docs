@@ -2,6 +2,10 @@
 
 Ingesting data with **qryn** is easy and painless. Just pick an integration and you're set!
 
+### How
+
+Our application implements _industry standard_ APIs and _globally established_ monitoring protocols. This allows us to ingest _"foreign"_ data into our tables without demanding anything out of the user. You keep using your preferred _Agent or Method_ to send data, and _qryn does the rest_.
+
 <br />
 
 <img src="https://user-images.githubusercontent.com/1423657/184487816-fcc86e34-0395-4927-8ceb-33c2ad3e63d4.gif" width=600 />
@@ -10,6 +14,7 @@ Ingesting data with **qryn** is easy and painless. Just pick an integration and 
 <!-- tabs:start -->
 
 #### ** Logs **
+<br />
 Get started using the [Log Ingestion](logs/ingestion.md) section
 
 ![image](https://user-images.githubusercontent.com/1423657/184496222-ca95d80c-906f-4c77-a963-86f0b27a56b0.png ':size=100')
@@ -19,6 +24,7 @@ Get started using the [Log Ingestion](logs/ingestion.md) section
 
 
 #### ** Metrics **
+<br />
 Get started using the [Metrics Ingestion](metrics/ingestion.md) section
 
 ![image](https://user-images.githubusercontent.com/1423657/184496222-ca95d80c-906f-4c77-a963-86f0b27a56b0.png ':size=100')
@@ -27,6 +33,7 @@ Get started using the [Metrics Ingestion](metrics/ingestion.md) section
 ![image](https://avatars.githubusercontent.com/u/54801242?s=200&v=4 ':size=100')
 
 #### ** Telemetry **
+<br />
 Get started using the [Telemetry Ingestion](telemetry/ingestion.md) section
 
 ![image](https://user-images.githubusercontent.com/1423657/184496222-ca95d80c-906f-4c77-a963-86f0b27a56b0.png ':size=100')
@@ -34,7 +41,9 @@ Get started using the [Telemetry Ingestion](telemetry/ingestion.md) section
 ![image](https://avatars.githubusercontent.com/u/54801242?s=200&v=4 ':size=100')
 
 #### ** Custom **
-![image](https://user-images.githubusercontent.com/1423657/184499067-86f7a341-1151-452e-8e7f-c6a6c51a232c.png ':size=100')
-
+!<br />
 Missing an ingestion API? Open an [feature request](https://github.com/metrico/qryn/issues) or a PR with your work.
+
+[image](https://user-images.githubusercontent.com/1423657/184499067-86f7a341-1151-452e-8e7f-c6a6c51a232c.png ':size=100')
+
 <!-- tabs:end -->
