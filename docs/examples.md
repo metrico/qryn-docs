@@ -4,14 +4,14 @@ This section illustrates a number of example LogQL queries to get you started.
 
 ### LogQL Bootcamp
 
-LogQL is a PromQL-inspired query language. Queries act as if they are a distributed grep with powerful filters and aggregations.
+LogQL is a PromQL-inspired query language acting like a distributed grep with powerful _filters and aggregations_.
 
-There are two types of LogQL queries:
+There are two types of _LogQL_ queries:
 
   * [Log queries](https://grafana.com/docs/loki/latest/logql/log_queries/) returning the contents of log lines as streams.
   * [Metric queries](https://grafana.com/docs/loki/latest/logql/metric_queries/) that convert logs into value matrices.
 
-A LogQL query consists of:
+LogQL queries combine _Stream Selectors_ and _Filter Expressions_
 
 <!-- tabs:start -->
 
