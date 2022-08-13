@@ -92,7 +92,7 @@ In Grafana queries, use $__interval for unwrap, ie: unwrap data [$__interval]
 
 ![image](https://user-images.githubusercontent.com/1423657/184496222-ca95d80c-906f-4c77-a963-86f0b27a56b0.png ':size=100')
 
-Loki doesn't allow inserting metrics through its API - but **qryn** does 👍
+_Grafana Loki_ does not allow inserting metrics through its LogQL API - but **qryn** does 👍
 
 Both below format variations are accepted to insert labeled metrics using the `value` parameter in a stream:
 
