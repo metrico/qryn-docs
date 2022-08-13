@@ -4,7 +4,7 @@ Ingesting telemetry with **qryn** is easy and painless. Just pick an integration
 
 
 ### Traces
-The following protocol APIs are supported for ingesting logs:
+The following protocol APIs are supported for ingesting telemetry events:
 <!-- tabs:start -->
 ## ** Zipkin **
 
@@ -57,7 +57,9 @@ curl -X POST http://localhost:3100/tempo/api/push  -H 'Content-Type: application
 ##### Tempo Logs
 ![image](https://user-images.githubusercontent.com/1423657/147878505-4136912b-e8b4-492d-b98f-7137dfeee015.png)
 
-That's it! You're now _tracing spans using ClickHouse_! 
+_That's it!_ 
+
+You're now _tracing spans using ClickHouse_! 
 
 
 ## ** ClickHouse MV **
@@ -125,7 +127,9 @@ The following type events will be pushed:
 }]
 ```
 
-That's it! You're now tracing _ClickHouse using ClickHouse_! 
+_That's it!_
+
+You're now tracing _ClickHouse using ClickHouse_! 
 
 
 <!-- tabs:end -->
