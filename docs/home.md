@@ -5,10 +5,10 @@
     <img src="https://github.com/metrico/qryn-docs/blob/main/docs/resources/images/favicon-32x32.png?raw=true" width=25 /> <i>ˈkwɪr..ɪŋ</i>
   </h1>
   <h3 align="center" style="font-weight: normal;">
-      <b>qryn</b> is a <i>polyglot, high-performance cloud observability stack</i>
+      <b>qryn</b> is a <i>polyglot, high-performance cloud observability stack</i><br>
+      <img src="https://user-images.githubusercontent.com/1423657/50496835-404e6480-0a33-11e9-87a4-aebb71a668a7.gif" width=500 class=border />
   </h3>
-  <img src="https://user-images.githubusercontent.com/1423657/50496835-404e6480-0a33-11e9-87a4-aebb71a668a7.gif" width=500 class=border />
-   <br/>
+  <br/>
 </p>
 
 * Built in _[Explore UI](https://github.com/metrico/qryn-view) and [LogQL CLI](https://github.com/lmangani/vLogQL)_ for instantly _querying logs and extracting metrics_
