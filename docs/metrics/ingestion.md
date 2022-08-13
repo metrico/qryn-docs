@@ -12,7 +12,7 @@ The following protocol APIs are supported for ingesting metrics:
 
 ![image](https://user-images.githubusercontent.com/1423657/184495268-d83cbc0a-a182-4fe4-9271-cb64d7a52f21.png ':size=100')
 
-**qryn** natively supports the Prometheus Remote Write API _(Protobuf WriteRequest format)_ for storing metrics.
+**qryn** natively supports the Prometheus _Remote Write_ API for storing metrics.
 
 #### API Endpoints
 - [x] `api/v1/prom/remote/write`
