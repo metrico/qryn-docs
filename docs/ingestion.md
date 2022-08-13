@@ -8,7 +8,7 @@ Ingesting data with **qryn** is easy and painless. Just pick an integration and 
 
 
 
-## ** Logs **
+### Logs
 The following protocol APIs are supported for ingesting logs:
 <!-- tabs:start -->
 #### ** LogQL **
@@ -18,7 +18,7 @@ The following protocol APIs are supported for ingesting logs:
 <!-- tabs:end -->
 
 
-## ** Metrics **
+### Metrics
 The following protocol APIs are supported for ingesting metrics:
 <!-- tabs:start -->
 #### ** Prometheus **
@@ -29,7 +29,7 @@ The following protocol APIs are supported for ingesting metrics:
 * Influx _(line protocol)_
 <!-- tabs:end -->
 
-## ** Traces **
+### Traces
 The following protocol APIs are supported for ingesting logs:
 <!-- tabs:start -->
 #### ** Zipkin **
