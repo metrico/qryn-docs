@@ -10,9 +10,9 @@ It means _querying_ and we choose it overnight because Grafana did not like _cLo
 
 ----
 
-?> Loki already exists, why do we need _qryn_?
+?> Loki, Prometheus and Tempo already exists, why do we need _qryn_?
 
-All data is in ClickHouse, ready to be accessed and correlated in hundreds of way. Direct control for freaks.
+Why not? All data is in ClickHouse, ready to be accessed, analyzed and correlated in thousands of way today and into the future.
 
 ---
 
