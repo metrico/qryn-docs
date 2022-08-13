@@ -11,11 +11,20 @@ There are two types of _LogQL_ queries:
   * [Log queries](https://grafana.com/docs/loki/latest/logql/log_queries/) returning the contents of log lines as streams.
   * [Metric queries](https://grafana.com/docs/loki/latest/logql/metric_queries/) that convert logs into value matrices.
 
-LogQL queries combine _Stream Selectors_ and _Filter Expressions_
+**LogQL** queries combine a mandatory **Stream Selectors** _fetching all relevant logs by fingerprint_, followed by optional **Filter and Aggregation Expressions** _reducing and interpolating the returned dataset_.
+
 
 <!-- tabs:start -->
 
 ## ** A Log Stream selector **
+
+The log stream selector determines which log streams should be included in your query and is represented by of one or more key-value pairs.
+
+```
+{app="clickhouse"}
+```
+
+In this example, logs that have a label `app` matching `clickhouse` will be included in the results.
 
 ### Log Stream Selectors Operators
 
@@ -60,9 +69,11 @@ Show all log lines for 2 jobs with different names
 
 ## ** Filter Expression **
 
+Once labels are selected the resulting data is be filtered using filter expressions.
+
 ### Filter Expressions Operators
 
-Used for testing text within log line streams.
+The following filter operators are supported in expressions:
 
 * `|=` : equals
 * `!=` : not equals
@@ -137,12 +148,27 @@ We can use operations on both the log **stream selectors** and **filter expressi
 
 ### ** Range Vectors **
 
-The data so far is returned as streams of log lines. We can graph these in visualizations if we convert them to vectors. We can aggregate the lines into numeric values, such as counts, which then become known as instance or range vectors.
+Just like Prometheus, LogQL supports aggregating data over a selected ranges to transform it into an instance vectors.
+
+The currently supported functions are:
 
 * `count_over_time` : Shows the total count of log lines for time range
 * `rate` : Similar as count_over_time but converted to number of entries per second
 * `bytes_over_time` : Number of bytes in each log stream in the range
 * `bytes_rate` : Similar to bytes_over_time but converted to number of bytes per second
+
+The folllowing example counts all the log lines within the last five minutes for the Clickhouse job.
+
+```
+count_over_time({job=”clickhouse”}[5m])
+```
+
+Extend the example to the per-second rate of all non-timeout errors within the last ten seconds for the job.
+
+```
+rate( ( {job="clickhouse"} |= "error" != "timeout)[10s] ) )
+```
+
 
 #### Examples
 
@@ -181,7 +207,7 @@ count_over_time({job="systemd-journal"} |= "error" [1h])
 
 ### ** Aggregate Functions **
 
-An aggregate function converts a **range vector** result into a single instance vector.
+Like PromQL, LogQL supports a subset of built-in aggregation operators that can be used to aggregate elements of a single vector, resulting in a new vector of fewer elements with aggregated values:
 
 * `sum` : Calculate the total of all instance vectors in the range at time
 * `min` : Show the minimum value from all instance vectors in the range at time
