@@ -22,7 +22,7 @@ Get started using the [Log Ingestion](logs/ingestion.md) section
 Get started using the [Metrics Ingestion](metrics/ingestion.md) section
 
 ![image](https://user-images.githubusercontent.com/1423657/184496222-ca95d80c-906f-4c77-a963-86f0b27a56b0.png ':size=100')
-![image](https://user-images.githubusercontent.com/1423657/184495268-d83cbc0a-a182-4fe4-9271-cb64d7a52f21.png ':size=100')
+![image](https://user-images.githubusercontent.com/1423657/184496973-9f46e551-872d-4a25-877c-51a2e5f53e84.png ':size=100')
 ![image](https://user-images.githubusercontent.com/1423657/184496174-aca323dd-f40e-489a-a584-fa7348c0eab0.png ':size=100')
 ![image](https://avatars.githubusercontent.com/u/54801242?s=200&v=4 ':size=100')
 
