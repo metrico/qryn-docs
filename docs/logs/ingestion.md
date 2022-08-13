@@ -28,7 +28,7 @@ Install [Grafana Agent](https://grafana.com/docs/grafana-cloud/data-configuratio
 
 The agent configuration is stored in `/etc/grafana-agent.yaml`
 
-This example will scrape and send info from all logs in /var/log that end in log. They are labeled with varlogs as the job and job_name
+This example will scrape and send info from all logs in `/var/log` that end in log. They are labeled with varlogs as the `job` and `job_name`
 ```
 loki:
   configs:
@@ -51,7 +51,7 @@ loki:
 
 !> Replace the **qryn** URL from the example to match your actual deployment!
 
-Here is another example, scraping logs for a minecraft server with logs stored in a subdirectory of the /home directory of a special minecraft user.
+Here is another example, scraping logs for a minecraft server with logs stored in a subdirectory of the `/home` directory of a special minecraft user.
 ```
       - job_name: minecraftlog
         static_configs:
@@ -60,7 +60,9 @@ Here is another example, scraping logs for a minecraft server with logs stored i
               job: minecraft
               __path__: /home/MCuser/minecraft/logs/latest.log
 ```
-Anytime you change the agent configuration, you must restart the agent for the new configuration to take effect.
+
+!> Anytime you change the agent configuration, you must restart the agent for the new configuration to take effect.
+
 ```
 sudo systemctl restart grafana-agent.service
 ``` 
@@ -69,9 +71,48 @@ sudo systemctl restart grafana-agent.service
 
 ![image](https://user-images.githubusercontent.com/1423657/184496304-4f35a365-efdc-4dca-9771-6b7b1deb9ae3.png ':size=100')
 
-**qryn** implements an experimental Elastic API subset for ingestion.
+**qryn** implements an experimental Elastic APIs to ingestion JSON objects as tagged logs.
 
-* Elastic _(_index, _bulk)_
+#### Service Tags
+The `_index` and `_id` tags are automatically added to each insert based on the API request
+
+#### Index API
+```bash
+curl -X POST "localhost:3100/test-index/_doc/1234" -H 'Content-Type: application/json' -d'
+```
+```json
+{
+  "message": "hello",
+  "user": "cloki"
+}
+```
+
+#### Bulk API
+```json
+{ "index" : { "_index" : "test-index", "_id" : "1234" } }
+{ "message" : "hello", "user": "qryn" }
+```
+```bash
+curl -s -H "Content-Type: application/x-ndjson" -XPOST http://localhost/_bulk --data-binary "@bulkreq"
+```
+
+Either type of insert will be equivalent to the following logQL qryn push:
+```json
+{
+      "stream": {
+        "_index": "test-index",
+        "_id": "1234",
+        "type": "elastic"
+      },
+      "values": [
+          [ "<unix epoch in nanoseconds>", "{\"message\": \"hello\", \"user\":\"qryn'"}" ]
+      ]
+    }
+```
+##### Notes
+- _The implementation is not focused on speed. Bulking capacity depends on fastify settings._
+- _A static type tag is also attached to events ingested through the elastic compatible APIs_
+- _delete, update bulk actions and other APIs are not supported_
 
 ## ** Influx **
 
