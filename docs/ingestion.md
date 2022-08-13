@@ -12,7 +12,7 @@ Our polyglot stack implements _industry standard_ APIs and _globally established
 <!-- tabs:start -->
 
 #### ** Logs **
-<br />
+
 Get started using the [Log Ingestion](logs/ingestion.md) section
 
 ![image](https://user-images.githubusercontent.com/1423657/184496222-ca95d80c-906f-4c77-a963-86f0b27a56b0.png ':size=100')
@@ -22,7 +22,7 @@ Get started using the [Log Ingestion](logs/ingestion.md) section
 
 
 #### ** Metrics **
-<br />
+
 Get started using the [Metrics Ingestion](metrics/ingestion.md) section
 
 ![image](https://user-images.githubusercontent.com/1423657/184496222-ca95d80c-906f-4c77-a963-86f0b27a56b0.png ':size=100')
@@ -31,7 +31,7 @@ Get started using the [Metrics Ingestion](metrics/ingestion.md) section
 ![image](https://avatars.githubusercontent.com/u/54801242?s=200&v=4 ':size=100')
 
 #### ** Telemetry **
-<br />
+
 Get started using the [Telemetry Ingestion](telemetry/ingestion.md) section
 
 ![image](https://user-images.githubusercontent.com/1423657/184496222-ca95d80c-906f-4c77-a963-86f0b27a56b0.png ':size=100')
@@ -40,7 +40,7 @@ Get started using the [Telemetry Ingestion](telemetry/ingestion.md) section
 ![image](https://avatars.githubusercontent.com/u/54801242?s=200&v=4 ':size=100')
 
 #### ** Custom **
-<br />
+
 Missing an ingestion API? Open a [feature request](https://github.com/metrico/qryn/issues) or a PR with your work.
 
 ![image](https://user-images.githubusercontent.com/1423657/184502410-eacd247e-e046-4cdb-9e0c-39411e02d734.png ':size=100')
