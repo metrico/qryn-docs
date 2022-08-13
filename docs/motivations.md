@@ -35,10 +35,10 @@ qryn is made possible by its community of contributors and users - we love you a
 #### Disclaimers
 
 ©️ QXIP BV, released under the GNU Affero General Public License v3.0. See [LICENSE](LICENSE) for details.
-<div style="font-size: 10px;">
-- qryn is not affiliated or endorsed by Grafana Labs or ClickHouse Inc. All rights belong to their respective owners.
-- qryn is a 100% clear-room api implementation and does not fork, use or derivate from Grafana Loki code or concepts.
-- Grafana®, Loki™ and Tempo® are a Trademark of Raintank, Grafana Labs. 
-- ClickHouse® is a trademark of ClickHouse Inc. 
-- Prometheus is a trademark of The Linux Foundation.
+<div style="font-size: 12px;">
+- qryn is not affiliated or endorsed by Grafana Labs or ClickHouse Inc. All rights belong to their respective owners.<br>
+- qryn is a 100% clear-room api implementation and does not fork, use or derivate from Grafana Loki code or concepts.<br>
+- Grafana®, Loki™ and Tempo® are a Trademark of Raintank, Grafana Labs. <br>
+- ClickHouse® is a trademark of ClickHouse Inc. <br>
+- Prometheus is a trademark of The Linux Foundation.<br>
 </div>
