@@ -41,9 +41,9 @@ Get started using the [Telemetry Ingestion](telemetry/ingestion.md) section
 ![image](https://avatars.githubusercontent.com/u/54801242?s=200&v=4 ':size=100')
 
 #### ** Custom **
-!<br />
+<br />
 Missing an ingestion API? Open an [feature request](https://github.com/metrico/qryn/issues) or a PR with your work.
 
-[image](https://user-images.githubusercontent.com/1423657/184499067-86f7a341-1151-452e-8e7f-c6a6c51a232c.png ':size=100')
+![image](https://user-images.githubusercontent.com/1423657/184502410-eacd247e-e046-4cdb-9e0c-39411e02d734.png ':size=100')
 
 <!-- tabs:end -->
