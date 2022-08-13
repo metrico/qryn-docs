@@ -13,8 +13,12 @@ The following protocol APIs are supported for ingesting logs:
 <!-- tabs:start -->
 #### ** LogQL **
 * LogQL PUSH
+#### ** Elastic **
+* Elastic _(_index, _bulk)_
 #### ** Influx **
 * Influx _(line protocol syslog)_
+#### ** ClickHouse MV **
+* ClickHouse Materialized View
 <!-- tabs:end -->
 
 
@@ -36,4 +40,6 @@ The following protocol APIs are supported for ingesting logs:
 * Zipkin _(json/protobuf)_
 #### ** OTLP **
 * OTLP _(grafana-agent)_
+#### ** ClickHouse MV **
+* ClickHouse Materialized View
 <!-- tabs:end -->
