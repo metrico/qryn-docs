@@ -22,7 +22,7 @@ cd $(dirname $(readlink -f `which qryn`)) \
   qryn
 ```
 
-That's it! You are ready to access the stack using qryn-view or Grafana
+?> That's it! You are ready to access the stack using qryn-view or Grafana
 
 
 #### ** PM2 **
@@ -47,7 +47,7 @@ pm2 save
 pm2 startup
 ```
 
-That's it! You are ready to access the stack using qryn-view or Grafana
+?> That's it! You are ready to access the stack using qryn-view or Grafana
 
 
 #### ** Docker **
@@ -76,7 +76,7 @@ CLICKHOUSE_DB="qryn" \
 node qryn.js
 ```
 
-That's it! You are ready to access the stack using qryn-view or Grafana
+?> That's it! You are ready to access the stack using qryn-view or Grafana
 
 
 <!-- tabs:end -->
