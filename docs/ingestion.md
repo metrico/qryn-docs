@@ -14,6 +14,14 @@ The following protocol APIs are supported for ingesting logs:
 * LogQL PUSH
 * Influx _(line protocol syslog)_
 
+  <!-- tabs:start -->
+  ##### ** Sub 1 **
+  aaa
+  ##### ** Sub 1 **
+  bbb
+  <!-- tabs:end -->
+
+
 #### ** Metrics **
 The following protocol APIs are supported for ingesting metrics:
 * Prometheus _(remote_write)_
