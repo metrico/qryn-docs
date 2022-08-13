@@ -2,18 +2,11 @@
 
 Ingesting logs with **qryn** is easy and painless. Just pick an integration and you're set!
 
-
 ### Integrations
-The following protocol APIs are supported for ingesting logs:
-<!-- tabs:start -->
 
-## ** LogQL **
+The **qryn** LogQL API and is 100% compatible with Grafana Loki for ingestion. Any Loki example can be used with **qryn**!
 
-![image](https://user-images.githubusercontent.com/1423657/184496222-ca95d80c-906f-4c77-a963-86f0b27a56b0.png ':size=100')
-
-**qryn** implements a LogQL API and is 100% compatible with Grafana Loki for ingestion. Any Loki example can be used with **qryn**!
-
-* Vector.io
+* Vector
   * [Loki sink](https://vector.dev/docs/reference/configuration/sinks/loki/)
   * [Examples](https://component-pages--vector-project.netlify.app/guides/integrate/sources/http/loki/)
 * Grafana Agent
@@ -26,7 +19,55 @@ The following protocol APIs are supported for ingesting logs:
   * [Examples](https://grafana.com/blog/2022/06/23/how-to-send-logs-to-grafana-loki-with-the-opentelemetry-collector-using-fluent-forward-and-filelog-receivers/#:~:text=Set%20up%20a%20Grafana%20Cloud,click%20the%20Send%20Logs%20button.)
 * Logstash
   * [Examples](https://grafana.com/docs/loki/latest/clients/logstash/)
-  
+
+----
+
+The following protocol APIs are supported for ingesting logs:
+<!-- tabs:start -->
+
+## ** LogQL **
+
+![image](https://user-images.githubusercontent.com/1423657/184496222-ca95d80c-906f-4c77-a963-86f0b27a56b0.png ':size=100')
+
+### Grafana Agent
+Install [Grafana Agent](https://grafana.com/docs/grafana-cloud/data-configuration/agent/) using the official documentation.
+
+The agent configuration is stored in `/etc/grafana-agent.yaml`
+
+This example will scrape and send info from all logs in /var/log that end in log. They are labeled with varlogs as the job and job_name
+```
+loki:
+  configs:
+  - name: default
+    positions:
+      filename: /tmp/positions.yaml
+    scrape_configs:
+      - job_name: varlogs
+        static_configs:
+          - targets: [localhost]
+            labels:
+              job: varlogs
+              __path__: /var/log/*log
+    clients:
+      - url: http://qryn.host:3100/loki/api/v1/push
+        basic_auth:
+          username: <User>
+          password: <Password>
+```
+ 
+Here is another example, scraping logs for a minecraft server with logs stored in a subdirectory of the /home directory of a special minecraft user.
+```
+      - job_name: minecraftlog
+        static_configs:
+          - targets: [localhost]
+            labels:
+              job: minecraft
+              __path__: /home/MCuser/minecraft/logs/latest.log
+```
+Anytime you change the agent configuration, you must restart the agent for the new configuration to take effect.
+```
+sudo systemctl restart grafana-agent.service
+``` 
 
 ## ** Elastic **
 
