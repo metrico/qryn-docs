@@ -16,6 +16,6 @@
 * Designed to be Cloud native for _serverless and stateless operations_ on top of ClickHouse.
 
 <br />
-<p id=logo align="center">
+<p id=logo align="center" style="border-radius:4px;">
     <img src="https://user-images.githubusercontent.com/1423657/50496835-404e6480-0a33-11e9-87a4-aebb71a668a7.gif" width=400 />
 </p>
