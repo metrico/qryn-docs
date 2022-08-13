@@ -6,7 +6,7 @@
 </h1>
 </p>
 
-**qryn** is a _polyglot monitoring and observability stack_ built on top of _ClickHouse_
+**qryn** is a _high-performance polyglot monitoring and observability stack_ built on top of _ClickHouse_
 
 * Native Grafana and _[LogQL/PromQL/Tempo APIs](support.md)_ for _querying, processing, ingesting, tracing and alerting_
 * Ingestion and PUSH APIs transparently compatible with [Loki](logs/ingestion.md), [Prometheus](metrics/ingestion.md), [Tempo](telemetry/ingestion.md), [InfluxDB](metrics/ingestion.md), [Elastic](logs/ingestion.md) _and more_
