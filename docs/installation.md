@@ -7,6 +7,9 @@ Stack configuration is 100% based on [ENV](env.md) parameters passed to the proc
 <!-- tabs:start -->
 
 #### ** NPM **
+
+![image](https://user-images.githubusercontent.com/1423657/184507827-9087fc2d-457b-42cd-ae2e-1c894160745b.png ':size=100')
+
 Install `qryn` as global package on your system using `npm`
 ```bash
 sudo npm install -g qryn
@@ -26,6 +29,9 @@ cd $(dirname $(readlink -f `which qryn`)) \
 
 
 #### ** PM2 **
+
+![image](https://user-images.githubusercontent.com/1423657/184507855-772cd575-2f07-451a-9ab3-9e965132ac23.png ':height=100')
+
 Install `qryn` and `pm2` as global packages on your system using `npm`
 
 ```bash
@@ -50,6 +56,9 @@ pm2 startup
 ?> That's it! You are ready to access the stack using qryn-view or Grafana
 
 #### ** GIT **
+
+![image](https://user-images.githubusercontent.com/1423657/184507866-9e43ae95-6974-4f0b-bdf3-7a8d05f43d8d.png ':size=100')
+
 Clone the qryn repository, install with `npm`and run using `nodejs` 14.x *(or higher)*
 ```bash
 git clone https://github.com/metrico/qryn && cd qryn
@@ -68,6 +77,8 @@ node qryn.js
 ?> That's it! You are ready to access the stack using qryn-view or Grafana
 
 #### ** Docker **
+
+![image](https://user-images.githubusercontent.com/1423657/184507884-624b9598-62e1-413f-854e-8210ecac4e75.png ':height=100')
 
 Each release is automatically pushed to [docker hub](https://hub.docker.com/r/qxip/qryn/tags) and [ghcr](ghcr.io/metrico/qryn:2.1.11)
 ```
@@ -92,6 +103,8 @@ Follow this [guide](https://github.com/metrico/opentelemetry-trace-sampling-demo
 ?> That's it - demo logs included! Just access your stack using qryn-view or Grafana
 
 #### ** Kubernetes **
+
+![image](https://user-images.githubusercontent.com/1423657/184507942-cb195a16-b6d1-451a-9d80-00550f261048.png ':size=100')
 
 Each release is automatically pushed to [docker hub](https://hub.docker.com/r/qxip/qryn/tags) and [ghcr](ghcr.io/metrico/qryn:2.1.11)
 ```
