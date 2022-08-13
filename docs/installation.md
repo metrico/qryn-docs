@@ -68,6 +68,16 @@ node qryn.js
 ?> That's it! You are ready to access the stack using qryn-view or Grafana
 
 #### ** Docker **
+
+Each release is automatically pushed to [docker hub](https://hub.docker.com/r/qxip/qryn/tags) and [ghcr](ghcr.io/metrico/qryn:2.1.11)
+```
+qxip/qryn:latest
+```
+```
+ghcr.io/metrico/qryn:latest
+```
+
+##### Compose
 Use docker to get started in no time - use either a local or cloud ClickHouse instance.
 
 ```bash
@@ -75,14 +85,26 @@ git clone https://github.com/metrico/qryn && cd qryn/docker
 docker-compose up -d
 ```
 
+##### Sampling Demo
+
+Follow this [guide](https://github.com/metrico/opentelemetry-trace-sampling-demo) to spin up a fully configured system w/ samples
+
 ?> That's it - demo logs included! Just access your stack using qryn-view or Grafana
 
 #### ** Kubernetes **
+
+Each release is automatically pushed to [docker hub](https://hub.docker.com/r/qxip/qryn/tags) and [ghcr](ghcr.io/metrico/qryn:2.1.11)
+```
+qxip/qryn:latest
+```
+```
+ghcr.io/metrico/qryn:latest
+```
+
+##### Helm
 Use K8s and helm to get started in no time - use either a local or cloud ClickHouse instance.
 
-```bash
-TBD
-```
+Follow this [guide](https://github.com/metrico/qryn-k8s) to get started.
 
 ?> That's it - demo logs included! Just access your stack using qryn-view or Grafana
 
