@@ -19,4 +19,13 @@
   * [Introduction](introduction.md "QRYN – General Concepts – Introduction – LogQL for ClickHouse and beyond")
   * [Supported APIs](support.md "QRYN – Supported Components – LogQL for ClickHouse and beyond")
 
-* [About](motivations.md "QRYN – Motivations – LogQL for ClickHouse and beyond")
+* **Tools**
+  * [qryn-view](https://github.com/metrico/qryn-view)
+  * [vLogQL](https://github.com/metrico/vLogql)
+  * [Fluxpipe](https://github.com/metrico/fluxpipe)
+  * [ClickHouse-Mate](https://github.com/metrico/clickhouse-mate)
+  * [Promcasa](https://github.com/metrico/promcasa)
+
+* **Misc**
+  * [About](motivations.md "QRYN – Motivations – LogQL for ClickHouse and beyond")
+  * [FAQ](faq.md)
