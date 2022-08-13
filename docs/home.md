@@ -1,7 +1,4 @@
 <br />
-<p id=logo align="center">
-    <img src="https://github.com/metrico/qryn-docs/blob/main/docs/resources/images/qryn_logo_trans.png?raw=true" width=200 />
-</p>
 
 <p id=start align="center">
 <h1 align="center">LogQL for ClickHouse <i>and beyond</i></h1>
