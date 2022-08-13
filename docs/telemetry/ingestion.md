@@ -8,15 +8,12 @@ The following protocol APIs are supported for ingesting telemetry events:
 <!-- tabs:start -->
 ## ** Zipkin **
 
-![image](https://user-images.githubusercontent.com/1423657/184494381-15d20f5d-3d52-411b-9064-dfd2ccea7c1c.png ':size=100')
+![image](https://user-images.githubusercontent.com/1423657/184494381-15d20f5d-3d52-411b-9064-dfd2ccea7c1c.png ':size=100')![image](https://user-images.githubusercontent.com/1423657/184494438-17d7ceb0-a62a-4819-9b1c-43d7f0baf802.png ':size=100')
+
 
 **qryn** natively implements a json/http [Zipkin](https://zipkin.io/) receiver API endpoint to ingest tracing data
 
-#### Send Spans using OpenTelemetry libraries
-
-![image](https://user-images.githubusercontent.com/1423657/184494438-17d7ceb0-a62a-4819-9b1c-43d7f0baf802.png ':size=100')
-
-Trace from any application supported by [opentelemetry](https://github.com/open-telemetry) using standard libraries
+Tracing from any application supported by [opentelemetry](https://github.com/open-telemetry) is possible with standard zipkin libraries.
 
 - [zipkin sender](https://github.com/open-telemetry/opentelemetry-js/blob/main/examples/tracer-web/examples/zipkin/index.js)
 
