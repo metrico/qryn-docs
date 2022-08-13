@@ -17,5 +17,5 @@
 
 <br />
 <p id=logo align="center" style="border-radius:4px;">
-    ![logo](https://user-images.githubusercontent.com/1423657/50496835-404e6480-0a33-11e9-87a4-aebb71a668a7.gif ':class=radius&size=440')
+![logo](https://user-images.githubusercontent.com/1423657/50496835-404e6480-0a33-11e9-87a4-aebb71a668a7.gif ':class=radius')
 </p>
