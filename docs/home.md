@@ -8,7 +8,7 @@
 
 **qryn** is a _dynamic observability stack_ built on top of ClickHouse supporting _many popular data ingestion formats_
 
-* Native Grafana and _LogQL/PromQL/Tempo_ APIs for _querying, processing, ingesting, tracing and alerting_
+* Native Grafana and _[LogQL/PromQL/Tempo_ APIs](support.md) for _querying, processing, ingesting, tracing and alerting_
 * Ingestion and PUSH APIs transparently compatible with [Loki](logs/ingestion.md), [Prometheus](metrics/ingestion.md), [Tempo](telemetry/ingestion.md), [InfluxDB](metrics/ingestion.md), [Elastic](logs/ingestion.md) _and more_
 * Powerful Query pipeline to dynamically _search, filter and extract data from logs, events, metrics and traces_
 * Ready to use with Agents such as _[Promtail, Grafana-Agent, Vector, Logstash, Telegraf](ingestion.md) and many more_
