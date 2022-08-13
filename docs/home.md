@@ -2,7 +2,7 @@
 
 <p id=start align="center">
 <h1 align="center">
-    <img src="https://github.com/metrico/qryn-docs/blob/main/docs/resources/images/qryn_logo_trans.png?raw=true" width=25 /> LogQL for ClickHouse <i>and beyond</i>
+    <img src="https://github.com/metrico/qryn-docs/blob/main/docs/resources/images/qryn_logo_trans.png?raw=true" width=32 /> LogQL for ClickHouse <i>and beyond</i>
 </h1>
 </p>
 
@@ -17,5 +17,5 @@
 
 <br />
 <p id=logo align="center" style="border-radius:4px;">
-    <img src="https://user-images.githubusercontent.com/1423657/50496835-404e6480-0a33-11e9-87a4-aebb71a668a7.gif" width=400 />
+    ![logo](https://user-images.githubusercontent.com/1423657/50496835-404e6480-0a33-11e9-87a4-aebb71a668a7.gif" ':class=radius' ':size=440')
 </p>
