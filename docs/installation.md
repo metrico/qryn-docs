@@ -49,17 +49,6 @@ pm2 startup
 
 ?> That's it! You are ready to access the stack using qryn-view or Grafana
 
-
-#### ** Docker **
-Use docker to get started in no time - use either a local or cloud ClickHouse instance.
-
-```bash
-git clone https://github.com/metrico/qryn && cd qryn/docker
-docker-compose up -d
-```
-
-That's it - demo logs included! Just access your stack using qryn-view or Grafana
-
 #### ** GIT **
 Clone the qryn repository, install with `npm`and run using `nodejs` 14.x *(or higher)*
 ```bash
@@ -78,5 +67,23 @@ node qryn.js
 
 ?> That's it! You are ready to access the stack using qryn-view or Grafana
 
+#### ** Docker **
+Use docker to get started in no time - use either a local or cloud ClickHouse instance.
+
+```bash
+git clone https://github.com/metrico/qryn && cd qryn/docker
+docker-compose up -d
+```
+
+?> That's it - demo logs included! Just access your stack using qryn-view or Grafana
+
+#### ** Kubernetes **
+Use K8s and helm to get started in no time - use either a local or cloud ClickHouse instance.
+
+```bash
+TBD
+```
+
+?> That's it - demo logs included! Just access your stack using qryn-view or Grafana
 
 <!-- tabs:end -->
