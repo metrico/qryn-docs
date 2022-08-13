@@ -2,12 +2,12 @@
 
 <p id=start align="center">
 <h1 align="center">
-    <img src="https://github.com/metrico/qryn-docs/blob/main/docs/resources/images/favicon-32x32.png?raw=true" width=25 /> <i>/ˈkwɪr..ɪŋ/</i>
+    <img src="https://github.com/metrico/qryn-docs/blob/main/docs/resources/images/favicon-32x32.png?raw=true" width=25 /> <i>ˈkwɪr..ɪŋ</i>
 </h1>
 </p>
 <p id=start align="center">
   <h4 align="center">
-      <b>qryn</b> is a <i>high-performance polyglot monitoring and observability stack</i> built on top of ClickHouse
+      qryn is a <i>high-performance polyglot monitoring and observability stack</i> built on top of ClickHouse
   </h4>
 </p>
 
