@@ -1,17 +1,14 @@
 <br />
 
 <p id=start align="center">
-<h1 align="center">
+  <h1 align="center">
     <img src="https://github.com/metrico/qryn-docs/blob/main/docs/resources/images/favicon-32x32.png?raw=true" width=25 /> <i>ˈkwɪr..ɪŋ</i>
-</h1>
-</p>
-<p id=start align="center">
-  <h3 align="center">
-      <i>qryn</i> is a <i>polyglot, high-performance cloud observability stack</i>
+  </h1>
+  <h3 align="center" style="font-weight: normal;">
+      <b>qryn</b> is a <i>polyglot, high-performance cloud observability stack</i>
   </h3>
 </p>
 
-#### Features    
 * Built in _[Explore UI](https://github.com/metrico/qryn-view) and [LogQL CLI](https://github.com/lmangani/vLogQL)_ for instantly _querying logs and extracting metrics_
 * Native Grafana and _[LogQL/PromQL/Tempo APIs](support.md)_ for _querying, processing, ingesting, tracing and alerting_
 * Ingestion and PUSH APIs transparently compatible with [Loki](logs/ingestion.md), [Prometheus](metrics/ingestion.md), [Tempo](telemetry/ingestion.md), [InfluxDB](metrics/ingestion.md), [Elastic](logs/ingestion.md) _and more_
