@@ -28,25 +28,33 @@ LogQL queries combine _Stream Selectors_ and _Filter Expressions_
 
 Return all log lines for the job systemd-journal
 
-```{job="systemd-journal"}```
+```
+{job="systemd-journal"}
+```
 
 -------
 
 Return all log lines for the unit ssh.service
 
-```{unit="ssh.service"}```
+```
+{unit="ssh.service"}
+```
 
 -------
 
 Return all log lines for the job systemd-journal and the unit cron.service
 
-```{job="systemd-journal",unit="cron.service"}```
+```
+{job="systemd-journal",unit="cron.service"}
+```
 
 -------
 
 Show all log lines for 2 jobs with different names
 
-```{job=~"qryn/systemd-journal|systemd-journal"}```
+```
+{job=~"qryn/systemd-journal|systemd-journal"}
+```
 
 -------
 
@@ -65,43 +73,57 @@ Used for testing text within log line streams.
 
 Return lines including the text "error"
 
-```{job="systemd-journal"} |= "error"```
+```
+{job="systemd-journal"} |= "error"
+```
 
 -------
 
 Return lines not including the text "error"
 
-```{job="systemd-journal"} != "error"```
+```
+{job="systemd-journal"} != "error"
+```
 
 -------
 
 Return lines including the text "error" or "info" using regex
 
-```{job="systemd-journal"} |~ "error|info"```
+```
+{job="systemd-journal"} |~ "error|info"
+```
 
 -------
 
 Return lines not including the text "error" or "info" using regex
 
-```{job="systemd-journal"} !~ "error|info"```
+```
+{job="systemd-journal"} !~ "error|info"
+```
 
 -------
 
 Return lines including the text "error" but not including "info"
 
-```{job="systemd-journal"} |= "error" != "info"```
+```
+{job="systemd-journal"} |= "error" != "info"
+```
 
 -------
 
 Return lines including the text "Invalid user" and including ("default" or "qryn") using regex
 
-```{job="systemd-journal"} |~ "Invalid user (default|qryn)"```
+```
+{job="systemd-journal"} |~ "Invalid user (default|qryn)"
+```
 
 -------
 
 Return lines including the text "status 403" or "status 503" using regex
 
-```{job="systemd-journal"} |~ "status [45]03"```
+```
+{job="systemd-journal"} |~ "status [45]03"
+```
 
 -------
 
@@ -126,13 +148,17 @@ The data so far is returned as streams of log lines. We can graph these in visua
 
 The count of jobs at 1 minutes time intervals
 
-```count_over_time({job="systemd-journal"}[1m])```
+```
+count_over_time({job="systemd-journal"}[1m])
+```
 
 -------
 
 The rate of logs per minute. Rate is similar to count_over_time but shows the entries per second.
 
-```rate({job="systemd-journal"}[1m])```
+```
+rate({job="systemd-journal"}[1m])
+```
 
 -------
 
@@ -148,7 +174,9 @@ eg,
 
 The count of errors at 1h time intervals
 
-```count_over_time({job="systemd-journal"} |= "error" [1h])```
+```
+count_over_time({job="systemd-journal"} |= "error" [1h])
+```
 
 
 ### ** Aggregate Functions **
@@ -167,19 +195,25 @@ An aggregate function converts a **range vector** result into a single instance 
 
 Calculate the total of all instance vectors in the range at time
 
-```sum(count_over_time({job="systemd-journal"}[1m]))```
+```
+sum(count_over_time({job="systemd-journal"}[1m]))
+```
 
 -------
 
 Show the minimum value from all instance vectors in the range at time
 
-```min(count_over_time({job="systemd-journal"}[1m]))```
+```
+min(count_over_time({job="systemd-journal"}[1m]))
+```
 
 -------
 
 Show the maximum value from all instance vectors in the range at time
 
-```max(count_over_time({job="systemd-journal"}[1m]))```
+```
+max(count_over_time({job="systemd-journal"}[1m]))
+```
 
 -------
 
@@ -191,25 +225,33 @@ Convert an instance vector into a range vector organized by unit
 
 Group a single log stream by unit
 
-```sum(count_over_time({job="systemd-journal"}[1m])) by (unit)```
+```
+sum(count_over_time({job="systemd-journal"}[1m])) by (unit)
+```
 
 -------
 
 Group multiple log streams by job
 
-```sum(count_over_time({job=~"qryn/systemd-journal|systemd-journal"}[1m])) by (job)```
+```
+sum(count_over_time({job=~"qryn/systemd-journal|systemd-journal"}[1m])) by (job)
+```
 
 -------
 
 Group multiple log streams and specific unit by job
 
-```sum(count_over_time({job=~"qryn/systemd-journal|systemd-journal", unit="cron.service"}[1m])) by (job)```
+```
+sum(count_over_time({job=~"qryn/systemd-journal|systemd-journal", unit="cron.service"}[1m])) by (job)
+```
 
 -------
 
 Group multiple log streams by job and unit
 
-```sum(count_over_time({job=~"qryn/systemd-journal|systemd-journal"}[1m])) by (job,unit)```
+```
+sum(count_over_time({job=~"qryn/systemd-journal|systemd-journal"}[1m])) by (job,unit)
+```
 
 -------
 
@@ -229,13 +271,17 @@ Comparison Operators. Used for testing numeric values present in scalars and vec
 
 Returns values greater than 4
 
-```sum(count_over_time({job="systemd-journal"}[1m])) > 4```
+```
+sum(count_over_time({job="systemd-journal"}[1m])) > 4
+```
 
 -------
 
 Returns values less than or equal to 1
 
-```sum(count_over_time({job="systemd-journal"}[1m])) <= 1```
+```
+sum(count_over_time({job="systemd-journal"}[1m])) <= 1
+```
 
 -------
 
@@ -250,13 +296,17 @@ Operatora can be used to add filter conditions:
 
 Returns only values smaller than 20% and smaller than 30%
 
-```{job="systemd-journal"} | json | mem > 20 and mem < 30```
+```
+{job="systemd-journal"} | json | mem > 20 and mem < 30
+```
 
 -------
 
 Return only values below 30% or above 80%
 
-```{job="systemd-journal"} | json | mem < 30 or mem > 80```
+```
+{job="systemd-journal"} | json | mem < 30 or mem > 80
+```
 
 -------
 
