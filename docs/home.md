@@ -1,5 +1,3 @@
-<br />
-
 <p id=start align="center">
   <h1 align="center">
     <img src="https://github.com/metrico/qryn-docs/blob/main/docs/resources/images/favicon-32x32.png?raw=true" width=25 /> <i>ˈkwɪr..ɪŋ</i>
