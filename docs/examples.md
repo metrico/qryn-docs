@@ -16,9 +16,9 @@ There are two types of _LogQL_ queries:
 
 <!-- tabs:start -->
 
-## ** A Log Stream selector **
+## ** Log Stream selector **
 
-The log stream selector determines which log streams should be included in your query and is represented by of one or more key-value pairs.
+The log _stream selector_ determines which log streams should be included in your query and is represented by of one or more key-value pairs.
 
 ```
 {app="clickhouse"}
