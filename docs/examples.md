@@ -56,10 +56,10 @@ Show all log lines for 2 jobs with different names
 
 Used for testing text within log line streams.
 
-* ```|= : equals```
-* ```!= : not equals```
-* ```|~ : regex matches```
-* ```!~ : regex does not match```
+* `|=` : equals
+* `!=` : not equals
+* `|~` : regex matches
+* `!~` : regex does not match
 
 #### Examples
 
@@ -218,12 +218,12 @@ Group multiple log streams by job and unit
 
 Comparison Operators. Used for testing numeric values present in scalars and vectors.
 
-* ```== (equality)```
-* ```!= (inequality)```
-* ```> (greater than)```
-* ```>= (greater than or equal to)```
-* ```< (less than)```
-* ```<= (less than or equal to)```
+* `==` : equal
+* `!=` : not equal
+* `>` : greater than
+* `>=` : greater than or equal to)
+* `<` : less than
+* `<=` : less than or equal to
 
 #### Examples
 
@@ -243,8 +243,8 @@ Returns values less than or equal to 1
 
 Operatora can be used to add filter conditions:
 
-* ```and : Both sides must be true```
-* ```or : One on either side must be true```
+* `and` : Both expressions must be true
+* `or` : Either expression must be true
 
 #### Examples
 
