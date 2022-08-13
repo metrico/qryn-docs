@@ -1,7 +1,9 @@
 <br />
 
 <p id=start align="center">
-<h1 align="center">LogQL for ClickHouse <i>and beyond</i></h1>
+<h1 align="center">
+    <img src="https://github.com/metrico/qryn-docs/blob/main/docs/resources/images/qryn_logo_trans.png?raw=true" width=25 /> LogQL for ClickHouse <i>and beyond</i>
+</h1>
 </p>
 
 **qryn** is a _dynamic observability stack_ built on top of ClickHouse supporting _many popular data ingestion formats_
