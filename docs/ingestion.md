@@ -1,6 +1,8 @@
+![qryn_integrations](https://user-images.githubusercontent.com/1423657/184487816-fcc86e34-0395-4927-8ceb-33c2ad3e63d4.gif)
+
 # Ingestion
 
-Ingesting data with **qryn** is painless and effortless. Just pick an integration and you're set.
+Ingesting data with **qryn** is easy and painless. Just pick an integration and you're set!
 
 
 <!-- tabs:start -->
@@ -22,5 +24,3 @@ The following protocol APIs are supported for ingesting logs:
 * OTLP _(grafana-agent)_
 
 <!-- tabs:end -->
-
-<img src="https://user-images.githubusercontent.com/1423657/143876342-85531041-aca5-4892-a218-e8775674867d.gif" />
