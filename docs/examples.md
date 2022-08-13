@@ -111,18 +111,16 @@ Return lines including the text "status 403" or "status 503" using regex
 
 We can use operations on both the log **stream selectors** and **filter expressions** to refine them.
 
-<br />
-
 <!-- tabs:start -->
 
 ### ** Range Vectors **
 
 The data so far is returned as streams of log lines. We can graph these in visualizations if we convert them to vectors. We can aggregate the lines into numeric values, such as counts, which then become known as instance or range vectors.
 
-* ```count_over_time : Shows the total count of log lines for time range```
-* ```rate : Similar as count_over_time but converted to number of entries per second```
-* ```bytes_over_time : Number of bytes in each log stream in the range```
-* ```bytes_rate : Similar to bytes_over_time but converted to number of bytes per second```
+* `count_over_time` : Shows the total count of log lines for time range
+* `rate` : Similar as count_over_time but converted to number of entries per second
+* `bytes_over_time` : Number of bytes in each log stream in the range
+* `bytes_rate` : Similar to bytes_over_time but converted to number of bytes per second
 
 #### Examples
 
@@ -155,15 +153,15 @@ The count of errors at 1h time intervals
 
 ### ** Aggregate Functions **
 
-An aggregate function converts a range vector result into a single instance vector.
+An aggregate function converts a **range vector** result into a single instance vector.
 
-* ```sum : Calculate the total of all instance vectors in the range at time```
-* ```min : Show the minimum value from all instance vectors in the range at time```
-* ```max : Show the maximum value from all instance vectors in the range at time```
-* ```avg : Calculate the average of the values from all instance vectors in the range at time```
-* ```stddev : Calculate the standard deviation of the values from all instance vectors in the range at time```
-* ```stdvar : Calculate the standard variance of the values from all instance vectors in the range at time```
-* ```count : Count the number of elements all all instance vectors in the range at time```
+* `sum` : Calculate the total of all instance vectors in the range at time
+* `min` : Show the minimum value from all instance vectors in the range at time
+* `max` : Show the maximum value from all instance vectors in the range at time
+* `avg` : Calculate the average of the values from all instance vectors in the range at time
+* `stddev` : Calculate the standard deviation of the values from all instance vectors in the range at time
+* `stdvar` : Calculate the standard variance of the values from all instance vectors in the range at time
+* `count` : Count the number of elements all all instance vectors in the range at time
 
 #### Examples
 
@@ -185,7 +183,7 @@ Show the maximum value from all instance vectors in the range at time
 
 -------
 
-### ** Aggregate Group **
+### Aggregate Group
 
 Convert an instance vector into a range vector organized by unit
 
@@ -243,7 +241,7 @@ Returns values less than or equal to 1
 
 ### ** Logical Operators **
 
-These can be used to add filter conditions
+Operatora can be used to add filter conditions:
 
 * ```and : Both sides must be true```
 * ```or : One on either side must be true```
