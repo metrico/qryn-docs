@@ -91,14 +91,20 @@ ghcr.io/metrico/qryn:latest
 ##### Compose
 Use docker to get started in no time - use either a local or cloud ClickHouse instance.
 
-```bash
-git clone https://github.com/metrico/qryn && cd qryn/docker
-docker-compose up -d
 ```
+  qryn:
+    image: qxip/qryn:latest
+    ports:
+      - "3100:3100"
+    environment:
+      - CLICKHOUSE_SERVER=http://user:pass@clickhouse-server:8123
+```
+
+!> Refer to the [configuration](env.md) for a list of supported parameters
 
 ##### Sampling Demo
 
-Follow this [guide](https://github.com/metrico/opentelemetry-trace-sampling-demo) to spin up a fully configured system w/ samples
+Follow this [guide](https://github.com/metrico/opentelemetry-trace-sampling-demo) to spin up a fully configured system w/ sample logs and traces, grafana settings, configured datasources, etc.
 
 ?> That's it - demo logs included! Just access your stack using qryn-view or Grafana
 
@@ -117,7 +123,73 @@ ghcr.io/metrico/qryn:latest
 ##### Helm
 Use K8s and helm to get started in no time - use either a local or cloud ClickHouse instance.
 
+You need to have a Kubernetes cluster, and the kubectl command-line tool must be configured to communicate with your cluster. It is recommended to run this tutorial on a cluster with at least two nodes that are not acting as control plane hosts.
+
 Follow this [guide](https://github.com/metrico/qryn-k8s) to get started.
+
+##### Example
+```
+kubectl apply -f qryn-service.yaml,qryn-deployment.yaml
+```
+
+###### `qryn-deployment.yml`
+```
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: cloki
+  labels:
+    io.metrico.service: qryn
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      io.metrico.service: qryn
+  strategy: {}
+  template:
+    metadata:
+      annotations:
+        cloki.cmd: cloki.org
+      creationTimestamp: null
+      labels:
+        io.metrico.service: cloki
+    spec:
+      containers:
+        - env:
+            - name: CLICKHOUSE_AUTH
+              value: "default:password"
+            - name: CLICKHOUSE_PORT
+              value: 8123
+            - name: CLICKHOUSE_SERVER
+              value: "clickhouse"
+          image: qxip/qryn
+          name: qryn
+          ports:
+            - containerPort: 3100
+          resources: {}
+      restartPolicy: Always
+status: {}
+```
+
+###### `qryn-service.yml`
+```
+apiVersion: v1
+kind: Service
+metadata:
+  creationTimestamp: null
+  labels:
+    io.metrico.service: qryn
+  name: cloki
+spec:
+  ports:
+    - name: "3100"
+      port: 3100
+      targetPort: 3100
+  selector:
+    io.metrico.service: qryn
+status:
+  loadBalancer: {}
+```
 
 ?> That's it - demo logs included! Just access your stack using qryn-view or Grafana
 
