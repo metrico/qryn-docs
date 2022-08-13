@@ -27,7 +27,6 @@ qryn is made possible by its community of contributors and users - we love you a
 
 <a href="https://github.com/lmangani/qryn/graphs/contributors">
   <img src="https://contributors-img.web.app/image?repo=metrico/qryn" />
-  <img src="https://contributors-img.web.app/image?repo=metrico/qryn" />
 </a>
 
 ------
