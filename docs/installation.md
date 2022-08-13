@@ -30,7 +30,7 @@ cd $(dirname $(readlink -f `which qryn`)) \
 
 #### ** PM2 **
 
-![image](https://user-images.githubusercontent.com/1423657/184507855-772cd575-2f07-451a-9ab3-9e965132ac23.png ':height=100')
+![image](https://user-images.githubusercontent.com/1423657/184507827-9087fc2d-457b-42cd-ae2e-1c894160745b.png ':size=100')
 
 Install `qryn` and `pm2` as global packages on your system using `npm`
 
@@ -78,7 +78,7 @@ node qryn.js
 
 #### ** Docker **
 
-![image](https://user-images.githubusercontent.com/1423657/184507884-624b9598-62e1-413f-854e-8210ecac4e75.png ':height=100')
+![image](https://user-images.githubusercontent.com/1423657/184507884-624b9598-62e1-413f-854e-8210ecac4e75.png ':size=100x300')
 
 Each release is automatically pushed to [docker hub](https://hub.docker.com/r/qxip/qryn/tags) and [ghcr](ghcr.io/metrico/qryn:2.1.11)
 ```
