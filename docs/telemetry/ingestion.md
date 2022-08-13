@@ -8,16 +8,18 @@ The following protocol APIs are supported for ingesting logs:
 <!-- tabs:start -->
 ## ** Zipkin **
 
-### Sending Spans
-qryn implements a basic [Zipkin](https://zipkin.io/) receiver json/http API endpoint to ingest tracing data.
+**qryn** natively implements a json/http [Zipkin](https://zipkin.io/) receiver API endpoint to ingest tracing data
 
 #### Send Spans using [opentelemetry-js](https://github.com/open-telemetry/opentelemetry-js)
+
+Trace from any application supported by opentelemetry using the official examples
 
 - [zipkin sender](https://github.com/open-telemetry/opentelemetry-js/blob/main/examples/tracer-web/examples/zipkin/index.js)
 
 #### Send Spans using CURL
 
-```
+Trace from your console for testing and to support telemetry withing your bash scripts
+```bash
 curl -X POST http://localhost:3100/tempo/api/push -H 'Content-Type: application/json' -d '[{
  "id": "1234",
  "traceId": "d6e9329d67b6146b",
@@ -33,7 +35,7 @@ curl -X POST http://localhost:3100/tempo/api/push -H 'Content-Type: application/
   }
 }]'
 ```
-```
+```bash
 curl -X POST http://localhost:3100/tempo/api/push  -H 'Content-Type: application/json' -d '[{
  "id": "5678",
  "traceId": "d6e9329d67b6146b",
@@ -71,7 +73,7 @@ Using MVs the internal spans can be translated to ZipkinV2 JSON and sent to an O
 ### Create Materialized View
 
 The following MV will push traces to the qryn /tempo API using the ClickHouse **URL engine**
-```
+```sql
 CREATE MATERIALIZED VIEW default.zipkin_spans
 ENGINE = URL('http://qryn:3100/tempo/api/push', 'JSONEachRow')
 SETTINGS output_format_json_named_tuples_as_objects = 1,
@@ -96,14 +98,14 @@ FROM system.opentelemetry_span_log
 ### Send Spans from ClickHouse
 
 Enable tracing as you login with the clickhouse-client (Value between 0 (turned off) and 1 (100% of queries create trace))
-```
+```bash
 clickhouse-client -h 127.0.0.1 --opentelemetry_start_trace_probability=0.1 --query_id "a0c9f73a1c684e0ce66333477a3841bf-200" --query "select 1"
 clickhouse-client -h 127.0.0.1 --query "system flush logs"
 
 ```
 
 The following type events will be pushed:
-```
+```json
 [{
  traceID: '97a156e95095e0e4c0f0f4dbb921244d',
  spanID: '19ce8d73f029e649',
