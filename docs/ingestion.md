@@ -2,12 +2,11 @@
 
 Ingesting data with **qryn** is easy and painless. Just pick an integration and you're set!
 
-Our polyglot stack implements _industry standard_ APIs and _globally established_ monitoring protocols. This allows us to ingest _"foreign"_ data into our tables without demanding anything out of the user. You keep using your preferred _Agent or Method_ to send data, and _qryn does the rest_.
+Our polyglot stack implements _industry standard_ APIs and _globally established_ monitoring protocols such as LogQL, PromQL and Tempo. This allows us to ingest _"foreign"_ data into our tables from standard clients, without demanding anything out of the end user. 
+
+You keep using your preferred _Agent or Method_ to send data, and _qryn does the rest_.
 
 <br />
-
-<img src="https://user-images.githubusercontent.com/1423657/184487816-fcc86e34-0395-4927-8ceb-33c2ad3e63d4.gif" width=600 />
-
 
 <!-- tabs:start -->
 
@@ -46,3 +45,5 @@ Missing an ingestion API? Open a [feature request](https://github.com/metrico/qr
 ![image](https://user-images.githubusercontent.com/1423657/184502410-eacd247e-e046-4cdb-9e0c-39411e02d734.png ':size=100')
 
 <!-- tabs:end -->
+
+<img src="https://user-images.githubusercontent.com/1423657/184487816-fcc86e34-0395-4927-8ceb-33c2ad3e63d4.gif" width=600 />
