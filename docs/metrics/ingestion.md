@@ -41,6 +41,8 @@ remote_write:
   - url: "http://qryn:3100/api/v1/write"
 ```
 
+!> Replace the **qryn** URL from the example to match your actual deployment!
+
 ?> _That's it!_ You are now ingesting Prometheus metrics in **qryn**
 
 #### Read
@@ -115,6 +117,8 @@ curl -i -XPOST -H "Content-Type: application/json" http://qryn:3100/loki/api/v1/
 }
 ```
 
+!> Replace the **qryn** URL from the example to match your actual deployment!
+
 ?> _That's it!_ You are now inserting metrics throug LogQL in **qryn**
 
 
@@ -141,6 +145,10 @@ curl -i -XPOST 'http://qryn:3100/influx/api/v2/write' \
 curl -i -XPOST 'http://qryn:3100/influx/api/v2/write' \
   --data-raw 'syslog,appname=myapp,facility=console,host=myhost,hostname=myhost,severity=warning facility_code=14i,message="warning message here",severity_code=4i,procid="12345",timestamp=1434055562000000000,version=1'
 ```  
+
+!> Replace the **qryn** URL from the example to match your actual deployment!
+
+?> _That's it!_ You are now inserting metrics from Influx clients in **qryn**
 
 #### Read
 
