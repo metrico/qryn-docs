@@ -89,7 +89,33 @@ In Grafana queries, use $__interval for unwrap, ie: unwrap data [$__interval]
 
 ![image](https://user-images.githubusercontent.com/1423657/184496222-ca95d80c-906f-4c77-a963-86f0b27a56b0.png ':size=100')
 
-* LogQL PUSH _(unwrap_metric)_
+Loki doesn't allow inserting metrics through its API - but **qryn** does 👍
+
+Both below format variations are accepted to insert labeled metrics using the `value` parameter in a stream:
+
+#### Metrics
+```bash
+curl -i -XPOST -H "Content-Type: application/json" http://qryn:3100/loki/api/v1/push \
+     --data '{"streams":[{"labels":"{\"__name__\":\"my_metric\"}","entries":[{"timestamp":"2022-08-08T16:00:06.944Z", "value":100}]}]}'
+```
+```json
+{
+    "streams": [
+        {
+            "labels": "{\"__name__\":\"my_metric\"}",
+            "entries": [
+                {
+                    "timestamp":"1545840006945",
+                    "value": 100
+                }
+            ]
+        }
+    ]
+}
+```
+
+?> _That's it!_ You are now inserting metrics throug LogQL in **qryn**
+
 
 ## ** Influx **
 
