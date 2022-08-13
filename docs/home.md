@@ -1,6 +1,6 @@
 <br />
 <p id=logo align="center">
-    <img src="https://github.com/metrico/qryn-docs/blob/main/docs/resources/images/qryn_logo_trans.png?raw=true" width=250 />
+    <img src="https://github.com/metrico/qryn-docs/blob/main/docs/resources/images/qryn_logo_trans.png?raw=true" width=200 />
 </p>
 
 <p id=start align="center">
@@ -10,7 +10,7 @@
 **qryn** is a _dynamic observability stack_ built on top of ClickHouse supporting _many popular data ingestion formats_
 
 * Native Grafana and _LogQL/PromQL/Tempo_ APIs for _querying, processing, ingesting, tracing and alerting_
-* Ingestion and PUSH APIs transparently compatible with Loki, Prometheus, Tempo, InfluxDB, Elastic _and more_
+* Ingestion and PUSH APIs transparently compatible with [Loki](logs/ingestion.md), [Prometheus](metrics/ingestion.md), [Tempo](telemetry/ingestion.md), [InfluxDB](metrics/ingestion.md), [Elastic](logs/ingestion.md) _and more_
 * Powerful Query pipeline to dynamically _search, filter and extract data from logs, events, metrics and traces_
 * Ready to use with Agents such as _Promtail, Grafana-Agent, Vector, Logstash, Telegraf and many more_
 * Built in _Explore UI and LogQL CLI_ for instantly _querying logs and extracting metrics_
@@ -18,5 +18,5 @@
 
 <br />
 <p id=logo align="center">
-    <img src="https://user-images.githubusercontent.com/1423657/50496835-404e6480-0a33-11e9-87a4-aebb71a668a7.gif" width=500 />
+    <img src="https://user-images.githubusercontent.com/1423657/50496835-404e6480-0a33-11e9-87a4-aebb71a668a7.gif" width=400 />
 </p>
