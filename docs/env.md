@@ -1,5 +1,15 @@
-#### Configuration
-The following ENV Variables can be used to control **qryn** parameters and backend settings:
+## qryn
+### Configuration
+
+**qryn** has no configuration files by design - just `ENV` variables
+
+?> K8s and container friendly 😉
+
+#### Parameters
+
+The following `ENV` parameters can be used to control **qryn** parameters and its backend settings
+
+!> All parameters are _optional_, except for the **CLICKHOUSE_SERVER** related settings
 
 | ENV   	                |Default   	|Usage   	|
 |------------------------|---	    |---		|
