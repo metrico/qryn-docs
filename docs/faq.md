@@ -19,7 +19,9 @@ Why not? Our system uses a different design where ultimately all data across ing
 ?> NodeJS is slow and _(insert argument)_ so _qryn_ must be slow and not serious.
 
 False. NodeJS can be very fast when used right as an API and in our stack, ClickHouse does all the heavy-lifting.<br>
-This said, there are limits so we also develop a golang/rust high-performance version of the stack [licensed to cloud integrators](mailto:info@qxip.net)
+Since qryn is stateless it can be auto-scaled easily based on resource usage at incredibly low cost.
+
+This said - there are limits! This is why our stack has a commercial high-performance version [for cloud integrators](mailto:info@qxip.net)
 
 ----
 
