@@ -26,7 +26,8 @@ On top of this dataset, multiple ingestion APIs and query languages are implemen
 qryn is made possible by its community of contributors and users - we love you all 🫀
 
 <a href="https://github.com/lmangani/qryn/graphs/contributors">
-  <img src="https://contributors-img.web.app/image?repo=lmangani/cloki" />
+  <img src="https://contributors-img.web.app/image?repo=metrico/qryn" />
+  <img src="https://contributors-img.web.app/image?repo=metrico/qryn" />
 </a>
 
 ------
@@ -34,9 +35,10 @@ qryn is made possible by its community of contributors and users - we love you a
 #### Disclaimers
 
 ©️ QXIP BV, released under the GNU Affero General Public License v3.0. See [LICENSE](LICENSE) for details.
-
+<div style="font-size: 10px;">
 - qryn is not affiliated or endorsed by Grafana Labs or ClickHouse Inc. All rights belong to their respective owners.
 - qryn is a 100% clear-room api implementation and does not fork, use or derivate from Grafana Loki code or concepts.
 - Grafana®, Loki™ and Tempo® are a Trademark of Raintank, Grafana Labs. 
 - ClickHouse® is a trademark of ClickHouse Inc. 
 - Prometheus is a trademark of The Linux Foundation.
+</div>
