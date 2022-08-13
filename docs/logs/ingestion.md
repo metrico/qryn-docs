@@ -38,12 +38,12 @@ The following protocol APIs are supported for ingesting logs:
 
 ##### Logs
 ```bash
-curl -i -XPOST 'http://localhost:3100/influx/api/v2/write' \
+curl -i -XPOST 'http://qryn:3100/influx/api/v2/write' \
   --data-raw 'syslog,appname=myapp,facility=console,host=myhost,hostname=myhost,severity=warning facility_code=14i,message="warning message here",severity_code=4i,procid="12345",timestamp=1434055562000000000,version=1'
 ```  
 ##### Metrics
 ```bash
-curl -i -XPOST 'http://localhost:3100/influx/api/v2/write' \
+curl -i -XPOST 'http://qryn:3100/influx/api/v2/write' \
   --data-raw 'cpu_load_short,host=server01,region=us-west value=0.64 1434055562000000000'
 ```  
   
