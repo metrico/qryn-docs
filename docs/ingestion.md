@@ -40,7 +40,7 @@ Get started using the [Telemetry Ingestion](telemetry/ingestion.md) section
 
 #### ** Custom **
 <br />
-Missing an ingestion API? Open an [feature request](https://github.com/metrico/qryn/issues) or a PR with your work.
+Missing an ingestion API? Open a [feature request](https://github.com/metrico/qryn/issues) or a PR with your work.
 
 ![image](https://user-images.githubusercontent.com/1423657/184502410-eacd247e-e046-4cdb-9e0c-39411e02d734.png ':size=100')
 
