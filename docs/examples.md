@@ -4,9 +4,7 @@ This section illustrates a number of example LogQL queries to get you started.
 
 ### LogQL Bootcamp
 
-The main purpose of the Log Query Language is to allow a user to easily reach the data, and only the data that matters to them.
-
-**qryn** allows many forms of data such as logs, values, strings etc, to be streamed into the Clickhouse database. Each type of stream is inserted with **labels** _(or tags)_ used to quickly filter the exact data stream we want to have returned to us to analyze and visualize data through Grafana or any other LogQL client.
+LogQL is a PromQL-inspired query language. Queries act as if they are a distributed grep with powerful filters and aggregations.
 
 There are two types of LogQL queries:
 
@@ -15,12 +13,9 @@ There are two types of LogQL queries:
 
 A LogQL query consists of:
 
-  * A Log Stream selector
-  * Filter expression
-
-We can use operations on both the log stream selectors and filter expressions to refine them.
-
 <!-- tabs:start -->
+
+## ** A Log Stream selector **
 
 ### ** Log Stream Selectors Operators **
 
@@ -54,6 +49,8 @@ Show all log lines for 2 jobs with different names
 ```{job=~"qryn/systemd-journal|systemd-journal"}```
 
 -------
+
+## ** Filter expression **
 
 ### ** Filter Expressions Operators **
 
@@ -108,6 +105,14 @@ Return lines including the text "status 403" or "status 503" using regex
 
 -------
 
+
+<!-- tabs:end -->
+
+
+We can use operations on both the log **stream selectors** and **filter expressions** to refine them.
+
+
+<!-- tabs:start -->
 
 ### ** Range and Instance Vectors **
 
@@ -256,9 +261,9 @@ Return only values below 30% or above 80%
 
 -------
 
-## ** Custom Functions **
-
-Anything missing? qryn/LogQL can be extended using [custom plugins](https://github.com/metrico/qryn/wiki/LogQL-Plugins)
-
 <!-- tabs:end -->
+
+
+?> Anything missing? qryn/LogQL can be extended using [custom plugins](https://github.com/metrico/qryn/wiki/LogQL-Plugins)
+
 
