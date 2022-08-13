@@ -7,7 +7,7 @@
   -->
   
   <h3 align="center" style="font-weight: normal;font-size: 26px;">
-     <b>qryn</b> is a <i>polyglot, high-performance cloud observability stack</i><br/><br/>
+     <b>qryn</b> is an open-source <i>high-performance polyglot observability stack</i><br/><br/>
     
      <img src="https://github.com/metrico/qryn-docs/blob/main/docs/resources/images/qryn_logo_trans.png?raw=true" width=50 />&nbsp;
      <img src="https://user-images.githubusercontent.com/1423657/184496222-ca95d80c-906f-4c77-a963-86f0b27a56b0.png" width=50 />&nbsp;
