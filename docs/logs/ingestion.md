@@ -29,6 +29,9 @@ The following protocol APIs are supported for ingesting logs:
   
 
 ## ** Elastic **
+
+![image](https://user-images.githubusercontent.com/1423657/184496304-4f35a365-efdc-4dca-9771-6b7b1deb9ae3.png ':size=100')
+
 **qryn** implements an experimental Elastic API subset for ingestion.
 
 * Elastic _(_index, _bulk)_
