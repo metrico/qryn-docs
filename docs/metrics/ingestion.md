@@ -40,11 +40,15 @@ remote_write:
   - url: "http://qryn:3100/api/v1/write"
 ```
 
+?> _That's it!_ You are now ingesting Prometheus metrics in **qryn**
 
 #### Read
-Stored Metrics can be accessed using the qryn _(unwrap_value)_ function or through the _PromQL emulation APIs_
+
+Stored Metrics in **qryn** are unified into the same format and can be accessed using the _(unwrap_value)_ function - or through the experimental _PromQL emulation APIs_
 
 ##### Unwrap Expressions
+
+The following `LogQL` query will access metrics inserted by Prometheus or any other insert agent.
 ```
 rate({label1="val1"}| unwrap int_valued_label [1s]) by (another_label)
 ```
@@ -76,7 +80,10 @@ In Grafana queries, use $__interval for unwrap, ie: unwrap data [$__interval]
 
 ![image](https://user-images.githubusercontent.com/1423657/150602556-2306aebc-3d5c-4226-af85-ed3614798222.png)
 
-Examples: [LogQL Range Aggregations](https://grafana.com/blog/2021/01/11/how-to-use-logql-range-aggregations-in-loki/)
+* More Examples: [LogQL Range Aggregations](https://grafana.com/blog/2021/01/11/how-to-use-logql-range-aggregations-in-loki/)
+
+?> _That's it!_ You are now analyzing Prometheus data using **qryn**
+
 
 ## ** LogQL **
 * LogQL PUSH _(unwrap_metric)_
