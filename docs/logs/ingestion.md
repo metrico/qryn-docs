@@ -43,12 +43,14 @@ loki:
               job: varlogs
               __path__: /var/log/*log
     clients:
-      - url: http://qryn.host:3100/loki/api/v1/push
+      - url: http://qryn:3100/loki/api/v1/push
         basic_auth:
           username: <User>
           password: <Password>
 ```
- 
+
+!> Replace the **qryn** URL from the example to match your actual deployment!
+
 Here is another example, scraping logs for a minecraft server with logs stored in a subdirectory of the /home directory of a special minecraft user.
 ```
       - job_name: minecraftlog
@@ -89,7 +91,10 @@ curl -i -XPOST 'http://qryn:3100/influx/api/v2/write' \
 curl -i -XPOST 'http://qryn:3100/influx/api/v2/write' \
   --data-raw 'cpu_load_short,host=server01,region=us-west value=0.64 1434055562000000000'
 ```  
-  
+
+!> Replace the **qryn** URL from the example to match your actual deployment!
+
+?> That's it! You're now shipping logs straight off your bash scripts!
 
 ## ** ClickHouse MV **
 
