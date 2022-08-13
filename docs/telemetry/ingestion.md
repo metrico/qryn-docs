@@ -10,15 +10,16 @@ The following protocol APIs are supported for ingesting logs:
 
 **qryn** natively implements a json/http [Zipkin](https://zipkin.io/) receiver API endpoint to ingest tracing data
 
-#### Send Spans using [opentelemetry-js](https://github.com/open-telemetry/opentelemetry-js)
+#### Send Spans using OpenTelemetry libraries
 
-Trace from any application supported by opentelemetry using the official examples
+Trace from any application supported by [opentelemetry](https://github.com/open-telemetry) using standard libraries
 
 - [zipkin sender](https://github.com/open-telemetry/opentelemetry-js/blob/main/examples/tracer-web/examples/zipkin/index.js)
 
 #### Send Spans using CURL
 
 Trace from your console for testing and to support telemetry withing your bash scripts
+
 ```bash
 curl -X POST http://localhost:3100/tempo/api/push -H 'Content-Type: application/json' -d '[{
  "id": "1234",
