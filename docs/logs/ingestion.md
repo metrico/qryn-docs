@@ -78,7 +78,7 @@ The `_index` and `_id` tags are automatically added to each insert based on the 
 
 #### Index API
 ```bash
-curl -X POST "localhost:3100/test-index/_doc/1234" -H 'Content-Type: application/json' -d'
+curl -X POST "qryn:3100/test-index/_doc/1234" -H 'Content-Type: application/json' -d'
 ```
 ```json
 {
@@ -93,10 +93,13 @@ curl -X POST "localhost:3100/test-index/_doc/1234" -H 'Content-Type: application
 { "message" : "hello", "user": "qryn" }
 ```
 ```bash
-curl -s -H "Content-Type: application/x-ndjson" -XPOST http://localhost/_bulk --data-binary "@bulkreq"
+curl -s -H "Content-Type: application/x-ndjson" -XPOST http://qryn/_bulk --data-binary "@bulkreq"
 ```
 
-Either type of insert will be equivalent to the following logQL qryn push:
+!> Replace the **qryn** URL from the example to match your actual deployment!
+
+
+Either type will get converted to the following `LogQL` insert
 ```json
 {
       "stream": {
@@ -109,6 +112,10 @@ Either type of insert will be equivalent to the following logQL qryn push:
       ]
     }
 ```
+
+?> That's it! You're now shipping logs straight off your Elastic agents!
+
+
 ##### Notes
 - _The implementation is not focused on speed. Bulking capacity depends on fastify settings._
 - _A static type tag is also attached to events ingested through the elastic compatible APIs_
