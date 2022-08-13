@@ -16,7 +16,7 @@ This means _any Loki example_ can be used with **qryn** without modifications:
 
 ----
 
-The following protocol APIs are supported for ingesting logs:
+The following protocols and APIs options are supported for ingesting Logs:
 <!-- tabs:start -->
 
 ## ** LogQL **
