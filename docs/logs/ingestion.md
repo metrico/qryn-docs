@@ -4,21 +4,15 @@ Ingesting logs with **qryn** is easy and painless. Just pick an integration and 
 
 ### Integrations
 
-The **qryn** LogQL API and is 100% compatible with Grafana Loki for ingestion. Any Loki example can be used with **qryn**!
+The **qryn** LogQL API and is 100% compatible with Grafana Loki for data ingestion. 
 
-* Vector
-  * [Loki sink](https://vector.dev/docs/reference/configuration/sinks/loki/)
-  * [Examples](https://component-pages--vector-project.netlify.app/guides/integrate/sources/http/loki/)
-* Grafana Agent
-  * [Loki sink]()https://grafana.com/docs/grafana-cloud/data-configuration/logs/collect-logs-with-agent/))
-  * [Examples](https://grafana.com/docs/grafana-cloud/quickstart/logs_agent_linuxnode/)
-* Promtail
-  * [Examples](https://grafana.com/docs/grafana-cloud/data-configuration/logs/collect-logs-with-promtail/)
-* Fluentd
-  * [Loki plugin](https://grafana.com/docs/loki/latest/clients/fluentd/)
-  * [Examples](https://grafana.com/blog/2022/06/23/how-to-send-logs-to-grafana-loki-with-the-opentelemetry-collector-using-fluent-forward-and-filelog-receivers/#:~:text=Set%20up%20a%20Grafana%20Cloud,click%20the%20Send%20Logs%20button.)
-* Logstash
-  * [Examples](https://grafana.com/docs/loki/latest/clients/logstash/)
+This means _any Loki example_ can be used with **qryn** without modifications:
+
+* [Vector](https://vector.dev/docs/reference/configuration/sinks/loki/) + [Examples](https://component-pages--vector-project.netlify.app/guides/integrate/sources/http/loki/)
+* [Grafana Agent]()https://grafana.com/docs/grafana-cloud/data-configuration/logs/collect-logs-with-agent/))+ [Examples](https://grafana.com/docs/grafana-cloud/quickstart/logs_agent_linuxnode/)
+* [Promtail](https://grafana.com/docs/grafana-cloud/data-configuration/logs/collect-logs-with-promtail/)
+* [Fluentd](https://grafana.com/docs/loki/latest/clients/fluentd/) + [Examples](https://grafana.com/blog/2022/06/23/how-to-send-logs-to-grafana-loki-with-the-opentelemetry-collector-using-fluent-forward-and-filelog-receivers/#:~:text=Set%20up%20a%20Grafana%20Cloud,click%20the%20Send%20Logs%20button.)
+* [Logstash](https://grafana.com/docs/loki/latest/clients/logstash/)
 
 ----
 
