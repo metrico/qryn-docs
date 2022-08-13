@@ -37,12 +37,13 @@ AS SELECT format('syslog,level={0},logger_name={1} message="{2}" {3}',
   replaceRegexpAll(toString(logger_name), '[^a-zA-Z0-9_]', '_'), 
   replaceAll(replaceRegexpAll(message, '["\\\\]', '\x00\\0'), '\x00', '\\'), 
   toString(toUnixTimestamp64Nano(event_time_microseconds))) FROM system.text_log;
-@lmangani
-
 ```
 
 !> Replace the **qryn** URL from the example to match your actual deployment!
 
-?> That's it! You're now shipping logs straight off your ClickHouse core
+_Done?_ Just wait a few seconds for the logs to flush and they will appear in **qryn**
+
+
+?> That's it! You're now shipping logs straight off your ClickHouse core!
 
 <!-- tabs:end -->
