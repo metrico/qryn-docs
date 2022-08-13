@@ -7,6 +7,8 @@
   <h3 align="center" style="font-weight: normal;">
       <b>qryn</b> is a <i>polyglot, high-performance cloud observability stack</i>
   </h3>
+  <img src="https://user-images.githubusercontent.com/1423657/50496835-404e6480-0a33-11e9-87a4-aebb71a668a7.gif" width=500 class=border />
+   <br/>
 </p>
 
 * Built in _[Explore UI](https://github.com/metrico/qryn-view) and [LogQL CLI](https://github.com/lmangani/vLogQL)_ for instantly _querying logs and extracting metrics_
@@ -15,11 +17,5 @@
 * Powerful Query pipeline to dynamically _[search, filter and extract data](getting-started.md) from logs, events, metrics and traces_
 * Ready to use with Agents such as _[Promtail, Grafana-Agent, Vector, Logstash, Telegraf](ingestion.md) and many more_
 * Designed to be Cloud native for _serverless and stateless operations_ on top of [ClickHouse](https://clickhouse.com/clickhouse).
-
-<br />
-<p id=logo align="center">
-    <img src="https://user-images.githubusercontent.com/1423657/50496835-404e6480-0a33-11e9-87a4-aebb71a668a7.gif" width=400 class=border />
-    <br/>
-</p>
 
 ?> ... it's pronounced /ˈkwɪr..ɪŋ/ or just _querying_
