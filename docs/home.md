@@ -6,9 +6,9 @@
 </h1>
 </p>
 <p id=start align="center">
-  <h4 align="center">
-      qryn is a <i>high-performance polyglot monitoring and observability stack</i> built on top of ClickHouse
-  </h4>
+  <h3 align="center">
+      <i>qryn</i> is a <i>polyglot, high-performance cloud observability stack</i>
+  </h3>
 </p>
 
 #### Features    
@@ -17,7 +17,7 @@
 * Ingestion and PUSH APIs transparently compatible with [Loki](logs/ingestion.md), [Prometheus](metrics/ingestion.md), [Tempo](telemetry/ingestion.md), [InfluxDB](metrics/ingestion.md), [Elastic](logs/ingestion.md) _and more_
 * Powerful Query pipeline to dynamically _[search, filter and extract data](getting-started.md) from logs, events, metrics and traces_
 * Ready to use with Agents such as _[Promtail, Grafana-Agent, Vector, Logstash, Telegraf](ingestion.md) and many more_
-* Designed to be Cloud native for _serverless and stateless operations_ on top of ClickHouse.
+* Designed to be Cloud native for _serverless and stateless operations_ on top of [ClickHouse](https://clickhouse.com/clickhouse).
 
 <br />
 <p id=logo align="center">
