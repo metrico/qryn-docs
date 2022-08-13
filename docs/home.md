@@ -1,8 +1,6 @@
 <p id=start align="center">
     <h1 align="center">LogQL for ClickHouse and beyond</h1>
-    <img src="https://user-images.githubusercontent.com/1423657/50496835-404e6480-0a33-11e9-87a4-aebb71a668a7.gif" />
 </p>
-
 
 **qryn** is a _flexible observability stack_ built on top of ClickHouse supporting many _popular data ingestion formats_
 
@@ -12,3 +10,9 @@
 * Powerful Query pipeline to dynamically search, filter and extract data from logs, events, traces and beyond
 * Ready to use with Agents such as _Promtail, Grafana-Agent, Vector, Logstash, Telegraf and many more_
 * Cloud native, Serverless ready, with stateless execution and compact design
+
+<br />
+
+<p id=logo align="center">
+    <img src="https://user-images.githubusercontent.com/1423657/50496835-404e6480-0a33-11e9-87a4-aebb71a668a7.gif" />
+</p>
