@@ -9,6 +9,8 @@ The following protocol APIs are supported for ingesting logs:
 
 ## ** LogQL **
 
+![image](https://user-images.githubusercontent.com/1423657/184496222-ca95d80c-906f-4c77-a963-86f0b27a56b0.png ':size=100')
+
 **qryn** implements a LogQL API and is 100% compatible with Grafana Loki for ingestion. Any Loki example can be used with **qryn**!
 
 * Vector.io
