@@ -61,14 +61,13 @@ curl -X POST http://localhost:3100/tempo/api/push  -H 'Content-Type: application
 ##### Tempo Logs
 ![image](https://user-images.githubusercontent.com/1423657/147878505-4136912b-e8b4-492d-b98f-7137dfeee015.png)
 
-_That's it!_ 
 
-You're now _tracing spans using ClickHouse_! 
+?> _That's it!_ You're now _tracing spans using ClickHouse_! 
 
 
 ## ** ClickHouse MV **
 
-<img src="https://avatars.githubusercontent.com/u/54801242?s=200&v=4" width=200 />
+<img src="https://avatars.githubusercontent.com/u/54801242?s=200&v=4" width=100 />
 
 ClickHouse creates trace spans for each query and some of the query execution stages, such as query planning or distributed queries.
 Using MVs the internal spans can be translated to ZipkinV2 JSON and sent to an OTLP collector such as qryn, jaeger or prometheus.
@@ -131,9 +130,7 @@ The following type events will be pushed:
 }]
 ```
 
-_That's it!_
-
-You're now tracing _ClickHouse using ClickHouse_! 
+?> _That's it!_ You're now tracing _ClickHouse using ClickHouse_! 
 
 
 <!-- tabs:end -->
