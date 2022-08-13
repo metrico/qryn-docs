@@ -6,17 +6,19 @@ Ingesting logs with **qryn** is easy and painless. Just pick an integration and 
 ### Integrations
 The following protocol APIs are supported for ingesting logs:
 <!-- tabs:start -->
-#### ** LogQL **
+
+## ** LogQL **
 * LogQL PUSH
-#### ** Elastic **
+
+## ** Elastic **
 * Elastic _(_index, _bulk)_
-#### ** Influx **
+
+## ** Influx **
 * Influx _(line protocol syslog)_
-#### ** ClickHouse MV **
 
 ## ** ClickHouse MV **
 
-<img src="https://avatars.githubusercontent.com/u/54801242?s=200&v=4" width=200 />
+<img src="https://avatars.githubusercontent.com/u/54801242?s=200&v=4" width=100 />
 
 ClickHouse populates the `system.text_log` table with its internal logs. Without using any client or file reading application, we can use ClickHouse Materialized View + URL Engine to ship our logs to **qryn** as soon as they are generated.
 
@@ -41,6 +43,6 @@ AS SELECT format('syslog,level={0},logger_name={1} message="{2}" {3}',
 
 !> Replace the **qryn** URL from the example to match your actual deployment!
 
-That's it! You're now shipping logs straight off your ClickHouse instances - _extend the schema with your preferred tags._
+?> That's it! You're now shipping logs straight off your ClickHouse core
 
 <!-- tabs:end -->
