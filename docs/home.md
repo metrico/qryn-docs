@@ -5,11 +5,12 @@
     <img src="https://github.com/metrico/qryn-docs/blob/main/docs/resources/images/favicon-32x32.png?raw=true" width=25 /> <i>/ˈkwɪr..ɪŋ/</i>
 </h1>
 </p>
+<p id=start align="center">
+  <h4 align="center">
+      <b>qryn</b> is a <i>high-performance polyglot monitoring and observability stack</i> built on top of ClickHouse
+  </h4>
+</p>
 
-<h4 align="center">
-**qryn** is a _high-performance polyglot monitoring and observability stack_ built on top of _ClickHouse_
-</h4>
-    
 #### Features    
 * Built in _[Explore UI](https://github.com/metrico/qryn-view) and [LogQL CLI](https://github.com/lmangani/vLogQL)_ for instantly _querying logs and extracting metrics_
 * Native Grafana and _[LogQL/PromQL/Tempo APIs](support.md)_ for _querying, processing, ingesting, tracing and alerting_
