@@ -16,7 +16,6 @@
  <img src="https://avatars.githubusercontent.com/u/54801242?s=200&v=4" width=25 />
   
   <h3 align="center" style="font-weight: normal;font-size: 26px;">
-      <img src="https://github.com/metrico/qryn-docs/blob/main/docs/resources/images/favicon-32x32.png?raw=true" width=32 /><br> 
       <b>qryn</b> is a <i>polyglot, high-performance cloud observability stack</i><br/><br/>
       <img src="https://user-images.githubusercontent.com/1423657/50496835-404e6480-0a33-11e9-87a4-aebb71a668a7.gif" width=500 class=border />
   </h3>
