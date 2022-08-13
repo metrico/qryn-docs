@@ -17,7 +17,7 @@ A LogQL query consists of:
 
 ## ** A Log Stream selector **
 
-### ** Log Stream Selectors Operators **
+### Log Stream Selectors Operators
 
 * ```= : equals```
 * ```!= : not equals```
@@ -50,9 +50,9 @@ Show all log lines for 2 jobs with different names
 
 -------
 
-## ** Filter expression **
+## ** Filter Expression **
 
-### ** Filter Expressions Operators **
+### Filter Expressions Operators
 
 Used for testing text within log line streams.
 
@@ -111,10 +111,11 @@ Return lines including the text "status 403" or "status 503" using regex
 
 We can use operations on both the log **stream selectors** and **filter expressions** to refine them.
 
+<br />
 
 <!-- tabs:start -->
 
-### ** Range and Instance Vectors **
+### ** Range Vectors **
 
 The data so far is returned as streams of log lines. We can graph these in visualizations if we convert them to vectors. We can aggregate the lines into numeric values, such as counts, which then become known as instance or range vectors.
 
