@@ -86,6 +86,9 @@ In Grafana queries, use $__interval for unwrap, ie: unwrap data [$__interval]
 
 
 ## ** LogQL **
+
+![image](https://user-images.githubusercontent.com/1423657/184496222-ca95d80c-906f-4c77-a963-86f0b27a56b0.png ':size=100')
+
 * LogQL PUSH _(unwrap_metric)_
 
 ## ** Influx **
