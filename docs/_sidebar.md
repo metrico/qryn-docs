@@ -19,5 +19,4 @@
   * [Introduction](introduction.md "QRYN – General Concepts – Introduction – LogQL for ClickHouse and beyond")
   * [Supported APIs](support.md "QRYN – Supported Components – LogQL for ClickHouse and beyond")
 
-* **About**
-  * [Motivations](motivations.md "QRYN – Motivations – LogQL for ClickHouse and beyond")
+* [About](motivations.md "QRYN – Motivations – LogQL for ClickHouse and beyond")
