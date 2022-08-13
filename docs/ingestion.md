@@ -2,9 +2,7 @@
 
 Ingesting data with **qryn** is easy and painless. Just pick an integration and you're set!
 
-### How
-
-Our application implements _industry standard_ APIs and _globally established_ monitoring protocols. This allows us to ingest _"foreign"_ data into our tables without demanding anything out of the user. You keep using your preferred _Agent or Method_ to send data, and _qryn does the rest_.
+Our polyglot stack implements _industry standard_ APIs and _globally established_ monitoring protocols. This allows us to ingest _"foreign"_ data into our tables without demanding anything out of the user. You keep using your preferred _Agent or Method_ to send data, and _qryn does the rest_.
 
 <br />
 
