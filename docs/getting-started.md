@@ -1,6 +1,8 @@
 # Getting Started
 
-In this section, we'll take a quick look at a few things that you need to know about the [qryn](https://api.slack.com/block-kit) framework before you get started, if you aren't familiar with it and its protocols. We'll also take a look at the basics of querying in **LogQL**.
+In this section, we'll learn how to find and query our ingested data. Let's get __qryn__!
+
+<!-- TBD -->
 
 ## Topic
 
