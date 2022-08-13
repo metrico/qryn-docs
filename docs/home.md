@@ -2,11 +2,11 @@
 
 <p id=start align="center">
 <h1 align="center">
-    <img src="https://github.com/metrico/qryn-docs/blob/main/docs/resources/images/favicon-32x32.png?raw=true" width=32 /> LogQL for ClickHouse <i>and beyond</i>
+    <img src="https://github.com/metrico/qryn-docs/blob/main/docs/resources/images/favicon-32x32.png?raw=true" width=25 /> <i>/ˈkwɪr..ɪŋ/</i>
 </h1>
 </p>
 
-**qryn** is a _dynamic observability stack_ built on top of ClickHouse supporting _many popular data ingestion formats_
+**qryn** is a _polyglot monitoring and observability stack_ built on top of _ClickHouse_
 
 * Native Grafana and _[LogQL/PromQL/Tempo APIs](support.md)_ for _querying, processing, ingesting, tracing and alerting_
 * Ingestion and PUSH APIs transparently compatible with [Loki](logs/ingestion.md), [Prometheus](metrics/ingestion.md), [Tempo](telemetry/ingestion.md), [InfluxDB](metrics/ingestion.md), [Elastic](logs/ingestion.md) _and more_
@@ -20,3 +20,5 @@
     <img src="https://user-images.githubusercontent.com/1423657/50496835-404e6480-0a33-11e9-87a4-aebb71a668a7.gif" width=400 class=border />
     <br/>
 </p>
+
+?> ... it's pronounced /ˈkwɪr..ɪŋ/ or just _querying_
