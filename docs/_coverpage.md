@@ -4,11 +4,13 @@
 <p align="center">
     <h3 align="center">Polyglot Monitoring and Observability Stack</h3>
 </p>
+
 <!--
 <p align="center">
     your logs, metrics, and traces - at once.
 </p>
 -->
+
 [View Docs](#start)
 [Go to GitHub](https://github.com/metrico/qryn/)
 
