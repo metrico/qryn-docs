@@ -1,4 +1,4 @@
-# Ingestion
+# Data Ingestion
 
 Ingesting data with **qryn** is easy and painless. Just pick an integration and you're set!
 
@@ -34,5 +34,7 @@ Get started using the [Telemetry Ingestion](telemetry/ingestion.md) section
 ![image](https://avatars.githubusercontent.com/u/54801242?s=200&v=4 ':size=100')
 
 #### ** Custom **
-Missing an ingestion? Open an [feature request](https://github.com/metrico/qryn/issues) or a PR with your work.
+![image](https://user-images.githubusercontent.com/1423657/184499067-86f7a341-1151-452e-8e7f-c6a6c51a232c.png ':size=100')
+
+Missing an ingestion API? Open an [feature request](https://github.com/metrico/qryn/issues) or a PR with your work.
 <!-- tabs:end -->
