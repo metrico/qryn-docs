@@ -10,7 +10,8 @@ The following protocol APIs are supported for ingesting metrics:
 
 ### Prometheus Remote Write
 
-![image](https://user-images.githubusercontent.com/1423657/184495268-d83cbc0a-a182-4fe4-9271-cb64d7a52f21.png ':size=100')
+![image](https://user-images.githubusercontent.com/1423657/184496973-9f46e551-872d-4a25-877c-51a2e5f53e84.png ':size=100')
+
 
 **qryn** natively supports the Prometheus _Remote Write_ API for storing metrics.
 
