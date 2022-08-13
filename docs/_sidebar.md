@@ -1,6 +1,8 @@
-<a href="#">
-<img src="https://github.com/metrico/qryn-docs/blob/main/docs/resources/images/qryn_logo_trans.png?raw=true" width=120 />
-</a>
+<p align="center">
+  <a href="#">
+    <img src="https://github.com/metrico/qryn-docs/blob/main/docs/resources/images/qryn_logo_trans.png?raw=true" width=120 />
+  </a>
+</p>
 
 * [Docs](/?id=start)
 * **Overview**
