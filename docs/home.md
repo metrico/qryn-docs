@@ -1,3 +1,4 @@
+<br />
 <p id=logo align="center">
     <img src="https://user-images.githubusercontent.com/1423657/50496835-404e6480-0a33-11e9-87a4-aebb71a668a7.gif" width=400 />
 </p>
@@ -14,7 +15,3 @@
 * Ready to use with Agents such as _Promtail, Grafana-Agent, Vector, Logstash, Telegraf and many more_
 * Built in _Explore UI and LogQL CLI_ for instantly _querying logs and extracting metrics_
 * Designed to be Cloud native for _serverless and stateless operations_ on top of ClickHouse.
-
-<br />
-
-
