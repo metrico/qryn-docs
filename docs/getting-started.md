@@ -11,6 +11,7 @@ Let's explore using [Grafana](guide/datasources.md) and its _amazing visualizati
 
 ![grafanaexplore](https://user-images.githubusercontent.com/1423657/184538094-13c11500-24ef-4468-9f33-dc9d564238e3.gif)
 
+### LogQL _(Loki)_
 #### Find a Label 🏷️
 
 Let's find logs with label `{job="dummy-server"}`
@@ -23,11 +24,26 @@ Let's filter our logs with a string match for `peach`
 
 ![ezgif com-gif-maker (13)](https://user-images.githubusercontent.com/1423657/184545713-3f6e90ba-3c6d-4dc4-b897-d10373feb695.gif)
 
+##### Calculate metrics 📊
+
+Let's calculate the 1m rate for our matching logs `rate({job="dummy-server"} |= "peach" [1m])`
+
+![image](https://user-images.githubusercontent.com/1423657/184548882-37268c27-7a01-4787-8259-11327158c2d5.png)
+
 #### Go Pro 🥊
 
-That was too easy, _wasn't it?_
+That was easy, _wasn't it?_
 
 Progress your knowledge using the [advanced LogQL guide](guide/logql.md)
+
+----------
+
+### Tempo _(Loki)_
+#### Find a Trace using LogQL 🏷️
+
+Let's find traces with label `{job="dummy-server"}` through the LogQL integration
+
+![image](https://user-images.githubusercontent.com/1423657/184548814-b5a4c641-010e-47b1-91c8-5aa402a85908.png)
 
 
 ### ** 👁️ View **
