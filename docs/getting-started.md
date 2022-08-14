@@ -30,21 +30,19 @@ Let's calculate the 1m rate for our matching logs `rate({job="dummy-server"} |= 
 
 ![image](https://user-images.githubusercontent.com/1423657/184548882-37268c27-7a01-4787-8259-11327158c2d5.png)
 
+
+#### Find a Trace using LogQL 🧲
+
+Let's use the `Tempo` datasource and find traces for `{job="dummy-server"}` using LogQL or _Beta Search_
+
+![image](https://user-images.githubusercontent.com/1423657/184548814-b5a4c641-010e-47b1-91c8-5aa402a85908.png)
+
+
 #### Go Pro 🥊
 
 That was easy, _wasn't it?_
 
 Progress your knowledge using the [advanced LogQL guide](guide/logql.md)
-
-----------
-
-### Tempo _(Loki)_
-#### Find a Trace using LogQL 🏷️
-
-Let's find traces with label `{job="dummy-server"}` through the LogQL integration
-
-![image](https://user-images.githubusercontent.com/1423657/184548814-b5a4c641-010e-47b1-91c8-5aa402a85908.png)
-
 
 ### ** 👁️ View **
 
