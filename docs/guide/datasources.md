@@ -7,6 +7,9 @@ Let's connect our **qryn** instance to Grafana in seconds using _native datasour
 
 ?> Using Grafana `8.2+` or `9.0+` is required to enjoy all available features
 
+![image](https://user-images.githubusercontent.com/1423657/184538670-6db7a0b4-e3db-4dee-af41-ababa1098728.png)
+
+
 <!-- tabs:start -->
 
 #### ** Loki **
@@ -16,6 +19,7 @@ Connect Grafana to **qryn** using the _built-in_ `Loki` datasource
 * Browse to `Configuration` > `Data Sources` via the cog icon on the left sidebar
 * Click the big `+ Add` data source button
 * Choose `Loki` from the list
+  * _Optional_ configure derivate fields to Tempo
 * Use your **qryn** URL and `save`
 
 ![image](https://user-images.githubusercontent.com/1423657/184536845-31638c7f-30bd-4416-ae99-4486024367f8.png)
@@ -81,6 +85,7 @@ Connect Grafana to **qryn** using the _built-in_ `Tempo` datasource
 * Browse to `Configuration` > `Data Sources` via the cog icon on the left sidebar
 * Click the big `+ Add` data source button
 * Choose `Tempo` from the list
+  * _Optional_ configure Loki search datasource
 * Use your **qryn** URL and `save`
 
 ![image](https://user-images.githubusercontent.com/1423657/184536886-7a1eb428-9671-4a36-a93b-173fcfcd775d.png)
