@@ -10,20 +10,34 @@ In order to explore our logs and metrics, we'll need to use a _client_ such as _
 <!-- tabs:start -->
 #### ** ⭐ Grafana **
 
-Explore using [Grafana](guide/datasources.md) and its _amazing visualizations_
+Let's explore using [Grafana](guide/datasources.md) and its _amazing visualizations_
 
 ![grafanaexplore](https://user-images.githubusercontent.com/1423657/184538094-13c11500-24ef-4468-9f33-dc9d564238e3.gif)
 
+##### Find a Label
+- TBD
+##### Find a String
+- TBD
+##### Go Pro
+Progress your knowledge using the [advanced LogQL guide](guide/logql.md)
 
 #### ** View **
 
-Explore using [qryn-view](view.md) our embedded user interface
+Let's explore using [qryn-view](view.md) our embedded user interface
 
 ![view](https://user-images.githubusercontent.com/1423657/166163594-c51cc598-50a2-4136-8792-91b45024c8d9.gif)
 
+##### Find a Label
+- TBD
+##### Find a String
+- TBD
+##### Go Pro
+Progress your knowledge using the [advanced LogQL guide](guide/logql.md)
+
+
 #### ** vLogQL **
 
-Explore using [vLogQL](https://github.com/lmangani/vlogql) our command line LogQL tool
+Let's explore using [vLogQL](https://github.com/lmangani/vlogql) our command line LogQL tool
 
 #### 📦 Download Binary
 ```
