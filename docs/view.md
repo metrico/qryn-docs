@@ -17,5 +17,6 @@
 
 
 ##### Acknowledgements
-- qryn is not affiliated or endorsed by Grafana Labs or ClickHouse Inc. All rights belong to their respective owners.
+- qryn is not affiliated or endorsed by Grafana Labs or ClickHouse Inc. 
 - qryn is part of the cLoki project, licensed under the AGPLv3 LICENSE by QXIP BV
+- all rights belong to their respective owners.
