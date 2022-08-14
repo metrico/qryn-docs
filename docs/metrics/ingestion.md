@@ -132,7 +132,7 @@ curl -i -XPOST -H "Content-Type: application/json" http://qryn:3100/loki/api/v1/
 
 ![image](https://user-images.githubusercontent.com/1423657/184496174-aca323dd-f40e-489a-a584-fa7348c0eab0.png ':size=100')
 
-?> **qryn** implements the Influx v2 Write API subset for ingestion of Metrics _(and logs)_
+?> **qryn** implements the Influx v2 Write API subset for ingestion of Metrics _(and [logs](logs/ingestion#influx))_
 
 ### Usage
 
