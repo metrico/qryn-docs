@@ -1,8 +1,8 @@
 # Examples
 
-This section illustrates a number of example LogQL queries to get you started.
+This section illustrates a number of example queries to help familiarize with **qryn**
 
-### LogQL Bootcamp
+### LogQL
 
 LogQL is a PromQL-inspired query language acting like a distributed grep with powerful _filters and aggregations_.
 
