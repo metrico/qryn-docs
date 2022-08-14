@@ -2,11 +2,12 @@
 
 Ingesting telemetry with **qryn** is easy and painless. Just pick an integration and you're set!
 
-
 ### Telemetry Ingestion
 The following protocol APIs are supported for ingesting telemetry events:
 <!-- tabs:start -->
 ## ** Zipkin **
+
+<a id=zipkin name=zipkin></a>
 
 ![image](https://user-images.githubusercontent.com/1423657/184494381-15d20f5d-3d52-411b-9064-dfd2ccea7c1c.png ':size=100')![image](https://user-images.githubusercontent.com/1423657/184494438-17d7ceb0-a62a-4819-9b1c-43d7f0baf802.png ':size=100')
 
@@ -64,6 +65,8 @@ curl -X POST http://qryn:3100/tempo/api/push  -H 'Content-Type: application/json
 
 
 ## ** ClickHouse MV **
+
+<a id=clickhouse name=clickhouse></a>
 
 <img src="https://avatars.githubusercontent.com/u/54801242?s=200&v=4" width=100 />
 
@@ -130,5 +133,35 @@ The following type events will be pushed:
 
 ?> _That's it!_ You're now tracing _ClickHouse using ClickHouse_! 
 
+## ** Grafana Agent **
+
+<a id=grafana name=grafana></a>
+
+![image](https://user-images.githubusercontent.com/1423657/184496222-ca95d80c-906f-4c77-a963-86f0b27a56b0.png ':size=100')
+
+Grafana Agent can act as a telemetry collector and receive spans from `Jaeger`, `Kafka`, `OpenCensus`, `OTLP`, and `Zipkin` to process and forward traces to **qryn** using its _Tempo compatible API_
+
+##### Example
+In this example an `OTLP` collector is started on port `:4318` forwarding traces to **qryn** on port `:3100`
+###### config.yaml
+```
+server:
+  log_level: debug
+
+traces:
+  configs:
+  - name: server_traces
+    receivers:
+      otlp:
+        protocols:
+          http:
+            endpoint: "0.0.0.0:4318"
+
+    remote_write:
+      - endpoint: qryn:3100
+        insecure: true
+```
+
+This [article](https://grafana.com/blog/2020/11/17/tracing-with-the-grafana-cloud-agent-and-grafana-tempo/) provides great insight on the subject.
 
 <!-- tabs:end -->
