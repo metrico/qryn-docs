@@ -44,3 +44,9 @@ This said - there are limits! This is why our stack has a commercial high-perfor
 No, but you'll become one over time if you do.
 
 ---
+
+?> Some of your queries are not as good as they _could be_
+
+Join us make this better! Please open a [PR](https://github.com/metrico/qryn) or start a discussion with your proposal.
+
+---
