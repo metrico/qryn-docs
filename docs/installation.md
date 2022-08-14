@@ -113,6 +113,7 @@ Follow this [guide](https://github.com/metrico/opentelemetry-trace-sampling-demo
 ![image](https://user-images.githubusercontent.com/1423657/184507942-cb195a16-b6d1-451a-9d80-00550f261048.png ':size=100')
 
 Each release is automatically pushed to [docker hub](https://hub.docker.com/r/qxip/qryn/tags) and [ghcr](ghcr.io/metrico/qryn:2.1.11)
+
 ```
 qxip/qryn:latest
 ```
@@ -121,19 +122,19 @@ ghcr.io/metrico/qryn:latest
 ```
 
 ##### Helm
-Use K8s and helm to get started in no time - use either a local or cloud ClickHouse instance.
+Use `Kubernetes` and `helm` to get started using either a local or cloud ClickHouse instance.
 
-You need to have a Kubernetes cluster, and the kubectl command-line tool must be configured to communicate with your cluster. It is recommended to run this tutorial on a cluster with at least two nodes that are not acting as control plane hosts.
+?> You need to have a Kubernetes cluster, and the kubectl command-line tool must be configured to communicate with your cluster. It is recommended to run this tutorial on a cluster with at least two nodes that are not acting as control plane hosts.
 
 Follow this [guide](https://github.com/metrico/qryn-k8s) to get started.
 
-##### Example
-```
+##### Rapid Example
+```bash
 kubectl apply -f qryn-service.yaml,qryn-deployment.yaml
 ```
 
 ###### `qryn-deployment.yml`
-```
+```yaml
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -172,7 +173,7 @@ status: {}
 ```
 
 ###### `qryn-service.yml`
-```
+```yaml
 apiVersion: v1
 kind: Service
 metadata:
