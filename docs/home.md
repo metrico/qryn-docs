@@ -18,7 +18,7 @@
      <img src="https://user-images.githubusercontent.com/1423657/184494438-17d7ceb0-a62a-4819-9b1c-43d7f0baf802.png" width=50 />&nbsp;
      <img src="https://avatars.githubusercontent.com/u/54801242?s=200&v=4" width=50 /><br/>
     
-     <img src="https://user-images.githubusercontent.com/1423657/50496835-404e6480-0a33-11e9-87a4-aebb71a668a7.gif" width=500 class=border />
+     <img src="https://user-images.githubusercontent.com/1423657/184538094-13c11500-24ef-4468-9f33-dc9d564238e3.gif" width=500 class=border />
   </h3>
 </p>
 
