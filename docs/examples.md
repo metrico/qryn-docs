@@ -18,15 +18,17 @@ There are two types of _LogQL_ queries:
 
 ## ** Log Stream selector **
 
-The log _stream selector_ determines which log streams should be included in your query and is represented by of one or more key-value pairs.
+The _stream selector_ block is always mandatory and determines which log streams should be included in your query using operators
 
 ```
 {app="clickhouse"}
 ```
 
-In this example, logs that have a label `app` matching `clickhouse` will be included in the results.
+In this example, logs that have a label `app` matching `clickhouse` will be included in the results
 
 ### Log Stream Selectors Operators
+
+The following label operators are supported in label selectors:
 
 * ```= : equals```
 * ```!= : not equals```
