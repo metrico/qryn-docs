@@ -1,7 +1,5 @@
-## Integrations
-
 <a name="grafana" id="grafana"></a>
-#### Grafana
+## Grafana
 
 Let's connect our **qryn** instance to Grafana in seconds using _native datasources_
 
