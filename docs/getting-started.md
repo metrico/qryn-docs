@@ -5,61 +5,64 @@ In this section, we'll learn how to find and query our ingested data. Let's get 
 In order to **explore** our _logs and metrics_, we'll need to use a _client_ such as _Grafana_
 
 <!-- tabs:start -->
-#### ** ⭐ Grafana **
+### ** ⭐ Grafana **
 
 Let's explore using [Grafana](guide/datasources.md) and its _amazing visualizations_
 
 ![grafanaexplore](https://user-images.githubusercontent.com/1423657/184538094-13c11500-24ef-4468-9f33-dc9d564238e3.gif)
 
-##### Find a Label
+#### Find a Label
 
 Let's find logs with label `{job="dummy-server"}`
 
 ![ezgif com-gif-maker (12)](https://user-images.githubusercontent.com/1423657/184545583-58610ae2-6a80-456b-8326-9c30a72e44ab.gif)
 
-##### Find a String
+#### Find a String
 
 Let's filter our logs with a string match for `peach`
 
 ![ezgif com-gif-maker (13)](https://user-images.githubusercontent.com/1423657/184545713-3f6e90ba-3c6d-4dc4-b897-d10373feb695.gif)
 
-##### Go Pro
+#### Go Pro
 
 That was too easy, _wasn't it?_
 
 Progress your knowledge using the [advanced LogQL guide](guide/logql.md)
 
 
-#### ** View **
+### ** 👁️ View **
 
 Let's explore using [qryn-view](view.md) our embedded user interface
 
 ![view](https://user-images.githubusercontent.com/1423657/166163594-c51cc598-50a2-4136-8792-91b45024c8d9.gif)
 
-##### Find a Label
+#### Find a Label
 
 Let's find logs with label `{type="syslog"}`
 
 ![ezgif com-gif-maker (14)](https://user-images.githubusercontent.com/1423657/184545892-d0649b5c-8e57-444c-a40f-417dfb2199ea.gif)
 
-##### Find a String
+#### Find a String
 
 Let's filter our logs with a string match for `boat` - in case we need a bigger one.
 
 ![image](https://user-images.githubusercontent.com/1423657/184545906-359e90bc-ba37-4490-ad02-d3717a4eebd1.png)
 
-##### Go Pro
+#### Go Pro
 
 That was too easy, _wasn't it?_
 
 Progress your knowledge using the [advanced LogQL guide](guide/logql.md)
 
 
-#### ** vLogQL **
+### ** 🗄️ vLogQL **
 
-Let's explore using [vLogQL](https://github.com/lmangani/vlogql) our command line LogQL tool
+Let's explore using [vLogQL](https://github.com/lmangani/vlogql) our compact _command line_ LogQL client and canary agent
+
+?> vLogQL is made in [v](https://vlang.io)
 
 #### 📦 Download Binary
+Download and deploy the `vlogql` binary anywhere on your system
 ```
 curl -fsSL github.com/lmangani/vLogQL/releases/latest/download/vlogql -O && chmod +x vlogql
 ```
@@ -82,7 +85,11 @@ Options:
 ```
 
 #### ⭐ Examples 
+
 ##### Query w/o Labels
+
+Let's find `5` logs with label `{type="syslog"}` with a regex match for `MiB`
+
 ```bash
 # LOGQL_API="https://qryn:3100" ./vlogql --query '{type="clickhouse"} |~ "MiB"' --limit 5
 
@@ -95,6 +102,9 @@ Options:
 ```
 
 ##### Query w/ Labels
+
+Let's find `5` logs with label `{type="syslog"}` with a regex match for `MiB` and print `labels` 
+
 ```bash
 # LOGQL_API="https://qryn:3100" ./vlogql --query '{type="clickhouse"} |~ "MiB"' --limit 4 --labels
 
@@ -106,6 +116,10 @@ Log Labels: {'pid': '19639', 'level': 'Debug', 'call': 'MemoryTracker', 'type': 
 2022.03.14 09:53:31.017389 [ 19639 ] {a34cbcc9-d11a-4a0a-8c7a-634e00322900} <Debug> MemoryTracker: Peak memory usage (for query): 4.14 MiB.
 ```
 ##### Query Labels
+
+Let's query for available stream `labels`
+
+
 ```bash
 # LOGQL_API="https://qryn:3100" ./vlogql --labels
 
@@ -113,6 +127,10 @@ Log Labels: {'pid': '19639', 'level': 'Debug', 'call': 'MemoryTracker', 'type': 
 ['response', 'host', 'type']
 ```
 ##### Query Label Values
+
+Let's query for available stream label `values`
+
+
 ```bash
 # LOGQL_API="https://qryn:3100" ./vlogql --label type
 
