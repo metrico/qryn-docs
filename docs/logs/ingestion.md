@@ -7,11 +7,11 @@ Ingesting logs with **qryn** is easy and painless. Just pick an integration and 
 The following protocols and APIs integrations are supported for ingesting Logs:
 <!-- tabs:start -->
 
-## ** Various **
+## ** Popular **
 
 ![image](https://user-images.githubusercontent.com/1423657/184487816-fcc86e34-0395-4927-8ceb-33c2ad3e63d4.gif)
 
-**qryn** API are 100% compatible with Grafana Loki for data ingestion. 
+?> **qryn** API are 100% compatible with Grafana Loki for data ingestion
 
 This means _any Loki compatible client_ can be used with **qryn** without modifications! 🏁
 
