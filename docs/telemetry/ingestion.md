@@ -2,7 +2,6 @@
 
 Ingesting telemetry with **qryn** is easy and painless. Just pick an integration and you're set!
 
-### Telemetry Ingestion
 The following protocol APIs are supported for ingesting telemetry events:
 <!-- tabs:start -->
 ## ** Zipkin **
