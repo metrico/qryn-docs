@@ -340,7 +340,7 @@
             --docsifytabs-tab-color--active: #121212;
             --docsifytabs-tab-color: #878787;
             --docsifytabs-tab-background: #f7f7f7;
-
+            --sidebar-nav-pagelink-background: 0px;
         }
     </style>
 </head>
@@ -361,12 +361,12 @@
     search: {
       maxAge: 86400000, // Expiration time, the default one day
       placeholder: 'Search...',
-      noData: '😬 Nothing found, friend.',
+      noData: '😬 No Results',
       depth: 6,
       hideOtherSidebarContent: false,
     },
     tabs: {
-      persist: true,
+      persist: false,
       sync: false,
       tabComments: true,
       tabHeadings: true,
