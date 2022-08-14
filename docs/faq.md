@@ -16,6 +16,20 @@ Why not? Our system uses a different design where ultimately all data across ing
 
 ## Technology
 
+?> What exactly does _qryn_ support?
+
+**qryn** is an API polyglot and supports multiple standards at once, out of the box.
+
+| API        | Ingest           | Query    | Notes  |
+|---         |---               |---       |---     |
+| Loki       | 🟢 logs, metrics | 🟢 logql  | full support |
+| Prometheus | 🟢 metrics       | 🟢 promql | remote_write ingestion, logql+promql querying |
+| Elastic    | 🟢 logs          | 👽 logql  | _index/bulk_ ingestion, logql querying |
+| Influx     | 🟢 logs, metrics | 👽 logql  | line protocol ingestion  |
+| OTLP/Zipkin| 🟢 traces, spans | 🟢 tempo  | zipking ingestion, tempo querying |
+
+---
+
 ?> NodeJS is slow and _(insert argument)_ so _qryn_ must be slow and not serious.
 
 False. NodeJS can be very fast when used right as an API and in our stack, ClickHouse does all the heavy-lifting.<br>
