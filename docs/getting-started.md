@@ -24,6 +24,9 @@ Let's connect our **qryn** instance to Grafana in seconds and _without any plugi
 #### ** Loki **
 Connect Grafana to **qryn** using the _built-in_ `Loki` datasource
 
+![image](https://user-images.githubusercontent.com/1423657/184536845-31638c7f-30bd-4416-ae99-4486024367f8.png)
+
+
 #### Provisioning
 Use the following sample as reference for provisioning your datasource:
 ```
@@ -51,6 +54,8 @@ datasources:
 #### ** Prometheus **
 Connect Grafana to **qryn** using the _built-in_ `Prometheus` datasource
 
+![image](https://user-images.githubusercontent.com/1423657/184536921-b3ff7fab-f71f-4f07-93c3-40a5b9915c64.png)
+
 #### Provisioning
 Use the following sample as reference for provisioning your datasource:
 ```
@@ -71,6 +76,8 @@ datasources:
 
 #### ** Tempo **
 Connect Grafana to **qryn** using the _built-in_ `Tempo` datasource
+
+![image](https://user-images.githubusercontent.com/1423657/184536886-7a1eb428-9671-4a36-a93b-173fcfcd775d.png)
 
 #### Provisioning
 Use the following sample as reference for provisioning your datasource:
