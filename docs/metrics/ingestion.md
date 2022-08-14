@@ -8,6 +8,8 @@ The following protocol APIs are supported for ingesting metrics:
 <!-- tabs:start -->
 ## ** Prometheus **
 
+<a id=prometheus name=prometheus></a>
+
 ### Prometheus Remote Write
 
 ![image](https://user-images.githubusercontent.com/1423657/184496973-9f46e551-872d-4a25-877c-51a2e5f53e84.png ':size=100')
@@ -90,6 +92,8 @@ In Grafana queries, use $__interval for unwrap, ie: unwrap data [$__interval]
 
 ## ** LogQL **
 
+<a id=logql name=logql></a>
+
 ![image](https://user-images.githubusercontent.com/1423657/184496222-ca95d80c-906f-4c77-a963-86f0b27a56b0.png ':size=100')
 
 _Grafana Loki_ does not allow inserting metrics through its LogQL API - but **qryn** does 👍
@@ -123,6 +127,8 @@ curl -i -XPOST -H "Content-Type: application/json" http://qryn:3100/loki/api/v1/
 
 
 ## ** Influx **
+
+<a id=influx name=influx></a>
 
 ![image](https://user-images.githubusercontent.com/1423657/184496174-aca323dd-f40e-489a-a584-fa7348c0eab0.png ':size=100')
 
