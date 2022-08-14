@@ -3,11 +3,17 @@
 In this section, we'll learn how to find and query our ingested data. Let's get __qryn__!
 
 
-### Integrations
+### Explore
 
-Let's connect our **qryn** instance to Grafana
+In order to access and explore our data, we need a compatible client
 
-!> The [qryn-view](view.md) embedded UI can be used to explore data on port `:3100`
+?> Explore using the embedded user-interface of [qryn-view](view.md)
+?> Explore using a command line client such as [vLogQL](https://github.com/lmangani/vlogql)
+?> Explore using Grafana and its amazing integrations
+
+#### Grafana Integration
+
+Let's connect our **qryn** instance to Grafana in seconds and _without any plugin_
 
 <!-- tabs:start -->
 
