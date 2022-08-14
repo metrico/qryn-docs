@@ -18,6 +18,52 @@ On top of this dataset, multiple ingestion APIs and query languages are implemen
   <img src="https://user-images.githubusercontent.com/1423657/54091852-5ce91000-4385-11e9-849d-998c1e5d3243.png" />
 </p>
 
+#### Flow Diagram
+```mermaid
+stateDiagram-v2
+
+    state ClickHouse {
+        udf --> udf: cloki
+        http binary
+    }
+
+    state cLoki {
+      direction LR
+      read --> write: UDF
+      write --> read
+    }
+
+    state Agents {
+        vector grafana_agent logtail 
+        telegraf otlp logstash
+    }
+
+    PromQL --> Agents
+    LogQL --> Agents
+    InfluxD --> Agents
+    StatsD --> Agents
+    DogD --> Agents
+
+    Agents --> cLoki: INSERT
+    
+    write --> ClickHouse
+    ClickHouse --> cLoki
+
+    cLokiview --> cLoki
+    cLoki --> ClickHouse: query transpiler
+    ClickHouse --> PromCasa: export
+    PromCasa --> Prometheus: scrape
+    vLogQL --> cLoki: logql
+    Grafana --> cLoki: logql, promql
+    Grafana --> Fluxpipe: query
+    Grafana --> Prometheus: promql
+    Fluxpipe --> ClickHouse: query
+    Fluxpipe --> cLoki: logql
+    Fluxpipe --> Prometheus: promql
+    PromCasa --> Fluxpipe: scrape
+    ClickHouseMate --> ClickHouse: client
+```
+
 #### Contributors
 
 qryn is made possible by its community of contributors and users - we love you all 🫀
