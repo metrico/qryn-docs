@@ -15,12 +15,6 @@
   * [Advanced Examples](examples.md "QRYN – Getting Started – LogQL for ClickHouse and beyond")
   * [Supported APIs](support.md "QRYN – Supported Components – LogQL for ClickHouse and beyond")
   * [Case Studies](case-studies.md "QRYN – Case Studies – LogQL for ClickHouse and beyond")
- 
-<!--
-* **General Concepts**
-  * [Introduction](introduction.md "QRYN – General Concepts – Introduction – LogQL for ClickHouse and beyond")
--->
-
 
 * **Misc**
   * [About](motivations.md "QRYN – Motivations – LogQL for ClickHouse and beyond")
@@ -33,3 +27,7 @@
   * [ClickHouse-Mate](https://github.com/metrico/clickhouse-mate)
   * [Promcasa](https://github.com/metrico/promcasa)
 
+<!--
+* **General Concepts**
+  * [Introduction](introduction.md "QRYN – General Concepts – Introduction – LogQL for ClickHouse and beyond")
+-->
