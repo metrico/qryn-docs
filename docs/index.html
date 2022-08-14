@@ -370,6 +370,13 @@
       sync: false,
       tabComments: true,
       tabHeadings: true,
+    },
+    plugins: {
+      EditOnGithubPlugin.create(
+        'https://github.com/metrico/qryn-docs/blob/main/docs/',
+        null,
+        function(file) { return 'edit on git' }
+      )
     }
   }
 </script>
@@ -383,6 +390,9 @@
 <script src="//unpkg.com/mermaid/dist/mermaid.js"></script>
 <script src="//unpkg.com/docsify-mermaid@latest/dist/docsify-mermaid.js"></script>
 <script>mermaid.initialize({ startOnLoad: true });</script>
+    
+<script src="//cdn.jsdelivr.net/npm/docsify-edit-on-github"></script>
+
 
  </body>
 </html>
