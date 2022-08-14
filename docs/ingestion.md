@@ -1,4 +1,4 @@
-# ⛓️ Data Ingestion
+# 🔻 Data Ingestion
 
 Ingesting data with **qryn** is easy and painless. _Choose a supported integration and start shipping._
 
