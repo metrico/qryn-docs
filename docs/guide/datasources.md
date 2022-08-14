@@ -1,5 +1,6 @@
-
 ## Grafana Integration
+
+![image](https://user-images.githubusercontent.com/1423657/184496222-ca95d80c-906f-4c77-a963-86f0b27a56b0.png ':size=100')
 
 <a name="grafana" id="grafana"></a>
 
