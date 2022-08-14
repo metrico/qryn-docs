@@ -1,8 +1,6 @@
 # ⛓️ Data Ingestion
 
-Ingesting data with **qryn** is easy and painless. _Just pick a supported integration and you're set!_
-
-Our _polyglot stack_ is compatible with popular formats supported by _Grafana, Influx, Promethes, Elastic and others_\
+Ingesting data with **qryn** is easy and painless. _Choose a supported integration and start shipping._
 
 <!-- tabs:start -->
 
