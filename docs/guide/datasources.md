@@ -14,7 +14,7 @@ Let's connect our **qryn** instance to Grafana in seconds using _native datasour
 Connect Grafana to **qryn** using the _built-in_ `Loki` datasource
 
 * Log into your Grafana instance
-* Browse to `Configuration` > `Data Sources` via the cog icon on the left sidebar
+* Browse to `Configuration` > `Data Sources` via the ⚙️ icon on the left sidebar
 * Click the big `+ Add` data source button
 * Choose `Loki` from the list
   * _Optional_ configure derivate fields to Tempo
@@ -51,7 +51,7 @@ datasources:
 Connect Grafana to **qryn** using the _built-in_ `Prometheus` datasource
 
 * Log into your Grafana instance
-* Browse to `Configuration` > `Data Sources` via the cog icon on the left sidebar
+* Browse to `Configuration` > `Data Sources` via the ⚙️ icon on the left sidebar
 * Click the big `+ Add` data source button
 * Choose `Prometheus` from the list
 * Use your **qryn** URL and `save`
@@ -80,7 +80,7 @@ datasources:
 Connect Grafana to **qryn** using the _built-in_ `Tempo` datasource
 
 * Log into your Grafana instance
-* Browse to `Configuration` > `Data Sources` via the cog icon on the left sidebar
+* Browse to `Configuration` > `Data Sources` via the ⚙️ icon on the left sidebar
 * Click the big `+ Add` data source button
 * Choose `Tempo` from the list
   * _Optional_ configure Loki search datasource
