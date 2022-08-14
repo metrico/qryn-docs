@@ -7,10 +7,14 @@ In this section, we'll learn how to find and query our ingested data. Let's get 
 
 In order to access and explore our data, we need a compatible client
 
-?> Explore using the embedded user-interface of [qryn-view](view.md)
-?> Explore using a command line client such as [vLogQL](https://github.com/lmangani/vlogql)
-?> Explore using Grafana and its amazing integrations
+?> Explore using [grafana](#grafana) and its _amazing visualizations_
 
+?> Explore using [qryn-view](view.md) our embedded user interface
+
+?> Explore using a command line client such as [vLogQL](https://github.com/lmangani/vlogql)
+
+
+<a name="grafana" id="grafana"></a>
 #### Grafana Integration
 
 Let's connect our **qryn** instance to Grafana in seconds and _without any plugin_
