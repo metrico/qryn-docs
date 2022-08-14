@@ -186,17 +186,7 @@ rate({job="systemd-journal"}[1m])
 
 -------
 
-##### Info
-
-```
-rate = count_over_time / 60 / range(m)
-
-eg,
-
-12 / 60 / 2 = 0.1
-```
-
-The count of errors at 1h time intervals
+Count of errors at 1h time intervals
 
 ```
 count_over_time({job="systemd-journal"} |= "error" [1h])
