@@ -30,10 +30,10 @@ In this example, logs that have a label `app` matching `clickhouse` will be incl
 
 The following label operators are supported in label selectors:
 
-* ```= : equals```
-* ```!= : not equals```
-* ```=~ : regex matches```
-* ```!~ : regex does not match```
+* `= `: equals
+* `!=` : not equals
+* `=~` : regex matches
+* `!~` : regex does not match
 
 #### Examples
 
