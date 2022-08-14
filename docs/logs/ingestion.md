@@ -24,6 +24,8 @@ This means _any Loki compatible client_ can be used with **qryn** without modifi
 
 ## ** LogQL **
 
+<a id=logql name=logql></a>
+
 ![image](https://user-images.githubusercontent.com/1423657/184496222-ca95d80c-906f-4c77-a963-86f0b27a56b0.png ':size=100')
 
 ### Grafana Agent
@@ -71,6 +73,8 @@ sudo systemctl restart grafana-agent.service
 ``` 
 
 ## ** Elastic **
+
+<a id=elastic name=elastic></a>
 
 ![image](https://user-images.githubusercontent.com/1423657/184496304-4f35a365-efdc-4dca-9771-6b7b1deb9ae3.png ':size=100')
 
@@ -126,6 +130,8 @@ Either type will get converted to the following `LogQL` insert
 
 ## ** Influx **
 
+<a id=influx name=influx></a>
+
 ![image](https://user-images.githubusercontent.com/1423657/184496174-aca323dd-f40e-489a-a584-fa7348c0eab0.png ':size=100')
 
 ?> **qryn** implements the Influx v2 Write API subset for ingestion of Logs _(and metrics)_
@@ -148,6 +154,8 @@ curl -i -XPOST 'http://qryn:3100/influx/api/v2/write' \
 ?> That's it! You're now shipping logs straight off your bash scripts!
 
 ## ** ClickHouse MV **
+
+<a id=clickhouse name=clickhouse></a>
 
 <img src="https://avatars.githubusercontent.com/u/54801242?s=200&v=4" width=100 />
 
