@@ -1,10 +1,8 @@
 # ⛓️ Data Ingestion
 
-Ingesting data with **qryn** is easy and painless. Just pick an integration and you're set!
+Ingesting data with **qryn** is easy and painless. _Just pick a supported integration and you're set!_
 
-Our polyglot stack implements _industry standard_ APIs and _globally established_ monitoring protocols such as LogQL, PromQL and Tempo. This allows us to ingest _"foreign"_ data into our tables from standard clients, without demanding anything out of the end user. 
-
-You keep using your preferred _Agent or Method_ to send data, and _qryn does the rest_.
+Our _polyglot stack_ is compatible with popular formats supported by _Grafana, Influx, Promethes, Elastic and others_\
 
 <!-- tabs:start -->
 
