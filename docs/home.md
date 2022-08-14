@@ -24,9 +24,9 @@
 
 ?> ... it's pronounced /ˈkwɪr..ɪŋ/ or just _querying_
 
-* Built in _[Explore UI](https://github.com/metrico/qryn-view) and [LogQL CLI](https://github.com/lmangani/vLogQL)_ for instantly _querying logs and extracting metrics_
-* Native Grafana and _[LogQL/PromQL/Tempo APIs](support.md)_ for _querying, processing, ingesting, tracing and alerting_
-* Ingestion and PUSH APIs transparently compatible with [Loki](logs/ingestion.md), [Prometheus](metrics/ingestion.md), [Tempo](telemetry/ingestion.md), [InfluxDB](metrics/ingestion.md), [Elastic](logs/ingestion.md) _and more_
+* Built in _[Explore UI](getting-started#view) and [LogQL CLI](getting-started#vlogql)_ for instantly _querying logs and extracting metrics_
+* Native Grafana and _[LogQL/PromQL/Tempo APIs](getting-started.md)_ for _querying, processing, ingesting, tracing and alerting_
+* Ingestion and PUSH APIs transparently compatible with [Loki](logs/ingestion#logql), [Prometheus](metrics/ingestion#prometheus), [Tempo](telemetry/ingestion#zipkin), [InfluxDB](metrics/ingestion#influx), [Elastic](logs/ingestion#elastic) _and more_
 * Powerful Query pipeline to dynamically _[search, filter and extract data](getting-started.md) from logs, events, metrics and traces_
 * Ready to use with Agents such as _[Promtail, Grafana-Agent, Vector, Logstash, Telegraf](ingestion.md) and many more_
 * Designed to be Cloud native for _serverless and stateless operations_ on top of [ClickHouse](https://clickhouse.com/clickhouse).
