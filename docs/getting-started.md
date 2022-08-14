@@ -12,11 +12,23 @@ Let's explore using [Grafana](guide/datasources.md) and its _amazing visualizati
 ![grafanaexplore](https://user-images.githubusercontent.com/1423657/184538094-13c11500-24ef-4468-9f33-dc9d564238e3.gif)
 
 ##### Find a Label
-- TBD
+
+Let's find logs with label `{job="dummy-server"}`
+
+![ezgif com-gif-maker (12)](https://user-images.githubusercontent.com/1423657/184545583-58610ae2-6a80-456b-8326-9c30a72e44ab.gif)
+
 ##### Find a String
-- TBD
+
+Let's filter our logs with a string match for `peach`
+
+![ezgif com-gif-maker (13)](https://user-images.githubusercontent.com/1423657/184545713-3f6e90ba-3c6d-4dc4-b897-d10373feb695.gif)
+
 ##### Go Pro
+
+That was too easy, _wasn't it?_
+
 Progress your knowledge using the [advanced LogQL guide](guide/logql.md)
+
 
 #### ** View **
 
@@ -25,10 +37,21 @@ Let's explore using [qryn-view](view.md) our embedded user interface
 ![view](https://user-images.githubusercontent.com/1423657/166163594-c51cc598-50a2-4136-8792-91b45024c8d9.gif)
 
 ##### Find a Label
-- TBD
+
+Let's find logs with label `{type="syslog"}`
+
+![ezgif com-gif-maker (14)](https://user-images.githubusercontent.com/1423657/184545892-d0649b5c-8e57-444c-a40f-417dfb2199ea.gif)
+
 ##### Find a String
-- TBD
+
+Let's filter our logs with a string match for `boat` - in case we need a bigger one.
+
+![image](https://user-images.githubusercontent.com/1423657/184545906-359e90bc-ba37-4490-ad02-d3717a4eebd1.png)
+
 ##### Go Pro
+
+That was too easy, _wasn't it?_
+
 Progress your knowledge using the [advanced LogQL guide](guide/logql.md)
 
 
