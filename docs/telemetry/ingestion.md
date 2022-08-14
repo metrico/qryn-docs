@@ -139,7 +139,7 @@ The following type events will be pushed:
 
 ![image](https://user-images.githubusercontent.com/1423657/184496222-ca95d80c-906f-4c77-a963-86f0b27a56b0.png ':size=100')
 
-Grafana Agent can act as a telemetry collector and receive spans from `Jaeger`, `Kafka`, `OpenCensus`, `OTLP`, and `Zipkin` to process and forward traces to **qryn** using its _Tempo compatible API_
+Grafana Agent can act as a telemetry collector and receive spans from Jaeger, Kafka, OpenCensus, OTLP, and Zipkin to process and forward traces to **qryn** using the _Tempo API_
 
 ##### Example
 In this example an `OTLP` collector is started on port `:4318` forwarding traces to **qryn** on port `:3100`
