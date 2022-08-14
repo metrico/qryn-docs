@@ -1,22 +1,28 @@
 # Introduction
 
-qryn implements a complete LogQL API buffered by a fast bulking LRU sitting on top of ClickHouse tables and relying on its columnar search and insert performance alongside solid distribution and clustering capabilities for stored data. qryn does not parse or index incoming logs, but rather groups log streams using the same label system as Prometheus. 
+**qryn** was designed from the ground up to leverage the strenghts of ClickHouse and implemented as a thin API and processing layer on top of it.
+
+This section describes some of the general design concepts and details the interaction between stack components.
 
 <!-- tabs:start -->
 
 #### ** Ingestion **
 
-```javascript
-tab1
+```
+COMING SOON
 ```
 
 #### ** Querying **
 
-```javascript
-tab2
+```
+COMING SOON
+```
+
+#### ** Database **
+```
+COMING SOON
 ```
 
 <!-- tabs:end --> 
 
 
-That's a quick overview. Let's take a dive into some specifics of working with the qryn functions.    
