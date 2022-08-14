@@ -71,7 +71,7 @@ sudo systemctl restart grafana-agent.service
 
 ![image](https://user-images.githubusercontent.com/1423657/184496304-4f35a365-efdc-4dca-9771-6b7b1deb9ae3.png ':size=100')
 
-**qryn** implements an experimental Elastic APIs to ingestion JSON objects as tagged logs.
+?> **qryn** implements an experimental Elastic APIs to ingestion JSON objects as tagged logs.
 
 #### Service Tags
 The `_index` and `_id` tags are automatically added to each insert based on the API request
@@ -125,7 +125,7 @@ Either type will get converted to the following `LogQL` insert
 
 ![image](https://user-images.githubusercontent.com/1423657/184496174-aca323dd-f40e-489a-a584-fa7348c0eab0.png ':size=100')
 
-**qryn** implements the Influx v2 Write API subset for ingestion of Logs _(and metrics)_
+?> **qryn** implements the Influx v2 Write API subset for ingestion of Logs _(and metrics)_
 
 #### CURL Examples
 
