@@ -1,4 +1,6 @@
 # qryn:cloud 
+
+!> qryn:cloud requires activation licenses. please [contact us](mailto:info@qxip.net) before starting.
 ## 📦 Installation
 
 Let's install **qryn cloud** in a snap. All you need is a supported OS or `Docker` installed.
