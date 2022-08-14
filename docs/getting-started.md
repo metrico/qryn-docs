@@ -19,13 +19,11 @@ Explore using [Grafana](guide/datasources.md) and its _amazing visualizations_
 
 Explore using [qryn-view](view.md) our embedded user interface
 
-![view](https://user-images.githubusercontent.com/1423657/166163222-9878936e-5114-4ece-883f-f721f5fba8ee.gif)
-
 ![view](https://user-images.githubusercontent.com/1423657/166163594-c51cc598-50a2-4136-8792-91b45024c8d9.gif)
 
 #### ** vLogQL **
 
-Explore using a command line client such as [vLogQL](https://github.com/lmangani/vlogql)
+Explore using [vLogQL](https://github.com/lmangani/vlogql) our command line LogQL tool
 
 #### 📦 Download Binary
 ```
