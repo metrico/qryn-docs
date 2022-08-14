@@ -11,7 +11,7 @@ The following protocol APIs are supported for ingesting telemetry events:
 ![image](https://user-images.githubusercontent.com/1423657/184494381-15d20f5d-3d52-411b-9064-dfd2ccea7c1c.png ':size=100')![image](https://user-images.githubusercontent.com/1423657/184494438-17d7ceb0-a62a-4819-9b1c-43d7f0baf802.png ':size=100')
 
 
-**qryn** natively implements a json/http [Zipkin](https://zipkin.io/) API endpoint to ingest tracing spans.
+?> **qryn** natively implements a json/http [Zipkin](https://zipkin.io/) API endpoint to ingest tracing spans.
 
 Tracing is possible from any application supported by the [opentelemetry](https://github.com/open-telemetry) libraries.
 
