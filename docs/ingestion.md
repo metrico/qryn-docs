@@ -22,19 +22,19 @@ Get started using the [Log Ingestion](logs/ingestion.md) section
 
 Get started using the [Metrics Ingestion](metrics/ingestion.md) section
 
-![image](https://user-images.githubusercontent.com/1423657/184496222-ca95d80c-906f-4c77-a963-86f0b27a56b0.png ':size=100')
-![image](https://user-images.githubusercontent.com/1423657/184496973-9f46e551-872d-4a25-877c-51a2e5f53e84.png ':size=100')
-![image](https://user-images.githubusercontent.com/1423657/184496174-aca323dd-f40e-489a-a584-fa7348c0eab0.png ':size=100')
-![image](https://avatars.githubusercontent.com/u/54801242?s=200&v=4 ':size=100')
+[![image](https://user-images.githubusercontent.com/1423657/184496222-ca95d80c-906f-4c77-a963-86f0b27a56b0.png ':size=100')](metrics/ingestion#grafana)
+[![image](https://user-images.githubusercontent.com/1423657/184496973-9f46e551-872d-4a25-877c-51a2e5f53e84.png ':size=100')](metrics/ingestion#prometheus)
+[![image](https://user-images.githubusercontent.com/1423657/184496174-aca323dd-f40e-489a-a584-fa7348c0eab0.png ':size=100')](metrics/ingestion#influx)
+[![image](https://avatars.githubusercontent.com/u/54801242?s=200&v=4 ':size=100')](metrics/ingestion#clickhouse)
 
 #### ** Telemetry **
 
 Get started using the [Telemetry Ingestion](telemetry/ingestion.md) section
 
-![image](https://user-images.githubusercontent.com/1423657/184496222-ca95d80c-906f-4c77-a963-86f0b27a56b0.png ':size=100')
-![image](https://user-images.githubusercontent.com/1423657/184494381-15d20f5d-3d52-411b-9064-dfd2ccea7c1c.png ':size=100')
-![image](https://user-images.githubusercontent.com/1423657/184494438-17d7ceb0-a62a-4819-9b1c-43d7f0baf802.png ':size=100')
-![image](https://avatars.githubusercontent.com/u/54801242?s=200&v=4 ':size=100')
+[![image](https://user-images.githubusercontent.com/1423657/184496222-ca95d80c-906f-4c77-a963-86f0b27a56b0.png ':size=100')](telemetry/ingestion#grafana)
+[![image](https://user-images.githubusercontent.com/1423657/184494381-15d20f5d-3d52-411b-9064-dfd2ccea7c1c.png ':size=100')](telemetry/ingestion#zipkin)
+[![image](https://user-images.githubusercontent.com/1423657/184494438-17d7ceb0-a62a-4819-9b1c-43d7f0baf802.png ':size=100')](telemetry/ingestion#zipkin)
+[![image](https://avatars.githubusercontent.com/u/54801242?s=200&v=4 ':size=100')](telemetry/ingestion#clickhouse)
 
 #### ** Custom **
 
