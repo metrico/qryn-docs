@@ -1,8 +1,5 @@
 # About 
 
-
-### Motivation
-
 **qryn** _(formerly known as cLoki)_ is a project incubated at _qxip_ built by _ClickHouse users_ for _ClickHouse users_.
 
 ?> It's pronounced /ˈkwɪr..ɪŋ/ or _querying_
