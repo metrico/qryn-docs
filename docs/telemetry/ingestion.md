@@ -1,4 +1,4 @@
-# Trace Ingestion
+# Telemetry Ingestion
 
 Ingesting telemetry with **qryn** is easy and painless. Just pick an integration and you're set!
 
