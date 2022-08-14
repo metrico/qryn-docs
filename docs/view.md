@@ -1,6 +1,6 @@
 # :eye: qryn _view_
 
-**qryn-view** is a smart and minimal LOgQL API data explorer bundled with **qryn** 
+**qryn-view** is a smart and minimal **LogQL** client and _data explorer_ bundled with **qryn** 
 
 ?> **view** is automatically served on port `:3100` of your setup.
 
