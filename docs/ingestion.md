@@ -1,4 +1,4 @@
-# ▶️ Data Ingestion 
+# ⛓️ Data Ingestion
 
 Ingesting data with **qryn** is easy and painless. Just pick an integration and you're set!
 
