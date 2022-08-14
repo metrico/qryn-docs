@@ -1,8 +1,10 @@
-## LogQL
+## 🔎 LogQL
 
-LogQL is a PromQL-inspired query language acting like a distributed grep with powerful _filters and aggregations_.
+**LogQL** is a _PromQL-inspired_ query language acting like a distributed grep with powerful _filters and aggregations_.
 
-There are two types of _LogQL_ queries:
+?> _Relax. It's all quite simple once you try it
+
+There are just two types of _LogQL_ queries:
 
   * [Log queries](https://grafana.com/docs/loki/latest/logql/log_queries/) returning the contents of log lines as streams.
   * [Metric queries](https://grafana.com/docs/loki/latest/logql/metric_queries/) that convert logs into value matrices.
