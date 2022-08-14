@@ -46,7 +46,7 @@ Progress your knowledge using the [advanced LogQL guide](guide/logql.md)
 
 ### ** 👁️ View **
 
-Let's explore using [qryn-view](view.md) our embedded user interface
+Let's explore using [qryn-view](view.md) our embedded user interface - _no installation needed_
 
 ![view](https://user-images.githubusercontent.com/1423657/166163594-c51cc598-50a2-4136-8792-91b45024c8d9.gif)
 
