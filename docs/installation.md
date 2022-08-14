@@ -1,4 +1,4 @@
-# Installation
+# 📦 Installation
 
 Let's install **qryn** in a snap. All you need is `NodeJS` [14.x-16.x](https://github.com/nodesource/distributions) or `Docker` installed.
 
