@@ -13,7 +13,8 @@
     * [Telemetry](telemetry/ingestion.md "QRYN – Supported Components – LogQL for ClickHouse and beyond")
   * [Querying](getting-started.md "QRYN – Getting Started – LogQL for ClickHouse and beyond")
     * [Integrations](guide/datasources.md "QRYN – Getting Started – LogQL for ClickHouse and beyond") 
-  * [Cheatsheet](examples.md "QRYN – Getting Started – LogQL for ClickHouse and beyond")
+  * [Advanced](examples.md "QRYN – Getting Started – LogQL for ClickHouse and beyond")
+    * [LogQL](guide/logql.md "QRYN – Getting Started – LogQL for ClickHouse and beyond") 
   * [Supported APIs](support.md "QRYN – Supported Components – LogQL for ClickHouse and beyond")
   * [Case Studies](case-studies.md "QRYN – Case Studies – LogQL for ClickHouse and beyond")
 
