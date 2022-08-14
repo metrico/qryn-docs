@@ -29,6 +29,9 @@ This means _any Loki compatible client_ can be used with **qryn** without modifi
 ![image](https://user-images.githubusercontent.com/1423657/184496222-ca95d80c-906f-4c77-a963-86f0b27a56b0.png ':size=100')
 
 ### Grafana Agent
+
+<a id=grafana name=grafana></a>
+
 Install [Grafana Agent](https://grafana.com/docs/grafana-cloud/data-configuration/agent/) using the official documentation.
 
 The agent configuration is stored in `/etc/grafana-agent.yaml`
