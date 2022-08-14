@@ -2,7 +2,7 @@
 
 **qryn-view** is a smart and minimal **LogQL** client and _data explorer_ bundled with **qryn** 
 
-?> **view** is automatically served on port `:3100` of your setup.
+?> **view** is automatically served on port `:3100` of your **qryn** setup
 
 #### Features
 - Label Browser
