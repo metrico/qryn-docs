@@ -13,7 +13,7 @@ The following protocol APIs are supported for ingesting metrics:
 ![image](https://user-images.githubusercontent.com/1423657/184496973-9f46e551-872d-4a25-877c-51a2e5f53e84.png ':size=100')
 
 
-**qryn** natively supports the Prometheus _Remote Write_ API for storing metrics.
+!> **qryn** natively supports the Prometheus _Remote Write_ API for storing metrics.
 
 #### API Endpoints
 - [x] `api/v1/prom/remote/write`
@@ -94,7 +94,7 @@ In Grafana queries, use $__interval for unwrap, ie: unwrap data [$__interval]
 
 _Grafana Loki_ does not allow inserting metrics through its LogQL API - but **qryn** does 👍
 
-Both below format variations are accepted to insert labeled metrics using the `value` parameter in a stream:
+We can insert labeled metrics using the `value` parameter in a LogQL stream:
 
 #### Metrics
 ```bash
@@ -126,7 +126,7 @@ curl -i -XPOST -H "Content-Type: application/json" http://qryn:3100/loki/api/v1/
 
 ![image](https://user-images.githubusercontent.com/1423657/184496174-aca323dd-f40e-489a-a584-fa7348c0eab0.png ':size=100')
 
-**qryn** implements the Influx v2 Write API subset for ingestion of Metrics _(and logs)_
+!> **qryn** implements the Influx v2 Write API subset for ingestion of Metrics _(and logs)_
 
 ### Usage
 
