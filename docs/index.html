@@ -371,13 +371,13 @@
       tabComments: true,
       tabHeadings: true,
     },
-    plugins: {
+    plugins: [
       EditOnGithubPlugin.create(
         'https://github.com/metrico/qryn-docs/blob/main/docs/',
         null,
         function(file) { return 'edit on git' }
       )
-    }
+    ]
   }
 </script>
 <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
