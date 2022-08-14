@@ -6,8 +6,6 @@ Our polyglot stack implements _industry standard_ APIs and _globally established
 
 You keep using your preferred _Agent or Method_ to send data, and _qryn does the rest_.
 
-<br />
-
 <!-- tabs:start -->
 
 #### ** Logs **
