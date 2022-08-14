@@ -4,6 +4,11 @@ Ingesting logs with **qryn** is easy and painless. Just pick an integration and 
 
 ### Integrations
 
+The following protocols and APIs integrations are supported for ingesting Logs:
+<!-- tabs:start -->
+
+## ** Various **
+
 The **qryn** LogQL API and is 100% compatible with Grafana Loki for data ingestion. 
 
 This means _any Loki example_ can be used with **qryn** without modifications:
@@ -14,10 +19,6 @@ This means _any Loki example_ can be used with **qryn** without modifications:
 * [Fluentd](https://grafana.com/docs/loki/latest/clients/fluentd/) + [Examples](https://grafana.com/blog/2022/06/23/how-to-send-logs-to-grafana-loki-with-the-opentelemetry-collector-using-fluent-forward-and-filelog-receivers/#:~:text=Set%20up%20a%20Grafana%20Cloud,click%20the%20Send%20Logs%20button.)
 * [Logstash](https://grafana.com/docs/loki/latest/clients/logstash/)
 
-----
-
-The following protocols and APIs options are supported for ingesting Logs:
-<!-- tabs:start -->
 
 ## ** LogQL **
 
