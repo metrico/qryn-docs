@@ -9,9 +9,11 @@ The following protocols and APIs integrations are supported for ingesting Logs:
 
 ## ** Various **
 
-The **qryn** LogQL API and is 100% compatible with Grafana Loki for data ingestion. 
+![image](https://user-images.githubusercontent.com/1423657/184487816-fcc86e34-0395-4927-8ceb-33c2ad3e63d4.gif)
 
-This means _any Loki example_ can be used with **qryn** without modifications:
+**qryn** API are 100% compatible with Grafana Loki for data ingestion. 
+
+This means _any Loki compatible client_ can be used with **qryn** without modifications! 🏁
 
 * [Vector](https://vector.dev/docs/reference/configuration/sinks/loki/) + [Examples](https://component-pages--vector-project.netlify.app/guides/integrate/sources/http/loki/)
 * [Grafana Agent](https://grafana.com/docs/grafana-cloud/data-configuration/logs/collect-logs-with-agent/)+ [Examples](https://grafana.com/docs/grafana-cloud/quickstart/logs_agent_linuxnode/)
