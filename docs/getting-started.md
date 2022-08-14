@@ -8,21 +8,24 @@ In this section, we'll learn how to find and query our ingested data. Let's get 
 In order to explore our logs and metrics, we'll need to use a _client_ such as _Grafana_
 
 <!-- tabs:start -->
-#### ** Grafana **
-?> Explore using [grafana](guide/datasources.md) and its _amazing visualizations_
+#### ** ⭐ Grafana **
+
+Explore using [Grafana](guide/datasources.md) and its _amazing visualizations_
 
 ![grafanaexplore](https://user-images.githubusercontent.com/1423657/184538094-13c11500-24ef-4468-9f33-dc9d564238e3.gif)
 
 
 #### ** View **
-?> Explore using [qryn-view](view.md) our embedded user interface
+
+Explore using [qryn-view](view.md) our embedded user interface
 
 ![view](https://user-images.githubusercontent.com/1423657/166163222-9878936e-5114-4ece-883f-f721f5fba8ee.gif)
 
 ![view](https://user-images.githubusercontent.com/1423657/166163594-c51cc598-50a2-4136-8792-91b45024c8d9.gif)
 
-#### ** vLogQL ***
-?> Explore using a command line client such as [vLogQL](https://github.com/lmangani/vlogql)
+#### ** vLogQL **
+
+Explore using a command line client such as [vLogQL](https://github.com/lmangani/vlogql)
 
 #### 📦 Download Binary
 ```
