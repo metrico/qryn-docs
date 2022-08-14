@@ -1,4 +1,3 @@
-![image](https://user-images.githubusercontent.com/1423657/184538670-6db7a0b4-e3db-4dee-af41-ababa1098728.png)
 
 ## Grafana Integration
 
@@ -15,6 +14,8 @@ Let's connect our **qryn** to your Grafana instance(s)
 #### ** Loki **
 Connect Grafana to **qryn** using the _built-in_ `Loki` datasource
 
+
+#### Manual Provisioning
 * Log into your Grafana instance
 * Browse to `Configuration` > `Data Sources` via the ⚙️ icon on the left sidebar
 * Click the big `+ Add` data source button
@@ -22,10 +23,12 @@ Connect Grafana to **qryn** using the _built-in_ `Loki` datasource
   * _Optional_ configure derivate fields to Tempo
 * Use your **qryn** URL and `save`
 
+-----
+
 ![image](https://user-images.githubusercontent.com/1423657/184536845-31638c7f-30bd-4416-ae99-4486024367f8.png)
 
 
-#### Provisioning
+#### Auto Provisioning
 Use the following sample as reference for provisioning your datasource:
 ```
 # grafana config file
@@ -52,15 +55,18 @@ datasources:
 #### ** Prometheus **
 Connect Grafana to **qryn** using the _built-in_ `Prometheus` datasource
 
+#### Manual Provisioning
 * Log into your Grafana instance
 * Browse to `Configuration` > `Data Sources` via the ⚙️ icon on the left sidebar
 * Click the big `+ Add` data source button
 * Choose `Prometheus` from the list
 * Use your **qryn** URL and `save`
 
+-----
+
 ![image](https://user-images.githubusercontent.com/1423657/184536921-b3ff7fab-f71f-4f07-93c3-40a5b9915c64.png)
 
-#### Provisioning
+#### Auto Provisioning
 Use the following sample as reference for provisioning your datasource:
 ```
 # grafana config file
@@ -81,6 +87,7 @@ datasources:
 #### ** Tempo **
 Connect Grafana to **qryn** using the _built-in_ `Tempo` datasource
 
+#### Manual Provisioning
 * Log into your Grafana instance
 * Browse to `Configuration` > `Data Sources` via the ⚙️ icon on the left sidebar
 * Click the big `+ Add` data source button
@@ -88,9 +95,11 @@ Connect Grafana to **qryn** using the _built-in_ `Tempo` datasource
   * _Optional_ configure Loki search datasource
 * Use your **qryn** URL and `save`
 
+-----
+
 ![image](https://user-images.githubusercontent.com/1423657/184536886-7a1eb428-9671-4a36-a93b-173fcfcd775d.png)
 
-#### Provisioning
+#### Auto Provisioning
 Use the following sample as reference for provisioning your datasource:
 ```
 # grafana config file
@@ -113,3 +122,6 @@ datasources:
 ```
 
 <!-- tabs:end -->
+
+![image](https://user-images.githubusercontent.com/1423657/184538670-6db7a0b4-e3db-4dee-af41-ababa1098728.png)
+
