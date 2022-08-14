@@ -1,4 +1,4 @@
-# Advanced Examples
+# 📖 Advanced Examples
 
 This section illustrates a number of examples and resources to help you master **qryn**
 
