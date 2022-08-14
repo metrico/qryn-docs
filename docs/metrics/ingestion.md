@@ -17,7 +17,7 @@ The following protocol APIs are supported for ingesting metrics:
 
 #### API Endpoints
 - [x] `api/v1/prom/remote/write`
-- [x] `api/prom/remote/write` _(alias)_
+- [x] `api/prom/remote/write`
 
 <!--
 ![image](https://user-images.githubusercontent.com/1423657/150554482-988b5ccf-225c-4919-bc31-6fa18bef6f53.png)
