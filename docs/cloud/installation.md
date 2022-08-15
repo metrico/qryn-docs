@@ -101,6 +101,8 @@ docker compose ps
 
 ?> That's it! You are ready to access the stack using [qryn-view or Grafana](getting-started.md)
 
+?> For an overview of all enviroment settings go [here](/cloud/env.md) and for configurations go [here](/cloud/config.md)
+
 #### ** APT **
 Install `qryn` on your system using `deb` on a Debian system _(or derivate)_
 
