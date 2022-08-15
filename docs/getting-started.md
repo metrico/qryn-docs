@@ -11,10 +11,10 @@ Let's explore using [Grafana](guide/datasources.md) and its _amazing visualizati
 
 ![grafanaexplore](https://user-images.githubusercontent.com/1423657/184538094-13c11500-24ef-4468-9f33-dc9d564238e3.gif)
 
-### LogQL _(Loki)_
+### LogQL
 #### Find a Label 🏷️
 
-Let's find logs with label `{job="dummy-server"}`
+Let's use our **qryn** `Loki` datasource find logs with label `{job="dummy-server"}`
 
 ![ezgif com-gif-maker (12)](https://user-images.githubusercontent.com/1423657/184545583-58610ae2-6a80-456b-8326-9c30a72e44ab.gif)
 
@@ -31,14 +31,15 @@ Let's calculate the 1m rate for our matching logs `rate({job="dummy-server"} |= 
 ![image](https://user-images.githubusercontent.com/1423657/184548882-37268c27-7a01-4787-8259-11327158c2d5.png)
 
 
+### Tempo
 #### Find a Trace using LogQL 🧲
 
-Let's use the `Tempo` datasource and find traces for `{job="dummy-server"}` using LogQL or _Beta Search_
+Let's use the **qryn** `Tempo` datasource to find traces for `{job="dummy-server"}` using _LogQL or Beta Search_
 
 ![image](https://user-images.githubusercontent.com/1423657/184548814-b5a4c641-010e-47b1-91c8-5aa402a85908.png)
 
 
-#### Go Pro 🥊
+### Go Pro 🥊
 
 That was easy, _wasn't it?_
 
@@ -49,6 +50,9 @@ Progress your knowledge using the [advanced LogQL guide](guide/logql.md)
 Let's explore using [qryn-view](view.md) our embedded user interface - _no installation needed_
 
 ![view](https://user-images.githubusercontent.com/1423657/166163594-c51cc598-50a2-4136-8792-91b45024c8d9.gif)
+
+#### Connect 🔌
+Access your local _view_ instance or use the [public view](https://view.cloki.org) to access your **qryn** API 
 
 #### Find a Label 🏷️
 
