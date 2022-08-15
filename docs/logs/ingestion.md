@@ -34,7 +34,7 @@ Install [Grafana Agent](https://grafana.com/docs/grafana-cloud/data-configuratio
 
 The agent configuration is stored in `/etc/grafana-agent.yaml`
 
-This example will scrape and send info from all logs in `/var/log` that end in log. They are labeled with varlogs as the `job` and `job_name`
+This example will scrape and send info from all log files in `/var/log` that end in log. They are labeled with varlogs as the `job` and `job_name`
 ```
 loki:
   configs:
@@ -79,7 +79,7 @@ sudo systemctl restart grafana-agent.service
 
 ![image](https://user-images.githubusercontent.com/1423657/184496304-4f35a365-efdc-4dca-9771-6b7b1deb9ae3.png ':size=100')
 
-?> **qryn** implements an experimental Elastic APIs to ingestion JSON objects as tagged logs.
+?> **qryn** implements an experimental Elastic API for ingestion of JSON objects as tagged logs.
 
 #### API Endpoints
 - [x] `/:target/_doc`
