@@ -14,12 +14,14 @@ The following `ENV` parameters can be used to configure and control **qryn:cloud
 
 #### ** qryn-go **
 <a id=api name=api></a>
+
 | ENV   	                |Default   	|Usage   	|
 |------------------------|---	    |---		|
 | CLICKHOUSE_SERVER      | localhost   	| Clickhouse Server address  		|
 
 #### ** qryn-writer **
 <a id=writer name=writer></a>
+
 | ENV   	                |Default   	|Usage   	|
 |------------------------|---	    |---		|
 | CLICKHOUSE_SERVER      | localhost   	| Clickhouse Server address  		|
