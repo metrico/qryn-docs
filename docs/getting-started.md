@@ -62,13 +62,19 @@ Let's find logs with label `{type="syslog"}`
 
 #### Find a String 🔎
 
-Let's filter our logs with a string match for `boat` - in case we need a bigger one.
+Let's filter our logs to check if we need a bigger _boat_ `{type="syslog"} |= "boat"`
 
 ![image](https://user-images.githubusercontent.com/1423657/184545906-359e90bc-ba37-4490-ad02-d3717a4eebd1.png)
 
-#### Go Pro 🥊
+##### Calculate metrics 📊
 
-That was too easy, _wasn't it?_
+Let's calculate the 1m rate for our matching logs `rate({type="syslog"} |= "boat" [1m])`
+
+![image](https://user-images.githubusercontent.com/1423657/166163222-9878936e-5114-4ece-883f-f721f5fba8ee.gif)
+
+### Go Pro 🥊
+
+That was easy, _wasn't it?_
 
 Progress your knowledge using the [advanced LogQL guide](guide/logql.md)
 
