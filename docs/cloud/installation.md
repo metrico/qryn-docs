@@ -33,7 +33,7 @@ docker pull ghcr.io/metrico/qryn-go
 
 Define a docker compose file to configure each element.
 
-?> This example assumes an external clickhouse server instance. With user default and password 'clickPass'.
+?> This example assumes an external clickhouse server instance. With user default and password 'qryn1234'.
 
 ```yml
 version: '3.1'
@@ -56,7 +56,7 @@ services:
       - QRYN_DATABASE_DATA_0_DEBUG=true
       - QRYN_DATABASE_DATA_0_USER=default
       - QRYN_DATABASE_DATA_0_SECURE=false
-      - QRYN_DATABASE_DATA_0_PASS=clickPass
+      - QRYN_DATABASE_DATA_0_PASS=qryn1234
       - QRYN_DATABASE_DATA_0_ASYNC_INSERT=false
       - QRYN_HTTP_SETTINGS_PORT=3100
       - QRYN_SYSTEM_SETTINGS_DB_TIMER=0.5
@@ -84,7 +84,7 @@ services:
       - QRYN_DATABASE_DATA_0_HTTP_PORT=443
       - QRYN_DATABASE_DATA_0_DEBUG=true
       - QRYN_DATABASE_DATA_0_USER=default
-      - QRYN_DATABASE_DATA_0_PASS=clickPass
+      - QRYN_DATABASE_DATA_0_PASS=qryn1234
       - QRYN_DATABASE_DATA_0_SECURE=false
       - QRYN_DATABASE_DATA_0_HTTPS=false
       - QRYN_HTTP_SETTINGS_PORT=3200
