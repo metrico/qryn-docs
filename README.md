@@ -3,11 +3,13 @@
 # qryn-docs
 Documentation for [qryn](https://github.com/metrico/qryn)
 
-### Docs URL
-https://metrico.github.io/qryn-docs/#/
+### Public Docs
+- [x] https://qryn.metrico.in
+- [x] https://metrico.github.io/qryn-docs/#/
 
 #### Status
-* work in progress
+* _always a work in progress_
+* _contributions welcome via PRs_
 
 #### Note
 Before editing the instructions, please familiarize with the [docsify.js](https://docsify.js.org/#/more-pages) documentation
