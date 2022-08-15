@@ -15,7 +15,7 @@ The following protocol APIs are supported for ingesting telemetry events:
 
 Tracing is possible from any application supported by the [opentelemetry](https://github.com/open-telemetry) libraries.
 
-- [zipkin sender](https://github.com/open-telemetry/opentelemetry-js/blob/main/examples/tracer-web/examples/zipkin/index.js)
+- [Zipkin example](https://github.com/open-telemetry/opentelemetry-js/blob/main/examples/tracer-web/examples/zipkin/index.js)
 
 #### Send Spans using CURL
 
