@@ -38,7 +38,7 @@ Store data from Prometheus instances using the [remote_write API](https://promet
 ```
 # Remote write configuration
 remote_write:
-  - url: "http://qryn:3100/api/v1/write"
+  - url: "http://qryn:3100/api/v1/prom/remote/write"
 ```
 
 !> Replace the **qryn** URL from the example to match your actual deployment!
