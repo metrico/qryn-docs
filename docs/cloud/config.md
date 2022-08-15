@@ -11,7 +11,9 @@ Stack configuration is 100% based on [ENV](env.md) parameters passed to the proc
 <!-- tabs:start -->
 
 #### ** qryn-go **
+<a id=api name=api></a>
 
 #### ** qryn-writer **
+<a id=writer name=writer></a>
 
 <!-- tabs:end -->
