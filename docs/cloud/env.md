@@ -2,15 +2,14 @@
 
 ### Configuration
 
-**qryn** has no configuration files by design - just `ENV` variables
+**qryn:cloud** can be configured through a static `config.json` file or using `ENV` variables
 
-?> K8s and Docker container friendly 😉
 
-#### Parameters
+#### ENV Parameters
 
 The following `ENV` parameters can be used to configure and control **qryn:cloud**
 
-!> These are licensed components. Please [contact us](mailto:info@qxip.net) to obtain your keys.
+!> These are licensed components. Please [contact us](mailto:info@qxip.net) to obtain an activation key.
 
 ?> **qryn:cloud** provides healthy defaults, we recommend to focus on the DATABASE_DATA part to start with and let the defaults do the job for your deployment
 
