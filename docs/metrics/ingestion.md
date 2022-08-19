@@ -88,41 +88,6 @@ In Grafana queries, use $__interval for unwrap, ie: unwrap data [$__interval]
 ?> _That's it!_ You are now analyzing Prometheus data using **qryn**
 
 
-## ** LogQL **
-
-<a id=logql name=logql></a>
-
-![image](https://user-images.githubusercontent.com/1423657/184496222-ca95d80c-906f-4c77-a963-86f0b27a56b0.png ':size=100')
-
-_Grafana Loki_ does not allow inserting metrics through its LogQL API - but **qryn** does 👍
-
-We can insert labeled metrics using the `value` parameter in a LogQL stream:
-
-#### Metrics
-```bash
-curl -i -XPOST -H "Content-Type: application/json" http://qryn:3100/loki/api/v1/push \
-     --data '{"streams":[{"labels":"{\"__name__\":\"my_metric\"}","entries":[{"timestamp":"2022-08-08T16:00:06.944Z", "value":100}]}]}'
-```
-```json
-{
-    "streams": [
-        {
-            "labels": "{\"__name__\":\"my_metric\"}",
-            "entries": [
-                {
-                    "timestamp":"1545840006945",
-                    "value": 100
-                }
-            ]
-        }
-    ]
-}
-```
-
-!> Replace the **qryn** URL from the example to match your actual deployment!
-
-?> _That's it!_ You are now inserting metrics throug LogQL in **qryn**
-
 
 ## ** Influx **
 
@@ -199,5 +164,42 @@ In Grafana queries, use $__interval for unwrap, ie: unwrap data [$__interval]
 * More Examples: [LogQL Range Aggregations](https://grafana.com/blog/2021/01/11/how-to-use-logql-range-aggregations-in-loki/)
 
 ?> _That's it!_ You are now analyzing Influx data using **qryn**
+
+## ** LogQL **
+
+<a id=logql name=logql></a>
+
+![image](https://user-images.githubusercontent.com/1423657/184496222-ca95d80c-906f-4c77-a963-86f0b27a56b0.png ':size=100')
+
+_Grafana Loki_ does not allow inserting metrics through its LogQL API - but **qryn** does 👍
+
+We can insert labeled metrics using the `value` parameter in a LogQL stream:
+
+#### Metrics
+```bash
+curl -i -XPOST -H "Content-Type: application/json" http://qryn:3100/loki/api/v1/push \
+     --data '{"streams":[{"labels":"{\"__name__\":\"my_metric\"}","entries":[{"timestamp":"2022-08-08T16:00:06.944Z", "value":100}]}]}'
+```
+```json
+{
+    "streams": [
+        {
+            "labels": "{\"__name__\":\"my_metric\"}",
+            "entries": [
+                {
+                    "timestamp":"1545840006945",
+                    "value": 100
+                }
+            ]
+        }
+    ]
+}
+```
+
+!> Replace the **qryn** URL from the example to match your actual deployment!
+
+?> _That's it!_ You are now inserting metrics throug LogQL in **qryn**
+
+
 
 <!-- tabs:end -->
