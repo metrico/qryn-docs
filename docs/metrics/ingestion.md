@@ -1,7 +1,5 @@
 # Metric Ingestion
 
-Ingesting metrics with **qryn** is easy and painless. Just pick an integration and you're set!
-
 The following protocol APIs are supported for ingesting metrics:
 <!-- tabs:start -->
 ## ** Prometheus **
