@@ -1,7 +1,5 @@
 # Log Ingestion
 
-Ingesting logs with **qryn** is easy and painless. Just pick an integration and you're set!
-
 The following protocols and APIs integrations are supported for ingesting Logs:
 <!-- tabs:start -->
 
