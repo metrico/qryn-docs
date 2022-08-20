@@ -6,8 +6,6 @@ The following protocol APIs are supported for ingesting metrics:
 
 <a id=prometheus name=prometheus></a>
 
-### Prometheus Remote Write
-
 ![image](https://user-images.githubusercontent.com/1423657/184496973-9f46e551-872d-4a25-877c-51a2e5f53e84.png ':size=100')
 
 
