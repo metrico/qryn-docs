@@ -8,7 +8,7 @@ Ingesting data with **qryn** is easy and painless. _Choose a supported integrati
 
 Get started using the [Log Ingestion](logs/ingestion.md) section
 
-[![image](https://user-images.githubusercontent.com/1423657/185748942-fa2bcbf8-b568-46c0-8609-f012472507f1.png ':size=100')](logs/ingestion#popular)
+[![image](https://user-images.githubusercontent.com/1423657/185749193-faa91e58-4283-479a-8196-bae5212ae141.png ':size=100')](logs/ingestion#popular)
 [![image](https://user-images.githubusercontent.com/1423657/184496222-ca95d80c-906f-4c77-a963-86f0b27a56b0.png ':size=100')](logs/ingestion#grafana)
 [![image](https://user-images.githubusercontent.com/1423657/184496304-4f35a365-efdc-4dca-9771-6b7b1deb9ae3.png ':size=100')](logs/ingestion#elastic)
 [![image](https://user-images.githubusercontent.com/1423657/184496174-aca323dd-f40e-489a-a584-fa7348c0eab0.png ':size=100')](logs/ingestion#influx)
