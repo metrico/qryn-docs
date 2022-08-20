@@ -10,7 +10,7 @@ It means _querying_ and we choose it overnight because Grafana literally owns th
 
 ?> Loki, Prometheus and Tempo already exists, why do we need _qryn_?
 
-Why not? Our system uses a different design where ultimately all data across ingested protocols is stored in ClickHouse, ready to be accessed, analyzed and correlated in thousands of way today and into the future.
+Why not? Alternatives are good and can help accelerate evolution in an lively ecosystem. **qryn** is just designed to make its users happy and was implemented as a transparent and lightweight _overlay_ on top ClickHouse, where all data ingested across protocols sits ready to be accessed, analyzed and correlated in thousands of way today and into the future leveraging its fast and ever growing capabilities.
 
 ---
 
