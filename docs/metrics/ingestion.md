@@ -1,4 +1,4 @@
-# Metric Ingestion
+# 🔻 Metric Ingestion
 
 The following protocol APIs are supported for ingesting metrics:
 <!-- tabs:start -->
