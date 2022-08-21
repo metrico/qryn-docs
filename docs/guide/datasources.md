@@ -1,10 +1,10 @@
-![image](https://user-images.githubusercontent.com/1423657/184496222-ca95d80c-906f-4c77-a963-86f0b27a56b0.png ':size=100')
 
-## Grafana Integration
+
+## ![image](https://user-images.githubusercontent.com/1423657/184496222-ca95d80c-906f-4c77-a963-86f0b27a56b0.png ':size=25') Grafana Datasources
 
 <a name="grafana" id="grafana"></a>
 
-Let's connect our **qryn** to your Grafana instance(s)
+Let's connect our **qryn** to your Grafana instance(s) using just _native datasources_
 
 ?> Using Grafana `8.2+` or `9.0+` is required to enjoy all available features
 
