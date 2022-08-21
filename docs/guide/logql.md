@@ -150,11 +150,11 @@ We can use operations on both the log **stream selectors** and **filter expressi
 
 Just like Prometheus, LogQL supports aggregating data over a selected ranges to transform it into an instance vectors.
 
-The currently supported functions are:
+The currently supported `range vector` functions are:
 
-* `count_over_time` : Shows the total count of log lines for time range
-* `rate` : Similar as count_over_time but converted to number of entries per second
-* `bytes_over_time` : Number of bytes in each log stream in the range
+* `rate` : Calculates the number of entries per second
+* `count_over_time` : Counts the entries for each log stream within the given range.
+* `bytes_over_time` : Counts the number of bytes in each log stream in the range
 * `bytes_rate` : Similar to bytes_over_time but converted to number of bytes per second
 
 The folllowing example counts all the log lines within the last five minutes for the Clickhouse job.
@@ -194,8 +194,30 @@ Count of errors at 1h time intervals
 count_over_time({job="systemd-journal"} |= "error" [1h])
 ```
 
+### ** Unwrap ** 
 
-### ** Aggregate Functions **
+Unwrap Expressions allow for the unwrapping of a value to be used in an aggregation. It can extract any parsed json value.
+
+Supported `unwrap range` functions for operating over unwrapped ranges are:
+
+* `rate(unwrapped-range)`: calculates per second rate of all values in the specified interval
+* `sum_over_time(unwrapped-range)`: the sum of all values in the specified interval
+* `avg_over_time(unwrapped-range)`: the average value of all points in the specified interval
+* `max_over_time(unwrapped-range)`: the maximum value of all points in the specified interval
+* `min_over_time(unwrapped-range)`: the minimum value of all points in the specified interval
+
+#### Examples
+
+Extract a value from a json log and select a field to unwrap into metrics for visualization:
+```
+avg_over_time({job="0.6611336793589486_json"} | json myField="my_field" | unwrap myField [5s])"
+```
+
+The function extracts the value of `my_field` and aggregates it into an average of `5s` buckets over the given timerange.
+
+
+
+### ** Aggregate **
 
 Like PromQL, LogQL supports a subset of built-in aggregation operators that can be used to aggregate elements of a single vector, resulting in a new vector of fewer elements with aggregated values:
 
@@ -272,7 +294,7 @@ sum(count_over_time({job=~"qryn/systemd-journal|systemd-journal"}[1m])) by (job,
 -------
 
 
-### ** Comparison Operators **
+### ** Comparison Ops **
 
 Comparison Operators. Used for testing numeric values present in scalars and vectors.
 
@@ -301,7 +323,7 @@ sum(count_over_time({job="systemd-journal"}[1m])) <= 1
 
 -------
 
-### ** Logical Operators **
+### ** Logical Ops **
 
 Operatora can be used to add filter conditions:
 
