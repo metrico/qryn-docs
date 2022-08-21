@@ -4,11 +4,9 @@
 
 <a name="grafana" id="grafana"></a>
 
-Let's connect our **qryn** to your Grafana instance(s) using just _native datasources_
+Let's connect our **qryn** to any Grafana instance using just _native datasources_
 
 ?> Using Grafana `8.2+` or `9.0+` is required to enjoy all available features
-
-?> Our docker-compose bundles include a preconfigured Grafana. _skip this_
 
 <!-- tabs:start -->
 
