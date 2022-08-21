@@ -15,7 +15,7 @@ Install `qryn` as global package on your system using `npm`
 sudo npm install -g qryn
 ```
 
-Start `qryn` using ENV variables for its settings:
+Start `qryn` using [ENV](env.md) variables for its settings:
 
 ```bash
 cd $(dirname $(readlink -f `which qryn`)) \
@@ -38,7 +38,7 @@ Install `qryn` and `pm2` as global packages on your system using `npm`
 sudo npm install -g qryn pm2
 ```
 
-Start `qryn` using ENV variables for its settings:
+Start `qryn` using [ENV](env.md) variables for its settings:
 ```bash
 cd $(dirname $(readlink -f `which qryn`)) \
   && CLICKHOUSE_SERVER="my.clickhouse.server" \
@@ -65,7 +65,7 @@ git clone https://github.com/metrico/qryn && cd qryn
 npm install
 ```
 
-Start `qryn` using ENV variables for its settings:
+Start `qryn` using [ENV](env.md) variables for its settings:
 
 ```bash
 CLICKHOUSE_SERVER="my.clickhouse.server" \
@@ -216,7 +216,7 @@ Install `qryn` as global package on your system using `bun`
 bun install -g qryn
 ```
 
-Start `qryn` using ENV variables for its settings:
+Start `qryn` using [ENV](env.md) variables for its settings:
 
 ```bash
 CLICKHOUSE_SERVER="my.clickhouse.server" \
