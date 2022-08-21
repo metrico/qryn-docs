@@ -144,7 +144,6 @@ Either type will get converted to the following `LogQL` insert
 
 ##### API Endpoints
 - [x] `/influx/api/v2/write`
-- [x] `/write`
 
 #### CURL Examples
 
