@@ -14,19 +14,29 @@ Let's explore using [Grafana](guide/datasources.md) and its _amazing visualizati
 ### LogQL
 #### Find a Label 🏷️
 
-Let's use our **qryn** `Loki` datasource find logs with label `{job="dummy-server"}`
+Let's use our **qryn** `Loki` datasource find logs with label _dummy-server_
+```
+{job="dummy-server"}
+```
 
 ![ezgif com-gif-maker (12)](https://user-images.githubusercontent.com/1423657/184545583-58610ae2-6a80-456b-8326-9c30a72e44ab.gif)
 
 #### Find a String 🔎
 
 Let's filter our logs with a string match for `peach`
+```
+{job="dummy-server"} |= "peach"
+```
+
 
 ![ezgif com-gif-maker (13)](https://user-images.githubusercontent.com/1423657/184545713-3f6e90ba-3c6d-4dc4-b897-d10373feb695.gif)
 
 ##### Calculate metrics 📊
 
-Let's calculate the 1m rate for our matching logs `rate({job="dummy-server"} |= "peach" [1m])`
+Let's calculate the minute rate for our matching logs 
+```
+rate({job="dummy-server"} |= "peach" [1m])
+```
 
 ![image](https://user-images.githubusercontent.com/1423657/184548882-37268c27-7a01-4787-8259-11327158c2d5.png)
 
@@ -56,19 +66,28 @@ Access your local _view_ instance or use the [public view](https://view.cloki.or
 
 #### Find a Label 🏷️
 
-Let's find logs with label `{type="syslog"}`
+Let's find logs with label 
+```
+{type="syslog"}
+```
 
 ![ezgif com-gif-maker (14)](https://user-images.githubusercontent.com/1423657/184545892-d0649b5c-8e57-444c-a40f-417dfb2199ea.gif)
 
 #### Find a String 🔎
 
-Let's filter our logs to check if we need a bigger _boat_ `{type="syslog"} |= "boat"`
+Let's filter our logs to check if we need a _bigger boat_ 
+```
+{type="syslog"} |= "boat"
+```
 
 ![image](https://user-images.githubusercontent.com/1423657/184545906-359e90bc-ba37-4490-ad02-d3717a4eebd1.png)
 
 ##### Calculate metrics 📊
 
-Let's calculate the 1m rate for our matching logs `rate({type="syslog"} |= "boat" [1m])`
+Let's calculate the minute rate for our matching logs 
+```
+rate({type="syslog"} |= "boat" [1m])
+```
 
 ![image](https://user-images.githubusercontent.com/1423657/166163222-9878936e-5114-4ece-883f-f721f5fba8ee.gif)
 
