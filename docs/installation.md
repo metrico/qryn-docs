@@ -203,4 +203,29 @@ status:
 
 ?> That's it - demo logs included! Just access your stack using qryn-view or Grafana
 
+#### ** Bun **
+
+Use **bun** to run **qryn** 
+
+?> Install [bun](https://bun.sh/) before proceeding!
+
+Install `qryn` as global package on your system using `bun`
+```bash
+bun install -g qryn
+```
+
+Start `qryn` using ENV variables for its settings:
+
+```bash
+cd $(dirname $(readlink -f `which qryn`)) \
+  && CLICKHOUSE_SERVER="my.clickhouse.server" \
+  CLICKHOUSE_AUTH="default:password" \
+  CLICKHOUSE_DB="qryn" \
+  qryn
+```
+
+?> That's it! You are ready to access and use the stack
+
+
+
 <!-- tabs:end -->
