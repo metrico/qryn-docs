@@ -1,4 +1,4 @@
-# Telemetry Ingestion
+# 🔻 Telemetry Ingestion
 
 The following protocol APIs are supported for ingesting telemetry events:
 <!-- tabs:start -->
