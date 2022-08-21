@@ -217,14 +217,13 @@ bun install -g qryn
 Start `qryn` using ENV variables for its settings:
 
 ```bash
-cd $(dirname $(readlink -f `which qryn`)) \
-  && CLICKHOUSE_SERVER="my.clickhouse.server" \
-  CLICKHOUSE_AUTH="default:password" \
-  CLICKHOUSE_DB="qryn" \
-  qryn
+CLICKHOUSE_SERVER="my.clickhouse.server" \
+CLICKHOUSE_AUTH="default:password" \
+CLICKHOUSE_DB="qryn" \
+qryn
 ```
 
-?> That's it! You are ready to access and use the stack
+?> That's it! You are ready to use **qryn**
 
 
 
