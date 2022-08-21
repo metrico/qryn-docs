@@ -205,7 +205,9 @@ status:
 
 #### ** Bun **
 
-Use **bun** to run **qryn** 
+![image](https://user-images.githubusercontent.com/1423657/185789758-d7366d2f-7b59-4cda-8bf4-198214581dd6.png ':size=100')
+
+Use **bun** to install and run **qryn** 
 
 ?> Install [bun](https://bun.sh/) before proceeding!
 
