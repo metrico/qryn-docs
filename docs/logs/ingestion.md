@@ -1,4 +1,4 @@
-# Log Ingestion
+# 🔻 Log Ingestion
 
 The following protocols and APIs integrations are supported for ingesting Logs:
 <!-- tabs:start -->
