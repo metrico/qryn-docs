@@ -51,6 +51,18 @@ Join us make this better! Please open a [PR](https://github.com/metrico/qryn) or
 
 ---
 
+## Troubleshooting
+
+?> JavaScript heap out of memory
+
+The default Node heap size is **too small** for the workload. Increase it accordingly, ie: 
+
+```
+ export NODE_OPTIONS="--max-old-space-size=4096" # Increases node heap to 4 GB
+ ```
+
+---
+
 ## Disclaimers
 
 ?> ©️ QXIP BV, released under the GNU Affero General Public License v3.0. See LICENSE for details.
