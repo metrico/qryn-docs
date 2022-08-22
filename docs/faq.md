@@ -67,8 +67,10 @@ The default Node heap size is **too small** for the workload. Increase it accord
 
 ?> ©️ QXIP BV, released under the GNU Affero General Public License v3.0. See LICENSE for details.
 
+<div style="font-size: 12px;">
 - qryn is not affiliated or endorsed by Grafana Labs or ClickHouse Inc. All rights belong to their respective owners.<br>
 - qryn is a 100% clear-room api implementation and does not fork, use or derivate from Grafana Loki code or concepts.<br>
 - Grafana®, Loki™ and Tempo® are a Trademark of Raintank, Grafana Labs. <br>
 - ClickHouse® is a trademark of ClickHouse Inc. <br>
 - Prometheus is a trademark of The Linux Foundation.<br>
+</div>
