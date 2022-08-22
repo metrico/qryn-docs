@@ -8,10 +8,10 @@ This section illustrates a number of examples and resources to help you master *
 
 
 ## 🔎 LogQL
-* 🟢 [LogQL Basics](guide/logql.md)
+- 🟢 [LogQL Basics](guide/logql.md)
 
 ## 🔎 PromQL
-* 🟢 [PromQL Basics](https://prometheus.io/docs/prometheus/latest/querying/basics/)
+- 🟢 [PromQL Basics](https://prometheus.io/docs/prometheus/latest/querying/basics/)
 
 ## 🔎 Tempo
-* 🟢 [Tempo Basics](https://grafana.com/docs/grafana/latest/datasources/tempo/)
+- 🟢 [Tempo Basics](https://grafana.com/docs/grafana/latest/datasources/tempo/#query-traces)
