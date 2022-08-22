@@ -7,11 +7,11 @@ This section illustrates a number of examples and resources to help you master *
 ###### Difficulty Levels: 🟢 easy 🔵 medium ⚫ hard 👽 meltdown
 
 
-### 🔎 LogQL
-* 🔵 [LogQL Overview & Cheatsheet](guide/logql.md)
+## 🔎 LogQL
+* 🟢 [LogQL Basics](guide/logql.md)
 
-### 🔎 PromQL
-* _coming soon_
+## 🔎 PromQL
+* 🟢 [PromQL Basics](https://prometheus.io/docs/prometheus/latest/querying/basics/)
 
-### 🔎 Tempo
-* _coming soon_
+## 🔎 Tempo
+* 🟢 [Tempo Basics](https://grafana.com/docs/grafana/latest/datasources/tempo/)
