@@ -4,16 +4,33 @@ At the time of writing this doc, **qryn** supports the following features:
 
 ## LogQL API
 
-| **Name**             | **Type**           | **Support**         | **APIs.**                         | **Docs**    
-|----------------------|--------------------|---------------------|-----------------------------------|--------------
-| Name.                | Type.              | **Yes**             | `/something`                      | [View Docs](/feature/name.md)
+| **Name**             | **Type**         | **Support**         | **APIs.**               | **Docs**    
+|----------------------|------------------|---------------------|-------------------------|--------------
+| Push                 | POST             | **Yes**             | `/loki/api/v1/push`        | [View Docs](https://github.com/metrico/qryn/wiki/HTTP-API#logql-http-api)
+| Query                | GET              | **Yes**             | `/loki/api/v1/query`       | [View Docs](https://github.com/metrico/qryn/wiki/HTTP-API#logql-http-api)
+| Query Range          | GET              | **Yes**             | `/loki/api/v1/query_range` | [View Docs](https://github.com/metrico/qryn/wiki/HTTP-API#logql-http-api)
+| Labels               | GET              | **Yes**             | `/loki/api/v1/label`       | [View Docs](https://github.com/metrico/qryn/wiki/HTTP-API#logql-http-api)
+| Label Values         | GET              | **Yes**             | `/loki/api/v1/label/name/values` | [View Docs](https://github.com/metrico/qryn/wiki/HTTP-API#logql-http-api)
+| Tail                 | GET              | **Yes**             | `/loki/api/v1/tail`        | [View Docs](https://github.com/metrico/qryn/wiki/HTTP-API#logql-http-api)
+| Ready                | GET              | **Yes**             | `/ready`                   | [View Docs](https://github.com/metrico/qryn/wiki/HTTP-API#logql-http-api)
 
 
 ## Tempo API
 
 | **Name**             | **Type**           | **Support**         | **APIs.**                         | **Docs**    
 |----------------------|--------------------|---------------------|-----------------------------------|--------------
-| Name.                | Type.              | **Yes**             | `/something`                      | [View Docs](/feature/name.md)
+| Push                 | POST               | **Yes**             | `/tempo/api/push`                                | [View Docs](/api/tempo.md)
+| Query Spans          | GET                | **Yes**             | `/api/v2/spans`                                | [View Docs](/api/tempo.md)
+| Query Traces         | GET                | **Yes**             | `/api/traces/{traceId}`                                | [View Docs](/api/tempo.md)
+| Labels               | GET                | **Yes**             | `/api/search/tags`                                | [View Docs](/api/tempo.md)
+| Label Values         | GET                | **Yes**             | `/api/search/tag/{tags}/values`                                | [View Docs](/api/tempo.md)
+
+
+ 
+ /api/v2/spans
+ /api/traces/{traceId}
+ /api/search/tags
+ /api/search/tag/{tags}/values
 
 
 ## Prometheus API
