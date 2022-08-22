@@ -1,8 +1,10 @@
-# Supported Features
+# Supported API Features
 
-At the time of writing this doc, **qryn** supports the following features:
+At the time of writing this doc, **qryn** supports the following APIs are supported:
 
 ## LogQL API
+
+🟢 INSERT 🟢 QUERY
 
 | **Name**             | **Type**         | **Support**         | **APIs.**               | **Docs**    
 |----------------------|------------------|---------------------|-------------------------|--------------
@@ -16,6 +18,8 @@ At the time of writing this doc, **qryn** supports the following features:
 
 
 ## Tempo API
+
+🟢 INSERT 🟢 QUERY
 
 | **Name**             | **Type**           | **Support**         | **APIs.**                         | **Docs**    
 |----------------------|--------------------|---------------------|-----------------------------------|--------------
@@ -35,6 +39,9 @@ At the time of writing this doc, **qryn** supports the following features:
 
 ## Prometheus API
 
+🟢 INSERT 🟡 QUERY
+
+
 | **Name**             | **Type**           | **Support**         | **APIs.**                         | **Docs**    
 |----------------------|--------------------|---------------------|-----------------------------------|--------------
 | Remote Write         | POST               | **Yes**             | `/api/v1/prom/remote/write`       | [View Docs](https://github.com/metrico/qryn/blob/master/qryn.js#L388)
@@ -49,6 +56,8 @@ At the time of writing this doc, **qryn** supports the following features:
 
 ## Elastic API
 
+🟢 INSERT
+
 | **Name**             | **Type**           | **Support**         | **APIs.**                         | **Docs**    
 |----------------------|--------------------|---------------------|-----------------------------------|--------------
 | Index                | POST               | **Yes**             | `/:target/_doc`                   | [View Docs](https://github.com/metrico/qryn/blob/master/qryn.js#L318)
@@ -60,7 +69,9 @@ At the time of writing this doc, **qryn** supports the following features:
 
 ## Influx API
 
+🟢 INSERT
+
 | **Name**             | **Type**           | **Support**         | **APIs.**                         | **Docs**    
 |----------------------|--------------------|---------------------|-----------------------------------|--------------
-| Write                | POST              | **Yes**             | `/influx/api/v2/write`             | [View Docs](https://github.com/metrico/qryn/blob/master/qryn.js#L388)
+| Write                | POST               | **Yes**             | `/influx/api/v2/write`            | [View Docs](https://github.com/metrico/qryn/blob/master/qryn.js#L388)
 
