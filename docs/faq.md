@@ -16,6 +16,19 @@ Why not? Alternatives are good and can help accelerate evolution in an lively ec
 
 ## Technology
 
+?> What is the underlying design?
+
+**qryn** implements a complete LogQL API buffered by a fast bulking **LRU** sitting on top of **ClickHouse** tables and relying on its *columnar search and insert performance alongside solid distribution and clustering capabilities* for stored data. qryn does not parse or index incoming logs, but rather groups log streams using the same label system as Prometheus and supports LogQL, PromQL and Tempo APIs for querying data back.
+
+On top of this dataset, multiple ingestion APIs and query languages are implemented, such as _PromQL, Tempo, Influx, Elastic and others._
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/1423657/54091852-5ce91000-4385-11e9-849d-998c1e5d3243.png" />
+</p>
+
+---
+
+
 ?> What exactly does _qryn_ support?
 
 **qryn** is an API polyglot and supports multiple standards at once, out of the box.
