@@ -4,7 +4,9 @@
 
 <a name="grafana" id="grafana"></a>
 
-Let's connect our **qryn** to any Grafana instance using just _native datasources_
+Let's connect **qryn** to _any_ Grafana instance in seconds using _native datasources_
+
+![image](https://user-images.githubusercontent.com/1423657/184538670-6db7a0b4-e3db-4dee-af41-ababa1098728.png)
 
 ?> Using Grafana `8.2+` or `9.0+` is required to enjoy all available features
 
@@ -15,7 +17,7 @@ Connect Grafana to **qryn** using the _built-in_ `Loki` datasource
 
 
 #### Manual Provisioning
-* Log into your Grafana instance
+* Log into your Grafana or Grafana Cloud instance
 * Browse to `Configuration` > `Data Sources` via the ⚙️ icon on the left sidebar
 * Click the big `+ Add` data source button
 * Choose `Loki` from the list
@@ -55,7 +57,7 @@ datasources:
 Connect Grafana to **qryn** using the _built-in_ `Prometheus` datasource
 
 #### Manual Provisioning
-* Log into your Grafana instance
+* Log into your Grafana or Grafana Cloud instance
 * Browse to `Configuration` > `Data Sources` via the ⚙️ icon on the left sidebar
 * Click the big `+ Add` data source button
 * Choose `Prometheus` from the list
@@ -87,7 +89,7 @@ datasources:
 Connect Grafana to **qryn** using the _built-in_ `Tempo` datasource
 
 #### Manual Provisioning
-* Log into your Grafana instance
+* Log into your Grafana or Grafana Cloud instance
 * Browse to `Configuration` > `Data Sources` via the ⚙️ icon on the left sidebar
 * Click the big `+ Add` data source button
 * Choose `Tempo` from the list
@@ -122,5 +124,4 @@ datasources:
 
 <!-- tabs:end -->
 
-![image](https://user-images.githubusercontent.com/1423657/184538670-6db7a0b4-e3db-4dee-af41-ababa1098728.png)
 
