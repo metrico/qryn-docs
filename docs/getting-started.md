@@ -48,6 +48,20 @@ Let's use the **qryn** `Tempo` datasource to find traces for `{job="dummy-server
 
 ![image](https://user-images.githubusercontent.com/1423657/184548814-b5a4c641-010e-47b1-91c8-5aa402a85908.png)
 
+### PromQL
+#### Visualize metrics using PromQL 📈
+
+#### Find a Label 🏷️
+
+Let's use our **qryn** `Loki` datasource find metrics for label `cpu_percent_value`
+
+![image](https://user-images.githubusercontent.com/1423657/185901793-37529481-5201-474f-b01e-b30386a8ef89.png)
+
+##### Visualize metrics 📊
+
+Let's calculate the `rate` for our matching metrics 
+
+![image](https://user-images.githubusercontent.com/1423657/185901314-b94082cf-b2ea-4fc2-93df-5d11e9fe055c.png)
 
 ### Go Pro 🥊
 
