@@ -7,6 +7,7 @@ Stack configuration is 100% based on [ENV](env.md) parameters passed to the proc
 <!-- tabs:start -->
 
 #### ** NPM **
+<a id=npm name=npm></a>
 
 ![image](https://user-images.githubusercontent.com/1423657/184507827-9087fc2d-457b-42cd-ae2e-1c894160745b.png ':size=100')
 
@@ -29,6 +30,7 @@ cd $(dirname $(readlink -f `which qryn`)) \
 
 
 #### ** PM2 **
+<a id=pm2 name=pm2></a>
 
 ![image](https://user-images.githubusercontent.com/1423657/184507827-9087fc2d-457b-42cd-ae2e-1c894160745b.png ':size=100')
 
@@ -56,6 +58,7 @@ pm2 startup
 ?> That's it! You are ready to access the stack using qryn-view or Grafana
 
 #### ** GIT **
+<a id=git name=git></a>
 
 ![image](https://user-images.githubusercontent.com/1423657/184507866-9e43ae95-6974-4f0b-bdf3-7a8d05f43d8d.png ':size=100')
 
@@ -77,6 +80,7 @@ node qryn.js
 ?> That's it! You are ready to access the stack using qryn-view or Grafana
 
 #### ** Docker **
+<a id=docker name=docker></a>
 
 ![image](https://user-images.githubusercontent.com/1423657/184507884-624b9598-62e1-413f-854e-8210ecac4e75.png ':size=300x100')
 
@@ -118,6 +122,7 @@ Follow this [guide](https://github.com/metrico/opentelemetry-trace-sampling-demo
 ?> That's it - demo logs included! Just access your stack using [qryn-view or Grafana](getting-started)
 
 #### ** Kubernetes **
+<a id=k8s name=k8s></a>
 
 ![image](https://user-images.githubusercontent.com/1423657/184507942-cb195a16-b6d1-451a-9d80-00550f261048.png ':size=100')
 
@@ -204,6 +209,7 @@ status:
 ?> That's it - demo logs included! Just access your stack using qryn-view or Grafana
 
 #### ** Bun **
+<a id=bun name=bun></a>
 
 ![image](https://user-images.githubusercontent.com/1423657/185789758-d7366d2f-7b59-4cda-8bf4-198214581dd6.png ':size=100')
 
