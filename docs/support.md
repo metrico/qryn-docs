@@ -8,12 +8,12 @@ At the time of writing this doc, **qryn** supports the following APIs are suppor
 
 | **Name**             | **Type**         | **Support**         | **APIs.**               | **Docs**    
 |----------------------|------------------|---------------------|-------------------------|--------------
-| Push                 | POST             | **Yes**             | `/loki/api/v1/push`        | [View Docs](https://github.com/metrico/qryn/wiki/HTTP-API#logql-http-api)
-| Query                | GET              | **Yes**             | `/loki/api/v1/query`       | [View Docs](https://github.com/metrico/qryn/wiki/HTTP-API#logql-http-api)
-| Query Range          | GET              | **Yes**             | `/loki/api/v1/query_range` | [View Docs](https://github.com/metrico/qryn/wiki/HTTP-API#logql-http-api)
-| Labels               | GET              | **Yes**             | `/loki/api/v1/label`       | [View Docs](https://github.com/metrico/qryn/wiki/HTTP-API#logql-http-api)
-| Label Values         | GET              | **Yes**             | `/loki/api/v1/label/name/values` | [View Docs](https://github.com/metrico/qryn/wiki/HTTP-API#logql-http-api)
-| Tail                 | GET              | **Yes**             | `/loki/api/v1/tail`        | [View Docs](https://github.com/metrico/qryn/wiki/HTTP-API#logql-http-api)
+| Push                 | POST             | **Yes**             | `/loki/api/v1/push`        | [View Docs](https://github.com/metrico/qryn/wiki/HTTP-API#lokiapiv1push)
+| Query                | GET              | **Yes**             | `/loki/api/v1/query`       | [View Docs](https://github.com/metrico/qryn/wiki/HTTP-API#lokiapiv1query)
+| Query Range          | GET              | **Yes**             | `/loki/api/v1/query_range` | [View Docs](https://github.com/metrico/qryn/wiki/HTTP-API#lokiapiv1query_range)
+| Labels               | GET              | **Yes**             | `/loki/api/v1/label`       | [View Docs](https://github.com/metrico/qryn/wiki/HTTP-API#lokiapiv1label)
+| Label Values         | GET              | **Yes**             | `/loki/api/v1/label/name/values` | [View Docs](https://github.com/metrico/qryn/wiki/HTTP-API#lokiapiv1labelnamevalues)
+| Tail                 | GET              | **Yes**             | `/loki/api/v1/tail`        | [View Docs](https://github.com/metrico/qryn/wiki/HTTP-API#lokiapiv1tail)
 | Ready                | GET              | **Yes**             | `/ready`                   | [View Docs](https://github.com/metrico/qryn/wiki/HTTP-API#logql-http-api)
 
 
@@ -28,13 +28,6 @@ At the time of writing this doc, **qryn** supports the following APIs are suppor
 | Query Traces         | GET                | **Yes**             | `/api/traces/{traceId}`                                | [View Docs](/api/tempo.md)
 | Labels               | GET                | **Yes**             | `/api/search/tags`                                | [View Docs](/api/tempo.md)
 | Label Values         | GET                | **Yes**             | `/api/search/tag/{tags}/values`                                | [View Docs](/api/tempo.md)
-
-
- 
- /api/v2/spans
- /api/traces/{traceId}
- /api/search/tags
- /api/search/tag/{tags}/values
 
 
 ## Prometheus API
@@ -52,8 +45,6 @@ At the time of writing this doc, **qryn** supports the following APIs are suppor
 | Label Values          | GET/POST           | **Yes**             | `/api/v1/label/:name/values`     | [View Docs](https://github.com/metrico/qryn/blob/master/qryn.js#L392)
 
 
-
-
 ## Elastic API
 
 🟢 INSERT
@@ -66,6 +57,7 @@ At the time of writing this doc, **qryn** supports the following APIs are suppor
 | Index                | PUT                | **Yes**             | `/:target/_create/:id`            | [View Docs](https://github.com/metrico/qryn/blob/master/qryn.js#L318)
 | Bulk                 | POST               | **Yes**             | `/_bulk`                          | [View Docs](https://github.com/metrico/qryn/blob/master/qryn.js#L318)
 | Bulk                 | POST               | **Yes**             | `/:target/_bulk`                  | [View Docs](https://github.com/metrico/qryn/blob/master/qryn.js#L318)
+
 
 ## Influx API
 
