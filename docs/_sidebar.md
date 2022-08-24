@@ -26,7 +26,7 @@
   * [FAQ](faq.md)
   * 
 * **Tools**
-  * [qryn-view](https://github.com/metrico/qryn-view)
+  * [View](https://github.com/metrico/qryn-view)
   * [vLogQL](https://github.com/metrico/vLogql)
   * [Fluxpipe](https://github.com/metrico/fluxpipe)
   * [ClickHouse-Mate](https://github.com/metrico/clickhouse-mate)
