@@ -20,7 +20,7 @@ The following `ENV` parameters can be used to configure and control **qryn:cloud
 
 | ENV   	                |Default   	|Usage   	|
 |------------------------|---	    |---		|
-| QRYNCLOUD_LICENSE | None | License Key provided by QXIP Team |
+| QRYNCLOUD_LICENSE | None | License Key provided by QXIP |
 | ---- | --- | ---- |
 | QRYN_DATABASE_DATA_0_USER | default | Clickhouse Username |
 | QRYN_DATABASE_DATA_0_PASS | qryn | Clickhouse Password |
@@ -53,7 +53,7 @@ The following `ENV` parameters can be used to configure and control **qryn:cloud
 
 | ENV   	                |Default   	|Usage   	|
 |------------------------|---	    |---		|
-| QRYNCLOUD_LICENSE | None | License Key provided by QXIP Team |
+| QRYNCLOUD_LICENSE | None | License Key provided by QXIP |
 | ---- | --- | ---- |
 | QRYN_DATABASE_DATA_0_USER | default | Clickhouse Username |
 | QRYN_DATABASE_DATA_0_NODE | clickhouse | Clickhouse Node Name |
