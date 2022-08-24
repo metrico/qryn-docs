@@ -1,6 +1,6 @@
 # qryn:cloud 
 
-!> qryn:cloud requires activation licenses. please [contact us](mailto:info@qxip.net) to obtain your keys.
+!> qryn:cloud requires activation tokens. please [contact us](mailto:info@qxip.net) to obtain your QRYNCLOUD_LICENSE
 
 ## 📦 Installation
 
@@ -49,7 +49,6 @@ services:
       - 3100:3100
     environment:
       - CLICKHOUSE_SERVER=clickhouse-server
-      - DEBUG=true
       - QRYN_DATABASE_DATA_0_NAME=qryn
       - QRYN_DATABASE_DATA_0_HOST=clickhouse.server.com
       - QRYN_DATABASE_DATA_0_PORT=9000
@@ -62,6 +61,7 @@ services:
       - QRYN_SYSTEM_SETTINGS_DB_TIMER=0.5
       - QRYN_SYSTEM_SETTINGS_DB_BULK=1000
       - QRYN_LOG_SETTINGS_STDOUT=true
+      - QRYNCLOUD_LICENSE=XXXXXXXXX-XXXXXXXXXXXX-XXXXXXXX
     command:
       - sh
       - -c
@@ -77,7 +77,6 @@ services:
       - 3200:3200
     environment:
       - CLICKHOUSE_SERVER=clickhouse-server
-      - DEBUG=true
       - QRYN_DATABASE_DATA_0_NAME=qryn
       - QRYN_DATABASE_DATA_0_HOST=clickhouse.server.com
       - QRYN_DATABASE_DATA_0_PORT=9000
@@ -91,6 +90,7 @@ services:
       - QRYN_SYSTEM_SETTINGS_DB_TIMER=0.5
       - QRYN_SYSTEM_SETTINGS_DB_BULK=1000
       - QRYN_LOG_SETTINGS_STDOUT=true
+      - QRYNCLOUD_LICENSE=XXXXXXXXX-XXXXXXXXXXXX-XXXXXXXX
 ```
 
 ##### Run Compose
