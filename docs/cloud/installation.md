@@ -6,7 +6,7 @@
 
 Let's install **qryn cloud** in a snap. All you need is a supported OS or `Docker` installed.
 
-Stack configuration is 100% based on [ENV](env.md) parameters passed to the process or container.
+Stack configuration is 100% based on [ENV](/cloud/env.md) parameters passed to the process or container.
 
 <!-- tabs:start -->
 
