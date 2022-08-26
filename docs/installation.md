@@ -233,6 +233,69 @@ qryn
 
 ?> That's it! You are ready to use **qryn**
 
+#### ** RPi4/aarch64 **
+<a id=bun name=raspberry></a>
 
+Install a full **qryn** stack on an **aarch64** platform
+
+### Requirements
+- RPI 4 (aarch64)
+- ARMv8 64-Bit OS (DietPI or Raspbian)
+
+<img src="https://j6z7x9q7.rocketcdn.me/wp-content/uploads/2019/09/Heatsink-case-goud-1.jpg" width=150 />
+
+
+#### Install ClickHouse (aarch64)
+Install ClickHouse and define the default user `password`
+```
+curl -O 'https://builds.clickhouse.com/master/aarch64/clickhouse' && chmod a+x ./clickhouse
+./clickhouse install
+```
+
+Start the ClickHouse service:
+```
+sudo clickhouse start
+```
+
+#### Install NodeJS
+```
+curl -sSL https://deb.nodesource.com/setup_16.x | sudo bash -
+sudo apt install -y nodejs
+```
+
+#### Install cLoki
+Install cloki using the chosen ClickHouse `password`
+```
+npm install -g @pastash/pastash @pastash/output_loki cloki
+cd $(dirname $(readlink -f `which cloki`)) && \
+      CLICKHOUSE_AUTH="default:password" \ 
+      CLICKHOUSE_SERVER="localhost" \
+      CLICKHOUSE_DB="cloki" \
+      pm2 start cloki --name "cloki"
+```
+
+#### Install Grafana
+```
+wget https://dl.grafana.com/oss/release/grafana_8.3.3_arm64.deb
+sudo dpkg -i grafana_8.3.3_arm64.deb
+```
+
+Add a datasource for cLoki via UI following this [provisioning example]([https://github.com/metrico/qryn-oss-demo/blob/main/grafana/provisioning/datasources/datasource.yml](https://gist.githubusercontent.com/lmangani/a4be2275731783b37e0fd6f67439e5d5/raw/5a4d193976142c729197ae175e59bb927820a58f/datasource.yml))
+
+```yaml
+        apiVersion: 1
+        datasources:
+          - name: cLoki
+            type: loki
+            access: proxy
+            url: http://localhost:3100
+```
+
+#### TLDR;
+
+The above procedure is available as a [shell script](https://gist.githubusercontent.com/lmangani/a4be2275731783b37e0fd6f67439e5d5/raw/5a4d193976142c729197ae175e59bb927820a58f/rpi4_cloki_install.sh)
+
+
+?> That's it! You are ready to use **qryn**
 
 <!-- tabs:end -->
