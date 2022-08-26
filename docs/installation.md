@@ -262,15 +262,15 @@ curl -sSL https://deb.nodesource.com/setup_16.x | sudo bash -
 sudo apt install -y nodejs
 ```
 
-#### Install cLoki
-Install cloki using the chosen ClickHouse `password`
+#### Install qryn
+Install **qryn** using the chosen ClickHouse `password`
 ```
-npm install -g @pastash/pastash @pastash/output_loki cloki
-cd $(dirname $(readlink -f `which cloki`)) && \
+npm install -g qryn @pastash/pastash @pastash/output_loki
+cd $(dirname $(readlink -f `which qryn`)) && \
       CLICKHOUSE_AUTH="default:password" \ 
       CLICKHOUSE_SERVER="localhost" \
-      CLICKHOUSE_DB="cloki" \
-      pm2 start cloki --name "cloki"
+      CLICKHOUSE_DB="qryn" \
+      pm2 start qryn --name "qryn"
 ```
 
 #### Install Grafana
@@ -279,12 +279,12 @@ wget https://dl.grafana.com/oss/release/grafana_8.3.3_arm64.deb
 sudo dpkg -i grafana_8.3.3_arm64.deb
 ```
 
-Add a datasource for cLoki via UI following this [provisioning example]([https://github.com/metrico/qryn-oss-demo/blob/main/grafana/provisioning/datasources/datasource.yml](https://gist.githubusercontent.com/lmangani/a4be2275731783b37e0fd6f67439e5d5/raw/5a4d193976142c729197ae175e59bb927820a58f/datasource.yml))
+Add a datasource for qryn via UI following this [provisioning example]([https://github.com/metrico/qryn-oss-demo/blob/main/grafana/provisioning/datasources/datasource.yml](https://gist.githubusercontent.com/lmangani/a4be2275731783b37e0fd6f67439e5d5/raw/5a4d193976142c729197ae175e59bb927820a58f/datasource.yml))
 
 ```yaml
         apiVersion: 1
         datasources:
-          - name: cLoki
+          - name: Loki
             type: loki
             access: proxy
             url: http://localhost:3100
