@@ -2,7 +2,7 @@
 
 Let's install **qryn** in a snap. All you need is `NodeJS` [14.x-16.x](https://github.com/nodesource/distributions) or `Docker` installed.
 
-Stack configuration is 100% based on [ENV](env.md) parameters passed to the process or container.
+Configuration is performed using [ENV](env.md) parameters passed to the process or container.
 
 <!-- tabs:start -->
 
