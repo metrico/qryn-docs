@@ -264,6 +264,8 @@ sudo apt install -y nodejs
 Install **qryn** using the chosen ClickHouse `password`
 ```
 npm install -g qryn @pastash/pastash @pastash/output_loki
+```
+```
 CLICKHOUSE_AUTH="default:password" \ 
 CLICKHOUSE_SERVER="localhost" \
 CLICKHOUSE_DB="qryn" \
