@@ -152,7 +152,7 @@ kubectl apply -f qryn-service.yaml,qryn-deployment.yaml
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: cloki
+  name: qryn
   labels:
     io.metrico.service: qryn
 spec:
@@ -164,10 +164,10 @@ spec:
   template:
     metadata:
       annotations:
-        cloki.cmd: cloki.org
+        qryn.cmd: qryn.dev
       creationTimestamp: null
       labels:
-        io.metrico.service: cloki
+        io.metrico.service: qryn
     spec:
       containers:
         - env:
@@ -194,7 +194,7 @@ metadata:
   creationTimestamp: null
   labels:
     io.metrico.service: qryn
-  name: cloki
+  name: qryn
 spec:
   ports:
     - name: "3100"
