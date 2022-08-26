@@ -272,8 +272,8 @@ pm2 start qryn --name "qryn"
 
 #### Install Grafana
 ```
-wget https://dl.grafana.com/oss/release/grafana_8.3.3_arm64.deb
-sudo dpkg -i grafana_8.3.3_arm64.deb
+wget https://dl.grafana.com/oss/release/grafana_9.1.1_arm64.deb
+sudo dpkg -i grafana_9.1.1_arm64.deb
 ```
 
 Add a datasource for qryn via UI or by using this [provisioning example]([https://github.com/metrico/qryn-oss-demo/blob/main/grafana/provisioning/datasources/datasource.yml](https://gist.githubusercontent.com/lmangani/a4be2275731783b37e0fd6f67439e5d5/raw/5a4d193976142c729197ae175e59bb927820a58f/datasource.yml))
