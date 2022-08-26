@@ -19,11 +19,10 @@ sudo npm install -g qryn
 Start `qryn` using [ENV](env.md) variables for its settings:
 
 ```bash
-cd $(dirname $(readlink -f `which qryn`)) \
-  && CLICKHOUSE_SERVER="my.clickhouse.server" \
-  CLICKHOUSE_AUTH="default:password" \
-  CLICKHOUSE_DB="qryn" \
-  qryn
+CLICKHOUSE_SERVER="my.clickhouse.server" \
+CLICKHOUSE_AUTH="default:password" \
+CLICKHOUSE_DB="qryn" \
+qryn
 ```
 
 ?> That's it! You are ready to access the stack using qryn-view or Grafana
@@ -42,11 +41,10 @@ sudo npm install -g qryn pm2
 
 Start `qryn` using [ENV](env.md) variables for its settings:
 ```bash
-cd $(dirname $(readlink -f `which qryn`)) \
-  && CLICKHOUSE_SERVER="my.clickhouse.server" \
-  CLICKHOUSE_AUTH="default:password" \
-  CLICKHOUSE_DB="qryn" \
-  pm2 start qryn
+CLICKHOUSE_SERVER="my.clickhouse.server" \
+CLICKHOUSE_AUTH="default:password" \
+CLICKHOUSE_DB="qryn" \
+pm2 start qryn
 ```
 
 Save your settings and install as a system service
@@ -266,11 +264,10 @@ sudo apt install -y nodejs
 Install **qryn** using the chosen ClickHouse `password`
 ```
 npm install -g qryn @pastash/pastash @pastash/output_loki
-cd $(dirname $(readlink -f `which qryn`)) && \
-      CLICKHOUSE_AUTH="default:password" \ 
-      CLICKHOUSE_SERVER="localhost" \
-      CLICKHOUSE_DB="qryn" \
-      pm2 start qryn --name "qryn"
+CLICKHOUSE_AUTH="default:password" \ 
+CLICKHOUSE_SERVER="localhost" \
+CLICKHOUSE_DB="qryn" \
+pm2 start qryn --name "qryn"
 ```
 
 #### Install Grafana
