@@ -236,14 +236,13 @@ qryn
 #### ** RPi4/aarch64 **
 <a id=bun name=raspberry></a>
 
+<img src="https://j6z7x9q7.rocketcdn.me/wp-content/uploads/2019/09/Heatsink-case-goud-1.jpg" width=150 />
+
 Install a full **qryn** stack on an **aarch64** platform
 
 ### Requirements
 - RPI 4 (aarch64)
 - ARMv8 64-Bit OS (DietPI or Raspbian)
-
-<img src="https://j6z7x9q7.rocketcdn.me/wp-content/uploads/2019/09/Heatsink-case-goud-1.jpg" width=150 />
-
 
 #### Install ClickHouse (aarch64)
 Install ClickHouse and define the default user `password`
