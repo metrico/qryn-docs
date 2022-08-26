@@ -279,7 +279,10 @@ wget https://dl.grafana.com/oss/release/grafana_8.3.3_arm64.deb
 sudo dpkg -i grafana_8.3.3_arm64.deb
 ```
 
-Add a datasource for qryn via UI following this [provisioning example]([https://github.com/metrico/qryn-oss-demo/blob/main/grafana/provisioning/datasources/datasource.yml](https://gist.githubusercontent.com/lmangani/a4be2275731783b37e0fd6f67439e5d5/raw/5a4d193976142c729197ae175e59bb927820a58f/datasource.yml))
+Add a datasource for qryn via UI or by using this [provisioning example]([https://github.com/metrico/qryn-oss-demo/blob/main/grafana/provisioning/datasources/datasource.yml](https://gist.githubusercontent.com/lmangani/a4be2275731783b37e0fd6f67439e5d5/raw/5a4d193976142c729197ae175e59bb927820a58f/datasource.yml))
+
+![image](https://user-images.githubusercontent.com/1423657/186918652-d37c11de-a7a8-4d2c-a104-4a63c2da51e5.png)
+
 
 ```yaml
         apiVersion: 1
