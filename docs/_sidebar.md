@@ -23,6 +23,7 @@
 
 * **Misc**
   * [About](motivations.md "QRYN – Motivations – LogQL for ClickHouse and beyond")
+  * [Performance](performance.md)
   * [FAQ](faq.md)
   * 
 * **Tools**
