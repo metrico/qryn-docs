@@ -1,4 +1,4 @@
-# _Frequently Asked Questions_
+# 🗨️ _Frequently Asked Questions_
 
 ## General
 
