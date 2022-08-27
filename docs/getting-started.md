@@ -31,7 +31,7 @@ Let's filter our logs with a string match for `peach`
 
 ![ezgif com-gif-maker (13)](https://user-images.githubusercontent.com/1423657/184545713-3f6e90ba-3c6d-4dc4-b897-d10373feb695.gif)
 
-##### Calculate metrics 📊
+#### Calculate Metrics 📊
 
 Let's calculate the minute rate for our matching logs 
 ```
@@ -39,19 +39,6 @@ rate({job="dummy-server"} |= "peach" [1m])
 ```
 
 ![image](https://user-images.githubusercontent.com/1423657/184548882-37268c27-7a01-4787-8259-11327158c2d5.png)
-
-
-### Tempo <!-- {docsify-ignore-all} -->
-#### Find a Trace using LogQL 🧲
-
-Let's use the **qryn** `Tempo` datasource to find traces for `{job="dummy-server"}` using _LogQL or Beta Search_
-
-##### Beta Search
-![image](https://user-images.githubusercontent.com/1423657/186616553-ca34e26a-6a59-4a04-98e8-c27fdf8f6159.png)
-
-##### Loki Search
-![image](https://user-images.githubusercontent.com/1423657/184548814-b5a4c641-010e-47b1-91c8-5aa402a85908.png)
-
 
 
 ### PromQL <!-- {docsify-ignore-all} -->
@@ -68,6 +55,19 @@ Let's use our **qryn** `Loki` datasource find metrics for label `cpu_percent_val
 Let's calculate the `rate` for our matching metrics 
 
 ![image](https://user-images.githubusercontent.com/1423657/185901314-b94082cf-b2ea-4fc2-93df-5d11e9fe055c.png)
+
+### Tempo <!-- {docsify-ignore-all} -->
+#### Find a Trace using LogQL 🧲
+
+Let's use the **qryn** `Tempo` datasource to find traces for `{job="dummy-server"}` using _LogQL or Beta Search_
+
+##### Beta Search
+![image](https://user-images.githubusercontent.com/1423657/186616553-ca34e26a-6a59-4a04-98e8-c27fdf8f6159.png)
+
+##### Loki Search
+![image](https://user-images.githubusercontent.com/1423657/184548814-b5a4c641-010e-47b1-91c8-5aa402a85908.png)
+
+
 
 ### Go Pro 🥊
 
