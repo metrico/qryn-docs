@@ -46,7 +46,7 @@ rate({job="dummy-server"} |= "peach" [1m])
 
 #### Find a Label 🏷️
 
-Let's use our **qryn** `Loki` datasource find metrics for label `cpu_percent_value`
+Let's use our **qryn** `Prometheus` datasource find metrics for label `cpu_percent_value`
 
 ![image](https://user-images.githubusercontent.com/1423657/185901793-37529481-5201-474f-b01e-b30386a8ef89.png)
 
