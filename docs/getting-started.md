@@ -11,7 +11,7 @@ Let's explore using [Grafana](guide/datasources.md) and its _amazing visualizati
 
 ![grafanaexplore](https://user-images.githubusercontent.com/1423657/184538094-13c11500-24ef-4468-9f33-dc9d564238e3.gif)
 
-### LogQL
+### LogQL <!-- {docsify-ignore-all} -->
 #### Find a Label 🏷️
 
 Let's use our **qryn** `Loki` datasource find logs with label _dummy-server_
@@ -41,7 +41,7 @@ rate({job="dummy-server"} |= "peach" [1m])
 ![image](https://user-images.githubusercontent.com/1423657/184548882-37268c27-7a01-4787-8259-11327158c2d5.png)
 
 
-### Tempo
+### Tempo <!-- {docsify-ignore-all} -->
 #### Find a Trace using LogQL 🧲
 
 Let's use the **qryn** `Tempo` datasource to find traces for `{job="dummy-server"}` using _LogQL or Beta Search_
@@ -54,7 +54,7 @@ Let's use the **qryn** `Tempo` datasource to find traces for `{job="dummy-server
 
 
 
-### PromQL
+### PromQL <!-- {docsify-ignore-all} -->
 #### Visualize metrics using PromQL 📈
 
 #### Find a Label 🏷️
