@@ -7,22 +7,23 @@ The following protocols and APIs integrations are supported for ingesting Logs:
 
 ![image](https://user-images.githubusercontent.com/1423657/184487816-fcc86e34-0395-4927-8ceb-33c2ad3e63d4.gif)
 
-?> **qryn** API are 100% compatible with Grafana Loki for data ingestion
+?> **qryn** APIs are compatible with LogQL and [many ingestion formats](support.md)
 
 This means _any Loki compatible client_ can be used with **qryn** without modifications! 🏁
 
-### [Vector](https://vector.dev/docs/reference/configuration/sinks/loki/) + [Examples](https://component-pages--vector-project.netlify.app/guides/integrate/sources/http/loki/)
+#### [Vector](https://vector.dev/docs/reference/configuration/sinks/loki/) + [Examples](https://component-pages--vector-project.netlify.app/guides/integrate/sources/http/loki/)
 Vector is a popular lightweight, ultra-fast tool for building observability pipelines
 
-### [Grafana Agent](https://grafana.com/docs/grafana-cloud/data-configuration/logs/collect-logs-with-agent/)+ [Examples](https://grafana.com/docs/grafana-cloud/quickstart/logs_agent_linuxnode/)
+#### [Grafana Agent](https://grafana.com/docs/grafana-cloud/data-configuration/logs/collect-logs-with-agent/)+ [Examples](https://grafana.com/docs/grafana-cloud/quickstart/logs_agent_linuxnode/)
 Grafana Agent is a telemetry collector for sending metrics, logs, and trace data
-### [Promtail](https://grafana.com/docs/grafana-cloud/data-configuration/logs/collect-logs-with-promtail/)
+
+#### [Promtail](https://grafana.com/docs/grafana-cloud/data-configuration/logs/collect-logs-with-promtail/)
 Promtail is an agent which ships the contents of local logs to LogQL APIs
 
-### [Fluentd](https://grafana.com/docs/loki/latest/clients/fluentd/) + [Examples](https://grafana.com/blog/2022/06/23/how-to-send-logs-to-grafana-loki-with-the-opentelemetry-collector-using-fluent-forward-and-filelog-receivers/#:~:text=Set%20up%20a%20Grafana%20Cloud,click%20the%20Send%20Logs%20button.)
+#### [Fluentd](https://grafana.com/docs/loki/latest/clients/fluentd/) + [Examples](https://grafana.com/blog/2022/06/23/how-to-send-logs-to-grafana-loki-with-the-opentelemetry-collector-using-fluent-forward-and-filelog-receivers/#:~:text=Set%20up%20a%20Grafana%20Cloud,click%20the%20Send%20Logs%20button.)
 Fluentd is an open source data collector for unified logging layer conpatible with LogQL
 
-### [Logstash](https://grafana.com/docs/loki/latest/clients/logstash/)
+#### [Logstash](https://grafana.com/docs/loki/latest/clients/logstash/)
 Logstash is a data processing pipeline that ingests, transforms and sends data to Elastic and other systems
 
 !> Is your favourite client not listed? please submit a suggestion and we'll add it 👍
