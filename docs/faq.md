@@ -1,5 +1,7 @@
 # 🗨️ _Frequently Asked Questions_
 
+_Got any questions or ideas? Join our [matrix room](https://matrix.to/#/#qryn:matrix.org) and meet the team_
+
 ## General
 
 ?> What does _qryn_ mean? Why did you choose it?
