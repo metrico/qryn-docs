@@ -25,6 +25,16 @@ CLICKHOUSE_DB="qryn" \
 qryn
 ```
 
+Connect securely to _any_ ClickHouse hosted service:
+```
+CLICKHOUSE_SERVER="my.cloud.service" \
+CLICKHOUSE_PORT=9443 \
+CLICKHOUSE_PROTO="https" \
+CLICKHOUSE_AUTH="admin:supersecretpassword" \
+CLICKHOUSE_DB="qryn" \
+qryn
+```
+
 ?> That's it! You are ready to access the stack using qryn-view or Grafana
 
 
@@ -99,7 +109,11 @@ Use docker to get started in no time - use either a local or cloud ClickHouse in
     ports:
       - "3100:3100"
     environment:
-      - CLICKHOUSE_SERVER=http://user:pass@clickhouse-server:8123
+      - CLICKHOUSE_SERVER=clickhouse.hosted
+      - CLICKHOUSE_AUTH=admin:supersecretpassword
+      - CLICKHOUSE_PROTO=https
+      - CLICKHOUSE_PORT=8443
+      - CLICKHOUSE_DB=qryn
 ```
 
 !> Refer to the [configuration](env.md) for a list of supported parameters
