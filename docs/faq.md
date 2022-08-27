@@ -35,6 +35,14 @@ On top of this dataset, multiple ingestion APIs and query languages are implemen
 
 **qryn** is an API polyglot and supports multiple standards at once, out of the box.
 
+#### Logs
+Logs store event data that is usually text-based; they can describe an error or a success, or identify systems and processes, and correlate to other events. 
+#### Metrics
+Metrics are aggregatable and can be combined or divided to derive higher-level statistics. You can use metrics to monitor performance, request rates and errors. 
+#### Traces
+Traces reveal data that is relevant to a particular request, such as the duration of a process, an SQL query or the correlation ID of an inbound HTTP request. 
+
+
 
 ![image](https://user-images.githubusercontent.com/1423657/187046009-bc3d46d2-a5bd-400c-84e2-f6968a5a6bac.png)
 
