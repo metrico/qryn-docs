@@ -306,9 +306,7 @@ Add a datasource for qryn via UI or by using this [provisioning example]([https:
             url: http://localhost:3100
 ```
 
-#### TLDR;
-
-The above procedure is available as a [shell script](https://gist.githubusercontent.com/lmangani/a4be2275731783b37e0fd6f67439e5d5/raw/5a4d193976142c729197ae175e59bb927820a58f/rpi4_cloki_install.sh)
+**TLDR;** _The above procedure is available as a [shell script](https://gist.githubusercontent.com/lmangani/a4be2275731783b37e0fd6f67439e5d5/raw/5a4d193976142c729197ae175e59bb927820a58f/rpi4_cloki_install.sh)_
 
 
 ?> That's it! You are ready to use **qryn**
