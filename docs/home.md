@@ -1,12 +1,6 @@
-<p id=start align="center">
+<p id=start>
   
-  <!--
-  <h1 align="center">
-    <img src="https://github.com/metrico/qryn-docs/blob/main/docs/resources/images/favicon-32x32.png?raw=true" width=25 /> <i>ˈkwɪr..ɪŋ</i>
-  </h1>
-  -->
-  
-  <h3 align="center" style="font-weight: normal;font-size: 26px;">
+  <h2 style="font-weight: normal;font-size: 26px;">
      <b>qryn</b>: <i>the open-source polyglot observability stack</i><br/><br/>
     
      <img src="https://github.com/metrico/qryn-docs/blob/main/docs/resources/images/qryn_logo_trans.png?raw=true" width=50 />&nbsp;
@@ -19,7 +13,7 @@
      <img src="https://avatars.githubusercontent.com/u/54801242?s=200&v=4" width=50 /><br/>
     
      <img src="https://user-images.githubusercontent.com/1423657/184538094-13c11500-24ef-4468-9f33-dc9d564238e3.gif" width=500 class=border />
-  </h3>
+  </h2>
 </p>
 
 ?> ... it's pronounced /ˈkwɪr..ɪŋ/ or just _querying_
