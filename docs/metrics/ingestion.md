@@ -197,5 +197,18 @@ curl -i -XPOST -H "Content-Type: application/json" http://qryn:3100/loki/api/v1/
 ?> _That's it!_ You are now inserting metrics throug LogQL in **qryn**
 
 
+## ** Curl **
+
+No API guide would be complete without a Curl example - _and we're no exception!_
+
+We can easily insert labeled metrics using the `value` parameter in a _LogQL stream_:
+
+#### Insert Metrics
+```
+curl -i -XPOST -H "Content-Type: application/json" http://localhost:3100/loki/api/v1/push \
+     --data '{"streams":[{"labels":"{\"__name__\":\"test\"}","entries":[{"timestamp":"'"$(date --utc +%FT%T.%3NZ)"'", "value":100}]}]}'
+```
+
+?> _That's it!_ You are now inserting metrics throug Curl in **qryn**
 
 <!-- tabs:end -->
