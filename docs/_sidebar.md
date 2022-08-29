@@ -6,6 +6,7 @@
 
 * [Home](/?id=start)
 * **Overview**
+  * [Introduction](introduction.md "QRYN – Installation – LogQL for ClickHouse and beyond")
   * [Installation](installation.md "QRYN – Installation – LogQL for ClickHouse and beyond")
   * [Data Ingestion](ingestion.md "QRYN – Supported Components – LogQL for ClickHouse and beyond")
     * [Logs](logs/ingestion.md "QRYN – Supported Components – LogQL for ClickHouse and beyond")
