@@ -21,7 +21,7 @@ Grafana Agent is a telemetry collector for sending metrics, logs, and trace data
 Promtail is an agent which ships the contents of local logs to LogQL APIs
 
 #### [Fluentd](https://grafana.com/docs/loki/latest/clients/fluentd/) + [Examples](https://grafana.com/blog/2022/06/23/how-to-send-logs-to-grafana-loki-with-the-opentelemetry-collector-using-fluent-forward-and-filelog-receivers/#:~:text=Set%20up%20a%20Grafana%20Cloud,click%20the%20Send%20Logs%20button.)
-Fluentd is an open source data collector for unified logging layer conpatible with LogQL
+Fluentd is an open source data collector for unified logging layer compatible with LogQL
 
 #### [Logstash](https://grafana.com/docs/loki/latest/clients/logstash/)
 Logstash is a data processing pipeline that ingests, transforms and sends data to Elastic and other systems
