@@ -48,6 +48,8 @@ The following `ENV` parameters can be used to configure and control **qryn:cloud
 | QRYN_LOG_SETTINGS_MAX_AGE_DAYS | 7 | Retention in Days for log data |
 | QRYN_LOG_SETTINGS_ROTATION_HOURS | 24 | Rotation Interval in Hours for log data |
 
+?> The license is added without quotes. QRYNCLOUD_LICENSE=XXXXXX-XXXXXX-XXXXX
+
 #### ** qryn-writer **
 <a id=writer name=writer></a>
 
@@ -78,11 +80,9 @@ The following `ENV` parameters can be used to configure and control **qryn:cloud
 | QRYN_HTTPS_SETTINGS_ENABLE | false | Set to true to activate HTTPS protocol for writer |
 | QRYN_HTTPS_SETTINGS_HOST | "0.0.0.0" | Listen Host for HTTPS for Write API|
 | QRYN_HTTPS_SETTINGS_PORT | 3444 | Listen Port for HTTPS for Write API |
-| QRYN_HTTPS_SETTINGS_MIN-TLS-VERSION | "TLS1.2" | Set to min TLS version to accept |
-| QRYN_HTTPS_SETTINGS_MAX-TLS-VERSION | "TLS1.4" | Set to max TLS version to accept |
 | QRYN_HTTPS_SETTINGS_HTTP_REDIRECT | "loki" | Prefix for API e.g. /PREFIX/api/v1/labels |
-| QRYN_HTTPS_SETTINGS_CERT | false | Set to true to see debug messages about database in log |
-| QRYN_HTTPS_SETTINGS_KEY | false | Set to true for websocket reader interface |
+| QRYN_HTTPS_SETTINGS_CERT | None | Path to Certificate File for HTTPS |
+| QRYN_HTTPS_SETTINGS_KEY | None | Path to Key File for HTTPS |
 | ---- | --- | ---- |
 | QRYN_HTTP_CONNECT_CONNECT_TIMEOUT | 10 | Seconds before timeout |
 | ---- | --- | ---- |
@@ -91,6 +91,8 @@ The following `ENV` parameters can be used to configure and control **qryn:cloud
 | QRYN_LOG_SETTINGS_SYSLOG | true | Set to true to emit logs to syslog |
 | QRYN_LOG_SETTINGS_MAX_AGE_DAYS | 7 | Retention in Days for log data |
 | QRYN_LOG_SETTINGS_ROTATION_HOURS | 24 | Rotation Interval in Hours for log data |
+
+?> The license is added without quotes. QRYNCLOUD_LICENSE=XXXXXX-XXXXXX-XXXXX
 
 <!-- tabs:end -->
 
