@@ -204,4 +204,19 @@ _Done?_ Just wait a few seconds for the logs to flush and they will appear in **
 
 ?> That's it! You're now shipping logs straight off your ClickHouse core!
 
+## ** Curl **
+
+No API guide would be complete without a Curl example - _and we're no exception!_
+
+#### Insert Logs
+```
+curl -i -XPOST -H "Content-Type: application/json" http://localhost:3100/loki/api/v1/push \
+     --data '{"streams":[{"labels":"{\"type\":\"test\"}","entries":[{"timestamp":"'"$(date --utc +%FT%T.%3NZ)"'", "line":"hello qryn"}]}]}'
+```
+#### Insert Metrics
+```
+curl -i -XPOST -H "Content-Type: application/json" http://localhost:3100/loki/api/v1/push \
+     --data '{"streams":[{"labels":"{\"__name__\":\"test\"}","entries":[{"timestamp":"'"$(date --utc +%FT%T.%3NZ)"'", "value":100}]}]}'
+```
+
 <!-- tabs:end -->
