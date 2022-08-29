@@ -4,7 +4,7 @@
  
 ?> ... it's pronounced /ˈkwɪr..ɪŋ/ or just querying
 
-###### Less is More 
+#### Less is More 👍
 **qryn** was designed to be a fast, thin, polyglot API leveraging the the many strenghts of _ClickHouse_
 
 _Everything is simple and works out of the box. Batteries included!_ 🔋
@@ -30,8 +30,6 @@ Start querying instantly using [LogQL, PromQL, Flux or Temapo](getting-started.m
 🎉 _No limits using your data_ 
 
 Want more than our APIs offer? Access your data using ClickHouse SQL _for fun and compliance_.
-
-<img src="https://avatars.githubusercontent.com/u/54801242?s=200&v=4" width=50 /><br/>
 
 <!-- tabs:end --> 
 
