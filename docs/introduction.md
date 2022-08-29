@@ -1,6 +1,4 @@
-# Introduction
-
-Meet <b>qryn</b>: <i>the open-source polyglot observability framework</i><br/><br/>
+# Meet qryn
  
 ?> ... it's pronounced /ˈkwɪr..ɪŋ/ or just querying
 
