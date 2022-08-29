@@ -1,6 +1,6 @@
 # Introduction
 
-**qryn** was designed from the ground up to leverage the strenghts of ClickHouse and implemented as a thin API and processing layer on top of it.
+**qryn** was designed as a fast, thin API leveraging the the strenghts of ClickHouse
 
 This section describes some of the general design concepts and details the interaction between stack components.
 
