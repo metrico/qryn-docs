@@ -161,4 +161,52 @@ traces:
 
 This [article](https://grafana.com/blog/2020/11/17/tracing-with-the-grafana-cloud-agent-and-grafana-tempo/) provides great insight on the subject.
 
+## ** Curl **
+
+No API guide would be complete without a Curl example - _and we're no exception!_
+
+
+#### Insert Traces
+
+Send a root span with a `parentId`
+```
+curl -X POST http://localhost:3100/tempo/api/push -H 'Content-Type: application/json' -d '[{
+ "id": "5678ABC",
+ "traceId": "d6e9329d67b6146b",
+ "parentId": "1234",
+ "timestamp": '$(date +%s%N | cut -b1-16)',
+ "duration": 50000,
+ "name": "1st span from bash!",
+ "tags": {
+    "http.method": "POST",
+    "http.path": "/child1"
+  },
+  "localEndpoint": {
+    "serviceName": "shell script child 1"
+  }
+}]'
+```
+
+Send a child span pointing to the `parentId` span
+```
+curl -X POST http://localhost:3100/tempo/api/push -H 'Content-Type: application/json' -d '[{
+ "id": "9101DEF",
+ "traceId": "d6e9329d67b6146b",
+ "parentId": "1234",
+ "timestamp": '$(date +%s%N | cut -b1-16)',
+ "duration": 50000,
+ "name": "2nd child span from bash!",
+ "tags": {
+    "http.method": "POST",
+    "http.path": "/child2"
+  },
+  "localEndpoint": {
+    "serviceName": "shell script child 2"
+  }
+}]'
+```
+
+
+?> _That's it!_ You are now inserting tracens using Curl in **qryn**
+
 <!-- tabs:end -->
