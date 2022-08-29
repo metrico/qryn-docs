@@ -23,7 +23,7 @@ Ingestion APIs are transparently compatible with [Loki](logs/ingestion#logql), [
 
 Start querying logs, metrics and traces instantly using [LogQL, PromQL, Flux or Tempo/Zipkin](getting-started.md)
 
-**qryn** is ready to use with [Grafana](getting-started?id=grafana) or using the integrated [View UI](getting-started?id=view) and [CLI](getting-started?id=cli)
+**qryn** is ready to use with [Grafana datasources](guide/datasources) or using the integrated [View UI](getting-started?id=view) and [CLI](getting-started?id=cli)
 
 
 #### ** Database **
