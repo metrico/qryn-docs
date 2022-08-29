@@ -90,6 +90,17 @@ The default Node heap size is **too small** for the workload. Increase it accord
 
 ---
 
+?> npm ERR! File exists: /usr/bin/cloki
+
+Welcome back, old user! Please remove any previous cloki versions before installing the qryn package
+```
+npm remove -g cloki
+npm install -g qryn
+```
+
+
+---
+
 ## Disclaimers
 
 ?> ©️ QXIP BV, released under the GNU Affero General Public License v3.0. See LICENSE for details.
