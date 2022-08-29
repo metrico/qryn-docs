@@ -1,13 +1,13 @@
 # Introduction
 
- Meet <b>qryn</b>: <i>the open-source polyglot observability framework</i><br/><br/>
+Meet <b>qryn</b>: <i>the open-source polyglot observability framework</i><br/><br/>
  
 ?> ... it's pronounced /ˈkwɪr..ɪŋ/ or just querying
 
 #### Less is More 👍
 **qryn** was designed to be a fast, thin, polyglot API leveraging the the many strenghts of _ClickHouse_
 
-_Everything is simple and works out of the box. Batteries included!_ 🔋
+_Everything is simple and works right out of the box. Batteries included!_ 🔋
 
 
 <!-- tabs:start -->
@@ -34,4 +34,3 @@ Want more than our APIs offer? Access your data using ClickHouse SQL _for fun an
 <!-- tabs:end --> 
 
 ![image](https://user-images.githubusercontent.com/1423657/187255795-f67e66be-bbee-4244-b291-342ca983900f.png)
-
