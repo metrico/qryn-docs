@@ -5,7 +5,7 @@ Meet <b>qryn</b>: <i>the open-source polyglot observability framework</i><br/><b
 ?> ... it's pronounced /ˈkwɪr..ɪŋ/ or just querying
 
 #### Less is More 👍
-**qryn** was designed to be a fast, thin, polyglot API leveraging the the many strenghts of _ClickHouse_
+**qryn**is a fast, thin, all-in-one polyglot API stack built on top of _ClickHouse_
 
 _Everything is simple and works right out of the box. Batteries included!_ 🔋
 
