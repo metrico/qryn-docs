@@ -1,4 +1,4 @@
-# Introduction
+# 👋 Introduction
  
 ?> ... it's pronounced /ˈkwɪr..ɪŋ/ or just **q**ue**ry**i**n**g
 
