@@ -1,6 +1,6 @@
 <p id=start>
   
-  <h2 style="font-weight: normal;font-size: 26px;">
+  <h3 style="font-weight: normal;font-size: 30px;">
      <b>qryn</b>: <i>the open-source polyglot observability stack</i><br/><br/>
     
      <img src="https://github.com/metrico/qryn-docs/blob/main/docs/resources/images/qryn_logo_trans.png?raw=true" width=50 />&nbsp;
@@ -13,7 +13,7 @@
      <img src="https://avatars.githubusercontent.com/u/54801242?s=200&v=4" width=50 /><br/>
     
      <img src="https://user-images.githubusercontent.com/1423657/184538094-13c11500-24ef-4468-9f33-dc9d564238e3.gif" width=500 class=border />
-  </h2>
+  </h3>
 </p>
 
 ?> ... it's pronounced /ˈkwɪr..ɪŋ/ or just _querying_
