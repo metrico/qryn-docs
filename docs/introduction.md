@@ -1,11 +1,10 @@
-# Meet qryn
+# Introduction
  
-?> ... it's pronounced /ˈkwɪr..ɪŋ/ or just querying
+?> ... it's pronounced /ˈkwɪr..ɪŋ/ or just **q**ue**ry**i**n**g
 
-#### Less is More 👍
 **qryn**is a _fast, thin, all-in-one_ **polyglot API** stack built on top of _ClickHouse_
 
-_Everything is simple and works right out of the box. Batteries included!_ 🔋
+_Everything is simple and works right out of the box - batteries included!_ 🔋
 
 
 <!-- tabs:start -->
