@@ -20,14 +20,14 @@ Just use one of the many Agents supporting [Loki, Prometheus, Influx, Elastic, Z
 
 #### ** Querying **
 
-🎉 _No custom query languages to learn._ 
+🎉 _No custom query languages to learn_ 
 
 Start querying instantly using [LogQL, PromQL, Flux or Temapo](getting-started.md)
 
 
 #### ** Database **
 
-🎉 _No limits using your data_ 
+🎉 _No limits accessing your own data_ 
 
 Want more than our APIs offer? Access your data using ClickHouse SQL _for fun and compliance_.
 
