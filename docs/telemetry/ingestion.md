@@ -1,7 +1,40 @@
 # 🔻 Telemetry Ingestion
 
 The following protocol APIs are supported for ingesting telemetry events:
+
 <!-- tabs:start -->
+## ** Grafana Agent **
+
+<a id=grafana name=grafana></a>
+
+![image](https://user-images.githubusercontent.com/1423657/184496222-ca95d80c-906f-4c77-a963-86f0b27a56b0.png ':size=100')
+
+Grafana Agent can act as a telemetry collector and receive spans from Jaeger, Kafka, OpenCensus, OTLP, and Zipkin to process and forward traces to **qryn** using the _Tempo API_
+
+##### Example
+In this example an `OTLP` collector is started on port `:4318` forwarding traces to **qryn** on port `:3100`
+###### config.yaml
+```
+server:
+  log_level: debug
+
+traces:
+  configs:
+  - name: server_traces
+    receivers:
+      otlp:
+        protocols:
+          http:
+            endpoint: "0.0.0.0:4318"
+
+    remote_write:
+      - endpoint: qryn:3100
+        insecure: true
+```
+
+This [article](https://grafana.com/blog/2020/11/17/tracing-with-the-grafana-cloud-agent-and-grafana-tempo/) provides great insight on the subject
+
+
 ## ** Zipkin **
 
 <a id=zipkin name=zipkin></a>
@@ -130,36 +163,6 @@ The following type events will be pushed:
 
 ?> _That's it!_ You're now tracing _ClickHouse using ClickHouse_! 
 
-## ** Grafana Agent **
-
-<a id=grafana name=grafana></a>
-
-![image](https://user-images.githubusercontent.com/1423657/184496222-ca95d80c-906f-4c77-a963-86f0b27a56b0.png ':size=100')
-
-Grafana Agent can act as a telemetry collector and receive spans from Jaeger, Kafka, OpenCensus, OTLP, and Zipkin to process and forward traces to **qryn** using the _Tempo API_
-
-##### Example
-In this example an `OTLP` collector is started on port `:4318` forwarding traces to **qryn** on port `:3100`
-###### config.yaml
-```
-server:
-  log_level: debug
-
-traces:
-  configs:
-  - name: server_traces
-    receivers:
-      otlp:
-        protocols:
-          http:
-            endpoint: "0.0.0.0:4318"
-
-    remote_write:
-      - endpoint: qryn:3100
-        insecure: true
-```
-
-This [article](https://grafana.com/blog/2020/11/17/tracing-with-the-grafana-cloud-agent-and-grafana-tempo/) provides great insight on the subject.
 
 ## ** Curl **
 
