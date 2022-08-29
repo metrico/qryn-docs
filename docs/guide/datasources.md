@@ -122,6 +122,42 @@ datasources:
         tags: ['job']
 ```
 
+#### ** Flux **
+
+Connect Grafana to **qryn** using the _built-in_ `Flux` datasource
+
+?> `Flux` is a lightweight scripting language for querying databases and working with data
+
+#### Manual Provisioning
+* Log into your Grafana or Grafana Cloud instance
+* Browse to `Configuration` > `Data Sources` via the ⚙️ icon on the left sidebar
+* Click the big `+ Add` data source button
+* Choose `InfluxDB` from the list
+* Choose `Flux` as the query language
+* Use your **qryn** URL and `save`
+
+#### Auto Provisioning
+Use the following sample as reference for provisioning your datasource:
+```
+# grafana config file
+apiVersion: 1
+datasources:
+ - name: Flux
+    type: influxdb
+    uid: flux
+    version: 2
+    access: proxy
+    url: http://fluxpipe:8086
+    basicAuth: false
+    jsonData:
+      defaultBucket:
+      httpMode: POST
+      organization: qryn
+      version: Flux
+    secureJsonData:
+      token:
+```
+
 <!-- tabs:end -->
 
 
