@@ -6,6 +6,7 @@ In order to **explore** our _logs and metrics_, we'll need to use a _client_ suc
 
 <!-- tabs:start -->
 ### ** ⭐ Grafana **
+<a id=grafana></a>
 
 Let's explore using [Grafana](guide/datasources.md) and its _amazing visualizations_
 
@@ -76,6 +77,7 @@ That was easy, _wasn't it?_
 Progress your knowledge using the [advanced LogQL guide](guide/logql.md)
 
 ### ** 👁️ View **
+<a id=view></a>
 
 Let's explore using [qryn-view](view.md) our embedded user interface - _no installation needed_
 
@@ -119,6 +121,7 @@ Progress your knowledge using the [advanced LogQL guide](guide/logql.md)
 
 
 ### ** 🗄️ vLogQL **
+<a id=cli></a>
 
 Let's explore using [vLogQL](https://github.com/lmangani/vlogql) our compact _command line_ LogQL client and canary agent
 
