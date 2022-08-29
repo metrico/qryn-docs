@@ -4,7 +4,7 @@
 
 **qryn**is a _fast, thin, all-in-one_ **polyglot API** stack built on top of _ClickHouse_
 
-_Everything is simple and works right out of the box - batteries included!_ 🔋
+_Logs, Metrics and Traces made simple, right out of the box - batteries included!_ 🔋
 
 
 <!-- tabs:start -->
