@@ -9,7 +9,7 @@ This section illustrates a number of examples and resources to help you master *
 ###### Difficulty Levels: 🟢 easy 🔵 medium ⚫ hard 👽 meltdown
 
 
-#### 🔎 Query Languages
+#### 📖 Query Languages
   - [LogQL Basics](guide/logql.md)
     - [Using LogQL](https://www.sobyte.net/post/2022-06/logql/)
     - [LogQL Queries](https://grafana.com/docs/loki/latest/logql/log_queries/)
