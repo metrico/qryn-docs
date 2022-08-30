@@ -1,6 +1,6 @@
 # 🔎 Querying Metrics
 
-In this section, we'll learn how to query and filter ingested metrics using PromQL. Let's get __qryn__!
+In this section, we'll learn how to query and filter metrics using **PromQL**. Let's get __qryn__!
 
 !> **qryn:oss** emulates a subset of promql queries using logql metics
 
