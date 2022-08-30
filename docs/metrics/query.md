@@ -32,7 +32,7 @@ Let's use our **qryn** `Prometheus` datasource find metrics for label `cpu_perce
 
 ![image](https://user-images.githubusercontent.com/1423657/185901793-37529481-5201-474f-b01e-b30386a8ef89.png)
 
-##### Visualize metrics 📊
+#### Visualize metrics 📊
 
 Let's calculate the `rate` for our matching metrics 
 
