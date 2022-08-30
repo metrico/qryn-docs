@@ -6,7 +6,15 @@
 
 Started in 2018 as a _proof-of-concept_ to demonstrate the vast capabilities of Clickhouse, it evolved through covid times 2020-2022 into an solid, fully featured polyglot stack for real-life workloads, leveraging the _lightness_ of NodeJS for its API and the _raw power_ of Clickhouse to perform heavy-duty tasks.
 
-- 📦 A _high-performance_ version of qryn developed in go is separately available for [integrator licensing](mailto:info@qxip.net).
+<!-- tabs:start -->
+
+#### ** OSS Version **
+**qryn:oss** is developed in _NodeJS/Bun_ and released under the AGPLv3 open-source license.
+
+#### ** CLOUD Version **
+**qryn:cloud** is developed in _Go/Rust_ and available for [integrators and resellers](mailto:info@qxip.net) under a commercial license.
+
+<!-- tabs:end --> 
 
 #### Contributors
 
