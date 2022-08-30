@@ -5,7 +5,6 @@
 </p>
 
 * [Home](/?id=start)
-* **Overview**
   * [Introduction](introduction.md "QRYN – Installation – LogQL for ClickHouse and beyond")
   * [Installation](installation.md "QRYN – Installation – LogQL for ClickHouse and beyond")
   * [Data Ingestion](ingestion.md "QRYN – Supported Components – LogQL for ClickHouse and beyond")
@@ -18,7 +17,7 @@
     * [Telemetry](telemetry/query "QRYN by Metrico.in")
   * [Advanced](examples.md "QRYN – Getting Started – LogQL for ClickHouse and beyond")
     * [LogQL](guide/logql.md "QRYN – Getting Started – LogQL for ClickHouse and beyond") 
-    * [Supported APIs](support.md "QRYN – Supported Components – LogQL for ClickHouse and beyond")
+    * [APIs](support.md "QRYN – Supported Components – LogQL for ClickHouse and beyond")
   * [Case Studies](case-studies.md "QRYN – Case Studies – LogQL for ClickHouse and beyond")
 
 * **Misc**
@@ -26,7 +25,7 @@
   * [Performance](performance.md)
   * [FAQ](faq.md)
   * 
-* **Tools**
+* **Links**
   * [View](https://github.com/metrico/qryn-view)
   * [vLogQL](https://github.com/metrico/vLogql)
   * [Fluxpipe](https://github.com/metrico/fluxpipe)
