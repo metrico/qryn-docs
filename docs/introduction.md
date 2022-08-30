@@ -37,16 +37,6 @@ Want more than our APIs offer? Access your data using pure ClickHouse SQL _for f
 
 <!-- tabs:end --> 
 
-<!-- tabs:start -->
-
-#### ** End-Users (OSS) **
-**qryn:oss** is developed in _NodeJS/Bun_ and released under the AGPLv3 open-source license.
-
-#### ** Integrators (CLOUD) **
-**qryn:cloud** is developed in _Go/Rust_ and available for [integrators and resellers](mailto:info@qxip.net) under a commercial license.
-
-<!-- tabs:end --> 
-
 ![image](https://user-images.githubusercontent.com/1423657/187255795-f67e66be-bbee-4244-b291-342ca983900f.png)
 
 
