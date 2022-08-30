@@ -1,4 +1,4 @@
-# Case Studies
+# 👑 Case Studies
 
 Here you'll find some real work examples that walk you through a certain flow and how they can be handled with **qryn**, as well as the topics included from the **General Concepts** section. 
 
