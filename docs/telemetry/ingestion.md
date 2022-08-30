@@ -46,49 +46,7 @@ This [article](https://grafana.com/blog/2020/11/17/tracing-with-the-grafana-clou
 
 Tracing is possible from any application supported by the [opentelemetry](https://github.com/open-telemetry) libraries.
 
-- [Zipkin example](https://github.com/open-telemetry/opentelemetry-js/blob/main/examples/tracer-web/examples/zipkin/index.js)
-
-#### Send Spans using CURL
-
-Trace from your console for testing and to support telemetry withing your bash scripts
-
-```bash
-curl -X POST http://qryn:3100/tempo/api/push -H 'Content-Type: application/json' -d '[{
- "id": "1234",
- "traceId": "d6e9329d67b6146b",
- "timestamp": '$(date +%s%N | cut -b1-16)',
- "duration": 1000,
- "name": "span from bash!",
- "tags": {
-    "http.method": "GET",
-    "http.path": "/api"
-  },
-  "localEndpoint": {
-    "serviceName": "shell script"
-  }
-}]'
-```
-```bash
-curl -X POST http://qryn:3100/tempo/api/push  -H 'Content-Type: application/json' -d '[{
- "id": "5678",
- "traceId": "d6e9329d67b6146b",
- "parentId": "1234",
- "timestamp": '$(date +%s%N | cut -b1-16)',
- "duration": 1000,
- "name": "child span from bash!",
-  "localEndpoint": {
-    "serviceName": "shell script"
-  }
-}]'
-```
-
-!> Replace the **qryn** URL from the example to match your actual deployment!
-
-### Screenshot
-##### Tempo Spans
-![image](https://user-images.githubusercontent.com/1423657/147878090-a7630467-433e-4912-a439-602ce719c21d.png)
-##### Tempo Logs
-![image](https://user-images.githubusercontent.com/1423657/147878505-4136912b-e8b4-492d-b98f-7137dfeee015.png)
+- [Opentelemetry Zipkin example](https://github.com/open-telemetry/opentelemetry-js/tree/main/examples/opentelemetry-web/examples/zipkin)
 
 
 ?> _That's it!_ You're now _tracing spans using ClickHouse_! 
@@ -171,18 +129,20 @@ No API guide would be complete without a Curl example - _and we're no exception!
 
 #### Insert Traces
 
+Trace from your console for testing and to support telemetry within your bash scripts
+
+
 Send a root span with a `parentId`
 ```
 curl -X POST http://localhost:3100/tempo/api/push -H 'Content-Type: application/json' -d '[{
- "id": "5678ABC",
+ "id": "1234",
  "traceId": "d6e9329d67b6146b",
- "parentId": "1234",
  "timestamp": '$(date +%s%N | cut -b1-16)',
- "duration": 50000,
+ "duration": 1000,
  "name": "1st span from bash!",
  "tags": {
     "http.method": "POST",
-    "http.path": "/child1"
+    "http.path": "/parent"
   },
   "localEndpoint": {
     "serviceName": "shell script child 1"
@@ -197,17 +157,26 @@ curl -X POST http://localhost:3100/tempo/api/push -H 'Content-Type: application/
  "traceId": "d6e9329d67b6146b",
  "parentId": "1234",
  "timestamp": '$(date +%s%N | cut -b1-16)',
- "duration": 50000,
+ "duration": 500,
  "name": "2nd child span from bash!",
  "tags": {
     "http.method": "POST",
-    "http.path": "/child2"
+    "http.path": "/child"
   },
   "localEndpoint": {
     "serviceName": "shell script child 2"
   }
 }]'
 ```
+
+!> Replace the **qryn** URL from the example to match your actual deployment!
+
+### Screenshot
+##### Tempo Spans
+![image](https://user-images.githubusercontent.com/1423657/147878090-a7630467-433e-4912-a439-602ce719c21d.png)
+##### Tempo Logs
+![image](https://user-images.githubusercontent.com/1423657/147878505-4136912b-e8b4-492d-b98f-7137dfeee015.png)
+
 
 
 ?> _That's it!_ You are now inserting tracens using Curl in **qryn**
