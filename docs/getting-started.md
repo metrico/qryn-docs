@@ -8,7 +8,7 @@ Let's **explore** our data using [Grafana](guide/datasources.md) and its _amazin
 
 #### ** Loki **
 
-### [Start using LogQL](logs/query) 
+### 🏁 [Start using LogQL](logs/query) 
 
 Connect Grafana to **qryn** using the _built-in_ `Loki` datasource
 
@@ -52,7 +52,7 @@ datasources:
 
 #### ** Prometheus **
 
-### [Start using PromQL](metrics/query)
+### 🏁 [Start using PromQL](metrics/query)
 
 Connect Grafana to **qryn** using the _built-in_ `Prometheus` datasource
 
@@ -87,7 +87,7 @@ datasources:
 
 #### ** Tempo **
 
-### [Start using Tempo](telemetry/query)
+### 🏁 [Start using Tempo](telemetry/query)
 
 Connect Grafana to **qryn** using the _built-in_ `Tempo` datasource
 
@@ -129,7 +129,7 @@ datasources:
 
 Connect Grafana to **qryn** using the _built-in_ `Flux` datasource
 
-?> `Flux` is a lightweight scripting language for querying databases and working with data
+`Flux` is a lightweight scripting language for querying databases and working with data
 
 #### Manual Provisioning
 * Log into your Grafana or Grafana Cloud instance
@@ -157,8 +157,7 @@ datasources:
       httpMode: POST
       organization: qryn
       version: Flux
-    secureJsonData:
-      token:
+
 ```
 
 <!-- tabs:end -->
