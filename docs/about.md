@@ -6,16 +6,6 @@
 
 Started in 2018 as a _proof-of-concept_ to demonstrate the vast capabilities of Clickhouse, it evolved through covid times 2020-2022 into an solid, fully featured polyglot stack for real-life workloads, leveraging the _lightness_ of NodeJS for its API and the _raw power_ of Clickhouse to perform heavy-duty tasks.
 
-<!-- tabs:start -->
-
-#### ** OSS Version **
-**qryn:oss** is developed in _NodeJS/Bun_ and released under the AGPLv3 open-source license.
-
-#### ** CLOUD Version **
-**qryn:cloud** is developed in _Go/Rust_ and available for [integrators and resellers](mailto:info@qxip.net) under a commercial license.
-
-<!-- tabs:end --> 
-
 #### Contributors
 
 qryn is made possible by its community of contributors and users - we love you all 🖤
@@ -32,7 +22,15 @@ qryn is made possible by its community of contributors and users - we love you a
 #### Developers: Join us!
 Are you a Go/NodeJS developer with a passion for ClickHouse and LogQL/MetricsQL/PromQL? [Join us, we're hiring!](mailto:info@qxip.net)
 
-----
+<!-- tabs:start -->
+
+#### ** OSS Version **
+**qryn:oss** is developed in _NodeJS/Bun_ and released under the AGPLv3 open-source license.
+
+#### ** CLOUD Version **
+**qryn:cloud** is developed in _Go/Rust_ and available for [integrators and resellers](mailto:info@qxip.net) under a commercial license.
+
+<!-- tabs:end --> 
 
 #### Disclaimers
 
