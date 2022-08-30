@@ -2,13 +2,11 @@
 
 In this section, we'll learn how to query and filter our ingested data. Let's get __qryn__!
 
-In order to **explore** our _logs and metrics_, we'll need to use a _client_ such as _Grafana_
-
 <!-- tabs:start -->
 ### ** ⭐ Grafana **
 <a id=grafana></a>
 
-Let's explore using [Grafana](guide/datasources.md) and its _amazing visualizations_
+Let's **explore** our data using [Grafana](guide/datasources.md) and its _amazing visualizations_
 
 ![grafanaexplore](https://user-images.githubusercontent.com/1423657/184538094-13c11500-24ef-4468-9f33-dc9d564238e3.gif)
 
