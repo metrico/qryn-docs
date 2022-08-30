@@ -8,7 +8,7 @@ Let's **explore** our data using [Grafana](guide/datasources.md) and its _amazin
 
 #### ** Loki **
 
-### [Start using LogQL](/#/logs/query) 
+### [Start using LogQL](logs/query) 
 
 Connect Grafana to **qryn** using the _built-in_ `Loki` datasource
 
@@ -52,7 +52,7 @@ datasources:
 
 #### ** Prometheus **
 
-### [Start using PromQL](/#/metrics/query)
+### [Start using PromQL](metrics/query)
 
 Connect Grafana to **qryn** using the _built-in_ `Prometheus` datasource
 
@@ -87,7 +87,7 @@ datasources:
 
 #### ** Tempo **
 
-### [Start using Tempo](/#/telemetry/query)
+### [Start using Tempo](telemetry/query)
 
 Connect Grafana to **qryn** using the _built-in_ `Tempo` datasource
 
