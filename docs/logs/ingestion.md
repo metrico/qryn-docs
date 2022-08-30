@@ -11,11 +11,11 @@ The following protocols and APIs integrations are supported for ingesting Logs:
 
 This means _any Loki compatible client_ can be used with **qryn** without modifications! 🏁
 
-#### [Vector](https://vector.dev/docs/reference/configuration/sinks/loki/) + [Examples](https://component-pages--vector-project.netlify.app/guides/integrate/sources/http/loki/)
-Vector is a popular lightweight, ultra-fast tool for building observability pipelines
-
 #### [Grafana Agent](https://grafana.com/docs/grafana-cloud/data-configuration/logs/collect-logs-with-agent/)+ [Examples](https://grafana.com/docs/grafana-cloud/quickstart/logs_agent_linuxnode/)
 Grafana Agent is a telemetry collector for sending metrics, logs, and trace data
+
+#### [Vector](https://vector.dev/docs/reference/configuration/sinks/loki/) + [Examples](https://component-pages--vector-project.netlify.app/guides/integrate/sources/http/loki/)
+Vector is a popular lightweight, ultra-fast tool for building observability pipelines
 
 #### [Promtail](https://grafana.com/docs/grafana-cloud/data-configuration/logs/collect-logs-with-promtail/)
 Promtail is an agent which ships the contents of local logs to LogQL APIs
