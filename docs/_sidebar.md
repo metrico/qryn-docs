@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="/?id=start">
+  <a href="/#/?id=start">
     <img src="https://github.com/metrico/qryn-docs/blob/main/docs/resources/images/qryn_logo_trans.png?raw=true" width=120 />
   </a>
 </p>
