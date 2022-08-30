@@ -1,6 +1,8 @@
 ## Performance ⚙️
 
-qryn is tested using the Victoriametrics Prometheus benchmark and various LogQL benchmarks
+!> Benchmarks are a work in progress! ⏲️
+
+**qryn** is regularly tested using the Victoriametrics Prometheus benchmark and various LogQL benchmarks
 
 ### Writer Performance
 ClickHouse `INSERT` performance up to **~500k samples/thread/second** _(4 CPUs, 3GB RAM, SSD)_
