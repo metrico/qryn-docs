@@ -3,6 +3,7 @@
 In this section, we'll learn how to query and filter ingested metrics using PromQL. Let's get __qryn__!
 
 !> qryn:oss emulates prometheus queries using logql metics
+
 ?> qryn:cloud fully supports all prometheus functionality
 
 <!-- tabs:start -->
