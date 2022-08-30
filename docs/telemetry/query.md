@@ -42,4 +42,19 @@ That was easy, _wasn't it?_
 
 Progress your knowledge using the [advanced Tempo articles](/#/examples)
 
+
+### ** Curl **
+<a id=curl></a>
+
+Let's **explore**  data using Curl and the [qryn api](/#/support)
+
+##### Query JSON by traceId(s)
+```bash
+curl -X GET http://qryn:3100/api/traces/d6e9329d67b6146b/json
+```
+
+##### Query Protobuf Response by traceId(s)
+```bash
+curl -X GET http://qryn:3100/api/traces/d6e9329d67b6146b
+```
 <!-- tabs:end -->
