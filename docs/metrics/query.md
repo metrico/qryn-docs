@@ -7,6 +7,11 @@ In this section, we'll learn how to query and filter ingested metrics using Prom
 
 <!-- tabs:start -->
 ### ** ⭐ Grafana **
+<a id=grafana></a>
+
+Let's **explore** our data using [Grafana](guide/datasources.md) and its _amazing visualizations_
+
+![grafanaexplore](https://user-images.githubusercontent.com/1423657/184538094-13c11500-24ef-4468-9f33-dc9d564238e3.gif)
 
 ### PromQL <!-- {docsify-ignore-all} -->
 #### Visualize metrics using PromQL 📈
