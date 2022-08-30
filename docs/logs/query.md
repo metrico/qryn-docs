@@ -1,6 +1,6 @@
 # 🔎 Querying Logs
 
-In this section, we'll learn how to query and filter our ingested data using LogQL. Let's get __qryn__!
+In this section, we'll learn how to query and filter our ingested data using **LogQL**. Let's get __qryn__!
 
 <!-- tabs:start -->
 ### ** ⭐ Grafana **
