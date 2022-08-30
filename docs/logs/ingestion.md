@@ -11,25 +11,25 @@ The following protocols and APIs integrations are supported for ingesting Logs:
 
 This means _any Loki compatible client_ can be used with **qryn** without modifications! 🏁
 
-#### [Grafana Agent](https://grafana.com/docs/grafana-cloud/data-configuration/logs/collect-logs-with-agent/)+ [Examples](https://grafana.com/docs/grafana-cloud/quickstart/logs_agent_linuxnode/)
+#### 🟢 [Grafana Agent](https://grafana.com/docs/grafana-cloud/data-configuration/logs/collect-logs-with-agent/)+ [Examples](https://grafana.com/docs/grafana-cloud/quickstart/logs_agent_linuxnode/)
 Grafana Agent is a telemetry collector for sending metrics, logs, and trace data
 
-#### [Vector](https://vector.dev/docs/reference/configuration/sinks/loki/) + [Examples](https://component-pages--vector-project.netlify.app/guides/integrate/sources/http/loki/)
+#### 🟢 [Vector](https://vector.dev/docs/reference/configuration/sinks/loki/) + [Examples](https://component-pages--vector-project.netlify.app/guides/integrate/sources/http/loki/)
 Vector is a popular lightweight, ultra-fast tool for building observability pipelines
 
-#### [Promtail](https://grafana.com/docs/grafana-cloud/data-configuration/logs/collect-logs-with-promtail/)
+#### 🟢 [Promtail](https://grafana.com/docs/grafana-cloud/data-configuration/logs/collect-logs-with-promtail/)
 Promtail is an agent which ships the contents of local logs to LogQL APIs
 
-#### [Fluentd](https://grafana.com/docs/loki/latest/clients/fluentd/) + [Examples](https://grafana.com/blog/2022/06/23/how-to-send-logs-to-grafana-loki-with-the-opentelemetry-collector-using-fluent-forward-and-filelog-receivers/#:~:text=Set%20up%20a%20Grafana%20Cloud,click%20the%20Send%20Logs%20button.)
+#### 🟢 [Fluentd](https://grafana.com/docs/loki/latest/clients/fluentd/) + [Examples](https://grafana.com/blog/2022/06/23/how-to-send-logs-to-grafana-loki-with-the-opentelemetry-collector-using-fluent-forward-and-filelog-receivers/#:~:text=Set%20up%20a%20Grafana%20Cloud,click%20the%20Send%20Logs%20button.)
 Fluentd is an open source data collector for unified logging layer compatible with LogQL
 
-#### [Logstash](https://grafana.com/docs/loki/latest/clients/logstash/)
+#### 🟢 [Logstash](https://grafana.com/docs/loki/latest/clients/logstash/)
 Logstash is a data processing pipeline that ingests, transforms and sends data to Elastic and other systems
 
-#### [paStash](https://github.com/sipcapture/paStash/wiki/Example:-Loki)
+#### 🟢 [paStash](https://github.com/sipcapture/paStash/wiki/Example:-Loki)
 PaStasH _(pastaʃ'ʃ-utta)_ is a NodeJS multi I/O processor supporting ingestion, decoding, interpolation and correlation of data
 
-#### [Docker](https://grafana.com/docs/loki/latest/clients/docker-driver/)
+#### 🟢 [Docker](https://grafana.com/docs/loki/latest/clients/docker-driver/)
 Official Docker plugin to read logs from Docker containers and ship them to LogQL/Loki APIs
 
 
@@ -264,5 +264,28 @@ curl -i -XPOST -H "Content-Type: application/json" http://qryn:3100/loki/api/v1/
 !> Replace the **qryn** URL from the example to match your actual deployment!
 
 ?> _That's it!_ You are now inserting metrics throug Curl in **qryn**
+
+## ** DEV **
+
+Integrating **qryn** features in your native application? _No Problem!_ 👇
+
+#### OSS LogQL libraries
+
+* NodeJS
+  * [pino-loki](https://www.npmjs.com/package/pino-loki)
+  * [winston-loki](https://github.com/JaniAnttonen/winston-loki)
+  * [workers](https://github.com/SirCremefresh/workers-loki-logger)
+  * [logpush](https://github.com/DavidJKTofan/logpush-grafana)
+* [RUST](https://docs.rs/loki-logger/latest/loki_logger/)
+* [Python](https://github.com/GreyZmeem/python-logging-loki)
+* [Arduino](https://github.com/grafana/loki-arduino)
+* [C#](https://github.com/serilog-contrib/serilog-sinks-grafana-loki)
+* [GO](https://github.com/grafana/loki-client-go)
+* [.NET](https://github.com/hannahchan/LokiLoggingProvider)
+* [Java](https://github.com/mjfryc/mjaron-tinyloki-java)
+* [Lambda/GO](https://github.com/Sorarinu/cloudwatch-logs-to-loki)
+* [Julia](https://github.com/JuliaLogging/LokiLogger.jl)
+
+?> Got an interesting link or resource to add? Please submit a `contribution`
 
 <!-- tabs:end -->
