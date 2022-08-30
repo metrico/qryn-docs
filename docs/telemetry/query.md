@@ -40,6 +40,6 @@ Use the **qryn** `Tempo` datasource to navigate Service relations using _Service
 
 That was easy, _wasn't it?_
 
-Progress your knowledge using the [advanced Tempo articles]([guide/logql.md](https://qryn.metrico.in/#/examples))
+Progress your knowledge using the [advanced Tempo articles](/#/examples)
 
 <!-- tabs:end -->
