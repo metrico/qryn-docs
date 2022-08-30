@@ -269,10 +269,11 @@ curl -i -XPOST -H "Content-Type: application/json" http://qryn:3100/loki/api/v1/
 
 Integrating **qryn** features in your native application? _No Problem!_ 👇
 
-![image](https://user-images.githubusercontent.com/1423657/187414382-64a9203f-52a6-4c58-af75-ad4fee3d5a31.png ':size=500')
-
 <br>
 
+![image](https://user-images.githubusercontent.com/1423657/187414382-64a9203f-52a6-4c58-af75-ad4fee3d5a31.png ':size=600')
+
+### Libraries & Examples
 * NodeJS
   * [pino-loki](https://www.npmjs.com/package/pino-loki)
   * [winston-loki](https://github.com/JaniAnttonen/winston-loki)
