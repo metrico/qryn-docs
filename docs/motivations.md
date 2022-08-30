@@ -4,13 +4,13 @@
 
 ?> It's pronounced /ˈkwɪr..ɪŋ/ or _querying_
 
-Started in 2018 as a _proof-of-concept_ artwork to display the vast capabilities of Clickhouse, it evolved through Covid times 2020-2022 into an fully featured stack for real-life workloads, leveraging the _lightness_ of NodeJS for its API and the _raw power_ of Clickhouse to perform heavy-duty tasks.
+Started in 2018 as a _proof-of-concept_ to demonstrate the vast capabilities of Clickhouse, it evolved through covid times 2020-2022 into an solid, fully featured polyglot stack for real-life workloads, leveraging the _lightness_ of NodeJS for its API and the _raw power_ of Clickhouse to perform heavy-duty tasks.
 
 - 📦 A _high-performance_ version of qryn developed in go is separately available for [integrator licensing](mailto:info@qxip.net).
 
 #### Contributors
 
-qryn is made possible by its community of contributors and users - we love you all 🫀
+qryn is made possible by its community of contributors and users - we love you all 🖤
 
 <a href="https://github.com/lmangani/qryn/graphs/contributors">
   <img src="https://contributors-img.web.app/image?repo=metrico/qryn" />
