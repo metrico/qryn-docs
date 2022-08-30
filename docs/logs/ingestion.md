@@ -26,6 +26,13 @@ Fluentd is an open source data collector for unified logging layer compatible wi
 #### [Logstash](https://grafana.com/docs/loki/latest/clients/logstash/)
 Logstash is a data processing pipeline that ingests, transforms and sends data to Elastic and other systems
 
+#### [paStash](https://github.com/sipcapture/paStash/wiki/Example:-Loki)
+PaStasH _(pastaʃ'ʃ-utta)_ is a NodeJS multi I/O processor supporting ingestion, decoding, interpolation and correlation of data
+
+#### [Docker](https://grafana.com/docs/loki/latest/clients/docker-driver/)
+Official Docker plugin to read logs from Docker containers and ship them to LogQL/Loki APIs
+
+
 !> Is your favourite client not listed? please submit a suggestion and we'll add it 👍
 
 ## ** LogQL **
