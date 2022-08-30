@@ -13,6 +13,15 @@ Let's explore using [Grafana](guide/datasources.md) and its _amazing visualizati
 ![grafanaexplore](https://user-images.githubusercontent.com/1423657/184538094-13c11500-24ef-4468-9f33-dc9d564238e3.gif)
 
 ### LogQL <!-- {docsify-ignore-all} -->
+
+<details>
+  <summary>Query Builder</summary>
+  <br>
+  Use the Grafana query builder available in Grafana 9.x to browser **qryn** logs
+  <img src="https://user-images.githubusercontent.com/1423657/187435182-8d739f3d-53b0-4561-8ca6-86c6736411b2.png">
+  <br>
+</details>
+
 #### Find a Label 🏷️
 
 Let's use our **qryn** `Loki` datasource find logs with label _dummy-server_
