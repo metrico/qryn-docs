@@ -42,6 +42,6 @@ Let's calculate the `rate` for our matching metrics
 
 That was easy, _wasn't it?_
 
-Progress your knowledge using the [advanced Promql articles]([guide/logql.md](https://qryn.metrico.in/#/examples))
+Progress your knowledge using the [advanced Promql articles](/#/examples)
 
 <!-- tabs:end -->
