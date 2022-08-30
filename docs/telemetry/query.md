@@ -14,12 +14,12 @@ Let's **explore** our data using [Grafana](guide/datasources.md) and its _amazin
 #### Find a Trace using LogQL 🧲
 
 #### Beta Search
-Let's use the **qryn** `Tempo` datasource to find traces using _Beta Search_
+Use the **qryn** `Tempo` datasource to find traces using _Beta Search_
 
 ![image](https://user-images.githubusercontent.com/1423657/186616553-ca34e26a-6a59-4a04-98e8-c27fdf8f6159.png)
 
 #### Loki Search
-Let's use the **qryn** `Tempo` datasource to find traces using _LogQL_
+Use the **qryn** `Tempo` datasource to find traces using _LogQL_
 
 ![image](https://user-images.githubusercontent.com/1423657/184548814-b5a4c641-010e-47b1-91c8-5aa402a85908.png)
 
