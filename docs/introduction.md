@@ -2,7 +2,7 @@
  
 ?> ... it's pronounced /ˈkwɪr..ɪŋ/ or just **q**ue**ry**i**n**g
 
-**qryn** is a _fast, thin, all-in-one_ **polyglot** observability stack built on top of _**ClickHouse**_
+**qryn** is a _fast, thin, all-in-one_ _**polyglot**_ observability stack built on top of _**ClickHouse**_
 
 _Logs, Metrics and Traces made simple, right out of the box - batteries included!_ 🔋
 
