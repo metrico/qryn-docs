@@ -43,7 +43,7 @@ That was easy, _wasn't it?_
 Progress your knowledge using the [advanced Tempo articles](/#/examples)
 
 
-### ** Curl **
+### ** ⬛ Curl **
 <a id=curl></a>
 
 Let's **explore**  data using Curl and the [qryn api](/#/support)
