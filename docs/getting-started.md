@@ -18,7 +18,7 @@ Let's explore using [Grafana](guide/datasources.md) and its _amazing visualizati
   <summary>Query Builder</summary>
   <br>
   Use the Grafana query builder available in Grafana 9.x to browser **qryn** logs
-  <img src="https://user-images.githubusercontent.com/1423657/187435182-8d739f3d-53b0-4561-8ca6-86c6736411b2.png">
+  <img src="https://user-images.githubusercontent.com/1423657/187436185-821840aa-5bed-4611-bf30-035c700218d7.png">
   <br>
 </details>
 
@@ -53,6 +53,14 @@ rate({job="dummy-server"} |= "peach" [1m])
 
 ### PromQL <!-- {docsify-ignore-all} -->
 #### Visualize metrics using PromQL 📈
+
+<details>
+  <summary>Query Builder</summary>
+  <br>
+  Use the Grafana [Prometheus query builder](https://grafana.com/blog/2022/07/18/new-in-grafana-9-the-prometheus-query-builder-makes-writing-promql-queries-easier/) available in Grafana 9.x to browser **qryn** logs
+  <img src="https://user-images.githubusercontent.com/1423657/187435182-8d739f3d-53b0-4561-8ca6-86c6736411b2.png">
+  <br>
+</details>
 
 #### Find a Label 🏷️
 
