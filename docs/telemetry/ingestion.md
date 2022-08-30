@@ -32,7 +32,13 @@ traces:
         insecure: true
 ```
 
-This [article](https://grafana.com/blog/2020/11/17/tracing-with-the-grafana-cloud-agent-and-grafana-tempo/) provides great insight on the subject
+The following articles provide great insight and examples on the subject:
+
+- [Tracing with Grafana Agent](https://grafana.com/blog/2020/11/17/tracing-with-the-grafana-cloud-agent-and-grafana-tempo/)
+- [Tracing K8s with Grafana Agent](https://grafana.com/docs/grafana-cloud/kubernetes-monitoring/agent-k8s/k8s_agent_traces/)
+
+?> _That's it!_ You're now _tracing spans to **qryn** using Grafana Agent_! 
+
 
 
 ## ** Zipkin **
@@ -50,7 +56,7 @@ Tracing is possible from any application supported by the [opentelemetry](https:
 - [Zipkin Tracing Instrumentations](https://zipkin.io/pages/tracers_instrumentation.html)
 - [Instrumenting a Library](https://zipkin.io/pages/instrumenting.html)
 
-?> _That's it!_ You're now _tracing spans using ClickHouse_! 
+?> _That's it!_ You're now _tracing spans to **qryn** using Zipkin! 
 
 
 ## ** ClickHouse MV **
@@ -180,6 +186,7 @@ curl -X POST http://localhost:3100/tempo/api/push -H 'Content-Type: application/
 
 
 
-?> _That's it!_ You are now inserting tracens using Curl in **qryn**
+?> _That's it!_ You're now _tracing spans to **qryn** using just curl_! 
+
 
 <!-- tabs:end -->
