@@ -207,7 +207,8 @@ We can insert labeled metrics using the `value` parameter in a _LogQL stream_:
 ```
 curl -i -XPOST -H "Content-Type: application/json" http://qryn:3100/loki/api/v1/push \
      --data '{"streams":[{"labels":"{\"__name__\":\"test_metric\"}","entries":[{"timestamp":"'"$(date --utc +%FT%T.%3NZ)"'", "value":100}]}]}'
-``````json
+```
+```json
 {
     "streams": [
         {
