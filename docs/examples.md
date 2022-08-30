@@ -2,7 +2,7 @@
 
 <br>
 
-<img src="https://user-images.githubusercontent.com/1423657/187046009-bc3d46d2-a5bd-400c-84e2-f6968a5a6bac.png" width=500>
+<img src="https://user-images.githubusercontent.com/1423657/187046009-bc3d46d2-a5bd-400c-84e2-f6968a5a6bac.png" width=450>
 
 This section illustrates a number of examples and resources to help you master **qryn**
 
