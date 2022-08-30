@@ -47,7 +47,8 @@ This [article](https://grafana.com/blog/2020/11/17/tracing-with-the-grafana-clou
 Tracing is possible from any application supported by the [opentelemetry](https://github.com/open-telemetry) libraries.
 
 - [Opentelemetry Zipkin example](https://github.com/open-telemetry/opentelemetry-js/tree/main/examples/opentelemetry-web/examples/zipkin)
-
+- [Zipkin Tracing Instrumentations](https://zipkin.io/pages/tracers_instrumentation.html)
+- [Instrumenting a Library](https://zipkin.io/pages/instrumenting.html)
 
 ?> _That's it!_ You're now _tracing spans using ClickHouse_! 
 
