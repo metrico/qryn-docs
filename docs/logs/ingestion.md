@@ -208,15 +208,54 @@ _Done?_ Just wait a few seconds for the logs to flush and they will appear in **
 
 No API guide would be complete without a Curl example - _and we're no exception!_
 
-#### Insert Logs
-```
-curl -i -XPOST -H "Content-Type: application/json" http://localhost:3100/loki/api/v1/push \
+#### POST Logs
+Insert labeled  using the `line` parameter in a _LogQL stream_:
+
+```bash
+curl -i -XPOST -H "Content-Type: application/json" http://qryn:3100/loki/api/v1/push \
      --data '{"streams":[{"labels":"{\"type\":\"test\"}","entries":[{"timestamp":"'"$(date --utc +%FT%T.%3NZ)"'", "line":"hello qryn"}]}]}'
 ```
-#### Insert Metrics
+```json
+{
+    "streams": [
+        {
+            "labels": "{\"type\":\"test\"}",
+            "entries": [
+                {
+                    "timestamp":"1545840006945",
+                    "line": "hello qryn"
+                }
+            ]
+        }
+    ]
+}
 ```
-curl -i -XPOST -H "Content-Type: application/json" http://localhost:3100/loki/api/v1/push \
-     --data '{"streams":[{"labels":"{\"__name__\":\"test\"}","entries":[{"timestamp":"'"$(date --utc +%FT%T.%3NZ)"'", "value":100}]}]}'
+
+#### POST Metrics
+We can also insert labeled  using the `value` parameter in a _LogQL stream_
+
+```bash
+curl -i -XPOST -H "Content-Type: application/json" http://qryn:3100/loki/api/v1/push \
+     --data '{"streams":[{"labels":"{\"__name__\":\"test_metric\"}","entries":[{"timestamp":"'"$(date --utc +%FT%T.%3NZ)"'", "value":100}]}]}'
 ```
+```json
+{
+    "streams": [
+        {
+            "labels": "{\"__name__\":\"test_metric\"}",
+            "entries": [
+                {
+                    "timestamp":"1545840006945",
+                    "value": 100
+                }
+            ]
+        }
+    ]
+}
+```
+
+!> Replace the **qryn** URL from the example to match your actual deployment!
+
+?> _That's it!_ You are now inserting metrics throug Curl in **qryn**
 
 <!-- tabs:end -->
