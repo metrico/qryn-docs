@@ -16,7 +16,6 @@
     * [Logs](logs/query "QRYN – Getting Started – LogQL for ClickHouse and beyond")
     * [Metrics](metrics/query "QRYN by Metrico.in")
     * [Telemetry](telemetry/query "QRYN by Metrico.in")
-    * [Integrations](guide/datasources.md "QRYN – Getting Started – LogQL for ClickHouse and beyond") 
   * [Advanced](examples.md "QRYN – Getting Started – LogQL for ClickHouse and beyond")
     * [LogQL](guide/logql.md "QRYN – Getting Started – LogQL for ClickHouse and beyond") 
     * [Supported APIs](support.md "QRYN – Supported Components – LogQL for ClickHouse and beyond")
