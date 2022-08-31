@@ -118,15 +118,9 @@ Use docker to get started in no time - use either a local or cloud ClickHouse in
 
 !> Refer to the [configuration](env.md) for a list of supported parameters
 
-#### Sampling Demo
+#### Polyglot Demo
 
-Follow this [guide](https://github.com/metrico/opentelemetry-trace-sampling-demo) for a demo including:
-
-- [qryn](https://cloki.org) _(inserts and queries logs, metrics, telemetry)_
-- [ClickHouse](https://clickhouse.com) _(data backend)_
-- [Grafana](https://grafana.com/) _(preconfigured for visualizing data)_
-- [Grafana Agent](https://grafana.com/docs/agent/latest/configuration/?src=li&mdm=social) _(processes trace data)_
-- [Demo App](https://github.com/metrico/opentelemetry-trace-sampling-demo/tree/main/src) _(generate Zipkin traces and LogQL logs)_
+Get started in seconds using the [qryn docker demo](https://github.com/metrico/qryn-oss-demo) w/ sample logs, traces and metrics - _batteries included!_
 
 ![image](https://user-images.githubusercontent.com/1423657/183257423-59ac2648-0627-4edc-99b0-eea42abc3ca1.png)
 
