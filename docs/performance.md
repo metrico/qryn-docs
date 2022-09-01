@@ -1,6 +1,6 @@
 ## Performance ⚙️
 
-!> Benchmarks are a work in progress! ⏲️
+!> Benchmarks are a work in progress! Share your experience and performance with us.
 
 **qryn** is regularly tested using the Victoriametrics Prometheus benchmark and various LogQL benchmarks
 
