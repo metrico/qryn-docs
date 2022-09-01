@@ -12,7 +12,7 @@ It means _querying_ and we choose it overnight because Grafana literally owns th
 
 ?> Wait, is _qryn_ using the Grafana stack? Does it use Loki, Mimir?
 
-Nope. We only use Grafana _(the user-interface)_ and replace _all_ other components with _qryn and its APIs_
+Nope. We only use Grafana _(the user-interface)_ while _all_ other components are provided by _qryn and ClickHouse
 
 ----
 
