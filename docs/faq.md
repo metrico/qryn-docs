@@ -16,7 +16,7 @@ Nope. We only use Grafana _(the user-interface)_ while _all_ other components ar
 
 ----
 
-?> Loki, Prometheus and Tempo already exists, why do we need _qryn_?
+?> Loki, Mimir/Prometheus/Victoriametrics/etc already exists, why do we need _qryn_?
 
 Why not? Alternatives are good and can help accelerate evolution in an lively ecosystem. **qryn** is just designed to make its users happy and was implemented as a transparent and lightweight _overlay_ on top ClickHouse, where all data ingested across protocols sits ready to be accessed, analyzed and correlated in thousands of way today and into the future leveraging its fast and ever growing capabilities.
 
