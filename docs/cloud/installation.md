@@ -110,15 +110,26 @@ Install `qryn` on your system using `deb` on a Debian system _(or derivate)_
 
 ##### Download
 ```bash
+# Use provided download link from QXIP
 ```
 ##### Install
 ```bash
+dpkg -i qryn-writer_vx.x.x_amd64.deb
+dpkg -i qryn-go_vx.x.x_amd64.deb
 ```
 ##### Configure
 ```bash
 ```
 ##### Run
 ```bash
+# Execute init DB on first time run
+/usr/bin/qryn-writer/ -initialize_db
+
+systemctl enable qryn-writer
+systemctl start qryn-writer
+
+systemctl enable qryn-go
+systemctl start qryn-go
 ```
 
 #### ** RPM **
@@ -129,15 +140,29 @@ Install `qryn` on your system using `rpm` on a RHEL based OS _(or derivate)_
 
 ##### Download
 ```bash
+# Use provided download link from QXIP
 ```
 ##### Install
 ```bash
+dpkg -i qryn-writer_vx.x.x_x86_64.rpm
+dpkg -i qryn-go_vx.x.x_x86_64.rpm
 ```
 ##### Configure
+Configure per [here](/cloud/config.md)
 ```bash
+vim /etc/qryn-writer/qryn-writer.json
+vim /etc/qryn-go/qryn-go.json
 ```
 ##### Run
 ```bash
+# Execute init DB on first time run
+/usr/bin/qryn-writer/ -initialize_db
+
+systemctl enable qryn-writer
+systemctl start qryn-writer
+
+systemctl enable qryn-go
+systemctl start qryn-go
 ```
 
 <!-- tabs:end -->
