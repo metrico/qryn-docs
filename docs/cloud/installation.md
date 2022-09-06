@@ -25,8 +25,8 @@ docker login ghcr.io
 
 ##### Pull the containers
 ```
-docker pull ghcr.io/metrico/qryn-writer
-docker pull ghcr.io/metrico/qryn-go
+docker pull ghcr.io/metrico/qryn-writer-cloud
+docker pull ghcr.io/metrico/qryn-go-cloud
 ```
 
 ##### Create Docker Compose File
