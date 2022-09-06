@@ -40,7 +40,7 @@ version: '3.1'
 
 services:
   qryn-writer:
-    image: ghcr.io/metrico/qryn-writer:latest
+    image: ghcr.io/metrico/qryn-writer-cloud:latest
     container_name: qryn-writer
     restart: unless-stopped
     expose:
@@ -68,7 +68,7 @@ services:
       - ./cloki-writer -initialize_db && ./cloki-writer
 
   qryn-go:
-    image: ghcr.io/metrico/qryn-go:latest
+    image: ghcr.io/metrico/qryn-go-cloud:latest
     container_name: qryn-go
     restart: unless-stopped
     expose:
@@ -114,8 +114,8 @@ Install `qryn` on your system using `deb` on a Debian system _(or derivate)_
 ```
 ##### Install
 ```bash
-dpkg -i qryn-writer_vx.x.x_amd64.deb
-dpkg -i qryn-go_vx.x.x_amd64.deb
+dpkg -i qryn-writer-cloud_vx.x.x_amd64.deb
+dpkg -i qryn-go-cloud_vx.x.x_amd64.deb
 ```
 ##### Configure
 ```bash
@@ -144,8 +144,8 @@ Install `qryn` on your system using `rpm` on a RHEL based OS _(or derivate)_
 ```
 ##### Install
 ```bash
-dpkg -i qryn-writer_vx.x.x_x86_64.rpm
-dpkg -i qryn-go_vx.x.x_x86_64.rpm
+dpkg -i qryn-writer-cloud_vx.x.x_x86_64.rpm
+dpkg -i qryn-go-cloud_vx.x.x_x86_64.rpm
 ```
 ##### Configure
 Configure per [here](/cloud/config.md)
