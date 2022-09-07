@@ -13,7 +13,7 @@ The following protocol APIs are supported for ingesting metrics:
 
 #### API Endpoints
 
-See Supported API Endpoints [here](/support.md#prometheus_write).
+See Supported API Endpoints [here](/support.md#prometheus-api).
 
 <!--
 ![image](https://user-images.githubusercontent.com/1423657/150554482-988b5ccf-225c-4919-bc31-6fa18bef6f53.png)
@@ -94,8 +94,8 @@ In Grafana queries, use $__interval for unwrap, ie: unwrap data [$__interval]
 ?> **qryn** implements the Influx v2 Write API subset for ingestion of Metrics _(and [logs](logs/ingestion#influx))_
 
 #### API Endpoints
-- [x] `/influx/api/v2/write`
-- [x] `/write`
+
+See Supported API Endpoints [here](/support.md#influx-api).
 
 ### Usage
 
