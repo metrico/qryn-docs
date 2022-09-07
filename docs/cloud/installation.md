@@ -1,6 +1,6 @@
 # qryn:cloud 
 
-!> qryn:cloud requires activation tokens. please [contact us](mailto:info@qxip.net) to obtain your QRYNCLOUD_LICENSE
+!> qryn:cloud requires activation tokens! Please [contact us](mailto:info@qxip.net) to obtain a license.
 
 ## 📦 Installation
 
