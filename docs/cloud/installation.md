@@ -17,14 +17,21 @@ Install `qryn` on your system using `docker` and `docker-compose`
 ?> qryn:cloud provides separately scalable `reader` and `writer` components
 
 ##### Log into the Container Hub
-```
-docker login ghcr.io
-```
 
 !> A valid user with permission to access the container packages is required. Please [contact us](mailto:info@qxip.net) to obtain permission and a token access.
 
-##### Pull the containers
+```bash
+docker login ghcr.io
 ```
+
+>? If you have obtained a token for access to the container repository, it should be used instead of your password, when prompted for login
+
+```bash
+echo 'XXXX-XXXX-XXXX-XXXX-XXXX' | docker login ghcr.io -u yourUserName --password-stdin
+```
+
+##### Pull the containers
+```bash
 docker pull ghcr.io/metrico/qryn-writer-cloud
 docker pull ghcr.io/metrico/qryn-go-cloud
 ```
