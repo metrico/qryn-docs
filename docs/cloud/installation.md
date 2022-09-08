@@ -24,7 +24,7 @@ Install `qryn` on your system using `docker` and `docker-compose`
 docker login ghcr.io
 ```
 
->? If you have obtained a token for access to the container repository, it should be used instead of your password, when prompted for login
+?> If you have obtained a token for access to the container repository, it should be used instead of your password, when prompted for login
 
 ```bash
 echo 'XXXX-XXXX-XXXX-XXXX-XXXX' | docker login ghcr.io -u yourUserName --password-stdin
