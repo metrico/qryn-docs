@@ -18,7 +18,7 @@
 
 ?> ... it's pronounced /ˈkwɪr..ɪŋ/ or just _querying_
 
-* Ingestion and PUSH APIs transparently compatible with [Loki](logs/ingestion#logql), [Prometheus](metrics/ingestion#prometheus), [Tempo](telemetry/ingestion#zipkin), [InfluxDB](metrics/ingestion#influx), [Elastic](logs/ingestion#elastic) _and more_
+* Ingestion APIs transparently compatible with [Loki](logs/ingestion#logql), [Prometheus](metrics/ingestion#prometheus), [Tempo](telemetry/ingestion#zipkin), [InfluxDB](metrics/ingestion#influx), [Elastic](logs/ingestion#elastic) _and more_
 * Native Grafana and _[LogQL/PromQL/Tempo APIs](getting-started.md)_ for _querying, processing, ingesting, tracing and alerting_
 * Powerful Query pipeline to dynamically _[search, filter and extract data](getting-started.md) from logs, events, metrics and traces_
 * Ready to use with Agents such as _[Promtail, Grafana-Agent, Vector, Logstash, Telegraf](ingestion.md) and many more_
