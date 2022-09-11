@@ -21,6 +21,8 @@ Connect Grafana to **qryn** using the _built-in_ `Loki` datasource
   * _Optional_ configure derivate fields to Tempo
 * Use your **qryn** URL and `save`
 
+?> qryn:oss uses port **3100**, qryn:cloud uses port **3200**
+
 -----
 
 ![image](https://user-images.githubusercontent.com/1423657/184536845-31638c7f-30bd-4416-ae99-4486024367f8.png)
@@ -63,6 +65,8 @@ Connect Grafana to **qryn** using the _built-in_ `Prometheus` datasource
 * Choose `Prometheus` from the list
 * Use your **qryn** URL and `save`
 
+?> qryn:oss uses port **3100**, qryn:cloud uses port **3200**
+
 -----
 
 ![image](https://user-images.githubusercontent.com/1423657/184536921-b3ff7fab-f71f-4f07-93c3-40a5b9915c64.png)
@@ -98,6 +102,8 @@ Connect Grafana to **qryn** using the _built-in_ `Tempo` datasource
 * Choose `Tempo` from the list
   * _Optional_ configure Loki search datasource
 * Use your **qryn** URL and `save`
+
+?> qryn:oss uses port **3100**, qryn:cloud uses port **3200**
 
 -----
 
