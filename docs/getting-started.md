@@ -103,7 +103,7 @@ Connect Grafana to **qryn** using the _built-in_ `Tempo` datasource
   * _Optional_ configure Loki search datasource
 * Use your **qryn** URL and `save`
 
-?> qryn:oss uses port **3100**, qryn:cloud uses port **3200**
+?> qryn:oss uses port **3100**, qryn:cloud uses port **3200/tempo**
 
 -----
 
