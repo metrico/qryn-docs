@@ -214,6 +214,7 @@ status:
 
 ?> That's it - demo logs included! Just access your stack using qryn-view or Grafana
 
+<!--
 #### ** Bun **
 <a id=bun name=bun></a>
 
@@ -238,6 +239,8 @@ qryn
 ```
 
 ?> That's it! You are ready to use **qryn**
+
+-->
 
 #### ** RPi4/aarch64 **
 <a id=bun name=raspberry></a>
