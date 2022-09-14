@@ -214,13 +214,13 @@ status:
 
 ?> That's it - demo logs included! Just access your stack using qryn-view or Grafana
 
-<!--
+
 #### ** Bun **
 <a id=bun name=bun></a>
 
 ![image](https://user-images.githubusercontent.com/1423657/185789758-d7366d2f-7b59-4cda-8bf4-198214581dd6.png ':size=100')
 
-Use **bun** to install and run **qryn** 
+Use **bun** to install **qryn** _(nodejs still required until further development)_
 
 ?> Install [bun](https://bun.sh/) before proceeding!
 
@@ -239,8 +239,6 @@ qryn
 ```
 
 ?> That's it! You are ready to use **qryn**
-
--->
 
 #### ** RPi4/aarch64 **
 <a id=bun name=raspberry></a>
