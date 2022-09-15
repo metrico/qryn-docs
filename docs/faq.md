@@ -12,13 +12,13 @@ It means _querying_ and we choose it overnight because Grafana literally owns th
 
 ?> Wait, is _qryn_ using the Grafana stack? Does it use Loki, Mimir?
 
-Not at all - _it replaces them_. We simply allow using Grafana _(the user-interface, unmodified)_ while _all_ other components and APIs are entirely provided by _qryn and ClickHouse_
+Not at all - _it replaces them_. We simply allow using Grafana _(the user-interface, unmodified)_ and its native datasources, while _all_ other components and APIs are entirely provided by _qryn and ClickHouse_. Note qryn is **not** a fork and does not contain _any code_ from Grafana or its projects.
 
 ----
 
 ?> Loki, Mimir/Prometheus/Victoriametrics/etc already exists, why do we need _qryn_?
 
-Why not? Alternatives are good and can help accelerate evolution in an lively ecosystem. **qryn** is just designed to make its end users happy and was implemented as a transparent and lightweight _overlay_ on top ClickHouse, where all data ingested across protocols sits ready to be accessed, analyzed and correlated in thousands of way today and into the future leveraging its fast and ever growing capabilities.
+Why not? We're loving the challenge. Alternatives play an important role and can accelerate evolution in an lively ecosystem. **qryn** is just designed to make its end users happy and was implemented as a transparent, smart, lightweight _overlay_ on top ClickHouse, where all data ingested across protocols sits ready to be accessed, analyzed and correlated in thousands of way today and into the future leveraging its fast and ever growing capabilities.
 
 ---
 
