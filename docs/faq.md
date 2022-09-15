@@ -110,6 +110,7 @@ npm install -g qryn
 ## Disclaimers
 
 ?> ©️ QXIP BV, released under the GNU Affero General Public License v3.0. See LICENSE for details.
+?> Custom _(Non-GPL)_ License available for cloud technocalogy integrators. Please [contact us](mailto://info@qryn.dev) for details.
 
 <div style="font-size: 13px;">
 - qryn is not affiliated or endorsed by Grafana Labs or ClickHouse Inc. All rights belong to their respective owners.<br>
