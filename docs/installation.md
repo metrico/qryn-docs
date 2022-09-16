@@ -37,6 +37,9 @@ qryn
 
 ?> That's it! You are ready to access the stack using qryn-view or Grafana
 
+?> Intensive load? Run multiple process instances for ingestion and querying
+
+
 
 #### ** PM2 **
 <a id=pm2 name=pm2></a>
@@ -64,6 +67,9 @@ pm2 startup
 ```
 
 ?> That's it! You are ready to access the stack using qryn-view or Grafana
+
+?> Intensive load? Run pm2 in `cluster` mode to leverage multiple cpu threads
+
 
 #### ** GIT **
 <a id=git name=git></a>
