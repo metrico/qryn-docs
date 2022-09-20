@@ -36,8 +36,6 @@ Want more than our APIs offer? Access your data using pure ClickHouse SQL _for f
 
 <!-- tabs:end --> 
 
-<br> 
-
 ![image](https://user-images.githubusercontent.com/1423657/191248597-251706cc-e3c8-4d29-9a1d-549f66282360.png)
 
 
