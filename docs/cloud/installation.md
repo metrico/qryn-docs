@@ -1,6 +1,6 @@
 # qryn:cloud 
 
-!> qryn:cloud requires activation tokens! Please [contact us](mailto:info@qxip.net) to obtain a license.
+!> qryn:cloud requires activation & pull tokens! Please [contact us](mailto:info@qxip.net) to obtain a license.
 
 ## 📦 Installation
 
@@ -12,19 +12,19 @@ Stack configuration is 100% based on [ENV](/cloud/env.md) parameters passed to t
 
 #### ** Docker **
 
+![image](https://user-images.githubusercontent.com/1423657/184507884-624b9598-62e1-413f-854e-8210ecac4e75.png ':size=300x100')
+
 Install `qryn` on your system using `docker` and `docker-compose`
 
 ?> qryn:cloud provides separately scalable `reader` and `writer` components
 
 ##### Log into the Container Hub
 
-!> A valid user with permission to access the container packages is required. Please [contact us](mailto:info@qxip.net) to obtain permission and a token access.
-
 ```bash
 docker login ghcr.io
 ```
 
-?> If you have obtained a token for access to the container repository, it should be used instead of your password, when prompted for login
+Use the provided _remote token_ to access to the container repository instead of your password
 
 ```bash
 echo 'XXXX-XXXX-XXXX-XXXX-XXXX' | docker login ghcr.io -u yourUserName --password-stdin
