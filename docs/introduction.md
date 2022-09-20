@@ -6,6 +6,7 @@
 
 _Logs, Metrics and Traces made simple, right out of the box - batteries included!_ 🔋
 
+
 <!-- tabs:start -->
 
 #### ** Ingestion **
@@ -33,8 +34,9 @@ Start querying logs, metrics and traces instantly using [LogQL, PromQL, Flux or 
 
 Want more than our APIs offer? Access your data using pure ClickHouse SQL _for fun and compliance_.
 
-
 <!-- tabs:end --> 
+
+<br> 
 
 ![image](https://user-images.githubusercontent.com/1423657/191248597-251706cc-e3c8-4d29-9a1d-549f66282360.png)
 
