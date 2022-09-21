@@ -12,7 +12,9 @@
      <img src="https://user-images.githubusercontent.com/1423657/184494438-17d7ceb0-a62a-4819-9b1c-43d7f0baf802.png" width=50 />&nbsp;
      <img src="https://avatars.githubusercontent.com/u/54801242?s=200&v=4" width=50 /><br/>
     
-     <img src="https://user-images.githubusercontent.com/1423657/184538094-13c11500-24ef-4468-9f33-dc9d564238e3.gif" width=500 class=border />
+     <!-- <img src="https://user-images.githubusercontent.com/1423657/184538094-13c11500-24ef-4468-9f33-dc9d564238e3.gif" width=500 class=border /> -->
+     <img src="https://user-images.githubusercontent.com/1423657/191462388-4c7bbe6f-bf0f-486d-b059-577361997e55.png" width=500 class=border />
+
   </h3>
 </p>
 
@@ -24,4 +26,3 @@
 * Ready to use with Agents such as _[Promtail, Grafana-Agent, Vector, Logstash, Telegraf](ingestion.md) and many more_
 * Built in _[Data Explorer](getting-started#view) and [LogQL CLI](getting-started#vlogql)_ for instantly _querying logs and extracting metrics_
 * Designed to be Cloud native for _serverless and stateless operations_ on top of [ClickHouse](https://clickhouse.com/clickhouse).
-
