@@ -133,6 +133,8 @@ datasources:
 
 #### ** Flux **
 
+### [🔎 Start using Flux](https://docs.influxdata.com/flux/v0.x/)
+
 Connect Grafana to **qryn** using the _built-in_ `Flux` datasource
 
 `Flux` is a lightweight scripting language for querying databases and working with data
