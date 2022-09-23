@@ -1,4 +1,4 @@
-## Performance ⚙️
+# 🚤 Performance
 
 !> Benchmarks are a work in progress! Share your experience and performance with us.
 
