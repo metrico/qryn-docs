@@ -24,8 +24,9 @@
 * **Misc**
   * [About](about.md "QRYN – Motivations – LogQL for ClickHouse and beyond")
   * [Performance](performance.md)
+  * [Plugins](plugins.md)
   * [FAQ](faq.md)
-  * 
+
 * **Links**
   * [View](https://github.com/metrico/qryn-view)
   * [vLogQL](https://github.com/metrico/vLogql)
