@@ -1,7 +1,6 @@
 # 🔌 qryn plugins
 
-_Missing a LogQL function in qryn-js? No problem!_ Users can extend pipeline functionality in in _no time_ using [qryn Plugins](https://github.com/metrico/qryn/tree/master/plugins)
-Need to alias a complex query? Use macros to turn complex queries into easy to use queries
+_Missing a LogQL function in qryn-js? No problem!_ Users can easily extend built-in functionality using [qryn Plugins](https://github.com/metrico/qryn/tree/master/plugins) and or create _macro functions or aliases_ for complex or verbose functions.
 
 ?> plugins are not yet available in the qryn:cloud version
 
