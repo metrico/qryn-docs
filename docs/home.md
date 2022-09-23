@@ -1,12 +1,9 @@
 <p id=start>
   
-  <h2 style="font-weight: normal;font-size: 30px;">
-     <b>qryn</b>: <i>the open-source polyglot observability stack</i><br/><br/>
-      
-<!-- <img src="https://user-images.githubusercontent.com/1423657/184538094-13c11500-24ef-4468-9f33-dc9d564238e3.gif" width=500 class=border /> -->
+  <h1 style="font-weight: normal;font-size: 30px;">
+     <b>qryn</b>: <i>polyglot monitoring and observability</i><br/><br/>
 <img src="https://user-images.githubusercontent.com/1423657/191464140-48851b2c-ada0-4cfb-b27d-315edc0ba890.gif">
-
-  </h2>
+  </h1>
 </p>
 
 ?> ... it's pronounced /ˈkwɪr..ɪŋ/ or just _querying_
