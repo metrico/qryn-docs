@@ -115,7 +115,10 @@ docker compose ps
 
 ![image](https://user-images.githubusercontent.com/1423657/184507942-cb195a16-b6d1-451a-9d80-00550f261048.png ':size=100')
 
-##### Helm
+Install qryn on your system using `kubernetes`
+
+
+#### Helm
 Use `Kubernetes` and `helm` to get started using either a local or cloud ClickHouse instance.
 
 ?> You need to have a Kubernetes cluster, and the kubectl command-line tool must be configured to communicate with your cluster. It is recommended to run this tutorial on a cluster with at least two nodes that are not acting as control plane hosts.
