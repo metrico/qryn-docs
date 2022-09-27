@@ -9,11 +9,11 @@ _Logs, Metrics and Traces made simple, right out of the box - batteries included
 
 !> qryn:cloud requires activation & pull tokens! Please [contact us](mailto:office@qxip.net) to obtain a license.
 
-### [Installation](/#/cloud/installation)
+### [Installation](/cloud/installation)
 Follow the process to deploy `qryn:cloud` on your infrastructure
 
-### [ENV Configuration](/#/cloud/env)
+### [ENV Configuration](/cloud/env)
 Follow the process to configure `qryn:cloud` for your deployment
 
-### [Distributed Cluster](/#/cloud/cluster)
+### [Distributed Cluster](/cloud/cluster)
 Follow the process to distribute `qryn:cloud` tables on your cluster
