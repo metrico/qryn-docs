@@ -12,6 +12,7 @@ The distribution/sharding is `fingerprint` based to consist session to the same 
 ## How to create a minimal clickhouse cluster with docker-compose
 
 1. Create a compose yaml file with two clickhouse servers:
+
 ```yaml
 version: '2.1'
 networks:
@@ -46,9 +47,12 @@ services:
 ```
 
 2. Export the default config.xml file from clickhouse server docker image:
-`docker run -it clickhouse/clickhouse-server:22.6.4.35 cat /etc/clickhouse-server/config.xml >config.xml`
-`cat config.xml` - to ensure that the file is exported properly
+```
+docker run -it clickhouse/clickhouse-server:22.6.4.35 cat /etc/clickhouse-server/config.xml >config.xml
+```
+
 3. `vi config.xml` or use your preferred text editor
+
 4. Alter the config.xml file to configure the cluster 
    - find the `remote_servers` tag
    - inside the tag create your own cluster configuration like the next one:
@@ -73,7 +77,9 @@ your cluster tag should be inside `remote_servers` (between `<remote_servers>` a
 `shard` - is a set of clickhouse servers where distributed table will send parts of rows.
 `replica` - is a clickhouse server where to copy the shard of data. all replicas inside one shard will eventually 
 store the copy of the data.
-4. `docker-compose up` - run the cluster in the environment. You have a cluster setup.
+
+
+5. `docker-compose up` - run the cluster in the environment. You have a cluster setup.
 
 ## Configuration of qryn reader and writer
 After we created a cluster, we need to configure qryn to use it.
