@@ -1,4 +1,4 @@
-# ☁️ qryn:cloud
+## ☁️ [qryn:cloud](/cloud)
 
 ## Distributed mode
 qryn:cloud distributed mode is provided via an extra layer of `_dist` suffixed tables. 
