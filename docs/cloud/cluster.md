@@ -41,4 +41,4 @@ cluster name is the name of a cluster from the config.xml file of clickhouse ser
 </remote_servers>
 ```
 
-Before using Qryn the writer with `-initialize_db` flag should be started in order to create the `_dist` tables.
+?> Before using qryn:writer `-initialize_db` should be executed to create the `_dist` tables
