@@ -1,6 +1,6 @@
-## qryn:cloud
+## ☁️ qryn:cloud
 
-### Configuration
+### 📖 Configuration
 
 **qryn:cloud** can be configured through a static `config.json` file or using `ENV` variables
 
