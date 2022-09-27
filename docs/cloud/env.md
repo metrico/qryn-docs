@@ -1,4 +1,4 @@
-## ☁️ [qryn:cloud](/cloud)
+## ☁️ < [qryn:cloud](/cloud)
 
 ### 📖 Configuration
 
