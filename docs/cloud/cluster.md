@@ -1,4 +1,5 @@
-# qryn:cloud
+# ☁️ qryn:cloud
+
 ## Distributed mode
 qryn:cloud distributed mode is provided via an extra layer of `_dist` suffixed tables. 
 The tables use the `Distributed` engine type so writes and reads are provided for the whole cluster.
