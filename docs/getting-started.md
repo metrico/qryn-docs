@@ -8,7 +8,7 @@ Let's **explore** our data using [Grafana](guide/datasources.md) and its _amazin
 
 #### ** Loki **
 
-[arcade](https://demo.arcade.software/GKaq4SJRBPYyCZgoWBoM?embed ':include :type=iframe width=100% height=450px border=0')
+[arcade](https://demo.arcade.software/GKaq4SJRBPYyCZgoWBoM?embed ':include :type=iframe width=100% height=500px border=0')
 
 ### [🔎 Start using LogQL](logs/query) 
 
