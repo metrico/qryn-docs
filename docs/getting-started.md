@@ -8,7 +8,7 @@ Let's **explore** our data using [Grafana](guide/datasources.md) and its _amazin
 
 #### ** Loki **
 
-[arcade-loki](https://demo.arcade.software/GKaq4SJRBPYyCZgoWBoM?embed ':include :type=iframe width=100% height=500px border=0')
+[arcade-loki](https://demo.arcade.software/GKaq4SJRBPYyCZgoWBoM?embed ':include :type=iframe width=100% height=550px border=0')
 
 ### [🔎 Start using LogQL](logs/query) 
 
@@ -56,7 +56,7 @@ datasources:
 
 #### ** Prometheus **
 
-[arcade-prom](https://demo.arcade.software/r2A4ia93hPs96pyiaFQx?embed ':include :type=iframe width=100% height=500px border=0')
+[arcade-prom](https://demo.arcade.software/r2A4ia93hPs96pyiaFQx?embed ':include :type=iframe width=100% height=550px border=0')
 
 ### [🔎 Start using PromQL](metrics/query)
 
@@ -95,7 +95,7 @@ datasources:
 
 #### ** Tempo **
 
-[arcade-tempo](https://demo.arcade.software/G43G6ja4CHJYpF9rc3V2?embed ':include :type=iframe width=100% height=500px border=0')
+[arcade-tempo](https://demo.arcade.software/G43G6ja4CHJYpF9rc3V2?embed ':include :type=iframe width=100% height=550px border=0')
 
 ### [🔎 Start using Tempo](telemetry/query)
 
