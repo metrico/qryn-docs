@@ -8,6 +8,8 @@ Let's **explore** our data using [Grafana](guide/datasources.md) and its _amazin
 
 #### ** Loki **
 
+[arcade]([https://cinwell.com](https://demo.arcade.software/GKaq4SJRBPYyCZgoWBoM?embed) ':include :type=iframe width=100% height=450px')
+
 ### [🔎 Start using LogQL](logs/query) 
 
 Connect Grafana to **qryn** using the _built-in_ `Loki` datasource
