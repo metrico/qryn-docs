@@ -56,6 +56,8 @@ datasources:
 
 #### ** Prometheus **
 
+[arcade-prom](https://demo.arcade.software/r2A4ia93hPs96pyiaFQx?embed ':include :type=iframe width=100% height=500px border=0')
+
 ### [🔎 Start using PromQL](metrics/query)
 
 Connect Grafana to **qryn** using the _built-in_ `Prometheus` datasource
