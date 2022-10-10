@@ -93,7 +93,7 @@ datasources:
 
 #### ** Tempo **
 
-[arcade-tempo](https://app.arcade.software/share/G43G6ja4CHJYpF9rc3V2 ':include :type=iframe width=100% height=500px border=0')
+[arcade-tempo](https://app.arcade.software/share/G43G6ja4CHJYpF9rc3V2?embed ':include :type=iframe width=100% height=500px border=0')
 
 ### [🔎 Start using Tempo](telemetry/query)
 
