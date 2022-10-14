@@ -220,18 +220,17 @@ Insert labeled  using the `line` parameter in a _LogQL stream_:
 
 ```bash
 curl -i -XPOST -H "Content-Type: application/json" http://qryn:3100/loki/api/v1/push \
-     --data '{"streams":[{"labels":"{\"type\":\"test\"}","entries":[{"timestamp":"'"$(date --utc +%FT%T.%3NZ)"'", "line":"hello qryn"}]}]}'
+     --data '{"streams":[{"stream":{"type":"test"},"values":[["1665767942870000000", "hello qryn"]]}]}'
 ```
 ```json
 {
     "streams": [
         {
-            "labels": "{\"type\":\"test\"}",
-            "entries": [
-                {
-                    "timestamp":"1545840006945",
-                    "line": "hello qryn"
-                }
+            "streams": {"type":"test"},
+            "values": [
+                "1665767942870000000",
+                 "hello qryn"
+                ]
             ]
         }
     ]
@@ -242,19 +241,19 @@ curl -i -XPOST -H "Content-Type: application/json" http://qryn:3100/loki/api/v1/
 We can also insert labeled  using the `value` parameter in a _LogQL stream_
 
 ```bash
-curl -i -XPOST -H "Content-Type: application/json" http://qryn:3100/loki/api/v1/push \
-     --data '{"streams":[{"labels":"{\"__name__\":\"test_metric\"}","entries":[{"timestamp":"'"$(date --utc +%FT%T.%3NZ)"'", "value":100}]}]}'
+curl -i -XPOST -H "Content-Type: application/json" http://127.0.0.1:3104/loki/api/v1/push --data '{"streams":[{"stream":{"__name__":"test_metric"},"values":[["1665767942870000000", "metric value", 100]]}]}'
 ```
 ```json
 {
     "streams": [
         {
-            "labels": "{\"__name__\":\"test_metric\"}",
-            "entries": [
-                {
-                    "timestamp":"1545840006945",
-                    "value": 100
-                }
+            "stream": {"__name__":"test_metric"},
+            "values": [
+                [
+                    "1665767942870000000",
+                    "metric value",
+                    100
+                ]
             ]
         }
     ]
