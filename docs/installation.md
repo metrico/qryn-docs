@@ -224,7 +224,7 @@ status:
 #### ** ECS **
 <a id=aws name=aws></a>
 
-![image](https://user-images.githubusercontent.com/1423657/196041303-7ec4b3f8-a948-46f2-90ec-1058ec50f91c.png ':size=100')
+![image](https://user-images.githubusercontent.com/1423657/196041303-7ec4b3f8-a948-46f2-90ec-1058ec50f91c.png ':size=200')
 
 Use `AWS Fargate` to deploy and scale `qryn` using a remote ClickHouse instance
 
@@ -319,7 +319,7 @@ aws ecs create-service \
 #### ** GCP **
 <a id=gcp name=gcp></a>
 
-![image](https://user-images.githubusercontent.com/1423657/196041367-1ea95555-4e6d-45bf-b98e-7a8e5d4ddfaa.png ':size=100')
+![image](https://user-images.githubusercontent.com/1423657/196041367-1ea95555-4e6d-45bf-b98e-7a8e5d4ddfaa.png ':size=200')
 
 Use `Google Compute Cloud` to deploy and scale `qryn` using a remote ClickHouse instance
 
@@ -351,7 +351,7 @@ gcloud run deploy --image=gcr.io/<MY_PROJECT_ID>/qryn/qryn:latest \
 #### ** DigitalOcean **
 <a id=digital name=digital></a>
 
-![image](https://user-images.githubusercontent.com/1423657/196041474-98130d07-26fc-493c-bd4c-28b55c347aed.png ':size=100')
+![image](https://user-images.githubusercontent.com/1423657/196041474-98130d07-26fc-493c-bd4c-28b55c347aed.png ':size=200')
 
 
 Use `Digital Ocean` to deploy and scale `qryn` using a remote ClickHouse instance
