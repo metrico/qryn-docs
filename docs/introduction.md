@@ -50,7 +50,7 @@ Want more than our APIs offer? Access your data using pure ClickHouse SQL _for f
 
 
 
-# 👑 Hosting Partners
+### 👑 Hosting Partners
 Looking for a hosted ClickHouse option? There are many great companies we work with delivering _state-of-the-art_ managed service instances and great benchmark results with predictable costs at any scale - all backed by extremely skilled technical teams, and compatible with _qryn_
 
 💜 [Gigapipe](https://gigapipe.com) _(featuring a hosted qryn:cloud integration)_<br>
