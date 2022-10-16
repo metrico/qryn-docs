@@ -9,7 +9,7 @@ The tables use the `Distributed` engine type so writes and reads are provided fo
 
 The distribution/sharding is `fingerprint` based to consist session to the same cluster node.
 
-## How to create a minimal clickhouse cluster with docker-compose
+#### How to create a minimal clickhouse cluster with docker-compose
 
 1. Create a compose yaml file with two clickhouse servers:
 
@@ -81,7 +81,7 @@ store the copy of the data.
 
 5. `docker-compose up` - run the cluster in the environment. You have a cluster setup.
 
-## Configuration of qryn reader and writer
+#### Configuration of qryn reader and writer
 After we created a cluster, we need to configure qryn to use it.
 The distributed mode is turned on by json file configuration or by an env var.
 The json configuration for the example is the next:
