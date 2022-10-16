@@ -13,7 +13,8 @@ Grafana Agent can act as a telemetry collector and receive spans from Jaeger, Ka
 
 ##### Example
 In this example an `OTLP` collector is started on port `:4318` forwarding traces to **qryn** on port `:3100`
-###### config.yaml
+
+###### OTLP config.yaml _(cloud only)_
 ```
 server:
   log_level: debug
@@ -30,6 +31,61 @@ traces:
     remote_write:
       - endpoint: qryn:3100
         insecure: true
+```
+
+###### ZIPKIN config.yaml _(js)_
+```
+config.yaml: |
+    receivers:
+      jaeger:
+        protocols:
+          grpc:
+            endpoint: 0.0.0.0:14250
+          thrift_http:
+            endpoint: 0.0.0.0:14268
+          thrift_compact:
+            endpoint: 0.0.0.0:6831
+      otlp:
+        protocols:
+          grpc:
+            endpoint: 0.0.0.0:4317
+          http:
+            endpoint: 0.0.0.0:4318
+
+    processors:
+      memory_limiter:
+        check_interval: 1s
+        limit_percentage: 70
+        spike_limit_percentage: 30
+      batch:
+        send_batch_size: 100
+        send_batch_max_size: 1000
+        timeout: 10s
+      resourcedetection:
+        detectors: [env]
+        timeout: 5s
+        override: false
+      k8sattributes:
+        auth_type: 'serviceAccount'
+      resource:
+        attributes:
+          - key: app
+            action: insert
+            from_attribute: k8s.deployment.name
+          - key: pod_name
+            action: insert
+            from_attribute: k8s.pod.name
+    exporters:
+      zipkin:
+        endpoint: http://qryn:3100/api/v2/spans
+        tls:
+          insecure: true
+    service:
+      pipelines:
+        traces:
+          receivers: [jaeger, otlp]
+          processors: [memory_limiter, batch, resourcedetection, k8sattributes, resource]
+          exporters: [zipkin]
 ```
 
 The following articles provide great insight and examples on the subject:
