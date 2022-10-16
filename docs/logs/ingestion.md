@@ -18,7 +18,7 @@ This means _any Loki compatible client_ can be used with **qryn** without modifi
 > Vector is a popular lightweight, ultra-fast tool for building observability pipelines
 
 #### [Promtail](https://grafana.com/docs/grafana-cloud/data-configuration/logs/collect-logs-with-promtail/)
-Promtail is an agent which ships the contents of local logs to LogQL APIs
+> Promtail is an agent which ships the contents of local logs to LogQL APIs
 
 #### [Fluentd](https://grafana.com/docs/loki/latest/clients/fluentd/) + [Examples](https://grafana.com/blog/2022/06/23/how-to-send-logs-to-grafana-loki-with-the-opentelemetry-collector-using-fluent-forward-and-filelog-receivers/#:~:text=Set%20up%20a%20Grafana%20Cloud,click%20the%20Send%20Logs%20button.)
 > Fluentd is an open source data collector for unified logging layer compatible with LogQL
