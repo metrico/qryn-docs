@@ -415,7 +415,7 @@ qryn
 ?> That's it! You are ready to use **qryn**
 
 
-#### ** aarch64 **
+#### ** RPi4 **
 <a id=bun name=raspberry></a>
 
 <img src="https://j6z7x9q7.rocketcdn.me/wp-content/uploads/2019/09/Heatsink-case-goud-1.jpg" width=150 />
