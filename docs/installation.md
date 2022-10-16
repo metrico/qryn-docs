@@ -370,11 +370,13 @@ Configure Docker Hub as the container source
 
 ![image](https://user-images.githubusercontent.com/1423657/196040696-428cf633-61e3-4356-9dea-93a9fded1bf9.png ':size=200')
 
-### Choose Repository: `qryn`
+#### Choose Repository
+- `qryn`
 
-### Choose Tag: `latest` _(optional)_
+#### Choose Tag
+- `latest` _(optional)_
 
-#### Port
+#### Choose Port
 Configure the HTTP port to `3100`
 
 #### Enviroment Variables
