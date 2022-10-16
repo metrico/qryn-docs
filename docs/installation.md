@@ -221,6 +221,127 @@ status:
 ?> That's it - demo logs included! Just access your stack using qryn-view or Grafana
 
 
+#### ** AWS ECS ***
+<a id=aws name=aws></a>
+
+Use `AWS Fargate` to deploy and scale `qryn` using a remote ClickHouse instance
+
+#### Create ECS Cluster
+```
+aws ecs create-cluster \
+--cluster-name <YOUR_ECS_CLUSTER>
+```
+
+#### Create Log group
+```
+aws logs create-log-group \
+--log-group-name /ecs/<YOUR_APP_NAME>/<YOUR_CONTAINER_NAME>
+```
+
+#### Create ECS Task Definiton
+Every time a task is modified its version increases. For new tasks the version will be 1.
+```
+aws ecs register-task-definition \
+--cli-input-json "file://./<YOUR_TASK_DEF_NAME>.json"
+```
+
+> This json file defines the container specification. You can define secrets such as NC_DB and environment variables here.
+
+Here's the sample Task Definition
+
+```json
+{
+  "family": "qryn-sample-task-def",
+  "networkMode": "awsvpc",
+  "containerDefinitions": [{
+    "name": "<YOUR_CONTAINER_NAME>",
+    "image": "qryn:latest",
+    "essential": true,
+    "logConfiguration": {
+      "logDriver": "awslogs",
+      "options": {
+        "awslogs-group": "/ecs/<YOUR_APP_NAME>/<YOUR_CONTAINER_NAME>",
+        "awslogs-region": "<YOUR_AWS_REGION>",
+        "awslogs-stream-prefix": "ecs"
+      }
+    },
+    "secrets": [{
+      "name": "<YOUR_SECRETS_NAME>",
+      "valueFrom": "<YOUR_SECRET_ARN>"
+    }],
+    "environment": [{
+      "name": "CLICKHOUSE_SERVER",
+      "value": "<YOUR_CLICKHOUSE_SERVER_URL>"
+    },{
+      "name": "CLICKHOUSE_AUTH",
+      "value": "<YOUR_CLICKHOUSE_SERVER_AUTH>"
+    },{
+      "name": "CLICKHOUSE_DB",
+      "value": "qryn"
+    }],
+    "portMappings": [{
+      "containerPort": 3100,
+      "hostPort": 3100,
+      "protocol": "tcp"
+    }]
+  }],
+  "requiresCompatibilities": [
+    "FARGATE"
+  ],
+  "cpu": "256",
+  "memory": "512",
+  "executionRoleArn": "<YOUR_ECS_EXECUTION_ROLE_ARN>",
+  "taskRoleArn": "<YOUR_ECS_TASK_ROLE_ARN>"
+}
+```
+
+#### Create ECS Service
+```bash
+aws ecs create-service \
+--cluster <YOUR_ECS_CLUSTER> \
+--service-name  <YOUR_SERVICE_NAME> \
+--task-definition <YOUR_TASK_DEF>:<YOUR_TASK_DEF_VERSION> \
+--desired-count <DESIRED_COUNT> \
+--launch-type "FARGATE" \
+--platform-version <VERSION> \
+--health-check-grace-period-seconds <GRACE_PERIOD_IN_SECOND> \
+--network-configuration "awsvpcConfiguration={subnets=["<YOUR_SUBSETS>"], securityGroups=["<YOUR_SECURITY_GROUPS>"], assignPublicIp=ENABLED}" \
+--load-balancer targetGroupArn=<TARGET_GROUP_ARN>,containerName=<CONTAINER_NAME>,containerPort=<YOUR_CONTAINER_PORT>
+```
+
+> If your service fails to start, you may check the logs in ECS console or in Cloudwatch. Make sure the security groups have the correct inbound and outbound rules.
+
+?> That's it! You are ready to use **qryn** on Fargate!
+
+
+#### ** GCP ***
+
+#### Pull qryn Image on Cloud Shell
+Since Cloud Run only supports images from Google Container Registry (GCR) or Artifact Registry, we need to pull qryn image, tag it and push it in GCP using Cloud Shell. Here are some sample commands which you can execute in Cloud Shell.
+```
+# pull latest qryn image
+docker pull qryn:latest
+```
+```
+# tag the image
+docker tag qryn:latest gcr.io/<MY_PROJECT_ID>/qryn/qryn:latest
+```
+```
+# push the image to GCR
+docker push gcr.io/<MY_PROJECT_ID>/qryn/qryn:latest
+Deploy qryn on Cloud Run
+gcloud run deploy --image=gcr.io/<MY_PROJECT_ID>/qryn/qryn:latest \
+                  --set-env-vars "CLICKHOUSE_SERVER=y<YOUR_CLICKHOUSE_SERVER_URL>" \
+                  --set-env-vars "CLICKHOUSE_AUTH=<YOUR_CLICKHOUSE_SERVER_AUTH>" \
+                  --region=us-central1 \
+                  --allow-unauthenticated \
+                  --platform=managed 
+```
+
+?> That's it! You are ready to use **qryn** on GCP
+
+
+<!--
 #### ** Bun **
 <a id=bun name=bun></a>
 
@@ -245,6 +366,8 @@ qryn
 ```
 
 ?> That's it! You are ready to use **qryn**
+
+-->
 
 #### ** RPi4/aarch64 **
 <a id=bun name=raspberry></a>
