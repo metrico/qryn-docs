@@ -221,7 +221,7 @@ status:
 ?> That's it - demo logs included! Just access your stack using qryn-view or Grafana
 
 
-#### ** AWS ECS ***
+#### ** AWS ECS **
 <a id=aws name=aws></a>
 
 Use `AWS Fargate` to deploy and scale `qryn` using a remote ClickHouse instance
@@ -314,7 +314,7 @@ aws ecs create-service \
 ?> That's it! You are ready to use **qryn** on Fargate!
 
 
-#### ** GCP ***
+#### ** GCP **
 
 #### Pull qryn Image on Cloud Shell
 Since Cloud Run only supports images from Google Container Registry (GCR) or Artifact Registry, we need to pull qryn image, tag it and push it in GCP using Cloud Shell. Here are some sample commands which you can execute in Cloud Shell.
@@ -341,7 +341,6 @@ gcloud run deploy --image=gcr.io/<MY_PROJECT_ID>/qryn/qryn:latest \
 ?> That's it! You are ready to use **qryn** on GCP
 
 
-<!--
 #### ** Bun **
 <a id=bun name=bun></a>
 
@@ -367,7 +366,6 @@ qryn
 
 ?> That's it! You are ready to use **qryn**
 
--->
 
 #### ** RPi4/aarch64 **
 <a id=bun name=raspberry></a>
