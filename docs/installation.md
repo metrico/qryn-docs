@@ -319,7 +319,7 @@ aws ecs create-service \
 #### ** GCP **
 <a id=gcp name=gcp></a>
 
-![image](https://user-images.githubusercontent.com/1423657/196041367-1ea95555-4e6d-45bf-b98e-7a8e5d4ddfaa.png ':size:100')
+![image](https://user-images.githubusercontent.com/1423657/196041367-1ea95555-4e6d-45bf-b98e-7a8e5d4ddfaa.png ':size=100')
 
 Use `Google Compute Cloud` to deploy and scale `qryn` using a remote ClickHouse instance
 
