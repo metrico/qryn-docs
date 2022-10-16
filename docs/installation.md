@@ -340,6 +340,40 @@ gcloud run deploy --image=gcr.io/<MY_PROJECT_ID>/qryn/qryn:latest \
 
 ?> That's it! You are ready to use **qryn** on GCP
 
+#### ** DigitalOcean **
+
+## Create App
+
+On Home page, Click on `Create` and select `Apps (Deploy your code)`
+
+![image](https://user-images.githubusercontent.com/1423657/196040670-6a9dfba8-c246-4836-9ba0-35f0fda1bb5d.png ':size=200')
+
+![image](https://user-images.githubusercontent.com/1423657/196040591-13bae4b3-4bf8-406d-b48b-5bebf5617d9d.png ':size=200')
+
+### Choose Source: Docker Hub
+
+Configure Docker Hub as the container source
+
+![image](https://user-images.githubusercontent.com/1423657/196040696-428cf633-61e3-4356-9dea-93a9fded1bf9.png ':size=200')
+
+### Choose Repository: `qryn`
+
+### Choose Tag: `latest` _(optional)_
+
+#### Port
+Configure the HTTP port to `3100`
+
+#### Enviroment Variables
+Configure the ENV variables for connectivity, authentication, etc
+
+- `CLICKHOUSE_SERVER` = `<YOUR_CLICKHOUSE_SERVER_URL>`
+- `CLICKHOUSE_AUTH` = `<YOUR_CLICKHOUSE_SERVER_AUTH>`
+
+### Review and Launch
+
+Review all your App settings and launch in your preferred region
+
+?> That's it! You are ready to use **qryn** on DigitalOcean
 
 #### ** Bun **
 <a id=bun name=bun></a>
