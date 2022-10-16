@@ -133,7 +133,7 @@ Get started in seconds using the [qryn docker demo](https://github.com/metrico/q
 
 ?> That's it - demo logs included! Just access your stack using [qryn-view or Grafana](getting-started)
 
-#### ** Kubernetes **
+#### ** K8s **
 <a id=k8s name=k8s></a>
 
 ![image](https://user-images.githubusercontent.com/1423657/184507942-cb195a16-b6d1-451a-9d80-00550f261048.png ':size=100')
@@ -221,8 +221,10 @@ status:
 ?> That's it - demo logs included! Just access your stack using qryn-view or Grafana
 
 
-#### ** AWS ECS **
+#### ** ECS **
 <a id=aws name=aws></a>
+
+![image](https://user-images.githubusercontent.com/1423657/196041303-7ec4b3f8-a948-46f2-90ec-1058ec50f91c.png ':size=100')
 
 Use `AWS Fargate` to deploy and scale `qryn` using a remote ClickHouse instance
 
@@ -315,6 +317,12 @@ aws ecs create-service \
 
 
 #### ** GCP **
+<a id=gcp name=gcp></a>
+
+![image](https://user-images.githubusercontent.com/1423657/196041367-1ea95555-4e6d-45bf-b98e-7a8e5d4ddfaa.png ':size:100')
+
+Use `Google Compute Cloud` to deploy and scale `qryn` using a remote ClickHouse instance
+
 
 #### Pull qryn Image on Cloud Shell
 Since Cloud Run only supports images from Google Container Registry (GCR) or Artifact Registry, we need to pull qryn image, tag it and push it in GCP using Cloud Shell. Here are some sample commands which you can execute in Cloud Shell.
@@ -341,6 +349,12 @@ gcloud run deploy --image=gcr.io/<MY_PROJECT_ID>/qryn/qryn:latest \
 ?> That's it! You are ready to use **qryn** on GCP
 
 #### ** DigitalOcean **
+<a id=digital name=digital></a>
+
+![image](https://user-images.githubusercontent.com/1423657/196041474-98130d07-26fc-493c-bd4c-28b55c347aed.png ':size=100')
+
+
+Use `Digital Ocean` to deploy and scale `qryn` using a remote ClickHouse instance
 
 ## Create App
 
@@ -401,7 +415,7 @@ qryn
 ?> That's it! You are ready to use **qryn**
 
 
-#### ** RPi4/aarch64 **
+#### ** aarch64 **
 <a id=bun name=raspberry></a>
 
 <img src="https://j6z7x9q7.rocketcdn.me/wp-content/uploads/2019/09/Heatsink-case-goud-1.jpg" width=150 />
