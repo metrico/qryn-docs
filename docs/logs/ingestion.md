@@ -226,9 +226,10 @@ curl -i -XPOST -H "Content-Type: application/json" http://qryn:3100/loki/api/v1/
 {
     "streams": [
         {
-            "streams": {"type":"test"},
-            "values": [
-                "1665767942870000000",
+            "stream": {"type":"test"},
+            "values": [ 
+                [
+                 "1665767942870000000",
                  "hello qryn"
                 ]
             ]
