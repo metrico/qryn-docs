@@ -1,4 +1,4 @@
-## ☁️ < [qryn:cloud](/cloud)
+## ☁️ [qryn:cloud](/#/cloud)
 
 ## Distributed mode
 If you have too much of the data to fit into one clickhouse you may want to use clickhouse cluster to 
