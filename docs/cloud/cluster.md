@@ -153,7 +153,7 @@ It is the name of the cluster you put in the config.xml.
 
 ### Multi Tenancy support
 
-When one datasource is reused by a number of clients we may appear in a situation where we have to reduce the information each client can see. Qryn cloud project has `organisaqtion id` mechanism to provide such feature.
+When one datasource is reused by a number of clients we may appear in a situation where we have to reduce the information each client can see. Qryn cloud project has `organisation id` mechanism to provide such feature.
 
 #### Low level implementation.
 Each table created by Qryn has the `org_id String` column. This column is included into the primary key so the database client can easily filter information according to its value.
@@ -199,10 +199,10 @@ After the setting is set to true, all the read and write operations start failin
 
 If there's no org-id specified, then the request fails. 
 
-After the header or the get parameter is proveded with the ID, Qryn starts filtering all the read operations with it and adding the corresponding value to every write operation. 
+After the header or the get parameter is provided with the ID, Qryn starts filtering all the read operations with it and adding the corresponding value to every write operation. 
 
 ### Versions supported
 
-The functioonality is retested in:
+The functionality is retested in:
 - qryn-go v1.2.39
 - wryn-writer v.1.9.61
