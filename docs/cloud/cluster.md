@@ -192,9 +192,17 @@ Configuration json file has the bool `multitenance_settings.enabled` option whic
 
 The corresponding env variable is: `MULTITENANCE_SETTINGS_ENABLED=true`.
 
-#### Specifying tenant-id for read & write operations
-After the setting is set to true, all the read and write operations start failing because Qryn starts looking for the org-id header in the request. If there's no org-id specified, then the request fails. 
+### Specifying tenant-id for read & write operations
+After the setting is set to true, all the read and write operations start failing because Qryn starts looking for:
+- the `X-Scope-OrgID` header in http requests
+- the `X-Scope-OrgID` get parameter in websocker requests. 
 
-The name of the header is `uptrace-project-id`. For now it's the only possible name, but we may consider adding some extra aliases for it.
+If there's no org-id specified, then the request fails. 
 
-After the header is proveded with the ID, Qryn starts filtering all the read operations with it and adding the corresponding value to every write operation. 
+After the header or the get parameter is proveded with the ID, Qryn starts filtering all the read operations with it and adding the corresponding value to every write operation. 
+
+### Versions supported
+
+The functioonality is retested in:
+- qryn-go v1.2.39
+- wryn-writer v.1.9.61
