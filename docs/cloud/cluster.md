@@ -149,3 +149,51 @@ Please pay attention to the `QRYN_DATABASE_DATA_0_CLUSTER_NAME` and `QRYN_DATABA
 It is the name of the cluster you put in the config.xml.
 
 ?> Before using qryn:writer `-initialize_db` should be executed to create the `_dist` tables
+
+## Multitenance support
+
+When one datasource is reused by a number of clients we may appear in a situation where we have to reduce the information each client can see. Qryn cloud project has `organisaqtion id` mechanism to provide such feature.
+
+### Low level implementation.
+Each table created by Qryn has the `org_id String` column. This column is included into the primary key so the database client can easily filter information according to its value.
+
+For example there's `samples_v4` table schema:
+```
+CREATE TABLE cloki_nl.samples_v4
+(
+    `org_id` String,
+    `fingerprint` UInt64,
+    `timestamp_ns` Int64 CODEC(DoubleDelta),
+    `value` Float64 CODEC(Gorilla),
+    `string` String
+)
+ENGINE = MergeTree
+PARTITION BY (org_id, toStartOfDay(toDateTime(timestamp_ns / 1000000000)))
+ORDER BY (org_id, timestamp_ns)
+TTL toDateTime(timestamp_ns / 1000000000) + toIntervalDay(7)
+```
+The org_id column takes part in every write and read request in Qryn. By default (single-tenant mode of qryn) org-id is initialized as `'0'` so all the data is written to the same organization part.
+
+### Configuration of multitenancy
+The multi-tenant mode is configured in the configuration file of QRYN reader and writer or via the environment variables.
+
+Configuration json file has the bool `multitenance_settings.enabled` option which should be set to `true` in order to enable the multitenant mode:
+```
+{ 
+  database_d....,
+  ...
+  "multitenance_settings": {
+    "enabled": true
+  },
+  ...
+}
+```
+
+The corresponding env variable is: `MULTITENANCE_SETTINGS_ENABLED=true`.
+
+### Specifying tenant-id for read & write operations
+After the setting is set to true, all the read and write operations start failing because Qryn starts looking for the org-id header in the request. If there's no org-id specified, then the request fails. 
+
+The name of the header is `uptrace-project-id`. For now it's the only possible name, but we may consider adding some extra aliases for it.
+
+After the header is proveded with the ID, Qryn starts filtering all the read operations with it and adding the corresponding value to every write operation. 
