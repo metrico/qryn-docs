@@ -1,4 +1,4 @@
-## ☁️ < [qryn:cloud](/cloud)
+## ☁️ [qryn:cloud](/#/cloud)
 
 !> qryn:cloud requires activation licenses. please [contact us](mailto:info@qxip.net) to obtain your keys.
 
