@@ -15,7 +15,7 @@ Grafana Agent can act as a telemetry collector and receive spans from [Jaeger, K
 In this example an `OTLP` collector is started on port `:4318` forwarding traces to **qryn** on port `:3100`
 
 ###### OTLP Exporter
-```
+```yml
 server:
   log_level: debug
 
@@ -56,7 +56,7 @@ This works with improved scalability and supports open-source observability data
 ### Examples
 
 ###### OTLP Exporter
-```
+```yml
 config.yaml: |
   receivers:
     jaeger:
@@ -87,7 +87,7 @@ config.yaml: |
 ```
 
 ###### ZIPKIN Exporter
-```
+```yml
 receivers:
     jaeger:
       protocols:
