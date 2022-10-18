@@ -49,7 +49,9 @@ The following articles provide great insight and examples on the subject:
 
 ![image](https://user-images.githubusercontent.com/1423657/196469086-3d85efd5-7ef9-4d42-a677-5591470b7cae.png ':size=200')
 
-[OTEL Collector](https://opentelemetry.io/docs/collector/) offers a vendor-agnostic implementation of how to receive, process and export telemetry data. It removes the need to run, operate, and maintain multiple agents/collectors. This works with improved scalability and supports open-source observability data formats _(e.g. Jaeger, Prometheus, Fluent Bit, etc.)_ sending to **qryn** using the _Tempo API_
+[OTEL Collector](https://opentelemetry.io/docs/collector/) offers a vendor-agnostic implementation of how to receive, process and export telemetry data. It removes the need to run, operate, and maintain multiple agents/collectors. 
+
+This works with improved scalability and supports open-source observability data formats _(e.g. Jaeger, Prometheus, Fluent Bit, etc.)_ and allows aggregating and sending traces to **qryn** using the _Tempo API_
 
 ### Examples
 
