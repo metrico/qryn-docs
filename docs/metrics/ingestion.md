@@ -203,7 +203,7 @@ curl -i -XPOST -H "Content-Type: application/json" http://qryn:3100/loki/api/v1/
 
 [Telegraf](https://docs.influxdata.com/telegraf/v1.24/install/) can be used to easily ingest SNMP metrics into **qryn**
 
-The [snmp input](https://github.com/influxdata/telegraf/blob/master/plugins/inputs/snmp/README.md plugin uses polling to gather metrics from SNMP agents. Support for gathering individual OIDs as well as complete SNMP tables is included.
+The [snmp input](https://github.com/influxdata/telegraf/blob/master/plugins/inputs/snmp/README.md) plugin uses polling to gather metrics from SNMP agents. Support for gathering individual OIDs as well as complete SNMP tables is included.
 
 #### input config
 
