@@ -33,60 +33,7 @@ traces:
         insecure: true
 ```
 
-###### ZIPKIN Exporter
-```
-config.yaml: |
-    receivers:
-      jaeger:
-        protocols:
-          grpc:
-            endpoint: 0.0.0.0:14250
-          thrift_http:
-            endpoint: 0.0.0.0:14268
-          thrift_compact:
-            endpoint: 0.0.0.0:6831
-      otlp:
-        protocols:
-          grpc:
-            endpoint: 0.0.0.0:4317
-          http:
-            endpoint: 0.0.0.0:4318
 
-    processors:
-      memory_limiter:
-        check_interval: 1s
-        limit_percentage: 70
-        spike_limit_percentage: 30
-      batch:
-        send_batch_size: 100
-        send_batch_max_size: 1000
-        timeout: 10s
-      resourcedetection:
-        detectors: [env]
-        timeout: 5s
-        override: false
-      k8sattributes:
-        auth_type: 'serviceAccount'
-      resource:
-        attributes:
-          - key: app
-            action: insert
-            from_attribute: k8s.deployment.name
-          - key: pod_name
-            action: insert
-            from_attribute: k8s.pod.name
-    exporters:
-      zipkin:
-        endpoint: http://qryn:3100/api/v2/spans
-        tls:
-          insecure: true
-    service:
-      pipelines:
-        traces:
-          receivers: [jaeger, otlp]
-          processors: [memory_limiter, batch, resourcedetection, k8sattributes, resource]
-          exporters: [zipkin]
-```
 
 The following articles provide great insight and examples on the subject:
 
@@ -95,6 +42,78 @@ The following articles provide great insight and examples on the subject:
 
 ?> _That's it!_ You're now _tracing spans to **qryn** using Grafana Agent_! 
 
+
+## ** OTEL Collector **
+
+<a id=grafana name=grafana></a>
+
+![image](https://user-images.githubusercontent.com/1423657/196469086-3d85efd5-7ef9-4d42-a677-5591470b7cae.png ':size=200')
+
+[OTEL Collector](https://opentelemetry.io/docs/collector/) offers a vendor-agnostic implementation of how to receive, process and export telemetry data. It removes the need to run, operate, and maintain multiple agents/collectors. This works with improved scalability and supports open-source observability data formats _(e.g. Jaeger, Prometheus, Fluent Bit, etc.)_ sending to **qryn** using the _Tempo API_
+
+### Examples
+
+###### OTLP Exporter
+```
+config.yaml: |
+  receivers:
+    jaeger:
+      protocols:
+        grpc:
+          endpoint: 0.0.0.0:14250
+        thrift_http:
+          endpoint: 0.0.0.0:14268
+        thrift_compact:
+          endpoint: 0.0.0.0:6831
+    otlp:
+      protocols:
+        grpc:
+          endpoint: 0.0.0.0:4317
+        http:
+          endpoint: 0.0.0.0:4318
+  exporters:
+    otlphttp/qryn:
+      endpoint: http://qryn:3100
+      tls:
+        insecure: true
+  service:
+    pipelines:
+      traces:
+        receivers: [jaeger, otlp]
+        exporters: [otlphttp/qryn]
+
+```
+
+###### ZIPKIN Exporter
+```
+receivers:
+    jaeger:
+      protocols:
+        grpc:
+          endpoint: 0.0.0.0:14250
+        thrift_http:
+          endpoint: 0.0.0.0:14268
+        thrift_compact:
+          endpoint: 0.0.0.0:6831
+    otlp:
+      protocols:
+        grpc:
+          endpoint: 0.0.0.0:4317
+        http:
+          endpoint: 0.0.0.0:4318
+  exporters:
+    zipkin/qryn:
+     endpoint: "http://qryn:3100/api/v2/spans"
+     tls:
+       insecure: true
+  service:
+    pipelines:
+      traces:
+        receivers: [jaeger, otlp]
+        exporters: [zipkin/qryn]
+```
+
+?> _That's it!_ You're now _tracing spans to **qryn** using OTLP Collector! 
 
 
 ## ** Zipkin **
