@@ -93,11 +93,17 @@ In Grafana queries, use $__interval for unwrap, ie: unwrap data [$__interval]
 
 ?> **qryn** implements the Influx v2 Write API subset for ingestion of Metrics _(and [logs](logs/ingestion#influx))_
 
-#### API Endpoints
+
+### Telegraf
+
+![image](https://user-images.githubusercontent.com/1423657/196438621-1f025393-c15d-4b0f-bf47-0d92ca2ecbec.png ':size=100')
+
+[Telegraf](https://docs.influxdata.com/telegraf/v1.24/install/) can be used to easily send metrics and logs to **qryn**<br>
+
+
+### API Usage
 
 See Supported API Endpoints [here](/support.md#influx-api).
-
-### Usage
 
 #### Write
 
@@ -130,13 +136,13 @@ The following `LogQL` query will access metrics inserted by Influx clients or an
 rate({label1="val1"}| unwrap int_valued_label [1s]) by (another_label)
 ```
 
-1) `{label1="val1"}`
+1) `{label1="val1"}`<br>
   Fetch all log lines matching label filters.
-2) `<expr> | unwrap int_valued_label`
+2) `<expr> | unwrap int_valued_label`<br>
   Use the extracted label int_valued_label as sample values instead of log lines for the subsequent range aggregation.
-3) `rate(<expr> [1s])`
+3) `rate(<expr> [1s])`<br>
   Calculates the number of entries per second. 
-4) `by (another_label)`
+4) `by (another_label)`<br>
   Groups the resulting series by the selected label(s).
 
 ##### Supported Unwrap functions
