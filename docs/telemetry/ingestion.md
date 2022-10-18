@@ -9,12 +9,12 @@ The following protocol APIs are supported for ingesting telemetry events:
 
 ![image](https://user-images.githubusercontent.com/1423657/184496222-ca95d80c-906f-4c77-a963-86f0b27a56b0.png ':size=100')
 
-Grafana Agent can act as a telemetry collector and receive spans from Jaeger, Kafka, OpenCensus, OTLP, and Zipkin to process and forward traces to **qryn** using the _Tempo API_
+Grafana Agent can act as a telemetry collector and receive spans from [Jaeger, Kafka, OpenCensus, OTLP, and Zipkin](https://grafana.com/docs/agent/latest/configuration/traces-config/) to process and forward traces to **qryn** using the _Tempo API_
 
 ##### Example
 In this example an `OTLP` collector is started on port `:4318` forwarding traces to **qryn** on port `:3100`
 
-###### OTLP config.yaml _(cloud only)_
+###### OTLP Exporter
 ```
 server:
   log_level: debug
@@ -33,7 +33,7 @@ traces:
         insecure: true
 ```
 
-###### ZIPKIN config.yaml _(js)_
+###### ZIPKIN Exporter
 ```
 config.yaml: |
     receivers:
