@@ -207,7 +207,7 @@ The [snmp input](https://github.com/influxdata/telegraf/blob/master/plugins/inpu
 
 #### input config
 
-```
+```yaml
 # Retrieves SNMP values from remote agents
 [[inputs.snmp]]
   ## Agent addresses to retrieve values from.
@@ -294,10 +294,10 @@ The [snmp input](https://github.com/influxdata/telegraf/blob/master/plugins/inpu
 #### output config
 Use the `http` output with `prometheusremotewrite` format to write metrics into **qryn**
 
-```
-    [[outputs.http]]
-      url = "http://de5.sipcapture.io:3100/api/prom/remote/write"
-      data_format = "prometheusremotewrite"
+```yml
+  [[outputs.http]]
+    url = "http://qryn:3100/api/prom/remote/write"
+    data_format = "prometheusremotewrite"
 
     [outputs.http.headers]
       Content-Type = "application/x-protobuf"
