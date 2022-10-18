@@ -305,6 +305,11 @@ Use the `http` output with `prometheusremotewrite` format to write metrics into 
       X-Prometheus-Remote-Write-Version = "0.1.0"
 ```
 
+Start Telegraf and explore your SNMP metrics using Grafana
+
+![image](https://user-images.githubusercontent.com/1423657/196466648-20e5f638-b146-443b-b98a-29dcd1b951fa.png)
+
+
 ?> _That's it!_ You are now ingesting SNMP metrics into **qryn**
 
 ## ** Curl **
