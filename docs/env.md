@@ -39,3 +39,10 @@ The following `ENV` parameters can be used to control **qryn** parameters and it
 | LOG_LEVEL  			         | info  	    | Log Level  		|
 | HASH                   | short-hash | Hash function using for fingerprints. Currently supported `short-hash` and `xxhash64` (xxhash64 function)
 
+
+#### Node Parameters
+For memory intensive executions, fine tune the NodeJS settings using `NODE_OPTIONS  `
+
+| ENV   	                |Default |Example  |
+|------------------------|---	     |---		   |
+| NODE_OPTIONS           |      	 | `-max-old-space-size=8192`  |
