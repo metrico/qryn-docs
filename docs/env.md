@@ -1,9 +1,8 @@
-## qryn
-### Configuration
+# 📦 Configuration
 
 **qryn** has no configuration files by design - just `ENV` variables
 
-?> K8s and Docker container friendly 😉
+?> We're K8s and Docker container friendly 😉
 
 #### Parameters
 
