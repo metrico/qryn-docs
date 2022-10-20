@@ -18,6 +18,7 @@
   * [Advanced](examples.md "QRYN – Getting Started – LogQL for ClickHouse and beyond")
     * [LogQL](guide/logql.md "QRYN – Getting Started – LogQL for ClickHouse and beyond") 
     * [APIs](support.md "QRYN – Supported Components – LogQL for ClickHouse and beyond")
+    * [ENV](env.md "QRYN – Supported Components – LogQL for ClickHouse and beyond")
   * [Case Studies](case-studies.md "QRYN – Case Studies – LogQL for ClickHouse and beyond")
 
 * **[Blog](https://blog.qryn.dev/)**
