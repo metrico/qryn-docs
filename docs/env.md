@@ -1,4 +1,4 @@
-# 📦 Configuration
+# ⚙️ Configuration
 
 **qryn** has no configuration files by design - just `ENV` variables
 
