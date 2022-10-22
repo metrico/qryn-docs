@@ -357,7 +357,7 @@ systemctl start qryn-go
 
 <!-- tabs:end -->
 
-##### Emergency rotate configuration
+## Emergency rotate configuration
 
 *Supported since writer v1.9.64*
 
