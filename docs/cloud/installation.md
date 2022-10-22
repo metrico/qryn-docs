@@ -401,8 +401,11 @@ If you're not sure if the data always rotates before the HD is full, then you ca
 DATABASE_DATA_0_EMERGENCY_SWEEP_LIMIT = 200GB
 ```
 
-The same settings should be configured for each node in the cluster. The allowed units are: `B`, `KB`, `MB`, `GB`, `TB`, `PB`, `EB` .
+The allowed units are: `B`, `KB`, `MB`, `GB`, `TB`, `PB`, `EB` .
+
+?> the limit should be set larger than a single day's usage to avoid rotating live data
+
+?> The same settings should be configured for **each node** in case of clusters. 
 
 After the configuration is set and the writer is restarted, the emergency sweeper starts watching the overall size of the database and trying to keep it lower than 200GB. 
 
-!> the limit should be set larger than one day of the data to avoid rotating live data
