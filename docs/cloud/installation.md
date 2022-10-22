@@ -362,9 +362,8 @@ systemctl start qryn-go
 
 *Requires qryn-writer v1.9.64 or higher*
 
-## Time based rotation
+### Time based rotation
 
-Let's assume that you have a limited hard drive storage and you're not sure if all the data can fit before it gets rotated.
 The default rotation mechanism is configured in amount via amount of days for each node of the database configuration.
 
 ##### JSON
@@ -383,9 +382,9 @@ DATABASE_DATA_0_TTL_DAYS = 10
 
 ?> The default days value is "7"
 
-## Space based rotation
+### Space based rotation
 
-If you're not sure if the data always rotates before the HD is full, then you can configure the emergency sweeper. It will delete the oldest day in the database if the overall size of all the tables is more than the configured value. 
+To force data rotateion before the HD is full, admins can use the emergency sweeper settings, in charge of deleting the oldest partitions in the database if the overall size of all the tables is more than the configured value. 
 
 ##### JSON
 ```
