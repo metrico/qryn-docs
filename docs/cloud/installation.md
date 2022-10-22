@@ -365,14 +365,16 @@ Let's assume that you have a limited hard drive storage and you're not sure if a
 The default rotation mechanism is configured in amount via amount of days for each node of the database configuration. Config json:
 
 ### JSON
-```json
+```
 {
   "database_data": [{
      "ttl_days": 10
   }]
 }
+```
+
 ### ENV
-```bash
+```
 DATABASE_DATA_0_TTL_DAYS = 10
 ```
 
@@ -381,7 +383,7 @@ DATABASE_DATA_0_TTL_DAYS = 10
 But if you're not sure if the data always rotates before the HD is full, then you can configure the emergency sweeper. It will delete the oldest day in the database if the overall size of all the tables is more than the configured value. The json configuration would look like this:
 
 ### JSON
-```json
+```
 { 
   "database_data": [{
     "emergency_sweep_limit": "200GB"
@@ -391,7 +393,7 @@ But if you're not sure if the data always rotates before the HD is full, then yo
 }
 ```
 ### ENV
-```bash
+```
 DATABASE_DATA_0_EMERGENCY_SWEEP_LIMIT = 200GB
 ```
 
