@@ -361,10 +361,12 @@ systemctl start qryn-go
 
 *Supported since writer v1.9.64*
 
-Let's assume that you have a limited hard drive storage and you're not sure if all the data can fit before it gets rotated.
-The default rotation mechanism is configured in amount via amount of days for each node of the database configuration. Config json:
+## Time based rotation
 
-### JSON
+Let's assume that you have a limited hard drive storage and you're not sure if all the data can fit before it gets rotated.
+The default rotation mechanism is configured in amount via amount of days for each node of the database configuration.
+
+##### JSON
 ```
 {
   "database_data": [{
@@ -373,16 +375,18 @@ The default rotation mechanism is configured in amount via amount of days for ea
 }
 ```
 
-### ENV
+##### ENV
 ```
 DATABASE_DATA_0_TTL_DAYS = 10
 ```
 
 ?> The default days value is "7"
 
-But if you're not sure if the data always rotates before the HD is full, then you can configure the emergency sweeper. It will delete the oldest day in the database if the overall size of all the tables is more than the configured value. The json configuration would look like this:
+## Space based rotation
 
-### JSON
+If you're not sure if the data always rotates before the HD is full, then you can configure the emergency sweeper. It will delete the oldest day in the database if the overall size of all the tables is more than the configured value. 
+
+##### JSON
 ```
 { 
   "database_data": [{
@@ -392,7 +396,7 @@ But if you're not sure if the data always rotates before the HD is full, then yo
   ...
 }
 ```
-### ENV
+##### ENV
 ```
 DATABASE_DATA_0_EMERGENCY_SWEEP_LIMIT = 200GB
 ```
