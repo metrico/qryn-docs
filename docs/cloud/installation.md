@@ -357,9 +357,10 @@ systemctl start qryn-go
 
 <!-- tabs:end -->
 
-## Emergency rotate configuration
+## Data Rotation
+<a id="data-rotation" name="data-rotation"></a>
 
-*Supported since writer v1.9.64*
+*Requires qryn-writer v1.9.64 or higher*
 
 ## Time based rotation
 
