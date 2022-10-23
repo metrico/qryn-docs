@@ -2,7 +2,7 @@
 
 **LogQL** is a _PromQL-inspired_ query language acting like a distributed grep with powerful _filters and aggregations_.
 
-?> _Relax. It's all quite simple once you try it
+?> _Relax. It's all quite simple once you try it!_
 
 There are just two types of _LogQL_ queries:
 
