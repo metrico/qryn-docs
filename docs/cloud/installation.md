@@ -360,7 +360,7 @@ systemctl start qryn-go
 ## Data Rotation
 <a id="data-rotation" name="data-rotation"></a>
 
-*Requires qryn-writer v1.9.64 or higher*
+*Requires qryn-writer v1.9.65 or higher*
 
 ### Time based rotation
 
