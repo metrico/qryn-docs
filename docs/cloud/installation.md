@@ -377,7 +377,7 @@ The default rotation mechanism is configured in amount via amount of days for ea
 
 ##### ENV
 ```
-DATABASE_DATA_0_TTL_DAYS = 10
+QRYN_DATABASE_DATA_0_TTL_DAYS = 10
 ```
 
 ?> The default days value is "7"
@@ -398,7 +398,7 @@ To force data rotateion before the HD is full, admins can use the emergency swee
 ```
 ##### ENV
 ```
-DATABASE_DATA_0_EMERGENCY_SWEEP_LIMIT = 200GB
+QRYN_DATABASE_DATA_0_EMERGENCY_SWEEP_LIMIT = 200GB
 ```
 
 The allowed units are: `B`, `KB`, `MB`, `GB`, `TB`, `PB`, `EB` .
