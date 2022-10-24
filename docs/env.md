@@ -37,7 +37,7 @@ The following `ENV` parameters can be used to control **qryn** parameters and it
 | DEBUG  			             | false  	    | Debug Mode (for backwards compatibility) 		|
 | LOG_LEVEL  			         | info  	    | Log Level  		|
 | HASH                   | short-hash | Hash function using for fingerprints. Currently supported `short-hash` and `xxhash64` (xxhash64 function)
-
+| ALERTMAN_URL           | false      | Alertmanager API URL, ie: `http://my_alertmanager_url:1234` |
 
 #### Node Parameters
 For memory intensive executions, fine tune the NodeJS settings using `NODE_OPTIONS  `
