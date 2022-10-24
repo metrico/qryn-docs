@@ -1,5 +1,6 @@
-# ☁️ 
-## [qryn:cloud](/cloud)
+![image](https://user-images.githubusercontent.com/1423657/197589119-bb790fba-dd50-412c-92c1-033675fa980a.png ':size=200')
+
+# ☁️  [qryn:cloud](/cloud)
 
 !> qryn:cloud requires activation & pull tokens! Please [contact us](mailto:info@qxip.net) to obtain a license.
 
