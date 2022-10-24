@@ -5,7 +5,7 @@
 
 !> qryn:cloud requires activation & pull tokens! Please [contact us](mailto:info@qxip.net) to obtain a license.
 
-<br>
+## 🚀 Ready, Set, Cloud
 
 **qryn:cloud** is a _high-performance, distributed_ _**polyglot**_ observability stack designed for _**Integrators**_
 
@@ -20,6 +20,7 @@
 
 ?> _100x faster Logs, Metrics and Traces made simple, out of the box - batteries included!_ 🔋
 
+<br>
 
 ### 📦 &nbsp; [Installation](/cloud/installation)
 Follow the process to deploy `qryn:cloud` on your infrastructure
