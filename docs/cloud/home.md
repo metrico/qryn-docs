@@ -9,9 +9,16 @@
 
 **qryn:cloud** is a _high-performance, distributed_ _**polyglot**_ observability stack designed for _**Integrators**_
 
-Developed in _go/rust_ on top of _ClickHouse and Flux_, available for _self-hosted or cloud deployments._
+- Developed in state of the art _golang/rust_ 
+- Drop-in _Loki, Prometheus, Tempo_ compatible _APIs_
+- Massively Scalable _Ingestion and Query_ layers
+- Dozens of natively supported _formats and agents_
+- Engineered over _ClickHouse_ and _Flux_
+- Completely _Stateless_ with _Edge Ingestors_
+- Extensible w/o Development using _Flux_ scripts
+- Only available for _licensed cloud integrators_
 
-_Logs, Metrics and Traces at scale made simple, right out of the box - batteries included!_ 🔋
+_100x Logs, Metrics and Traces made simple, right out of the box - batteries included!_ 🔋
 
 
 ### 📦 &nbsp; [Installation](/cloud/installation)
