@@ -22,7 +22,7 @@ The following `ENV` parameters can be used to configure and control **qryn:cloud
 | ENV   	                |Default   	|Usage   	|
 |------------------------|---	    |---		|
 | QRYNCLOUD_LICENSE | None | License Key provided by QXIP |
-| ---- | --- | ---- |
+|   |   |   |
 | QRYN_DATABASE_DATA_0_USER | default | Clickhouse Username |
 | QRYN_DATABASE_DATA_0_PASS | qryn | Clickhouse Password |
 | QRYN_DATABASE_DATA_0_NAME | qryn | Clickhouse Database Name |
@@ -35,14 +35,14 @@ The following `ENV` parameters can be used to configure and control **qryn:cloud
 | QRYN_DATABASE_DATA_0_DEBUG | false | Set to true to see debug messages about database in log |
 | QRYN_DATABASE_DATA_0_SECURE | false | Set to true when Clickhouse is hosted on HTTPS (optional) |
 | QRYN_DATABASE_DATA_0_HTTPS | false | Set to true, when Clickhouse is hosted on HTTPS (optional) |
-| ---- | --- | ---- |
+|  |  |  |
 | QRYN_HTTP_SETTINGS_HOST | "0.0.0.0" | Listen Host Setting for Read API|
 | QRYN_HTTP_SETTINGS_PORT | 3200 | Listen Port Setting for Read API |
 | QRYN_HTTP_SETTINGS_PREFORK | false | Set to true to start reader in multi-process mode, does not support all functionality |
 | QRYN_HTTP_SETTINGS_DEBUG | false | Set to true to see debug messages about database in log |
-| ---- | --- | ---- |
+|  |  |  |
 | QRYN_HTTP_CONNECT_CONNECT_TIMEOUT | 10 | Seconds before timeout |
-| ---- | --- | ---- |
+|  |  |  |
 | QRYN_LOG_SETTINGS_LEVEL | "trace" | Set log level "debug", "info", "trace" |
 | QRYN_LOG_SETTINGS_STDOUT | false | Set to true to emit logs to stdout |
 | QRYN_LOG_SETTINGS_SYSLOG | true | Set to true to emit logs to syslog |
@@ -57,7 +57,7 @@ The following `ENV` parameters can be used to configure and control **qryn:cloud
 | ENV   	                |Default   	|Usage   	|
 |------------------------|---	    |---		|
 | QRYNCLOUD_LICENSE | None | License Key provided by QXIP |
-| ---- | --- | ---- |
+|  |  |  |
 | QRYN_DATABASE_DATA_0_USER | default | Clickhouse Username |
 | QRYN_DATABASE_DATA_0_NODE | clickhouse | Clickhouse Node Name |
 | QRYN_DATABASE_DATA_0_PASS | qryn | Clickhouse Password |
@@ -71,22 +71,22 @@ The following `ENV` parameters can be used to configure and control **qryn:cloud
 | QRYN_DATABASE_DATA_0_DEBUG | false | Set to true to see debug messages about database in log (optional) |
 | QRYN_DATABASE_DATA_0_SECURE | false | Set to true when Clickhouse is hosted on HTTPS (optional) |
 | QRYN_DATABASE_DATA_0_HTTPS | false | Set to true, when Clickhouse is hosted on HTTPS (optional) |
-| ---- | --- | ---- |
+|  |  |  |
 | QRYN_HTTP_SETTINGS_HOST | "0.0.0.0" | Listen Host Setting for Write API|
 | QRYN_HTTP_SETTINGS_PORT | 3100 | Listen Port Setting for Write API |
 | QRYN_HTTP_SETTINGS_PREFORK | false | Set to true to start reader in multi-process mode, does not support all functionality |
 | QRYN_HTTP_SETTINGS_API_PREFIX | "loki" | Prefix for API e.g. /PREFIX/api/v1/labels |
 | QRYN_HTTP_SETTINGS_DEBUG | false | Set to true to see debug messages about database in log |
-| ---- | --- | ---- |
+|  |  |  |
 | QRYN_HTTPS_SETTINGS_ENABLE | false | Set to true to activate HTTPS protocol for writer |
 | QRYN_HTTPS_SETTINGS_HOST | "0.0.0.0" | Listen Host for HTTPS for Write API|
 | QRYN_HTTPS_SETTINGS_PORT | 3444 | Listen Port for HTTPS for Write API |
 | QRYN_HTTPS_SETTINGS_HTTP_REDIRECT | "loki" | Prefix for API e.g. /PREFIX/api/v1/labels |
 | QRYN_HTTPS_SETTINGS_CERT | None | Path to Certificate File for HTTPS |
 | QRYN_HTTPS_SETTINGS_KEY | None | Path to Key File for HTTPS |
-| ---- | --- | ---- |
+|  |  |  |
 | QRYN_HTTP_CONNECT_CONNECT_TIMEOUT | 10 | Seconds before timeout |
-| ---- | --- | ---- |
+|  |  |  |
 | QRYN_LOG_SETTINGS_LEVEL | "trace" | Set log level "debug", "info", "trace" |
 | QRYN_LOG_SETTINGS_STDOUT | false | Set to true to emit logs to stdout |
 | QRYN_LOG_SETTINGS_SYSLOG | true | Set to true to emit logs to syslog |
