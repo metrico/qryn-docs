@@ -18,7 +18,7 @@
 - Extensible w/o Development using _Flux_ scripts
 - Only available for _licensed cloud integrators_
 
-_100x Logs, Metrics and Traces made simple, right out of the box - batteries included!_ 🔋
+?> _100x faster Logs, Metrics and Traces made simple, out of the box - batteries included!_ 🔋
 
 
 ### 📦 &nbsp; [Installation](/cloud/installation)
