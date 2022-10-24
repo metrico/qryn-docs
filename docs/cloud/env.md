@@ -1,6 +1,7 @@
 ![image](https://user-images.githubusercontent.com/1423657/197589119-bb790fba-dd50-412c-92c1-033675fa980a.png ':size=200')
 
 # ☁️  [qryn:cloud](/cloud)
+!> qryn:cloud requires activation & pull tokens! Please [contact us](mailto:info@qxip.net) to obtain a license.
 
 ### 📖 Configuration
 
@@ -10,8 +11,6 @@
 #### ENV Parameters
 
 The following `ENV` parameters can be used to configure and control **qryn:cloud**
-
-!> These are licensed components. Please [contact us](mailto:info@qxip.net) to obtain an activation key.
 
 ?> **qryn:cloud** provides healthy defaults, we recommend to focus on the DATABASE_DATA part to start with and let the defaults do the job for your deployment
 
