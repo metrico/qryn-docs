@@ -20,3 +20,7 @@ Follow the process to configure `qryn:cloud` for your deployment
 
 ### 🦑 &nbsp; [Clustering](/cloud/cluster)
 Follow the process to distribute `qryn:cloud` tables on your cluster
+
+
+### ☁️ &nbsp; [Hosted Version](/cloud)
+_Coming soon!_
