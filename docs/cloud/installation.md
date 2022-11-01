@@ -410,3 +410,26 @@ The allowed units are: `B`, `KB`, `MB`, `GB`, `TB`, `PB`, `EB` .
 
 After the configuration is set and the writer is restarted, the emergency sweeper starts watching the overall size of the database and trying to keep it lower than 200GB. 
 
+## Advanced payload codecs configuration
+
+By default the system stores traces and logs payload with no codecs specified (lz4 compression). But the needed compression codec can be specified in the configuration.
+
+The codec will be applied to the logs payload column (samples_v4.string) and the traces payload column (tempo_traces.payload).
+
+In order to specify the codec (for example ZSTD(9)) please specify the configuration option:
+```
+{
+  "database_data": [
+    {
+      ....
+      "text_codec": "ZSTD(9)"
+    }
+    ...
+  ]
+  ...
+}
+```
+The corresponding env variable would be: `QRYN_DATABASE_DATA_0_TEXT_CODEC=ZSTD(9)`
+Every general purpose codec from https://clickhouse.com/docs/en/sql-reference/statements/create/table/#general-purpose-codecs can be specified.
+Codecs should be specified for every database node.
+
