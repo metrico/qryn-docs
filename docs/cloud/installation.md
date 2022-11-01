@@ -435,3 +435,36 @@ Every general purpose codec from https://clickhouse.com/docs/en/sql-reference/st
 
 Codecs should be specified for every database node.
 
+After updating codecs configuration `qryn-writer -initialize_db` should be run to update the schema.
+
+## Advanced log lines index configuration
+
+In case if there are a lot of `|=` or `!=` line filter requests, a user can configure tokenbf or ngrambf_v1 skipping indexes over log lines.
+
+Indexes are applied for logs payload (samples_v4.string).
+
+In order to set the index, please specify the configuration option:
+```
+{
+  "database_data": [
+    {
+      ....
+      "logs_index": "tokenbf",
+      "logs_index_granularity": 1
+    }
+    ...
+  ]
+  ...
+}
+```
+The corresponding env variables:
+- QRYN_DATABASE_DATA_0_LOGS_INDEX=tokenbf
+- QRYN_DATABASE_DATA_0_LOGS_INDEX_GRANULARITY=1
+
+Every index can be specified.
+
+Cheatsheet: https://clickhouse.com/docs/en/engines/table-engines/mergetree-family/mergetree/#functions-support
+
+Index should be specified for each database node.
+
+After updating index configuration `qryn-writer -initialize_db` should be run to update the schema.
