@@ -16,10 +16,9 @@
 * _Auto-Scaling Cluster Capacity_
 * _Fully Managed, Secure, Distributed_
 
-<iframe height="350" width="100%" scrolling="no" border=0 src="https://qryn.metrico.in/cloud/pricing.html" style="height: 350px; width: 100%; border: 0px; background: #FFF;"></iframe>
+<iframe height="320" width="100%" scrolling="no" border=0 src="https://qryn.metrico.in/cloud/pricing.html" style="height: 350px; width: 100%; border: 0px; background: #FFF;"></iframe>
 
 <a href="https://gigapipe.com/?ref=qxip">
-  <img src="https://user-images.githubusercontent.com/1423657/199848716-79e9270b-c015-4a49-bc36-8f7bff4bb3b8.png">
+  <img src="https://user-images.githubusercontent.com/1423657/199849352-c95ea724-ccf0-4244-a879-643a87c0ee6d.png">
 </a>
 
-<br> 
