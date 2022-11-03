@@ -2,11 +2,12 @@
 
 [Gigapipe](https://gigapipe.com/) is fast-track service offering a fully managed **qryn** experience that _scales with you_.
 
-* Only Pay for Ingestion + Labels
+#### qryn:cloud service
+
 * Unlimited Logs, Metrics and Traces
 * Unlimited Users and Integrations
+* Only Pay for Ingestion + Label volume
 
-### qryn:cloud pricing
 <iframe height="800" width="100%" scrolling="no" border=0 src="https://qryn.metrico.in/cloud/pricing.html" style="height: 800px; width: 100%; border: 0px; background: #FFF;"></iframe>
 
 
