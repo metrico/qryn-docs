@@ -8,10 +8,11 @@
 
 #### Cloud Service _(beta)_
 
+* _Only Pay for Ingestion + Series volume_
 * _Unlimited Logs, Metrics and Traces_
 * _Unlimited Users and Integrations_
-* _Managed Cluster, Redudancy, Failover_
-* _Only Pay for Ingestion + Label volumes_
+* _Auto-Scaling Cluster Capacity_
+* _Fully Managed, Secure, Distributed_
 
 <iframe height="350" width="100%" scrolling="no" border=0 src="https://qryn.metrico.in/cloud/pricing.html" style="height: 350px; width: 100%; border: 0px; background: #FFF;"></iframe>
 
