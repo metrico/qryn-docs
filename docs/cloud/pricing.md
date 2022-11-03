@@ -10,7 +10,7 @@
 
 #### Cloud Service _(alpha pricing)_
 
-* _Only Pay for Ingestion + Series volume_
+* _Only Pay for Ingestion + Series/Labels volume_
 * _Unlimited Logs, Metrics and Traces_
 * _Unlimited Users and Integrations_
 * _Auto-Scaling Cluster Capacity_
