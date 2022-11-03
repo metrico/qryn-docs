@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>QRYN Cloud</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.css">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/milligram/1.3.0/milligram.css">
+  <style>
+    label {
+    display: block;
+      font-size: 0.8em;
+    width: 100%;
+  }
+  .line-item { 
+    display: block; 
+    font-size: 1.2em;
+    align-self: center;
+    flex-basis: 10%;
+  }
+  .form-group {
+    flex-basis: 45%;
+  }
+  .form-calc {
+    flex-basis: 10%;
+  }
+  .form-price {
+    width: 85%;
+  }
+  .item-total {
+    display: block;
+    flex-basis: 10%;
+    align-self: center;
+  }
+  .total {
+    align-self: center;
+    font-size: 3em;
+    max-width: 75%;
+  }
+  .sider {
+    margin-left: 2%;
+  }
+  </style>
+ 
+</head>
+<body>
+
+  
+  <h2><img src="https://raw.githubusercontent.com/metrico/qryn-docs/main/docs/resources/images/qryn_logo_trans.png" width=150/> Cloud Cost Calculator</h2>
+  <form class="sider">
+    <div class="form-row row d-flex">
+      <span class="line-item">Storage</span>
+      <div class="form-calc p-2 ">        
+        <label for="price">Cost x GB</label>
+        <input type="text" class="form-control form-price" name="price" value="0.89">
+      </div>
+
+      <div class="form-group p-2 ">
+        <label for="quantity"> 
+          <span class="badge badge-primary quantity-label">5</span>
+          GB
+        </label>
+        <input type="range" class="form-control form-quantity" name="quantity" value="5" min="5" max="1000" step="5">
+      </div>
+      <span class="item-total"></span>
+    </div>
+    <div class="form-row row d-flex">
+      <span class="line-item">Cardinality</span>
+      <div class="form-calc p-2 ">
+        <label for="price">Cost x Fingerprint</label>
+        <input type="text" class="form-control form-price" name="price" value="0.005">
+      </div>
+
+      <div class="form-group p-2 ">
+        <label for="quantity"> 
+          <span class="badge badge-primary quantity-label">1000</span> Labels
+        </label>
+        <input type="range" class="form-control form-quantity" name="quantity" value="1000" min="1000" max="100000" step="1000">
+      </div> 
+      <span class="item-total"></span>
+    </div>
+    <div class="p-2 text-right total">0</div>
+  </form>
+
+   <script>
+  (function() {
+      // Variable Declarations
+      const priceInput = document.querySelectorAll('.form-price');
+      const quantityInput = document.querySelectorAll('.form-quantity');
+      const quantityLabel = document.querySelectorAll('.quantity-label');
+      const itemPrice = document.querySelectorAll('.item-total'); 
+      const total = document.querySelector('.total');
+      let totalCost = 0;
+
+      // Update Individual total
+      function updatePriceTotal(obj, i) {
+        let oldItemPrice = parseFloat(itemPrice[i].innerText.substr(1));
+        let tempPrice = priceInput[i].value;
+        let tempQuantity = quantityInput[i].value;
+        let tempTotal = tempPrice * tempQuantity;
+        let tempCost = totalCost - oldItemPrice + tempTotal;
+        totalCost = tempCost;
+
+        itemPrice[i].innerText = "$" + tempTotal.toFixed(2);
+        total.innerText = "$" +  tempCost.toFixed(2);
+      }
+
+      // Updated Quantity Label Number
+      function updateQuantityLabel(obj, i) {
+        const quantity = quantityInput[i].value;
+        quantityLabel[i].innerText = quantity + '';
+      }
+
+      // Calculate Overall Total
+      function calculateCost() {
+        let tempTotal;
+        let cost = 0;
+        for (let i = 0; i < priceInput.length; i++) {
+          let tempPrice = priceInput[i].value;
+          let tempQuantity = quantityInput[i].value;
+          tempTotal = tempPrice * tempQuantity;
+          itemPrice[i].innerText = "$" + tempTotal.toFixed(2);
+          cost+=tempTotal;
+        }
+        totalCost = cost;
+        total.innerText = "$" + cost.toFixed(2) + "/mo";
+      }
+
+      // Init
+      calculateCost();
+
+      // Event Listeners
+      for (let i = 0; i < priceInput.length; i++) {
+         priceInput[i].addEventListener('input', function () { updatePriceTotal(this, i) });
+       }
+       for (let i = 0; i < quantityInput.length; i++) {
+           quantityInput[i].addEventListener('input', function () { updatePriceTotal(this, i) });
+       }
+       for (let i = 0; i < quantityInput.length; i++) {
+          quantityInput[i].addEventListener("input", function() { updateQuantityLabel(this, i) });
+       }
+
+  })();
+  </script>
+</body>
+</html>
