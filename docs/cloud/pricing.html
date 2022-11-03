@@ -39,7 +39,7 @@
   }
   .total {
     align-self: center;
-    font-size: 2.5em;
+    font-size: 1.5em;
     max-width: 50%;
     text-align: left !important;
   }
@@ -141,7 +141,7 @@
         totalCost = tempCost;
 
         itemPrice[i].innerText = "$" + tempTotal.toFixed(2);
-        total.innerText = "$" +  tempCost.toFixed(2) + "/mo";
+        total.innerText = "Your estimate: $" +  tempCost.toFixed(2) + "/mo";
       }
 
       // Updated Quantity Label Number
@@ -162,7 +162,7 @@
           cost+=tempTotal;
         }
         totalCost = cost;
-        total.innerText = "$" + cost.toFixed(2) + "/mo";
+        total.innerText = "Your estimate: $" + cost.toFixed(2) + "/mo";
       }
 
       // Init
