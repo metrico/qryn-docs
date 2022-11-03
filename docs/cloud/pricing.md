@@ -1,9 +1,11 @@
-<img src="https://nca.vc/wp-content/uploads/2020/11/Gigapipe_Logo-removebg-preview.png" width=250/>
+<a href="https://gigapipe.com/?ref=qxip">
+  <img src="https://nca.vc/wp-content/uploads/2020/11/Gigapipe_Logo-removebg-preview.png" width=250/>
+</a>
 
 [Gigapipe](https://gigapipe.com/) is fast-track service offering a fully managed **qryn** experience that _scales with you_.
 
-<a href="https://gigapipe.com">
-<img src="https://user-images.githubusercontent.com/1423657/199832448-b5b42495-bd88-45b5-a455-2e57fe828c63.png" width=500 />
+<a href="https://gigapipe.com/?ref=qxip">
+  <img src="https://user-images.githubusercontent.com/1423657/199832448-b5b42495-bd88-45b5-a455-2e57fe828c63.png" width=500 />
 </a>
 
 #### Cloud Service _(beta)_
@@ -15,5 +17,9 @@
 * _Fully Managed, Secure, Distributed_
 
 <iframe height="350" width="100%" scrolling="no" border=0 src="https://qryn.metrico.in/cloud/pricing.html" style="height: 350px; width: 100%; border: 0px; background: #FFF;"></iframe>
+
+<a href="https://gigapipe.com/?ref=qxip">
+  <img src="https://user-images.githubusercontent.com/1423657/199848716-79e9270b-c015-4a49-bc36-8f7bff4bb3b8.png">
+</a>
 
 <br> 
