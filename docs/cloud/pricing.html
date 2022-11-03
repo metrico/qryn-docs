@@ -100,7 +100,9 @@
         <label for="quantity"> 
           <span class="badge badge-primary quantity-label">5</span> 
           GB
-          <span class="tooltiptext">Ingested GB/month across Logs, Metrics and Traces</span>
+          <span class="tooltiptext">
+            Ingested GB/month for received Logs, Metrics and Traces<br>
+          </span>
         </label>
         <input type="range" class="form-control form-quantity" name="quantity" value="5" min="5" max="1000" step="5">
       </div>
@@ -117,7 +119,13 @@
         <label for="quantity" cl> 
           <span class="badge badge-primary quantity-label">1000</span> 
           Series
-          <span class="tooltiptext">Complexive number of Series/month via unique fingerprint</span>
+          <span class="tooltiptext">
+            Complexive number of Series/month as unique fingerprints<br>
+            - Log Label Keys<br>
+            - Metric Label Keys<br>
+            <br>
+            <i>Label Values are unmetered</i>
+          </span>
         </label>
         <input type="range" class="form-control form-quantity" name="quantity" value="1000" min="1000" max="100000" step="1000">
       </div> 
