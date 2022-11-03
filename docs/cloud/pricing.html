@@ -101,7 +101,11 @@
           <span class="badge badge-primary quantity-label">5</span> 
           GB
           <span class="tooltiptext">
-            Ingested GB/month for received Logs, Metrics and Traces<br>
+            Ingested GB/month for data received through any API/protocol<br>
+            <br>
+            - Logs (<i>LogQL/Influx/Elastic/Custom</i>)<br>
+            - Metrics (<i>Prometheus/Influx</i>)<br>
+            - Traces (<i>Zipkin/OTLP</i>)
           </span>
         </label>
         <input type="range" class="form-control form-quantity" name="quantity" value="5" min="5" max="1000" step="5">
@@ -124,7 +128,7 @@
             - Log Label Keys<br>
             - Metric Label Keys<br>
             <br>
-            <i>Label Values are unmetered</i>
+            <i>Log/Metric Label Values are unmetered</i>
           </span>
         </label>
         <input type="range" class="form-control form-quantity" name="quantity" value="1000" min="1000" max="100000" step="1000">
