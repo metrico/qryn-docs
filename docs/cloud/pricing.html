@@ -16,8 +16,8 @@
   }
   .line-item { 
     display: block; 
-    font-size: 1.2em;
-    align-self: center;
+    font-size: 1em;
+    align-self: left;
     flex-basis: 10%;
   }
   .form-group {
@@ -46,9 +46,7 @@
  
 </head>
 <body>
-
-  
-  <h2><img src="https://raw.githubusercontent.com/metrico/qryn-docs/main/docs/resources/images/qryn_logo_trans.png" width=150/> Cloud Cost Calculator</h2>
+  <h2>
   <form class="sider">
     <div class="form-row row d-flex">
       <span class="line-item">Storage</span>
@@ -67,7 +65,7 @@
       <span class="item-total"></span>
     </div>
     <div class="form-row row d-flex">
-      <span class="line-item">Cardinality</span>
+      <span class="line-item">Labels</span>
       <div class="form-calc p-2 ">
         <label for="price">Cost x Fingerprint</label>
         <input type="text" class="form-control form-price" name="price" value="0.005">
