@@ -13,6 +13,6 @@
 * _Managed Cluster, Redudancy, Failover_
 * _Only Pay for Ingestion + Label volumes_
 
-<iframe height="250" width="100%" scrolling="no" border=0 src="https://qryn.metrico.in/cloud/pricing.html" style="height: 250px; width: 100%; border: 0px; background: #FFF;"></iframe>
+<iframe height="350" width="100%" scrolling="no" border=0 src="https://qryn.metrico.in/cloud/pricing.html" style="height: 350px; width: 100%; border: 0px; background: #FFF;"></iframe>
 
 <br> 
