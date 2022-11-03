@@ -12,8 +12,6 @@
 * _Unlimited Users and Integrations_
 * _Managed Cluster, Redudancy, Failover_
 * _Only Pay for Ingestion + Label volumes_
-  * _$0.89 x GB/month_
-  * _$5 x 1k Series/month_
 
 <iframe height="250" width="100%" scrolling="no" border=0 src="https://qryn.metrico.in/cloud/pricing.html" style="height: 250px; width: 100%; border: 0px; background: #FFF;"></iframe>
 
