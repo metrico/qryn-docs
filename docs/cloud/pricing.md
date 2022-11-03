@@ -1,4 +1,4 @@
-<img src="https://nca.vc/wp-content/uploads/2020/11/Gigapipe_Logo-removebg-preview.png" width=200/>
+<img src="https://nca.vc/wp-content/uploads/2020/11/Gigapipe_Logo-removebg-preview.png" width=250/>
 
 [Gigapipe](https://gigapipe.com/) is fast-track service offering a fully managed **qryn** experience that _scales with you_.
 
