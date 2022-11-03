@@ -27,8 +27,8 @@
     flex-basis: 10%;
   }
   .form-price {
-    width: 85%;
-    height: 25px;
+    width: 85% !important;
+    height: 25px !important;
   }
   .item-total {
     display: block;
@@ -43,13 +43,41 @@
   .sider {
     margin-left: 2%;
   }
+  
+  /* Tooltip container */
+  .tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+  }
+
+  /* Tooltip text */
+  .tooltiptext {
+    visibility: hidden;
+    width: 220px;
+    background-color: #dedede;
+    color: #000;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 1;
+  }
+
+  /* Show the tooltip text when you mouse over the tooltip container */
+  .line-item:hover .tooltiptext {
+    visibility: visible;
+  }    
+    
   </style>
  
 </head>
 <body>
   <form class="sider">
     <div class="form-row row d-flex">
-      <span class="line-item">Storage</span>
+      <span class="line-item">Storage<span class="tooltiptext">Ingested GB/month</span></span>
       <div class="form-calc p-2 ">        
         <label for="price">Cost x GBs</label>
         <input type="text" class="form-control form-price" name="price" value="0.89">
@@ -65,15 +93,15 @@
       <span class="item-total"></span>
     </div>
     <div class="form-row row d-flex">
-      <span class="line-item">Labels</span>
+      <span class="line-item">Series<span class="tooltiptext">Unique Labels/Series/Month</span></span>
       <div class="form-calc p-2 ">
-        <label for="price">Cost x Fingerprint</label>
+        <label for="price">Cost x FPs</label>
         <input type="text" class="form-control form-price" name="price" value="0.005">
       </div>
 
       <div class="form-group p-2 ">
-        <label for="quantity"> 
-          <span class="badge badge-primary quantity-label">1000</span> Labels
+        <label for="quantity" cl> 
+          <span class="badge badge-primary quantity-label">1000</span> Series
         </label>
         <input type="range" class="form-control form-quantity" name="quantity" value="1000" min="1000" max="100000" step="1000">
       </div> 
