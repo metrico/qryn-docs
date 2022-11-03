@@ -36,6 +36,7 @@
     display: block;
     flex-basis: 10%;
     align-self: center;
+    margin-top: 10px;
   }
   .total {
     align-self: center;
@@ -57,11 +58,11 @@
   /* Tooltip text */
   .tooltiptext {
     visibility: hidden;
-    width: 220px;
-    background-color: #dedede;
-    color: #000;
-    text-align: center;
-    padding: 5px 0;
+    width: auto;
+    background-color: #7D12FF;
+    color: #fff;
+    text-align: left;
+    padding: 15px;
     border-radius: 6px;
 
     /* Position the tooltip text - see examples below! */
@@ -70,7 +71,7 @@
   }
 
   /* Show the tooltip text when you mouse over the tooltip container */
-  .line-item:hover .tooltiptext {
+  label:hover .tooltiptext {
     visibility: visible;
   }
     
@@ -88,7 +89,7 @@
 <body>
   <form class="sider">
     <div class="form-row row d-flex">
-      <span class="line-item">Storage<span class="tooltiptext">Ingested GB/month</span></span>
+      <span class="line-item">Storage</span>
       <div class="form-calc">        
         <label for="price">Cost x GBs</label>
         <input type="text" class="form-control form-price" name="price" value="0.89">
@@ -96,15 +97,16 @@
 
       <div class="form-group">
         <label for="quantity"> 
-          <span class="badge badge-primary quantity-label">5</span>
+          <span class="badge badge-primary quantity-label">5</span> 
           GB
+          <span class="tooltiptext">Ingested GB/month across Logs, Metrics and Traces</span>
         </label>
         <input type="range" class="form-control form-quantity" name="quantity" value="5" min="5" max="1000" step="5">
       </div>
       <span class="item-total"></span>
     </div>
     <div class="form-row row d-flex">
-      <span class="line-item">Series<span class="tooltiptext">Unique Labels/Series/Month</span></span>
+      <span class="line-item">Series</span>
       <div class="form-calc">
         <label for="price">Cost x FPs</label>
         <input type="text" class="form-control form-price" name="price" value="0.005">
@@ -112,7 +114,9 @@
 
       <div class="form-group">
         <label for="quantity" cl> 
-          <span class="badge badge-primary quantity-label">1000</span> Series
+          <span class="badge badge-primary quantity-label">1000</span> 
+          Series
+          <span class="tooltiptext">Complexive number of Series/month via unique fingerprint</span>
         </label>
         <input type="range" class="form-control form-quantity" name="quantity" value="1000" min="1000" max="100000" step="1000">
       </div> 
