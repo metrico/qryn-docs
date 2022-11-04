@@ -24,9 +24,9 @@
   <img src="https://user-images.githubusercontent.com/1423657/199849352-c95ea724-ccf0-4244-a879-643a87c0ee6d.png">
 </a>
 
-<a href="https://app.gigapipe.com/signup?ref=qxip" target="_blank">
+<!--
   <img src="https://user-images.githubusercontent.com/1423657/200003575-69fd497a-c1a5-4f26-909b-c3abf61858f2.png" width=250 />
-</a>
+-->
 
 > _Dedicated deployments w/ ClickHouse access available for premium customers. [contact us](mailto:info@qryn.dev) for quotes._
 
