@@ -3,7 +3,7 @@
   <img src="https://user-images.githubusercontent.com/1423657/200003575-69fd497a-c1a5-4f26-909b-c3abf61858f2.png" width=350 />
 </a>
 
-### ☁️ Cloud Service _(launching Dec 2022)_
+### ☁️ Polyglot Cloud Service
 
 [Gigapipe](https://gigapipe.com/) and [qxip](https://metrico.in) offer a fully managed **qryn** experience that _scales with your data_.
 
