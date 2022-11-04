@@ -5,11 +5,12 @@
 
 ### ☁️ Polyglot Cloud Service
 
-[Gigapipe](https://gigapipe.com/) and [qxip](https://metrico.in) offer a fully managed **qryn** experience that _scales with your data_.
+[Gigapipe](https://gigapipe.com/) and [qxip](https://metrico.in) offer a fully managed **qryn** experience that _scales with your needs_.<br>
+_Simple, efficient and versatile. All of the features, none of the stress. Just add your data._
 
-☛ _Only Pay for Ingestion + Labels volume_<br>
-☛ _Unlimited Logs, Metrics and Traces_<br>
-☛ _Managed, Secure and Auto-Scaling K8s_<br>
+☛ _Only Pay for Data Ingestion + Labels volume_<br>
+☛ _Unlimited Logs, Metrics, Traces & Integrations_<br>
+☛ _Fully Managed, Secure and Auto-Scaling K8s_<br>
 ☛ _Grafana and ClickHouse all inclusive_<br>
 
 <iframe height="300" width="100%" scrolling="no" border=0 src="https://qryn.metrico.in/cloud/pricing.html" style="height: 260px; width: 100%; border: 0px; background: #FFF;"></iframe>
@@ -23,6 +24,8 @@
 <a href="https://app.gigapipe.com/signup?ref=qxip" target="_blank">
   <img src="https://user-images.githubusercontent.com/1423657/199849352-c95ea724-ccf0-4244-a879-643a87c0ee6d.png">
 </a>
+
+> _Dedicated deployments w/ ClickHouse access available for premium customers. [contact us](mailto:info@qryn.dev) for quotes._
 
 > _Interested in launching a qryn powered cloud service? [contact us](mailto:info@qryn.dev) for partnership opportunities._
 
