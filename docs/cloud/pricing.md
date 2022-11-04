@@ -7,7 +7,7 @@
 
 [Gigapipe](https://gigapipe.com/) and [qxip](https://metrico.in) offer a fully managed **qryn** experience that _scales with your data_.
 
-➼ _Only Pay for data Ingestion + Labels volume_<br>
+➼ _Only Pay for Ingestion + Labels volume_<br>
 ➼ _Unlimited Logs, Metrics and Traces_<br>
 ➼ _Managed, Secure and Auto-Scaling K8s_<br>
 ➼ _Grafana and ClickHouse all inclusive_<br>
