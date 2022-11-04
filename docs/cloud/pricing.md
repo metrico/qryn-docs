@@ -24,5 +24,5 @@
 </a>
 
 <span style="font-size: 0.8em">
-* _Indicative pricing, subject to change before official product launch._
+* Indicative pricing estimates for feedback, subject to change before official product launch.
 </span>
