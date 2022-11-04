@@ -7,10 +7,10 @@
 
 [Gigapipe](https://gigapipe.com/) and [qxip](https://metrico.in) offer a fully managed **qryn** experience that _scales with your data_.
 
-➼ _Only Pay for Ingestion + Labels volume_<br>
-➼ _Unlimited Logs, Metrics and Traces_<br>
-➼ _Managed, Secure and Auto-Scaling K8s_<br>
-➼ _Grafana and ClickHouse all inclusive_<br>
+☛ _Only Pay for Ingestion + Labels volume_<br>
+☛ _Unlimited Logs, Metrics and Traces_<br>
+☛ _Managed, Secure and Auto-Scaling K8s_<br>
+☛ _Grafana and ClickHouse all inclusive_<br>
 
 <iframe height="300" width="100%" scrolling="no" border=0 src="https://qryn.metrico.in/cloud/pricing.html" style="height: 260px; width: 100%; border: 0px; background: #FFF;"></iframe>
 
@@ -25,5 +25,4 @@
 </a>
 
 > _Interested in launching a qryn powered cloud service? [contact us](mailto:info@qryn.dev) for partnership opportunities._
-
 
