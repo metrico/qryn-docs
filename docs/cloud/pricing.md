@@ -5,7 +5,9 @@
 [Gigapipe](https://gigapipe.com/) offers a fully managed **qryn** experience that _scales with you_.
 
 <a href="https://app.gigapipe.com/signup?ref=qxip" target="_blank">
-  <img src="https://user-images.githubusercontent.com/1423657/199832448-b5b42495-bd88-45b5-a455-2e57fe828c63.png" width=500 />
+  <img src="https://user-images.githubusercontent.com/1423657/199832448-b5b42495-bd88-45b5-a455-2e57fe828c63.png" width=500 /><br>
+  <img src="https://user-images.githubusercontent.com/1423657/199998885-b619d7a9-4f7f-4a35-9ba6-e49ba22c08d5.png" width=500 />
+
 </a>
 
 ### Cloud Service _(alpha pricing)_
@@ -18,7 +20,13 @@
 
 <iframe height="320" width="100%" scrolling="no" border=0 src="https://qryn.metrico.in/cloud/pricing.html" style="height: 350px; width: 100%; border: 0px; background: #FFF;"></iframe>
 
+
+<span style="font-size: 0.5em">
+➼ _Indicative pricing, subject to change before official launch._
+</span>
+
 <a href="https://app.gigapipe.com/signup?ref=qxip" target="_blank">
   <img src="https://user-images.githubusercontent.com/1423657/199849352-c95ea724-ccf0-4244-a879-643a87c0ee6d.png">
 </a>
+
 
