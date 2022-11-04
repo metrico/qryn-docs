@@ -5,8 +5,7 @@
 
 ### ☁️ Polyglot Cloud Service
 
-[Gigapipe](https://gigapipe.com/) and [qxip](https://metrico.in) offer a fully managed **qryn** experience that _scales with your needs_.<br>
-_Simple, efficient and versatile. All of the features, none of the stress. Just add your data._
+[Gigapipe](https://gigapipe.com/) and [qxip](https://metrico.in) offer a fully managed **qryn** experience that _scales with your needs_.
 
 ☛ _Only Pay for Data Ingestion + Labels volume_<br>
 ☛ _Unlimited Logs, Metrics, Traces & Integrations_<br>
