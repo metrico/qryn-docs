@@ -18,10 +18,6 @@
 
 <iframe height="320" width="100%" scrolling="no" border=0 src="https://qryn.metrico.in/cloud/pricing.html" style="height: 350px; width: 100%; border: 0px; background: #FFF;"></iframe>
 
-<span style="font-size: 0.7em">
-* Indicative pricing estimates for feedback, subject to change before official product launch.
-</span>
-
 <a href="https://app.gigapipe.com/signup?ref=qxip" target="_blank">
   <img src="https://user-images.githubusercontent.com/1423657/199849352-c95ea724-ccf0-4244-a879-643a87c0ee6d.png">
 </a>
