@@ -10,12 +10,12 @@
 
 ### Cloud Service _(alpha pricing)_
 
-* _Only Pay for Ingestion + Series/Labels volume_
+* _Only Pay for data Ingestion + Series/Labels volume_
 * _Unlimited Logs, Metrics and Traces_
 * _Unlimited Users and Integrations_
-* _Auto-Scaling Cluster Capacity_
-* _Fully Managed, Secure, Distributed_
-* _Grafana Included and Auto-Configured_
+* _Unlimited Auto-Scaling K8s Clusters_
+* _Fully Managed, Secure and Distributed_
+* _Grafana UI and ClickHouse included_
 
 <iframe height="320" width="100%" scrolling="no" border=0 src="https://qryn.metrico.in/cloud/pricing.html" style="height: 350px; width: 100%; border: 0px; background: #FFF;"></iframe>
 
