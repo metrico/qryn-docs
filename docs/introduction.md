@@ -42,8 +42,10 @@ Want more than our APIs offer? Access your data using pure ClickHouse SQL _for f
 
 <br> 
 
+<img src="https://user-images.githubusercontent.com/1423657/200078554-f8352174-9a6b-4f4a-90fc-1c6521d46c5b.png">
+<!--
 <img src="https://user-images.githubusercontent.com/1423657/191464140-48851b2c-ada0-4cfb-b27d-315edc0ba890.gif">
-
+-->
 <!--
 ![image](https://user-images.githubusercontent.com/1423657/187255795-f67e66be-bbee-4244-b291-342ca983900f.png)
 -->
