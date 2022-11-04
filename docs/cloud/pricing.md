@@ -12,7 +12,6 @@
 
 ➼ _Only Pay for data Ingestion + Series/Labels volume_<br>
 ➼ _Unlimited Logs, Metrics and Traces_<br>
-➼ _Unlimited Users and Integrations_<br>
 ➼ _Unlimited Auto-Scaling K8s Clusters_<br>
 ➼ _Fully Managed, Secure and Distributed_<br>
 ➼ _Grafana UI and ClickHouse included_<br>
