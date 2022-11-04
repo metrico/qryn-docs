@@ -157,6 +157,12 @@ It is the name of the cluster you put in the config.xml.
 
 When one datasource is reused by a number of clients we may appear in a situation where we have to reduce the information each client can see. Qryn cloud project has `organisation id` mechanism to provide such feature.
 
+#### Versions supported
+
+- _qryn-go v1.2.39 or higher_
+- _wryn-writer v.1.9.61 or higher_
+
+
 #### Low level implementation.
 Each table created by Qryn has the `org_id String` column. This column is included into the primary key so the database client can easily filter information according to its value.
 
@@ -203,8 +209,24 @@ If there's no org-id specified, then the request fails.
 
 After the header or the get parameter is provided with the ID, Qryn starts filtering all the read operations with it and adding the corresponding value to every write operation. 
 
-### Versions supported
+### Troubleshooting
 
-The functionality is retested in:
-- qryn-go v1.2.39
-- wryn-writer v.1.9.61
+The following commands provide a reference to monitor partition usage:
+
+##### Count Fingerprints by OrgID
+```
+:) SELECT org_id, count(DISTINCT fingerprint) FROM time_series_v2 GROUP BY org_id;
+```
+##### Count Traces by OrgID
+```
+:) SELECT oid, count(1) FROM tempo_traces GROUP BY oid;
+```
+##### Count Logs/Metrics by OrgID
+```
+:) SELECT org_id, count(1) FROM samples_v4 GROUP BY org_id;
+```
+##### Uncompressed size of Logs/Metrics by OrgID
+```
+:) SELECT org_id, sum(length(string)) FROM samples_v4 GROUP BY org_id;
+```
+
