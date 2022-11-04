@@ -9,12 +9,12 @@
   <img src="https://user-images.githubusercontent.com/1423657/199832448-b5b42495-bd88-45b5-a455-2e57fe828c63.png" width=500 />
 </a>
 
-### QRYN:Cloud Service _(launching Dec 2022)_
+### ☁️ Cloud Service _(launching Dec 2022)_
 
 ➼ _Only Pay for data Ingestion + Series/Labels volume_<br>
 ➼ _Unlimited Logs, Metrics and Traces_<br>
 ➼ _Managed, Secure and Auto-Scaling K8s_<br>
-➼ _Grafana UI and ClickHouse included_<br>
+➼ _Grafana and ClickHouse included_<br>
 
 <iframe height="320" width="100%" scrolling="no" border=0 src="https://qryn.metrico.in/cloud/pricing.html" style="height: 350px; width: 100%; border: 0px; background: #FFF;"></iframe>
 
