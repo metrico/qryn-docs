@@ -1,8 +1,9 @@
 <a href="https://app.gigapipe.com/signup?ref=qxip" target="_blank">
-  <img src="https://nca.vc/wp-content/uploads/2020/11/Gigapipe_Logo-removebg-preview.png" width=250/>
+  <!-- <img src="https://nca.vc/wp-content/uploads/2020/11/Gigapipe_Logo-removebg-preview.png" width=250/> -->
+  <img src="https://user-images.githubusercontent.com/1423657/200003575-69fd497a-c1a5-4f26-909b-c3abf61858f2.png" width=350 />
 </a>
 
-[Gigapipe](https://gigapipe.com/) offers a fully managed **qryn** experience that _scales with you_.
+[Gigapipe](https://gigapipe.com/) offers a fully managed **qryn** experience that _scales with your data_.
 
 <a href="https://app.gigapipe.com/signup?ref=qxip" target="_blank">
   <img src="https://user-images.githubusercontent.com/1423657/199832448-b5b42495-bd88-45b5-a455-2e57fe828c63.png" width=500 />
