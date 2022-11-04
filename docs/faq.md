@@ -36,8 +36,59 @@ On top of this dataset, multiple ingestion APIs and query languages are implemen
 
 ---
 
+?> _How are Series counted in qryn?_ TLDR; _Like Prometheus._
 
-?> What exactly does _qryn_ support?
+Fingerprint usage grows when _many different combinations of labels_ are used by logs and metrics.
+
+This is called **high cardinality**. Let's use some example inserts and look at the tags:
+
+##### Example 1
+```
+cpu_seconds{host="host1",cpu="0",type="user"} 1
+cpu_seconds{host="host1",cpu="0",type="user"} 2
+cpu_seconds{host="host1",cpu="0",type="user"} 3
+cpu_seconds{host="host1",cpu="0",type="user"} 2
+```
+
+>  The label value is constant for all time series or logs.
+
+This insert would use **one fingerprint**. 
+
+##### Example 2
+```
+cpu_seconds{host="host1",cpu="0",type="user"} 1
+cpu_seconds{host="host1",cpu="1",type="user"} 1
+cpu_seconds{host="host1",cpu="0",type="user"} 2
+cpu_seconds{host="host1",cpu="1",type="user"} 1
+```
+
+>  The label value of **cpu** is different for each time series even though *host* and *mode* are the same.
+
+The insert would use **two fingerprints**.
+
+##### Example 3
+```
+cpu_seconds{host="host1",cpu="0",type="user"} 1
+cpu_seconds{host="host2",cpu="1",type="proc"} 1
+cpu_seconds{host="host3",cpu="2",type="kern"} 2
+cpu_seconds{host="host4",cpu="3",type="null"} 1
+cpu_seconds{host="host5",cpu="0",type="user"} 2
+cpu_seconds{host="host6",cpu="1",type="user"} 1
+cpu_seconds{host="host7",cpu="2",type="proc"} 1
+cpu_seconds{host="host8",cpu="1",type="sysd"} 3
+cpu_seconds{host="host9",cpu="3",type="user"} 1
+cpu_seconds{host="host0",cpu="1",type="toor"} 1
+```
+
+Labels including *6* different types, *10* different hosts and *4* CPUs 
+
+This insert would use **240 fingerprints** _(6*10*4)_
+
+An _interval of 15 seconds_ or _4 times per minute_ would result in **960 data points** per minute. _(240 x 4)_
+
+---
+
+?> What formats does _qryn_ support?
 
 **qryn** is an API polyglot and [supports multiple APIs and protocols](https://qryn.metrico.in/#/support) at once, out of the box.
 
