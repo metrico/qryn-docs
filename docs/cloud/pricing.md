@@ -13,16 +13,17 @@
 
 ➼ _Only Pay for data Ingestion + Series/Labels volume_<br>
 ➼ _Unlimited Logs, Metrics and Traces_<br>
-➼ _Powered by Auto-Scaling K8s Clusters_<br>
-➼ _Fully Managed, Secure and Distributed_<br>
+➼ _Managed, Secure and Auto-Scaling K8s_<br>
 ➼ _Grafana UI and ClickHouse included_<br>
 
 <iframe height="320" width="100%" scrolling="no" border=0 src="https://qryn.metrico.in/cloud/pricing.html" style="height: 350px; width: 100%; border: 0px; background: #FFF;"></iframe>
+
+<span style="font-size: 0.7em">
+* Indicative pricing estimates for feedback, subject to change before official product launch.
+</span>
 
 <a href="https://app.gigapipe.com/signup?ref=qxip" target="_blank">
   <img src="https://user-images.githubusercontent.com/1423657/199849352-c95ea724-ccf0-4244-a879-643a87c0ee6d.png">
 </a>
 
-<span style="font-size: 0.8em">
-* Indicative pricing estimates for feedback, subject to change before official product launch.
-</span>
+
