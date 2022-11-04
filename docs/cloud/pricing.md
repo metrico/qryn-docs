@@ -9,8 +9,8 @@
 
 ⭐ _Only Pay for Data Ingestion + Labels volume_<br>
 ⭐ _Unlimited Logs, Metrics, Traces & Integrations_<br>
-⭐ _Fully Managed, Secure and Auto-Scaling K8s_<br>
-⭐ _Grafana and ClickHouse all inclusive_<br>
+⭐ _Fully Managed, Secure, Auto-Scaling on K8s_<br>
+⭐ _Built-in Grafana UI & ClickHouse Storage_<br>
 
 <iframe height="300" width="100%" scrolling="no" border=0 src="https://qryn.metrico.in/cloud/pricing.html" style="height: 260px; width: 100%; border: 0px; background: #FFF;"></iframe>
 
