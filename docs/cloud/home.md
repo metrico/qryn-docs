@@ -1,4 +1,8 @@
-![image](https://user-images.githubusercontent.com/1423657/197589119-bb790fba-dd50-412c-92c1-033675fa980a.png ':size=200')
+<!-- ![image](https://user-images.githubusercontent.com/1423657/197589119-bb790fba-dd50-412c-92c1-033675fa980a.png ':size=200') -->
+<a href="https://app.gigapipe.com/signup?ref=qxip" target="_blank">
+  <!-- <img src="https://user-images.githubusercontent.com/1423657/200078144-5d0b0960-2ad8-4b0c-9cdd-b7f8f9f516ae.png" width=500 /> -->
+  <img src="https://user-images.githubusercontent.com/1423657/200078554-f8352174-9a6b-4f4a-90fc-1c6521d46c5b.png" width=600 />  
+</a>
 
 # ☁️ [qryn:cloud](/cloud)
 <a id=cloud name=cloud></a>
@@ -31,5 +35,5 @@ Follow the process to configure `qryn:cloud` for your deployment
 ### 🦑 &nbsp; [Clustering](/cloud/cluster)
 Follow the process to distribute `qryn:cloud` tables on your cluster
 
-### ☁️ &nbsp; [Hosted Version](/cloud)
-_Coming soon!_
+### ☁️ &nbsp; [Hosted Version](/cloud/pricing)
+Fully managed and on-demand `qryn:cloud` and `clickhouse` clusters
