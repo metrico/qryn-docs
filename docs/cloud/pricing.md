@@ -21,6 +21,7 @@
 ✔️ We keep things simple. Logs, Metrics and Traces without headaches.<br>
 ✔️ Customers only pay for ingested traffic and labels. No storage costs.<br>
 ✔️ Services scale as you go and allow easy forecasting of future costs.<br>
+✔️ Powered by the high-performance qryn:go commercial cloud stack.<br>
 ✔️ All inclusive. No Servers or ClickHouse nodes to manage and budget.<br>
 
 ### 🕹️ Endless Integrations
@@ -32,7 +33,7 @@
 ✔️ Dedicated ClickHouse Clusters w/ Full remote access in any region.<br>
 
 ### ⚡ Gigapipe Powered
-We choose Gigapipe to operate our fully managed and scalable qryn cloud experience,<br>
+We choose Gigapipe to operate our fully managed and scalable qryn cloud,<br>
 allowing users to enjoy our stack and deploy its polyglot features in minutes,<br>
 instantly ready to scale, ingest, store and query at the rate of your business.
 
