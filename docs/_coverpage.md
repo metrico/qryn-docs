@@ -4,8 +4,7 @@
     <h3 align="center">The Polyglot Monitoring and Observability Stack</h3>
 </p>
 
-[Get Started](#start)
-[:octocat:](https://github.com/metrico/qryn/)
-[☁️](cloud/pricing)
+[Get Started :octocat:](#start)
+[Cloud ☁️](cloud/pricing)
 
 ![color](#ffffff)
