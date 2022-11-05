@@ -31,6 +31,11 @@
 ✔️ Dedicated qryn nodes with _metered and unmetered_ ingestion.<br>
 ✔️ Dedicated ClickHouse Clusters w/ Full remote access in any region.<br>
 
+### ⚡ Gigapipe Powered
+We choose Gigapipe to operate our fully managed and scalable qryn cloud experience,<br>
+allowing users to enjoy our stack and deploy its polyglot features in minutes,<br>
+instantly ready to scale, ingest, store and query at the rate of your business.
+
 <br>
 
 <a href="https://app.gigapipe.com/signup?ref=qxip" target="_blank">
