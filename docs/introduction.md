@@ -43,6 +43,11 @@ Want more than our APIs offer? Access your data using pure ClickHouse SQL _for f
 ![image](https://user-images.githubusercontent.com/1423657/187255795-f67e66be-bbee-4244-b291-342ca983900f.png)
 -->
 
+### 👑 Polyglot Cloud
+Looking for a hosted qryn option? Gigapipe and qxip offer a fully managed, pay as you go **qryn** experience.
+
+💜 [Gigapipe](https://cloud.qryn.dev) _(hosted qryn:cloud integration)_<br>
+
 ### 👑 Hosting Partners
 Looking for a hosted ClickHouse option? There are many great companies we work with delivering _state-of-the-art_ managed service instances and great benchmark results with predictable costs at any scale - all backed by extremely skilled technical teams, and compatible with _qryn_
 
