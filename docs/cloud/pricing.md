@@ -47,8 +47,7 @@
   <img src="https://user-images.githubusercontent.com/1423657/200003575-69fd497a-c1a5-4f26-909b-c3abf61858f2.png" width=250 />
 -->
 
-
-> _Dedicated deployments w/ ClickHouse access available for premium customers. [contact us](mailto:info@qryn.dev) for quotes._
+<br>
 
 > _Interested in launching a qryn powered cloud service? [contact us](mailto:info@qryn.dev) for partnership opportunities._
 
