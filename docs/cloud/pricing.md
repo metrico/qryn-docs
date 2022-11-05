@@ -14,6 +14,18 @@
 
 <iframe height="300" width="100%" scrolling="no" border=0 src="https://qryn.metrico.in/cloud/pricing.html" style="height: 260px; width: 100%; border: 0px; background: #FFF;"></iframe>
 
+### 🔋 Batteries Included
+✔️ We keep things simple. Logs, Metrics and Traces without headaches.<br>
+✔️ Customers only pay for ingested traffic and labels. No storage costs.<br>
+✔️ Services scale as you go and allow easy forecasting of future costs.<br>
+✔️ No ClickHouse servers and tables to worry about.<br>
+
+### 🕹️ Endless Integrations
+✔️ Use any agent compatible with Loki, Prometheus or Opentelemetry.<br>
+✔️ Bring your own Grafana, or use the embedded Gigapipe version.<br>
+
+
+
 <a href="https://app.gigapipe.com/signup?ref=qxip" target="_blank">
   <img src="https://user-images.githubusercontent.com/1423657/199832448-b5b42495-bd88-45b5-a455-2e57fe828c63.png" width=500 />
 </a>
@@ -27,6 +39,7 @@
 <!--
   <img src="https://user-images.githubusercontent.com/1423657/200003575-69fd497a-c1a5-4f26-909b-c3abf61858f2.png" width=250 />
 -->
+
 
 > _Dedicated deployments w/ ClickHouse access available for premium customers. [contact us](mailto:info@qryn.dev) for quotes._
 
