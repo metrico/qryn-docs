@@ -24,10 +24,14 @@
 ✔️ No ClickHouse servers and tables to worry about.<br>
 
 ### 🕹️ Endless Integrations
-✔️ Use any agent compatible with Loki, Prometheus or Opentelemetry.<br>
-✔️ Bring your own Grafana, or use the embedded Gigapipe version.<br>
+✔️ Anything compatible with _Loki, Prometheus, Influx, Elastic, OTLP and more._<br>
+✔️ Bring your own Grafana with _endless users_ or use the embedded deployment.<br>
 
+### 🗃️ Dedicated Options
+✔️ Dedicated qryn nodes with _metered and unmetered_ ingestion.<br>
+✔️ Dedicated ClickHouse Clusters w/ Full remote access in any region.<br>
 
+<br>
 
 <a href="https://app.gigapipe.com/signup?ref=qxip" target="_blank">
   <img src="https://user-images.githubusercontent.com/1423657/199832448-b5b42495-bd88-45b5-a455-2e57fe828c63.png" width=500 />
