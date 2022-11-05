@@ -5,7 +5,7 @@
 
 ### ☁️ Polyglot Cloud Service
 
-[Gigapipe](https://gigapipe.com/) and [qxip](https://metrico.in) offer a fully managed **qryn** experience that _scales with your needs_.
+[Gigapipe](https://gigapipe.com/) and [qxip](https://metrico.in) offer a managed **qryn** experience that _scales with your needs_.
 
 ⭐ _Unlimited Logs, Metrics, Traces & Integrations_<br>
 ⭐ _Built-in Grafana UI & ClickHouse Storage_<br>
