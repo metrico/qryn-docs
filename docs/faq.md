@@ -70,7 +70,7 @@ The insert would use **two fingerprints**.
 
 ##### Example 3
 
-If our metric/log Labels included *6* different types, *10* different hosts and *4* CPUs they would use **240 fingerprints** _(6*10*4)_
+Labels using *6* different types, *10* different hosts and *4* CPUs they would use **240 fingerprints** _(6*10*4)_
 
 Since Logs and Metrics share fingerprints, using the labels for both would cause no additional load in the calculation.
 
