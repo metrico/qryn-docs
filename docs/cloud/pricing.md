@@ -5,6 +5,9 @@
 
 ### ☁️ Polyglot Cloud Service
 
+![image.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1667682004378/zMOuQ_0lC.png?width=230)
+
+
 [Gigapipe](https://gigapipe.com/) and [qxip](https://metrico.in) offer a managed **qryn** experience that _scales with your needs_.
 
 ⭐ _Unlimited Logs, Metrics, Traces & Integrations_<br>
