@@ -69,24 +69,10 @@ cpu_seconds{host="host1",cpu="1",type="user"} 1
 The insert would use **two fingerprints**.
 
 ##### Example 3
-```
-cpu_seconds{host="host1",cpu="0",type="user"} 1
-cpu_seconds{host="host2",cpu="1",type="proc"} 1
-cpu_seconds{host="host3",cpu="2",type="kern"} 2
-cpu_seconds{host="host4",cpu="3",type="null"} 1
-cpu_seconds{host="host5",cpu="0",type="user"} 2
-cpu_seconds{host="host6",cpu="1",type="user"} 1
-cpu_seconds{host="host7",cpu="2",type="proc"} 1
-cpu_seconds{host="host8",cpu="1",type="sysd"} 3
-cpu_seconds{host="host9",cpu="3",type="user"} 1
-cpu_seconds{host="host0",cpu="1",type="toor"} 1
-```
 
-Labels including *6* different types, *10* different hosts and *4* CPUs 
+If our metric/log Labels included *6* different types, *10* different hosts and *4* CPUs they would use **240 fingerprints** _(6*10*4)_
 
-This insert would use **240 fingerprints** _(6*10*4)_
-
-An _interval of 15 seconds_ or _4 times per minute_ would result in **960 data points** per minute. _(240 x 4)_
+Since Logs and Metrics share fingerprints, using the labels for both would cause no additional load in the calculation.
 
 ---
 
