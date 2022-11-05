@@ -21,7 +21,7 @@
 ✔️ We keep things simple. Logs, Metrics and Traces without headaches.<br>
 ✔️ Customers only pay for ingested traffic and labels. No storage costs.<br>
 ✔️ Services scale as you go and allow easy forecasting of future costs.<br>
-✔️ No ClickHouse servers and tables to worry about.<br>
+✔️ All inclusive. No Servers or ClickHouse nodes to manage and budget.<br>
 
 ### 🕹️ Endless Integrations
 ✔️ Anything compatible with _Loki, Prometheus, Influx, Elastic, OTLP and more._<br>
