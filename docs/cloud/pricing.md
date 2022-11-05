@@ -39,7 +39,7 @@ instantly ready to scale, ingest, store and query at the rate of your business.
 <br>
 
 <a href="https://app.gigapipe.com/signup?ref=qxip" target="_blank">
-  <img src="https://user-images.githubusercontent.com/1423657/199832448-b5b42495-bd88-45b5-a455-2e57fe828c63.png" width=500 />
+  <img src="https://user-images.githubusercontent.com/1423657/199832448-b5b42495-bd88-45b5-a455-2e57fe828c63.png" width=600 />
 </a>
 
 <br><br>
