@@ -38,7 +38,7 @@ On top of this dataset, multiple ingestion APIs and query languages are implemen
 
 ### Fingerprints
 
-?> _How are Fingerprints counted in qryn?_ TLDR; _Like Prometheus._
+?> _How are Series Fingerprints counted in qryn?_ TLDR; _Like Prometheus._
 
 Fingerprint usage grows when _many different combinations of labels_ are used by logs and metrics.
 
