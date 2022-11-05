@@ -5,6 +5,7 @@
 </p>
 
 [Get Started](#start)
-[Go to GitHub](https://github.com/metrico/qryn/)
+[Github](https://github.com/metrico/qryn/)
+[Cloud](cloud/pricing)
 
 ![color](#ffffff)
