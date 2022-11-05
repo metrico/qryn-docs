@@ -42,7 +42,7 @@ On top of this dataset, multiple ingestion APIs and query languages are implemen
 
 Fingerprint usage grows when _many different combinations of labels_ are used by logs and metrics.
 
-This is called **high cardinality**. Let's use some example inserts and look at the tags:
+This is called **cardinality**. Let's use some example inserts and analyze their cardinality:
 
 ##### Example 1
 ```
