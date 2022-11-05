@@ -4,7 +4,7 @@
     <h3 align="center">The Polyglot Monitoring and Observability Stack</h3>
 </p>
 
-[:octocat: Get Started](#start)
-[☁️ Cloud](cloud/pricing)
+[Get Started](#start)
+<!-- [☁️ Cloud](cloud/pricing) -->
 
 ![color](#ffffff)
