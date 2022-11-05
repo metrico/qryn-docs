@@ -11,9 +11,10 @@
 [Gigapipe](https://gigapipe.com/) and [qxip](https://metrico.in) offer a managed **qryn** experience that _scales with your needs_.
 
 ⭐ _Unlimited Logs, Metrics, Traces & Integrations_<br>
+⭐ _Only Pay for Data Ingestion + Labels volume_<br>
 ⭐ _Built-in Grafana UI & ClickHouse Storage_<br>
 ⭐ _Fully Managed, Secure, Auto-Scaling on K8s_<br>
-⭐ _Only Pay for Data Ingestion + Labels volume_<br>
+⭐ _Made in EU, available in any AWS/GCP region_<br>
 
 💰 $0.89 x GB/month + $0.005 x [Series/month](https://qryn.metrico.in/#/faq?id=fingerprints)
 
