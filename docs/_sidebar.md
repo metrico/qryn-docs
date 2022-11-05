@@ -22,7 +22,7 @@
   * [Case Studies](case-studies.md "QRYN – Case Studies – LogQL for ClickHouse and beyond")
 
 * **[Blog](https://blog.qryn.dev/)**
-* **[Cloud](cloud)**
+* **[Cloud](cloud/pricing)**
 
 * **Misc**
   * [About](about.md "QRYN – Motivations – LogQL for ClickHouse and beyond")
