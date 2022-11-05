@@ -5,7 +5,7 @@
 </p>
 
 [Get Started](#start)
-[Github](https://github.com/metrico/qryn/)
-[Cloud](cloud/pricing)
+[:octocat:](https://github.com/metrico/qryn/)
+[☁️](cloud/pricing)
 
 ![color](#ffffff)
