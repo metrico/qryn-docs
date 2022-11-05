@@ -12,7 +12,7 @@
 ⭐ _Fully Managed, Secure, Auto-Scaling on K8s_<br>
 ⭐ _Only Pay for Data Ingestion + Labels volume_<br>
 
-💰 $0.89x GB/month + $0.005x [Series/month](https://qryn.metrico.in/#/faq?id=fingerprints)
+💰 $0.89 x GB/month + $0.005 x [Series/month](https://qryn.metrico.in/#/faq?id=fingerprints)
 
 <iframe height="300" width="100%" scrolling="no" border=0 src="https://qryn.metrico.in/cloud/pricing.html" style="height: 260px; width: 100%; border: 0px; background: #FFF;"></iframe>
 
