@@ -3,10 +3,7 @@
   <img src="https://user-images.githubusercontent.com/1423657/200078554-f8352174-9a6b-4f4a-90fc-1c6521d46c5b.png" width=600 />  
 </a>
 
-### ☁️ Polyglot Cloud Service
-
-![image.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1667682004378/zMOuQ_0lC.png?width=230)
-
+### ☁️ QRYN Cloud Service
 
 [Gigapipe](https://gigapipe.com/) and [qxip](https://metrico.in) offer a managed **qryn** experience that _scales with your needs_.
 
@@ -56,6 +53,8 @@ instantly ready to scale, ingest, store and query at the rate of your business.
 <!--
   <img src="https://user-images.githubusercontent.com/1423657/200003575-69fd497a-c1a5-4f26-909b-c3abf61858f2.png" width=250 />
 -->
+
+![image.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1667682004378/zMOuQ_0lC.png?width=230)
 
 <br>
 
