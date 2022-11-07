@@ -34,6 +34,14 @@ Start querying logs, metrics and traces instantly using [LogQL, PromQL, Flux or 
 
 Want more than our APIs offer? Access your data using pure ClickHouse SQL _for fun and compliance_.
 
+### 👑 Hosting Partners
+Looking for a hosted ClickHouse option? There are many great companies we work with delivering _state-of-the-art_ managed service instances and great benchmark results with predictable costs at any scale - all backed by extremely skilled technical teams, and compatible with _qryn_
+
+💜 [Gigapipe](https://gigapipe.com) _(featuring a hosted qryn:cloud integration)_<br>
+💙 [Altinity](https://altinity.com) _(supporting the community and many of our customers)_<br>
+💚 [DoubleCloud](https://double.cloud/) _(very kind sponsor of our public demo resources)_<br>
+💛 [ClickHouse](https://clickhouse.com) _(early alpha stage, not yet tested for production)_<br>
+
 
 #### ** Hosted **
 
@@ -46,15 +54,8 @@ Want more than our APIs offer? Access your data using pure ClickHouse SQL _for f
 ### 👑 Polyglot Cloud
 Looking for a hosted qryn option? Gigapipe and qxip offer a fully managed, pay as you go **qryn** experience.
 
-💜 [Gigapipe](https://cloud.qryn.dev) _(hosted qryn:cloud integration)_<br>
+💜 [Gigapipe](https://qryn.cloud) _(pay as you go, managed qryn and clickhouse services)_<br>
 
-### 👑 Hosting Partners
-Looking for a hosted ClickHouse option? There are many great companies we work with delivering _state-of-the-art_ managed service instances and great benchmark results with predictable costs at any scale - all backed by extremely skilled technical teams, and compatible with _qryn_
-
-💜 [Gigapipe](https://gigapipe.com) _(featuring a hosted qryn:cloud integration)_<br>
-💙 [Altinity](https://altinity.com) _(supporting the community and many of our customers)_<br>
-💚 [DoubleCloud](https://double.cloud/) _(very kind sponsor of our public demo resources)_<br>
-💛 [ClickHouse](https://clickhouse.com) _(early alpha stage, not yet tested for production)_<br>
 
 
 <!-- tabs:end --> 
