@@ -174,8 +174,6 @@ spec:
               value: CHANGEME_clickhouse_server_hostname
             - name: QRYN_DATABASE_DATA_0_PORT
               value: "9440"
-            - name: QRYN_DATABASE_DATA_0_HTTP_PORT
-              value: "443"
             - name: QRYN_DATABASE_DATA_0_HTTPS
               value: "true"
             - name: QRYN_DATABASE_DATA_0_USER
@@ -233,8 +231,6 @@ spec:
               value: CHANGEME_clickhouse_server_hostname
             - name: QRYN_DATABASE_DATA_0_PORT
               value: "9440"
-            - name: QRYN_DATABASE_DATA_0_HTTP_PORT
-              value: "443"
             - name: QRYN_DATABASE_DATA_0_HTTPS
               value: "true"
             - name: QRYN_DATABASE_DATA_0_USER
