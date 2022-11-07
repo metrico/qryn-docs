@@ -1,10 +1,10 @@
 <p align="center">
-  <a href="/#/?id=start">
+  <a href="/#/">
     <img src="https://raw.githubusercontent.com/metrico/qryn-docs/main/docs/resources/images/qryn_logo_trans.png" width=120 />
   </a>
 </p>
 
-* [Home](/)
+* [Home](/ "QRYN: Polyglot Observability")
   * [Introduction](introduction.md "QRYN – Installation – LogQL for ClickHouse and beyond")
   * [Installation](installation.md "QRYN – Installation – LogQL for ClickHouse and beyond")
     * [Settings](env.md "QRYN – Supported Components – LogQL for ClickHouse and beyond")
