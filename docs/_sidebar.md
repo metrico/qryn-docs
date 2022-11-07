@@ -4,7 +4,7 @@
   </a>
 </p>
 
-* [Home](/?id=start)
+* [Home](/)
   * [Introduction](introduction.md "QRYN – Installation – LogQL for ClickHouse and beyond")
   * [Installation](installation.md "QRYN – Installation – LogQL for ClickHouse and beyond")
     * [Settings](env.md "QRYN – Supported Components – LogQL for ClickHouse and beyond")
