@@ -1,10 +1,11 @@
-<p id=start>
+<!-- <p id=start> -->
   
-  <h1 style="font-weight: normal;font-size: 30px;">
+<h1 style="font-weight: normal;font-size: 30px;">
      <b>qryn</b>: <i>polyglot monitoring and observability</i><br/><br/>
 <img src="https://user-images.githubusercontent.com/1423657/191464140-48851b2c-ada0-4cfb-b27d-315edc0ba890.gif">
-  </h1>
-</p>
+</h1>
+
+<!-- </p> -->
 
 ?> ... it's pronounced /ˈkwɪr..ɪŋ/ or just _querying_
 
