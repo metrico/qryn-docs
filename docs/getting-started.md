@@ -174,4 +174,19 @@ datasources:
 
 ```
 
+### ** View **
+
+### [🔎 Start using View]([telemetry/query](https://github.com/metrico/qryn-view))
+
+Connect to **qryn** using **view**, our _built-in_ data exploration tool
+
+#### Supported Protocols
+* LogQL _to explore Logs and Metrics_
+* PromQL _to explore Metrics_
+* Tempo _to explore Traces_
+* Flux _for Anything_
+
+
+<img src="https://user-images.githubusercontent.com/1423657/200136242-f4133229-ee7c-45e0-8228-8734cf56140a.gif">
+
 <!-- tabs:end -->
