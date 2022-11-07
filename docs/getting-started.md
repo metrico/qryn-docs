@@ -178,7 +178,9 @@ datasources:
 
 ### [🔎 Start using View]([telemetry/query](https://github.com/metrico/qryn-view))
 
-Connect to **qryn** using **view**, our _built-in_ data exploration tool
+Connect to **qryn** using **view**, our _built-in_ data exploration tool!
+
+_**view** is a browser app, and requires no installation or server components._
 
 #### Supported Protocols
 * LogQL _to explore Logs and Metrics_
