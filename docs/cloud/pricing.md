@@ -14,7 +14,7 @@
 ⭐ _Made in EU, available in any AWS/GCP region_<br>
 
 💰 $0.89 x GB/month _($0.59 > 1TB, $0.39 > 10TB)_<br>
-💰 + $0.005 x [Series/month](https://qryn.metrico.in/#/faq?id=fingerprints)
+💰 $0.005 x [Series/month](https://qryn.metrico.in/#/faq?id=fingerprints)
 
 <iframe height="300" width="100%" scrolling="no" border=0 src="https://qryn.metrico.in/cloud/pricing.html" style="height: 260px; width: 100%; border: 0px; background: #FFF;"></iframe>
 
