@@ -112,8 +112,7 @@
 
       <div class="form-group">
         <label for="quantity"> 
-          <span class="badge badge-primary quantity-label">10</span> 
-          GB
+          <span class="badge badge-primary quantity-label">10 GB</span> 
           <span class="tooltiptext">
             Ingested GB/month for data received through any protocol<br>
             <br>
@@ -125,7 +124,7 @@
              <i>⭐ Phisical disk space is unmetered</i>
           </span>
         </label>
-        <input type="range" class="form-control form-quantity" name="quantity" value="10" min="10" max="1000" step="10">
+        <input type="range" class="form-control form-quantity form-quantity-net" name="quantity" value="10" min="10" max="10000" step="10">
       </div>
       <span class="item-total"></span>
     </div>
@@ -138,8 +137,7 @@
 
       <div class="form-group">
         <label for="quantity" cl> 
-          <span class="badge badge-primary quantity-label">1000</span> 
-          Series
+          <span class="badge badge-primary quantity-label">1k Series</span> 
           <span class="tooltiptext">
             Complexive number of Series/month as <a href="https://qryn.metrico.in/#/faq?id=fingerprints" target="_blank">unique fingerprints</a><br>
             <br>
@@ -150,7 +148,7 @@
             <i>⭐ No Duplication cost. Trace attributes are unmetered</i><br>
           </span>
         </label>
-        <input type="range" class="form-control form-quantity" name="quantity" value="1000" min="1000" max="100000" step="1000">
+        <input type="range" class="form-control form-quantity" name="quantity" value="1000" min="1000" max="500000" step="1000">
       </div> 
       <span class="item-total"></span>
     </div>
@@ -159,10 +157,41 @@
 
    <script>
   (function() {
+    
+      // ugly tiered price
+      function tierPrice(input, price) {
+        if (price == 0.005) return input * price;
+        var selectedAmount = parseInt(input);
+        var totalprice = 0;
+        while(selectedAmount > 0) {
+          if (selectedAmount > 10000) {
+            var tmp = selectedAmount - 10000;
+            totalprice += tmp * 0.39;
+            selectedAmount = selectedAmount - tmp;
+          } else if (selectedAmount > 1000) {
+            var tmp = selectedAmount - 1000;
+            totalprice += tmp * 0.59;
+            selectedAmount = selectedAmount - tmp;
+          } else if (selectedAmount > 0) {
+            totalprice += selectedAmount * 0.89;
+            selectedAmount = 0;
+          }
+        }
+        return totalprice;
+      }
+      // ugly network counter
+      function readableBytes(bytes) {
+          bytes = bytes * 1000000000;
+          var i = Math.floor(Math.log(bytes) / Math.log(1000)),
+          sizes = ['B', 'KB', 'MB', 'GB', 'TB', 'PB', 'EB', 'ZB', 'YB'];
+          return (bytes / Math.pow(1000, i)).toFixed(2) * 1 + ' ' + sizes[i];
+      }
+    
       // Variable Declarations
       const priceInput = document.querySelectorAll('.form-price');
       const quantityInput = document.querySelectorAll('.form-quantity');
       const quantityLabel = document.querySelectorAll('.quantity-label');
+      const networkInput = document.querySelectorAll('.form-quantity-net');
       const itemPrice = document.querySelectorAll('.item-total'); 
       const total = document.querySelector('.total');
       let totalCost = 0;
@@ -172,7 +201,8 @@
         let oldItemPrice = parseFloat(itemPrice[i].innerText.substr(1));
         let tempPrice = priceInput[i].value;
         let tempQuantity = quantityInput[i].value;
-        let tempTotal = tempPrice * tempQuantity;
+        // let tempTotal = tempPrice * tempQuantity;
+        let tempTotal = tierPrice(tempQuantity, tempPrice);
         let tempCost = totalCost - oldItemPrice + tempTotal;
         totalCost = tempCost;
 
@@ -183,7 +213,13 @@
       // Updated Quantity Label Number
       function updateQuantityLabel(obj, i) {
         const quantity = quantityInput[i].value;
-        quantityLabel[i].innerText = quantity + '';
+        quantityLabel[i].innerText = Math.floor(quantity / 100) / 10.0 + "k" + ' Series';
+      }
+    
+      // Updated Quantity Network Number
+      function updateQuantityNetwork(obj, i) {
+        const quantity = quantityInput[i].value;
+        quantityLabel[i].innerText = readableBytes(quantity)
       }
 
       // Calculate Overall Total
@@ -193,7 +229,8 @@
         for (let i = 0; i < priceInput.length; i++) {
           let tempPrice = priceInput[i].value;
           let tempQuantity = quantityInput[i].value;
-          tempTotal = tempPrice * tempQuantity;
+          // tempTotal = tempPrice * tempQuantity;
+          tempTotal = tierPrice(tempQuantity, tempPrice);
           itemPrice[i].innerText = "$" + tempTotal.toFixed(2);
           cost+=tempTotal;
         }
@@ -213,6 +250,7 @@
        }
        for (let i = 0; i < quantityInput.length; i++) {
           quantityInput[i].addEventListener("input", function() { updateQuantityLabel(this, i) });
+          networkInput[i].addEventListener("input", function() { updateQuantityNetwork(this, i) });
        }
 
   })();
