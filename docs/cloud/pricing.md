@@ -3,7 +3,7 @@
   <img src="https://user-images.githubusercontent.com/1423657/200078554-f8352174-9a6b-4f4a-90fc-1c6521d46c5b.png" width=600 />  
 </a>
 
-### ☁️ QRYN Cloud Service
+### ☁️ qryn cloud service
 
 [Gigapipe](https://gigapipe.com/) and [qxip](https://metrico.in) offer a managed **qryn** experience that _scales with your needs_.
 
