@@ -3,58 +3,86 @@
   <img src="https://user-images.githubusercontent.com/1423657/200078554-f8352174-9a6b-4f4a-90fc-1c6521d46c5b.png" width=600 />  
 </a>
 
-### ☁️ qryn cloud service
+## ☁️ [qryn cloud is ready 🚀](https://gigapipe.com/qryn?ref=qryn)
 
-[Gigapipe](https://gigapipe.com/) and [qxip](https://metrico.in) offer a managed **qryn** experience that _scales with your needs_.
+Enjoy the power of **qryn** as a service, powered by **gigapipe**
 
-⭐ _Unlimited Logs, Metrics, Traces & Integrations_<br>
-⭐ _Only Pay for Data Ingestion + Labels volume_<br>
-⭐ _Built-in Grafana UI & ClickHouse Storage_<br>
-⭐ _Fully Managed, Secure, Auto-Scaling on K8s_<br>
-⭐ _Made in EU, available in any AWS/GCP region_<br>
+⭐  Unlimited _Logs, Metrics, Traces & Integrations_<br>
+⭐  Only Pay for Data Ingestion + Labels volume<br>
+⭐  Built-in Grafana UI & ClickHouse Storage<br>
+⭐  Fully Managed, Secure, Distributed, Auto-Scaling<br>
+⭐  Made in EU, available in any AWS/GCP region<br>
 
-💰 $0.89 x GB/month _($0.59 > 1TB, $0.39 > 10TB)_<br>
-💰 $0.005 x [Series/month](https://qryn.metrico.in/#/faq?id=fingerprints)
+_How much does it cost?_
 
-<iframe height="300" width="100%" scrolling="no" border=0 src="https://qryn.metrico.in/cloud/pricing.html" style="height: 260px; width: 100%; border: 0px; background: #FFF;"></iframe>
+<iframe src="https://qryn.metrico.in/cloud/pricing.html" scrolling=no width=100% height=270></iframe>
+
+<details>
+ <summary>💰 Ingestion Pricing</summary>
+
+*  _♟ 0-1 TB: **$0.89** x GB/month_<br>
+*  _♟♟ 1-10 TB: **$0.59** x GB/month_<br>
+*  _♟♟♟ 10+ TB: **$0.39** x GB/month_<br>
+<br>
+⭐ _Only pay for what you ingest. Disk space unmetered_<br>
+
+</details>
+<details>
+ <summary>💰 Series Pricing</summary>
+*  _only **$0.005** x [Series/month *](https://qryn.metrico.in/#/faq?id=fingerprints)_<br>
+<br>
+⭐ _Fingerprints are shared between Logs and Metrics._<br>
+⭐ _Cardinality is calculated just [like Prometheus](https://qryn.metrico.in/#/faq?id=fingerprints)_<br>
+</details>
 
 ### 🔋 Batteries Included
+
 ✔️ We keep things simple. Logs, Metrics and Traces without headaches.<br>
-✔️ Customers only pay for ingested traffic and labels. No storage costs.<br>
+✔️ Customers only pay for ingested [traffic and labels](https://qryn.metrico.in/#/faq?id=fingerprints). No storage costs.<br>
 ✔️ Services scale as you go and allow easy forecasting of future costs.<br>
-✔️ Powered by the high-performance qryn:go commercial cloud stack.<br>
 ✔️ All inclusive. No Servers or ClickHouse nodes to manage and budget.<br>
 
 ### 🕹️ Endless Integrations
+
 ✔️ Anything compatible with _Loki, Prometheus, Influx, Elastic, OTLP and more._<br>
 ✔️ Bring your own Grafana with _endless users_ or use the embedded deployment.<br>
 
 ### 🗃️ Dedicated Options
+
 ✔️ Dedicated qryn nodes with _metered and unmetered_ ingestion.<br>
 ✔️ Dedicated ClickHouse Clusters w/ Full remote access in any region.<br>
 
 ### ⚡ Gigapipe Powered
-We choose Gigapipe to operate our fully managed and scalable qryn cloud,<br>
-allowing users to enjoy our stack and deploy its polyglot features in minutes,<br>
-instantly ready to scale, ingest, store and query at the rate of your business.
+
+We choose [Gigapipe](https://gigapipe.com) to operate our fully managed and scalable **qryn:cloud** experience, allowing users to enjoy our stack and deploy its polyglot features in minutes, instantly ready to ingest, store and query all of their observability data.
+
+**Gigapipe** runs a next generation managed **ClickHouse** cloud data platform offering a solid ecosystem of connected technologies backed by a team of _super smart engineers_ in an open culture environment where _innovation is second nature._ 
+
+Just the _perfect fit for the **qryn** gang and our grand vision!_  🔎
+
+_Thanks Alastair, Alex, Eric and all the Team for delivering THE dream integration!_ 
+
+<a href="https://gigapipe.com/qryn?ref=qryn" target="_blank">
+  <img src="https://user-images.githubusercontent.com/1423657/199832448-b5b42495-bd88-45b5-a455-2e57fe828c63.png" width=500 />
+</a>
 
 <br>
 
-<a href="https://app.gigapipe.com/signup?ref=qxip" target="_blank">
-  <img src="https://user-images.githubusercontent.com/1423657/199832448-b5b42495-bd88-45b5-a455-2e57fe828c63.png" width=600 />
-</a>
+## Motivation
+##### 🧠🤯🎱 = 💵 ?
 
-<br><br>
+Most cloud observability platforms _include a free headache_ in the pricing model. 
 
-<a href="https://app.gigapipe.com/signup?ref=qxip" target="_blank">
-  <img src="https://user-images.githubusercontent.com/1423657/199849352-c95ea724-ccf0-4244-a879-643a87c0ee6d.png">
-</a>
+Assuming they do support _logs, metrics and tracing_ in a single service, most tend to rate each typology in a different way, forcing specific agent or formats on users and sometimes they make things _overly complex_ to plan and forecast.
 
-<!--
-  <img src="https://user-images.githubusercontent.com/1423657/200003575-69fd497a-c1a5-4f26-909b-c3abf61858f2.png" width=250 />
--->
+Once you figure out the pricing model, the majority of service result _crazy expensive_. Other _"dirt cheap"_ tracing platforms appear to operate without any regard for EU/US privacy laws, backups, security and compliance. _A guaranteed recipe for disaster._
 
-![image.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1667682004378/zMOuQ_0lC.png?width=230)
+_*We wanted our service to be a solution, rather than another puzzle to crack.*_
+
+With **Gigapipe**, we can operate [qryn](https://qryn.dev) as a _state-of-the-art affordable service._ 
+
+
+<a href="https://gigapipe.com/qryn/" target="_blank"><img src="https://cdn.hashnode.com/res/hashnode/image/upload/v1668278089084/D7HPyeUPf.png?width=380"></a>
 
 <br>
 
