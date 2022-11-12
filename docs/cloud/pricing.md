@@ -26,8 +26,10 @@ _How much does it cost?_
 ⭐ _Only pay for what you ingest. Disk space unmetered_<br>
 
 </details>
+
 <details>
  <summary>💰 Series Pricing</summary>
+
 *  _only **$0.005** x [Series/month *](https://qryn.metrico.in/#/faq?id=fingerprints)_<br>
 <br>
 ⭐ _Fingerprints are shared between Logs and Metrics._<br>
