@@ -53,9 +53,7 @@ _How much does it cost?_
 
 ### ⚡ Gigapipe Powered
 
-We choose [Gigapipe](https://gigapipe.com) to operate our fully managed and scalable **qryn:cloud** experience, allowing users to enjoy our stack and deploy its polyglot features in minutes, instantly ready to ingest, store and query all of their observability data.
-
-**Gigapipe** runs a next generation managed **ClickHouse** cloud data platform offering a solid ecosystem of connected technologies backed by a team of _super smart engineers_ in an open culture environment where _innovation is second nature._ 
+We choose [Gigapipe](https://gigapipe.com) to operate our fully managed and scalable **qryn:cloud** experience, allowing users to enjoy our stack and deploy its polyglot features in minutes, instantly ready to ingest, store and query all of their observability data. **Gigapipe** runs a next generation managed **ClickHouse** cloud data platform offering a solid ecosystem of connected technologies backed by a team of _super smart engineers_ in an open culture environment where _innovation is second nature._ 
 
 Just the _perfect fit for the **qryn** gang and our grand vision!_  🔎
 
@@ -80,8 +78,9 @@ _*We wanted our service to be a solution, rather than another puzzle to crack.*_
 
 With **Gigapipe**, we can operate [qryn](https://qryn.dev) as a _state-of-the-art affordable service._ 
 
+<br>
 
-<a href="https://gigapipe.com/qryn/" target="_blank"><img src="https://cdn.hashnode.com/res/hashnode/image/upload/v1668278089084/D7HPyeUPf.png?width=380"></a>
+<a href="https://gigapipe.com/qryn/" target="_blank"><img src="https://cdn.hashnode.com/res/hashnode/image/upload/v1668278089084/D7HPyeUPf.png?width=250"></a>
 
 <br>
 
