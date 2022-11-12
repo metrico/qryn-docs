@@ -15,8 +15,7 @@ Enjoy the power of **qryn** as a service, powered by **gigapipe**
 
 _How much does it cost?_
 
-<iframe src="https://qryn.metrico.in/cloud/pricing.html" scrolling=no width=100% height=270></iframe>
-
+<iframe height="300" width="100%" scrolling="no" border=0 src="https://qryn.metrico.in/cloud/pricing.html" style="height: 260px; width: 100%; border: 0px; background: #FFF;"></iframe>
 <details>
  <summary>💰 Ingestion Pricing</summary>
 
