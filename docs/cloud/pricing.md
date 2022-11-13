@@ -14,8 +14,6 @@ Enjoy the power of **qryn** as a service, powered by **gigapipe**
 ⭐  Made in EU, available in any AWS/GCP region<br>
 
 _How much does it cost?_
-
-<iframe height="300" width="100%" scrolling="no" border=0 src="https://qryn.metrico.in/cloud/pricing.html" style="height: 260px; width: 100%; border: 0px; background: #FFF;"></iframe>
 <details>
  <summary>💰 Ingestion Pricing</summary>
 
@@ -35,6 +33,8 @@ _How much does it cost?_
 ⭐ _Fingerprints are shared between Logs and Metrics._<br>
 ⭐ _Cardinality is calculated just [like Prometheus](https://qryn.metrico.in/#/faq?id=fingerprints)_<br>
 </details>
+
+<iframe height="300" width="100%" scrolling="no" border=0 src="https://qryn.metrico.in/cloud/pricing.html" style="height: 260px; width: 100%; border: 0px; background: #FFF;"></iframe>
 
 <a href="https://gigapipe.com/qryn/" target="_blank"><img src="https://cdn.hashnode.com/res/hashnode/image/upload/v1668292168833/yhoe71kQ5I.png?width=200"></a>
 
