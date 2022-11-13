@@ -36,6 +36,8 @@ _How much does it cost?_
 ⭐ _Cardinality is calculated just [like Prometheus](https://qryn.metrico.in/#/faq?id=fingerprints)_<br>
 </details>
 
+<a href="https://gigapipe.com/qryn/" target="_blank"><img src="https://cdn.hashnode.com/res/hashnode/image/upload/v1668292168833/yhoe71kQ5I.png?width=200"></a>
+
 ### 🔋 Batteries Included
 
 ✔️ We keep things simple. Logs, Metrics and Traces without headaches.<br>
