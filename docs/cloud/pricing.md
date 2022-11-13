@@ -21,17 +21,17 @@ _How much does it cost?_
 *  _♟♟ 1-10 TB: **$0.59** x GB/month_<br>
 *  _♟♟♟ 10+ TB: **$0.39** x GB/month_<br>
 <br>
-⭐ _Only pay for what you ingest. Disk space unmetered_<br>
+⭐ Only pay for what you ingest. Disk space unmetered<br>
 
 </details>
 
 <details>
  <summary>💰 Series Pricing</summary>
 
-*  _only **$0.005** x [Series/month *](https://qryn.metrico.in/#/faq?id=fingerprints)_<br>
+*  _**$0.005** x [Series/month *](https://qryn.metrico.in/#/faq?id=fingerprints)_<br>
 <br>
-⭐ _Fingerprints are shared between Logs and Metrics._<br>
-⭐ _Cardinality is calculated just [like Prometheus](https://qryn.metrico.in/#/faq?id=fingerprints)_<br>
+⭐ Fingerprints are shared between Logs and Metrics.<br>
+⭐ Cardinality is calculated just [like Prometheus](https://qryn.metrico.in/#/faq?id=fingerprints)<br>
 </details>
 
 <iframe height="300" width="100%" scrolling="no" border=0 src="https://qryn.metrico.in/cloud/pricing.html" style="height: 260px; width: 100%; border: 0px; background: #FFF;"></iframe>
