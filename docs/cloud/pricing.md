@@ -74,9 +74,7 @@ _Thanks Alastair, Alex, Eric and all the Team for delivering THE dream integrati
 
 Most cloud observability platforms _include a free headache_ in the pricing model. 
 
-Assuming they do support _logs, metrics and tracing_ in a single service, most tend to rate each typology in a different way, forcing specific agent or formats on users and sometimes they make things _overly complex_ to plan and forecast.
-
-Once you figure out the pricing model, the majority of service result _crazy expensive_. Other _"dirt cheap"_ tracing platforms appear to operate without any regard for EU/US privacy laws, backups, security and compliance. _A guaranteed recipe for disaster._
+Assuming they do support _logs, metrics and tracing_ in a single service, most tend to rate each typology in a different way, forcing specific agent or formats on users and sometimes they make things _overly complex_ to plan and forecast. Once you figure out the pricing model, the majority of service result _crazy expensive_. Other _"dirt cheap"_ tracing platforms appear to operate without any regard for EU/US privacy laws, backups, security and compliance. _A guaranteed recipe for disaster._
 
 _*We wanted our service to be a solution, rather than another puzzle to crack.*_
 
