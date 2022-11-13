@@ -9,7 +9,7 @@
 
 ?> ... it's pronounced /ˈkwɪr..ɪŋ/ or just _querying_
 
-_All the greatest observability formats and integrations you love, at once. Let's get Polyglot._
+##### _All the greatest observability formats and integrations you love, at once. Let's get Polyglot._
 
 * Ingestion APIs transparently compatible with [Loki](logs/ingestion#logql), [Prometheus](metrics/ingestion#prometheus), [Tempo](telemetry/ingestion#zipkin), [InfluxDB](metrics/ingestion#influx), [Elastic](logs/ingestion#elastic) _and more_
 * Native Grafana and _[LogQL, PromQL, Tempo APIs](getting-started.md)_ for _querying, processing, ingesting, tracing and alerting_
