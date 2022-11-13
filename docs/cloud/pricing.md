@@ -17,9 +17,9 @@ _How much does it cost?_
 <details>
  <summary>💰 Ingestion Pricing</summary>
 
-*  _♟ 0-1 TB: **$0.89** x GB/month_<br>
-*  _♟♟ 1-10 TB: **$0.59** x GB/month_<br>
-*  _♟♟♟ 10+ TB: **$0.39** x GB/month_<br>
+*  _🔋 0-1 TB: **$0.89** x GB/month_<br>
+*  _🔋🔋 1-10 TB: **$0.59** x GB/month_<br>
+*  _🔋🔋🔋 10+ TB: **$0.39** x GB/month_<br>
 <br>
 ⭐ Only pay for what you ingest. Disk space unmetered<br>
 
