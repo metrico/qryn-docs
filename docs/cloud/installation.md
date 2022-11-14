@@ -467,3 +467,30 @@ Cheatsheet: https://clickhouse.com/docs/en/engines/table-engines/mergetree-famil
 Index should be specified for each database node.
 
 After updating index configuration `qryn-writer -initialize_db` should be run to update the schema.
+
+## Header-based sharding
+
+*Since: qryn-writer v1.9.71*
+
+In case of using a clickhouse distributed setup the default sharding is based on: 
+- fingerprint of logs
+- hash of traceid + spanid of traces
+
+Playload is distributed across of clickhouse nodes in a random way.
+
+If this is not acceptable, there is a header based distribution provided. Each write request should have `X-Shard` header with the ID of clickhouse node where the payload should be saved.
+
+### Configuration
+JSON based configuration of the feature:
+``` { ...
+  "cluster_settings": {
+    "distribution_header": true
+  },
+...}
+```
+Env based configuration: `QRYN_CLUSTER_SETTINGS_DISTRIBUTION_HEADER=true`
+
+## Usage
+
+After configuration the system accepts header: X-Shard: <Int64 ID OF A SHARD IN DISTRIBUTED SETUP>
+If the ID is not set or the ID is negative, the default type of sharding is provided.
