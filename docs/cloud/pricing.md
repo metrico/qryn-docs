@@ -3,7 +3,7 @@
   <img src="https://user-images.githubusercontent.com/1423657/200078554-f8352174-9a6b-4f4a-90fc-1c6521d46c5b.png" width=600 />  
 </a>
 
-## ☁️&nbsp; [qryn cloud is ready 🚀](https://gigapipe.com/qryn?ref=qryn)
+## ☁️&nbsp; [qryn cloud is ready 🚀](https://qryn.cloud)
 
 Enjoy the power of **qryn** as a service, powered by **gigapipe**
 
@@ -36,7 +36,7 @@ _How much does it cost?_
 
 <iframe height="300" width="100%" scrolling="no" border=0 src="https://qryn.metrico.in/cloud/pricing.html" style="height: 260px; width: 100%; border: 0px; background: #FFF;"></iframe>
 
-<a href="https://gigapipe.com/qryn/" target="_blank"><img src="https://cdn.hashnode.com/res/hashnode/image/upload/v1668292168833/yhoe71kQ5I.png?width=200"></a>
+<a href="https://qryn.cloud" target="_blank"><img src="https://cdn.hashnode.com/res/hashnode/image/upload/v1668292168833/yhoe71kQ5I.png?width=200"></a>
 
 ### 🔋 Batteries Included
 
@@ -63,7 +63,7 @@ Just the _perfect fit for the **qryn** gang and our grand vision!_  🔎
 
 _Thanks Alastair, Alex, Eric and all the Team for delivering THE dream integration!_ 
 
-<a href="https://gigapipe.com/qryn?ref=qryn" target="_blank">
+<a href="https://qryn.cloud" target="_blank">
   <img src="https://user-images.githubusercontent.com/1423657/199832448-b5b42495-bd88-45b5-a455-2e57fe828c63.png" width=500 />
 </a>
 
@@ -82,7 +82,7 @@ With **Gigapipe**, we can operate [qryn](https://qryn.dev) as a _state-of-the-ar
 
 <br>
 
-<a href="https://gigapipe.com/qryn/" target="_blank"><img src="https://cdn.hashnode.com/res/hashnode/image/upload/v1668278089084/D7HPyeUPf.png?width=250"></a>
+<a href="https://qryn.cloud" target="_blank"><img src="https://cdn.hashnode.com/res/hashnode/image/upload/v1668278089084/D7HPyeUPf.png?width=250"></a>
 
 <br>
 
