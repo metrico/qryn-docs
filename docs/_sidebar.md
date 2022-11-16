@@ -4,7 +4,9 @@
   </a>
 </p>
 
-* [Home](/ "QRYN: Polyglot Observability")
+* **[Cloud](cloud/pricing)**
+* **[Blog](https://blog.qryn.dev/)**
+* **[Get Started](/ "QRYN: Polyglot Observability")**
   * [Introduction](introduction.md "QRYN – Installation – LogQL for ClickHouse and beyond")
   * [Installation](installation.md "QRYN – Installation – LogQL for ClickHouse and beyond")
     * [Settings](env.md "QRYN – Supported Components – LogQL for ClickHouse and beyond")
@@ -20,9 +22,6 @@
     * [LogQL](guide/logql.md "QRYN – Getting Started – LogQL for ClickHouse and beyond") 
     * [APIs](support.md "QRYN – Supported Components – LogQL for ClickHouse and beyond")
   * [Case Studies](case-studies.md "QRYN – Case Studies – LogQL for ClickHouse and beyond")
-
-* **[Blog](https://blog.qryn.dev/)**
-* **[Cloud](cloud/pricing)**
 
 * **Misc**
   * [About](about.md "QRYN – Motivations – LogQL for ClickHouse and beyond")
