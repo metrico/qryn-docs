@@ -3,7 +3,7 @@
   <img src="https://user-images.githubusercontent.com/1423657/200078554-f8352174-9a6b-4f4a-90fc-1c6521d46c5b.png" width=600 />  
 </a>
 
-## ☁️&nbsp; [qryn cloud is ready 🚀](https://qryn.cloud)
+## ☁️&nbsp; [qryn cloud is launching soon 🚀](https://qryn.cloud)
 
 Enjoy the power of **qryn** as a service, powered by **gigapipe**
 
