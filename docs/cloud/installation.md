@@ -33,7 +33,7 @@ docker login ghcr.io
 Use the provided _remote token_ to access to the container repository instead of your password
 
 ```bash
-echo 'XXXX-XXXX-XXXX-XXXX-XXXX' | docker login ghcr.io -u yourUserName --password-stdin
+echo {providedPullToken} | docker login ghcr.io -u yourUserName --password-stdin
 ```
 
 ##### Pull the containers
