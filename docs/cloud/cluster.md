@@ -202,7 +202,7 @@ Configuration json file has the bool `multitenance_settings.enabled` option whic
 }
 ```
 
-The corresponding env variable is: `MULTITENANCE_SETTINGS_ENABLED=true`.
+The corresponding env variable is: `QRYN_MULTITENANCE_SETTINGS_ENABLED=true`.
 
 ### Specifying tenant-id for read & write operations
 After the setting is set to true, all the read and write operations start failing because Qryn starts looking for:
