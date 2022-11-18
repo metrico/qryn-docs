@@ -24,6 +24,13 @@
 
 ?> _100x faster Logs, Metrics and Traces made simple, out of the box - batteries included!_ 🔋
 
+### ⚙️ Architecture
+
+**qryn:cloud** provides separately scalable ingestion and consumption endpoints.<br>
+The Auth/Edge and Database services are provided by Integrators.
+<img src="https://user-images.githubusercontent.com/1423657/202738357-2718170e-4aad-45a0-baff-64d266739c32.png" width=400>
+
+
 <br>
 
 ### 📦 &nbsp; [Installation](/cloud/installation)
