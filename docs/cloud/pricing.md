@@ -70,7 +70,7 @@ _Thanks Alastair, Alex, Eric and all the Team for delivering THE dream integrati
 <br>
 
 ## Motivation
-##### 🧠🤯🎱 = 💵 ?
+#### 🧠🤯🎱 = 💵 ?
 
 Most cloud observability platforms _include a free headache_ in the pricing model. 
 
