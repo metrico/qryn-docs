@@ -2,17 +2,14 @@
 
 In this section, we'll learn how to query and filter metrics using **PromQL**. Let's get __qryn__!
 
-!> **qryn:oss** emulates a subset of promql queries using logql metics
-
-?> **qryn:cloud** fully supports prometheus and all promql functions
-
 <!-- tabs:start -->
 ### ** ⭐ Grafana **
 <a id=grafana></a>
 
 Let's **explore** our data using [Grafana](guide/datasources.md) and its _amazing visualizations_
 
-![grafanaexplore](https://user-images.githubusercontent.com/1423657/184538094-13c11500-24ef-4468-9f33-dc9d564238e3.gif)
+<!-- ![grafanaexplore](https://user-images.githubusercontent.com/1423657/184538094-13c11500-24ef-4468-9f33-dc9d564238e3.gif) -->
+[arcade-prom](https://demo.arcade.software/r2A4ia93hPs96pyiaFQx?embed ':include :type=iframe width=100% height=550px border=0')
 
 ### PromQL <!-- {docsify-ignore-all} -->
 #### Visualize metrics using PromQL 📈
@@ -45,3 +42,6 @@ That was easy, _wasn't it?_
 Progress your knowledge using the [advanced Promql articles](/#/examples)
 
 <!-- tabs:end -->
+
+!> **qryn:oss** emulates a subset of promql queries using logql metics
+!> **qryn:cloud** fully supports prometheus and all promql functions
