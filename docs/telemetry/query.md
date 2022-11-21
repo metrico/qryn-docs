@@ -8,7 +8,8 @@ In this section, we'll learn how to query and filter ingested traces using **Tem
 
 Let's **explore** our data using [Grafana](guide/datasources.md) and its _amazing visualizations_
 
-![grafanaexplore](https://user-images.githubusercontent.com/1423657/184538094-13c11500-24ef-4468-9f33-dc9d564238e3.gif)
+<!-- ![grafanaexplore](https://user-images.githubusercontent.com/1423657/184538094-13c11500-24ef-4468-9f33-dc9d564238e3.gif) -->
+[arcade-tempo](https://demo.arcade.software/G43G6ja4CHJYpF9rc3V2?embed ':include :type=iframe width=100% height=550px border=0')
 
 ### Tempo <!-- {docsify-ignore-all} -->
 #### Find a Trace using Tempo 🧲
