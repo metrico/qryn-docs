@@ -8,6 +8,8 @@
 
 !> qryn:cloud requires activation & pull tokens! Please [contact us](mailto:info@qxip.net) to obtain a license.
 
+?> ClickHouse Server LTS version 22.9 is suggested, >=22 required and 22.10 experimental
+
 ## 📦 Installation
 
 Let's install **qryn cloud** in a snap. All you need is a supported OS or `Docker` installed.
