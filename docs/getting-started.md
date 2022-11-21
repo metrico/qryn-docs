@@ -180,6 +180,8 @@ datasources:
 
 Connect to **qryn** using **view**, our _built-in_ data exploration tool!
 
+<img src="https://user-images.githubusercontent.com/1423657/200136242-f4133229-ee7c-45e0-8228-8734cf56140a.gif">
+
 _**view** is a browser app, and requires no installation or server components._
 
 #### Supported Protocols
@@ -188,7 +190,5 @@ _**view** is a browser app, and requires no installation or server components._
 * Tempo _to explore Traces_
 * Flux _for Anything_
 
-
-<img src="https://user-images.githubusercontent.com/1423657/200136242-f4133229-ee7c-45e0-8228-8734cf56140a.gif">
 
 <!-- tabs:end -->
