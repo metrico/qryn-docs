@@ -23,11 +23,12 @@ At the time of writing this doc, **qryn** supports the following APIs are suppor
 
 | **Name**             | **Type**           | **Support**         | **APIs.**                         | **Docs**    
 |----------------------|--------------------|---------------------|-----------------------------------|--------------
-| Push                 | POST               | **Yes**             | `/tempo/api/push`                                | [View Docs](/api/tempo.md)
-| Query Spans          | GET                | **Yes**             | `/api/v2/spans`                                | [View Docs](/api/tempo.md)
-| Query Traces         | GET                | **Yes**             | `/api/traces/{traceId}`                                | [View Docs](/api/tempo.md)
-| Labels               | GET                | **Yes**             | `/api/search/tags`                                | [View Docs](/api/tempo.md)
-| Label Values         | GET                | **Yes**             | `/api/search/tag/{tags}/values`                                | [View Docs](/api/tempo.md)
+| Push                 | POST               | **Yes**             | `/tempo/api/push`                    | [View Docs](/api/tempo.md)
+| Push                 | POST               | **Yes**             | `/api/v2/spans`                      | [View Docs](/api/tempo.md)
+| Query Spans          | GET                | **Yes**             | `/api/v2/spans`                      | [View Docs](/api/tempo.md)
+| Query Traces         | GET                | **Yes**             | `/api/traces/{traceId}`              | [View Docs](/api/tempo.md)
+| Labels               | GET                | **Yes**             | `/api/search/tags`                   | [View Docs](/api/tempo.md)
+| Label Values         | GET                | **Yes**             | `/api/search/tag/{name}/values`      | [View Docs](/api/tempo.md)
 
 
 ## Prometheus API
