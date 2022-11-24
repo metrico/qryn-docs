@@ -28,6 +28,7 @@ The following `ENV` parameters can be used to control **qryn** parameters and it
 | QRYN_LOGIN              | undefined             | Basic HTTP Username           |
 | QRYN_PASSWORD         | undefined             | Basic HTTP Password           |
 | READONLY  			          | false  	    | Readonly Mode, no DB Init  		|
+| OMIT_CREATE_TABLES | false | Omit database provisioning on startup. Dangerous. |
 | FASTIFY_BODYLIMIT      | 5242880   | API Maximum payload size in bytes |
 | FASTIFY_REQUESTTIMEOUT | 0 | API Maximum Request Timeout in ms |
 | FASTIFY_MAXREQUESTS    | 0 | API Maximum Requests per socket |
