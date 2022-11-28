@@ -8,7 +8,7 @@
 
 !> qryn:cloud requires activation & pull tokens! Please [contact us](mailto:info@qxip.net) to obtain a license.
 
-?> ClickHouse Server LTS version 22.9 is suggested, >=22 required and 22.10 experimental
+?> ClickHouse Server LTS version >=22 and <=22.9 is suggested. _22.10+ not yet supported._
 
 ## 📦 Installation
 
