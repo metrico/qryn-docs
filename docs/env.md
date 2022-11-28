@@ -4,9 +4,11 @@
 
 ?> We're K8s and Docker container friendly 😉
 
-## Resources
+### Resources
 
-Each setup is different and requirements depend on the amount and volume of data and labels ingested. Make sure you have sufficient memory and disk resources allocated for your node service and clickhouse server when dealing with large amounts of data and fingerprints. We suggest 8GB RAM or higher for most setups with 100k-1M fingerprints. Observe your daily and weekly data consumption to forecast your disk usage requirements. Compression codecs and other optimizations can be performed at the ClickHouse level. When in doubt, ask the community for suggestions. 
+Each setup is different and requirements depend on the amount and volume of data and labels ingested. 
+
+Make sure you have sufficient memory and disk resources allocated for your node service and clickhouse server when dealing with large amounts of data and fingerprints. We suggest 8GB RAM or higher for most setups with 100k-1M fingerprints. Observe your daily and weekly data consumption to forecast your disk usage requirements. Compression codecs and other optimizations can be performed at the ClickHouse level. When in doubt, ask the community for suggestions. 
 
 #### Parameters
 
