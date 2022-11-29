@@ -39,6 +39,7 @@ The following `ENV` parameters can be used to control **qryn** parameters and it
 | FASTIFY_REQUESTTIMEOUT | 0 | API Maximum Request Timeout in ms |
 | FASTIFY_MAXREQUESTS    | 0 | API Maximum Requests per socket |
 | FASTIFY_METRICS        | false | API /metrics exporter |
+| CORS_ALLOW_ORIGIN.     | * | CORS Allow Origin, default to any |
 | TEMPO_SPAN             | 24 | Default span for Tempo queries in hours |
 | TEMPO_TAGTRACE         | false | Optional tagging of TraceID (expensive) |
 | DEBUG  			             | false  	    | Debug Mode (for backwards compatibility) 		|
