@@ -492,7 +492,26 @@ JSON based configuration of the feature:
 ```
 Env based configuration: `QRYN_CLUSTER_SETTINGS_DISTRIBUTION_HEADER=true`
 
-## Usage
+### Usage
 
 After configuration the system accepts header: X-Shard: <Int64 ID OF A SHARD IN DISTRIBUTED SETUP>
 If the ID is not set or the ID is negative, the default type of sharding is provided.
+  
+## CORS support
+*since qryn-go v1.2.51*
+
+Qryn supports cors headers. They can be configured with the config as below:
+
+```
+{
+  ...
+  "http_settings": {
+    "cors": {"enable": true, "origin": "*"}
+  },
+  ...
+}
+```
+
+The corresponding env variables: 
+- `QRYN_HTTP_SETTINGS_CORS_ENABLE=true`
+- `QRYN_HTTP_SETTINGS_CORS_ORIGIN=*`
