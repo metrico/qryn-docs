@@ -44,7 +44,7 @@ The following `ENV` parameters can be used to control **qryn** parameters and it
 | TEMPO_TAGTRACE         | false | Optional tagging of TraceID (expensive) |
 | DEBUG  			             | false  	    | Debug Mode (for backwards compatibility) 		|
 | LOG_LEVEL  			         | info  	    | Log Level  		|
-| HASH                   | short-hash | Hash function using for fingerprints. Currently supported `short-hash` and `xxhash64` (xxhash64 function)
+| HASH                   | xxhash64 | Hash function using for fingerprints. Currently supported `short-hash` and `xxhash64` (xxhash64 function)
 | ALERTMAN_URL           | false      | Alertmanager API URL, ie: `http://my_alertmanager_url:1234` |
 
 #### Node Parameters
