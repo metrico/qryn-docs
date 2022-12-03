@@ -23,22 +23,68 @@ traces:
   configs:
   - name: server_traces
     receivers:
+      zipkin:
       otlp:
         protocols:
           http:
-            endpoint: "0.0.0.0:4318"
-
+            endpoint: '0.0.0.0:4318'
+          grpc:
+            endpoint: '0.0.0.0:4317'
     remote_write:
       - endpoint: qryn:3100
         insecure: true
+        basic_auth:
+         username: <qryn cloud Username>
+         password: <qryn cloud API Key>
 ```
-
-
 
 The following articles provide great insight and examples on the subject:
 
 - [Tracing with Grafana Agent](https://grafana.com/blog/2020/11/17/tracing-with-the-grafana-cloud-agent-and-grafana-tempo/)
 - [Tracing K8s with Grafana Agent](https://grafana.com/docs/grafana-cloud/kubernetes-monitoring/agent-k8s/k8s_agent_traces/)
+
+###### Service Graphs
+
+Service graphs are generated in Grafana Agent and pushed to qryn's prometheus compatible backend.
+
+```yml
+server:
+  log_level: debug
+
+traces:
+  configs:
+  - name: server_traces
+    receivers:
+      zipkin:
+      otlp:
+        protocols:
+          http:
+            endpoint: '0.0.0.0:4318'
+          grpc:
+            endpoint: '0.0.0.0:4317'
+    remote_write:
+      - endpoint: qryn:3100
+        insecure: true
+        basic_auth:
+         username: <qryn cloud Username>
+         password: <qryn cloud API Key>
+    service_graphs:
+        enabled: true
+    scrape_configs:
+      - job_name: local_scrape
+        static_configs:
+          - targets: ['127.0.0.1:12345']
+        remote_write:
+        - endpoint: qryn:3100
+          insecure: true
+          basic_auth:
+            username: <qryn cloud Username>
+            password: <qryn cloud API Key>
+```
+
+The following article provide great insight and examples on the subject:
+
+- [Grafana APM Dashboard](https://grafana.com/docs/tempo/latest/metrics-generator/app-performance-mgmt/)
 
 ?> _That's it!_ You're now _tracing spans to **qryn** using Grafana Agent_! 
 
