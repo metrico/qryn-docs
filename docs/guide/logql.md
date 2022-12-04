@@ -1,4 +1,4 @@
-## 📖 LogQL
+# 📖 LogQL
 
 **LogQL** is a _PromQL-inspired_ query language acting like a distributed grep with powerful _filters and aggregations_.
 
