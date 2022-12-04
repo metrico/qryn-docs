@@ -194,9 +194,8 @@ Count of errors at 1h time intervals
 count_over_time({job="systemd-journal"} |= "error" [1h])
 ```
 
--------
 
-### ** Unwrap ** 
+### ** Unwrap **
 
 Unwrap Expressions allow for the unwrapping of a value to be used in an aggregation. It can extract any parsed json value.
 
@@ -217,7 +216,6 @@ avg_over_time({job="0.6611336793589486_json"} | json myField="my_field" | unwrap
 
 The function extracts the value of `my_field` and aggregates it into an average of `5s` buckets over the given timerange.
 
--------
 
 ### ** Aggregate **
 
