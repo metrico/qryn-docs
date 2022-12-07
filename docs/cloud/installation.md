@@ -40,8 +40,8 @@ echo {providedPullToken} | docker login ghcr.io -u yourUserName --password-stdin
 
 ##### Pull the containers
 ```bash
-docker pull ghcr.io/metrico/qryn-writer-cloud
-docker pull ghcr.io/metrico/qryn-go-cloud
+docker pull qxip/qryn-writer-cloud
+docker pull qxip/qryn-go-cloud
 ```
 
 ##### Create Docker Compose File
@@ -55,7 +55,7 @@ version: '3.1'
 
 services:
   qryn-writer:
-    image: ghcr.io/metrico/qryn-writer-cloud:latest
+    image: qxip/qryn-writer-cloud:latest
     container_name: qryn-writer
     restart: unless-stopped
     expose:
@@ -83,7 +83,7 @@ services:
       - ./cloki-writer -initialize_db && ./cloki-writer
 
   qryn-go:
-    image: ghcr.io/metrico/qryn-go-cloud:latest
+    image: qxip/qryn-go-cloud:latest
     container_name: qryn-go
     restart: unless-stopped
     expose:
@@ -132,8 +132,8 @@ Use `Kubernetes` and `helm` to get started using either a local or cloud ClickHo
 
 ##### Pull the qryn service containers
 ```bash
-docker pull ghcr.io/metrico/qryn-writer-cloud
-docker pull ghcr.io/metrico/qryn-go-cloud
+docker pull qxip/qryn-writer-cloud
+docker pull qxip/qryn-go-cloud
 ```
 
 ##### Rapid Example
@@ -161,7 +161,7 @@ spec:
         io.metrico.service: qryn-writer
     spec:
       containers:
-        - image: ghcr.io/metrico/qryn-writer-cloud
+        - image: qxip/qryn-writer-cloud
           name: qryn-writer
           ports:
             - containerPort: 3100
@@ -222,7 +222,7 @@ spec:
         io.metrico.service: qryn-go
     spec:
       containers:
-        - image: ghcr.io/metrico/qryn-go-cloud
+        - image: qxip/qryn-go-cloud
           name: qryn-go
           ports:
             - containerPort: 3200
