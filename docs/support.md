@@ -68,12 +68,12 @@ At the time of writing this document **qryn** supports the following APIs:
 
 | **Name**             | **Type**           | **QRYN**      | **QRYN Cloud**| **APIs.**                |  
 |----------------------|--------------------|---------------|---------------|-----------------------------|
-| Index                | POST               | 🟢             | 🟡            |  `/:target/_doc`            |
-| Index                | POST               | 🟢             | 🟡            | `/:target/_create/:id`      |
-| Index                | PUT                | 🟢             | 🟡            | `/:target/_doc/:id`         |
-| Index                | PUT                | 🟢             | 🟡            | `/:target/_create/:id`      | 
-| Bulk                 | POST               | 🟢             | 🟡            | `/_bulk`                    |
-| Bulk                 | POST               | 🟢             | 🟡            | `/:target/_bulk`            |
+| Index                | POST               | 🟢             | 🟢            |  `/:target/_doc`            |
+| Index                | POST               | 🟢             | 🟢            | `/:target/_create/:id`      |
+| Index                | PUT                | 🟢             | 🟢            | `/:target/_doc/:id`         |
+| Index                | PUT                | 🟢             | 🟢            | `/:target/_create/:id`      | 
+| Bulk                 | POST               | 🟢             | 🟢            | `/_bulk`                    |
+| Bulk                 | POST               | 🟢             | 🟢            | `/:target/_bulk`            |
 
 
 ## Influx API
