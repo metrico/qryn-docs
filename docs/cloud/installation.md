@@ -515,3 +515,49 @@ Qryn supports cors headers. They can be configured with the config as below:
 The corresponding env variables: 
 - `QRYN_HTTP_SETTINGS_CORS_ENABLE=true`
 - `QRYN_HTTP_SETTINGS_CORS_ORIGIN=*`
+  
+## Debug information
+
+*since qryn-go v1.2.62*
+In order to see the in-server timings of the data read there's a configuration option to add internal debug info inside the response.
+Implemented for prometheus requests.
+
+###Usage
+Configuration to set up:
+```
+{
+  ...
+  "system_settings": { ...
+    "query_stats": true
+  }
+}
+```
+The corresponding environment option is `QRYN_SYSTEM_SETTINGS_QUERY_STATS=true`.
+Every prometheus query_range response will carry a "stats" attribute with internal query timings.
+  
+## OrgID usage statistics
+
+*since qryn-writer v1.9.81*
+
+Qryn writer has the feature to write usage statistics connected to each orgID:
+- uncompressed data volume 
+- compressed data volume
+- amount of time_series used today
+  
+The statistics are written into the `0` orgID.
+The statistics are updated each minute.
+
+### Usage
+Configuration to set up:
+```
+{
+  ...
+  "writer": { ...
+    "write_stats": true
+  }
+}
+```
+The corresponding environment option is `QRYN_WRITER_WRITE_STATS=true`.
+
+After the configuration is on, the statistics start being written into the configured database.
+Scaling of the writer with this option on is not suggested as it can lead to the clickhouse CPU overhead.
