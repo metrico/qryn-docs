@@ -52,13 +52,13 @@ At the time of writing this document **qryn** supports the following APIs:
 | Rules                | GET                | 🟢             | 🔴             | `/api/v1/rules`                   |
 | Alerts               | GET                | 🔴             | 🔴             | `/api/v1/alerts`                  |
 | Targets Metadata     | GET                | 🔴             | 🔴             | `/api/v1/targets/metadata`        |
-| Metadata             | GET                | 🟡             | 🔴             | `/api/v1/metadata`        |
-| Alert Managers       | GET                | 🔴             | 🔴             | `/api/v1/alertmanagers`        |
-| Config               | GET                | 🔴             | 🔴             | `/api/v1/status/config`        |
-| Flags                | GET                | 🔴             | 🔴             | `/api/v1/status/flags`        |
-| Runtime Info         | GET                | 🔴             | 🔴             | `/api/v1/status/runtimeinfo`        |
+| Metadata             | GET                | 🟡             | 🔴             | `/api/v1/metadata`                |
+| Alert Managers       | GET                | 🔴             | 🔴             | `/api/v1/alertmanagers`           |
+| Config               | GET                | 🔴             | 🔴             | `/api/v1/status/config`           |
+| Flags                | GET                | 🔴             | 🔴             | `/api/v1/status/flags`            |
+| Runtime Info         | GET                | 🔴             | 🔴             | `/api/v1/status/runtimeinfo`      |
 | Build Info           | GET                | 🟡             | 🔴             | `/api/v1/status/buildinfo`        |
-| TSDB Info            | GET                | 🔴             | 🔴             | `/api/v1/status/tsdb`        |
+| TSDB Info            | GET                | 🔴             | 🔴             | `/api/v1/status/tsdb`             |
 | Wal Replay           | GET                | 🔴             | 🔴             | `/api/v1/status/walreplay`        |
 
 
@@ -66,11 +66,11 @@ At the time of writing this document **qryn** supports the following APIs:
 
 🟢 Supported 🟡 Partial Support 🔴 Not Supported
 
-| **Name**             | **Type**           | **QRYN**      | **QRYN Cloud**| **APIs.**                |  
+| **Name**             | **Type**           | **QRYN**      | **QRYN Cloud**| **APIs.**                   |  
 |----------------------|--------------------|---------------|---------------|-----------------------------|
 | Index                | POST               | 🟢             | 🟢            |  `/:target/_doc`            |
 | Index                | POST               | 🟢             | 🟢            | `/:target/_create/:id`      |
-| Index                | PUT                | 🟢             | 🟢            | `/:target/_doc/:id`         |
+| Index                | PUT                | 🟢             | 🟢            | `/:target/_doc/`            |
 | Index                | PUT                | 🟢             | 🟢            | `/:target/_create/:id`      | 
 | Bulk                 | POST               | 🟢             | 🟢            | `/_bulk`                    |
 | Bulk                 | POST               | 🟢             | 🟢            | `/:target/_bulk`            |
