@@ -49,7 +49,7 @@ At the time of writing this document **qryn** supports the following APIs:
 | Series Values        | GET/POST           | 🟢             | 🟢             | `/api/v1/series`                  |
 | Exemplars Query      | GET/POST           | 🔴             | 🔴             | `/api/v1/query_exemplars`         |
 | Targets              | GET                | 🔴             | 🔴             | `/api/v1/targets`                 |
-| Rules                | GET                | 🟢             | 🔴             | `/api/v1/rules`                   |
+| Rules                | GET                | 🟢             | 🟢             | `/api/v1/rules`                   |
 | Alerts               | GET                | 🔴             | 🔴             | `/api/v1/alerts`                  |
 | Targets Metadata     | GET                | 🔴             | 🔴             | `/api/v1/targets/metadata`        |
 | Metadata             | GET                | 🟡             | 🔴             | `/api/v1/metadata`                |
