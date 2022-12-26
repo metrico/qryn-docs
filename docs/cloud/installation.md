@@ -597,8 +597,11 @@ Scaling of the writer with this option on is not suggested as it can lead to the
   #### ** ENV configuration **
   
   `QRYN_DATABASE_DATA_0_ASYNC_INSERT=true`
+  
   `QRYN_DATABASE_DATA_1_ASYNC_INSERT=true`
+  
   ...
+  
   `QRYN_DATABASE_DATA_X_ASYNC_INSERT=true`
   
   #### ** Header based configuration **
