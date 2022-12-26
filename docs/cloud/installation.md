@@ -561,3 +561,50 @@ The corresponding environment option is `QRYN_WRITER_WRITE_STATS=true`.
 
 After the configuration is on, the statistics start being written into the configured database.
 Scaling of the writer with this option on is not suggested as it can lead to the clickhouse CPU overhead.
+
+  ## Syncronous and asyncronous inserts
+  
+  *since qryn-writer v1.9.84.beta-1*
+  
+  In order to minimize the ingestion time qryn-writer includes the feature of asyncronous ingestion into the database.
+  
+  Writer in the asyncronous insert mode returns 2XX code immediately after the data was sent into the db. 
+  It doesn't wait for the database to approve an insert request. 
+  The insert request lasts for 5 seconds waiting for bigger amount of data to be sent to the DB. 
+  Then the insert request is finished. If an error appeared at the finishing stage of the request, all the data is lost.
+  
+  So async inserts are much faster, but the delivery in this case is not guaranteed.
+  
+  ### Usage
+  
+  Default insert mode is configured on per-node basis in the `database_data` array.
+  The insert mode can be configured on per-request basis. `X-Async-Insert` header with `0/1` values is accepted to forcefully apply or disallow the async inserts mode. If the header is omitted, the default mode is applied.
+  <!-- tabs:start -->
+  #### ** JSON configuration **
+```
+{
+  "database_data": [
+    {
+      ....
+      "async_insert": true
+    }
+    ...
+  ]
+  ...
+}
+```
+  
+  #### ** ENV configuration **
+  
+  `QRYN_DATABASE_DATA_0_ASYNC_INSERT=true`
+  `QRYN_DATABASE_DATA_1_ASYNC_INSERT=true`
+  ...
+  `QRYN_DATABASE_DATA_X_ASYNC_INSERT=true`
+  
+  #### ** Header based configuration **
+  
+  `curl .... -H "X-Async-Insert: 0" ....` to force syncronous inserts
+  
+  `curl .... -H "X-Async-Insert: 1" ....` to force asyncronous inserts  
+ <!-- tabs:end -->
+  
