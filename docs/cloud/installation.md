@@ -95,7 +95,10 @@ services:
     command:
       - sh
       - -c
-      - ./cloki-writer -initialize_db && ./cloki-writer
+      - ./cloki-writer
+    depends_on:
+      qryn-ctrl:
+        condition: service_completed_successfully
 
   qryn-go:
     image: qxip/qryn-go-cloud:latest
@@ -120,6 +123,9 @@ services:
       - QRYN_SYSTEM_SETTINGS_DB_BULK=1000
       - QRYN_LOG_SETTINGS_STDOUT=true
       - QRYNCLOUD_LICENSE=XXXXXXXXX-XXXXXXXXXXXX-XXXXXXXX
+    depends_on:
+      qryn-ctrl:
+        condition: service_completed_successfully  
 ```
 
 ##### Run Compose
