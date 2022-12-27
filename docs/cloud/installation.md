@@ -42,6 +42,7 @@ echo {providedPullToken} | docker login ghcr.io -u yourUserName --password-stdin
 ```bash
 docker pull qxip/qryn-writer-cloud
 docker pull qxip/qryn-go-cloud
+docker pull qxip/qryn-ctrl
 ```
 
 ##### Create Docker Compose File
@@ -54,6 +55,20 @@ Define a docker compose file to configure each element.
 version: '3.1'
 
 services:
+   qryn-writer:
+    image: qxip/qryn-ctrl:latest
+    container_name: qryn-ctrl
+    environment:
+      - CLICKHOUSE_SERVER=clickhouse-server
+      - QRYN_DATABASE_DATA_0_NAME=qryn
+      - QRYN_DATABASE_DATA_0_HOST=clickhouse.server.com
+      - QRYN_DATABASE_DATA_0_PORT=9000
+      - QRYN_DATABASE_DATA_0_USER=default
+      - QRYN_DATABASE_DATA_0_PASS=qryn1234
+      - QRYN_DATABASE_DATA_0_DEBUG=true
+      - QRYN_DATABASE_DATA_0_SECURE=false
+      - QRYN_DATABASE_DATA_0_ASYNC_INSERT=false
+      
   qryn-writer:
     image: qxip/qryn-writer-cloud:latest
     container_name: qryn-writer
