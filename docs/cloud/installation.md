@@ -68,6 +68,10 @@ services:
       - QRYN_DATABASE_DATA_0_DEBUG=true
       - QRYN_DATABASE_DATA_0_SECURE=false
       - QRYN_DATABASE_DATA_0_ASYNC_INSERT=false
+    command:
+      - sh
+      - -c
+      - ./qryn-ctrl -initialize_db
       
   qryn-writer:
     image: qxip/qryn-writer-cloud:latest
