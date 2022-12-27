@@ -55,7 +55,7 @@ Define a docker compose file to configure each element.
 version: '3.1'
 
 services:
-   qryn-writer:
+   qryn-ctrl:
     image: qxip/qryn-ctrl:latest
     container_name: qryn-ctrl
     environment:
