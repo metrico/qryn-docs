@@ -16,6 +16,7 @@ At the time of writing this document **qryn** supports the following APIs:
 | Tail                 | GET              | 🟢             | 🟢             | `/loki/api/v1/tail`        | 
 | Ready                | GET              | 🟢             | 🟢             | `/ready`                   | 
 
+?> You can add ```&csv=1``` to your query_range parameters to receive output in CSV format
 
 ## Tempo API
 
