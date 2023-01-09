@@ -96,6 +96,10 @@ The following `ENV` parameters can be used to configure and control **qryn:cloud
 | QRYN_LOG_SETTINGS_SYSLOG | true | Set to true to emit logs to syslog |
 | QRYN_LOG_SETTINGS_MAX_AGE_DAYS | 7 | Retention in Days for log data |
 | QRYN_LOG_SETTINGS_ROTATION_HOURS | 24 | Rotation Interval in Hours for log data |
+|  |  |  |
+| QRYN_SYSTEM_SETTINGS_CPU_MAX_PROCS | 16 | Set the limit of CPUs to be used by the prefork setting (Child processes) |
+| QRYN_SYSTEM_SETTINGS_CHANNELS_TIMESERIES | 16 | Set Channels for Time Series Data (Please do not modify unless directed) |
+| QRYN_SYSTEM_SETTINGS_CHANNELS_SAMPLE | 16 | Set Channels for Sample Data (Please do not modify unless directed) |
 
 ?> The license is added without quotes. QRYNCLOUD_LICENSE=XXXXXX-XXXXXX-XXXXX
 
