@@ -4,7 +4,7 @@
   </a>
 </p>
 
-* **[Cloud](cloud/pricing)**
+* **[Cloud](https://qryn.cloud)**
 * **[Blog](https://blog.qryn.dev/)**
 * **[Get Started](/ "QRYN: Polyglot Observability")**
   * [Introduction](introduction.md "QRYN – Installation – LogQL for ClickHouse and beyond")
