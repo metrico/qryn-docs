@@ -27,5 +27,5 @@ _**All the greatest observability formats and integrations you love, at once. Le
 <img src="https://user-images.githubusercontent.com/1423657/184496973-9f46e551-872d-4a25-877c-51a2e5f53e84.png" width=50 />&nbsp;
 <img src="https://user-images.githubusercontent.com/1423657/184494381-15d20f5d-3d52-411b-9064-dfd2ccea7c1c.png" width=50 />&nbsp;
 <img src="https://user-images.githubusercontent.com/1423657/184494438-17d7ceb0-a62a-4819-9b1c-43d7f0baf802.png" width=50 />&nbsp;
-<img src="https://avatars.githubusercontent.com/u/54801242?s=200&v=4" width=50 /><br/>
-  
+<img src="https://avatars.githubusercontent.com/u/54801242?s=200&v=4" width=50 /> <!--<br/>--> &nbsp;
+<a href="https://www.producthunt.com/posts/qryn?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-qryn" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=374769&theme=light" alt="qryn - Polyglot&#0032;Observability&#0032;for&#0032;Logs&#0044;&#0032;Metrics&#0032;and&#0032;Traces | Product Hunt" style="width: 250px; height: 54px;" width="250" height="54" /></a>
