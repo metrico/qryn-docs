@@ -29,13 +29,13 @@ Install `qryn` on your system using `docker` and `docker-compose`
 ##### Log into the Container Hub
 
 ```bash
-docker login ghcr.io
+docker login
 ```
 
 Use the provided _remote token_ to access to the container repository instead of your password
 
 ```bash
-echo {providedPullToken} | docker login ghcr.io -u yourUserName --password-stdin
+echo {providedPullToken} | docker login -u Username --password-stdin
 ```
 
 ##### Pull the containers
