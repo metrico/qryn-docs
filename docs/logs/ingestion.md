@@ -200,7 +200,7 @@ ENGINE = URL('http://qryn:3100/influx/api/v2/write', 'LineAsString')
 AS SELECT format('syslog,level={0},logger_name={1},type=clickhouse message="{2}" {3}',
    toString(level),
    replaceRegexpAll(toString(logger_name), '[^a-zA-Z0-9_]', '_'),
-   replaceAll(replaceRegexpAll(message, '["\\]', '\x00\0'), '\x00', '\'),
+   replaceAll(replaceRegexpAll(message, '["\\\\]', '\x00\0'), '\x00', '\\'),
    toString(toUnixTimestamp64Nano(event_time_microseconds)))
 FROM system.text_log;
 ```
