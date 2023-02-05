@@ -99,6 +99,8 @@ The following article provide great insight and examples on the subject:
 
 This works with improved scalability and supports open-source observability data formats _(e.g. Jaeger, Prometheus, Fluent Bit, etc.)_ and allows aggregating and sending traces to **qryn** using the _Tempo API_
 
+For native ingestion, we suggest using the [qryn opentelemetry distribution](https://github.com/metrico/otel-collector)
+
 ### Examples
 
 ###### OTLP Exporter
