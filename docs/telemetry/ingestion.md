@@ -95,11 +95,11 @@ The following article provide great insight and examples on the subject:
 
 ![image](https://user-images.githubusercontent.com/1423657/196469086-3d85efd5-7ef9-4d42-a677-5591470b7cae.png ':size=200')
 
-[OTEL Collector](https://opentelemetry.io/docs/collector/) offers a vendor-agnostic implementation of how to receive, process and export telemetry data. It removes the need to run, operate, and maintain multiple agents/collectors. 
+The [OTEL Collector]([https://opentelemetry.io/docs/collector/](https://github.com/metrico/otel-collector)) offers a vendor-agnostic implementation of how to receive, process and export telemetry data. It removes the need to run, operate, and maintain multiple agents/collectors. 
 
-This works with improved scalability and supports open-source observability data formats _(e.g. Jaeger, Prometheus, Fluent Bit, etc.)_ and allows aggregating and sending traces to **qryn** using the _Tempo API_
+This works with improved scalability and supports a large variety of open-source observability data formats _(e.g. Jaeger, Prometheus, Fluent Bit, etc.)_ and allows aggregating and sending traces to **qryn** using the _Tempo API_
 
-For native ingestion, we suggest using the [qryn opentelemetry distribution](https://github.com/metrico/otel-collector)
+For large scale ingestion, we suggest using the dedicated [qryn opentelemetry distribution](https://github.com/metrico/otel-collector) for ClickHouse.
 
 ### Examples
 
