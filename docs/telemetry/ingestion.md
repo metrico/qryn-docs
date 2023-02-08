@@ -103,6 +103,9 @@ For large scale ingestion, we suggest using the dedicated [qryn opentelemetry di
 
 ### Examples
 
+![image](https://user-images.githubusercontent.com/1423657/217615085-cb5c7858-798e-4896-8ad6-3b88cfb16c6c.png)
+
+
 #### qryn collector
 ```
 otel-collector:
