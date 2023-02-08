@@ -25,11 +25,12 @@ At the time of writing this document **qryn** supports the following APIs:
 | **Name**             | **Type**           | **QRYN**            | **QRYN Cloud**| **APIs.**                   | 
 |----------------------|--------------------|---------------------|---------------|-----------------------------------|
 | Push                 | POST               | 🟢                  | 🟢             | `/tempo/api/push`                 | 
-| Push                 | POST               | 🟢                  | 🟢             | `/api/v2/spans`                   | 
-| Query Spans          | GET                | 🟢                  | 🟢             | `/api/v2/spans`                   | 
-| Query Traces         | GET                | 🟢                  | 🟢             | `/api/traces/{traceId}`           | 
+| Push (Zipkin)        | POST               | 🟢                  | 🟢             | `/api/v2/spans`                   |
+| Push (OTLP)          | POST               | 🟢                  | 🟢             | `/v1/traces` (OTLP)               |
+| Query Traces         | GET                | 🟢                  | 🟢             | `/api/traces/{traceId}`           |
+| Query Traces (JSON)  | GET                | 🟢                  | 🟢             | `/api/traces/{traceId}/json`      |
 | Labels               | GET                | 🟢                  | 🟢             | `/api/search/tags`                | 
-| Label Values         | GET                | 🟢                  | 🟢             | `/api/search/tag/{name}/values`   | 
+| Label Values         | GET                | 🟢                  | 🟢             | `/api/search/tag/{name}/values`   |
 | Special Push (cloud) | POST               | 🟡                  | 🟢             | `/tempo/spans`                    |
 
 
