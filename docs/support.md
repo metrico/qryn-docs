@@ -24,14 +24,14 @@ At the time of writing this document **qryn** supports the following APIs:
 
 | **Name**             | **Type**           | **QRYN**            | **QRYN Cloud**| **APIs.**                   | 
 |----------------------|--------------------|---------------------|---------------|-----------------------------------|
-| Push                 | POST               | 🟢                  | 🟢             | `/tempo/api/push`                 | 
+| Push (Tempo)         | POST               | 🟢                  | 🟢             | `/tempo/api/push`                 | 
 | Push (Zipkin)        | POST               | 🟢                  | 🟢             | `/api/v2/spans`                   |
 | Push (OTLP)          | POST               | 🟢                  | 🟢             | `/v1/traces` (OTLP)               |
 | Query Traces         | GET                | 🟢                  | 🟢             | `/api/traces/{traceId}`           |
 | Query Traces (JSON)  | GET                | 🟢                  | 🟢             | `/api/traces/{traceId}/json`      |
-| Labels               | GET                | 🟢                  | 🟢             | `/api/search/tags`                | 
-| Label Values         | GET                | 🟢                  | 🟢             | `/api/search/tag/{name}/values`   |
-| Special Push (cloud) | POST               | 🟡                  | 🟢             | `/tempo/spans`                    |
+| Trace Tags           | GET                | 🟢                  | 🟢             | `/api/search/tags`                | 
+| Trace Tag Values     | GET                | 🟢                  | 🟢             | `/api/search/tag/{name}/values`   |
+| Push Cloud.          | POST               | 🟡                  | 🟢             | `/tempo/spans`                    |
 
 
 ## Prometheus API
