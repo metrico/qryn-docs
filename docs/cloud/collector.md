@@ -4,17 +4,15 @@
   <img src="https://user-images.githubusercontent.com/1423657/200078554-f8352174-9a6b-4f4a-90fc-1c6521d46c5b.png" width=600 />  
 </a>
 
-# ☁️  [qryn:cloud:collector](/cloud)
+# ☁️  [qryn-cloud-collector](/cloud)
 
-!> qryn-cloud-collecotr requires activation & pull tokens! Please [contact us](mailto:info@qxip.net) to obtain a license.
-
-?> ClickHouse Server LTS version >=22 and <=22.9 is suggested. _22.10+ not yet supported._
+!> qryn-cloud-collector requires activation & pull tokens! Please [contact us](mailto:info@qxip.net) to obtain a license.
 
 ## 📦 Installation
 
 Let's install **qryn-cloud-collector** in a snap. All you need is a supported OS or `Docker` installed.
 
-Stack configuration is 100% based on [ENV](/cloud/env.md) parameters passed to the process or container along with a yml configuration file.
+Stack configuration passed to the process or container with a yml configuration file, detailed below.
 
 <!-- tabs:start -->
 
@@ -45,8 +43,6 @@ docker pull qxip/qryn-cloud-collector
 
 Define a docker compose file to configure each element.
 
-?> Adjust the clickhouse server and authentication details to match your setup
-
 ```yml
 version: '3.1'
 
@@ -68,6 +64,8 @@ services:
 ```
 
 Create the qryn-collector-config.yaml file
+
+?> Adjust the clickhouse server and authentication details to match your setup
 
 ```yml
 receivers:
