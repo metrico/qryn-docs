@@ -1,6 +1,6 @@
 <p align="center">
   <a href="/#/">
-    <img src="https://raw.githubusercontent.com/metrico/qryn-docs/main/docs/resources/images/qryn_logo_trans.png" width=120 />
+    <img src="https://user-images.githubusercontent.com/1423657/218816262-e0e8d7ad-44d0-4a7d-9497-0d383ed78b83.png" width=120 />
   </a>
 </p>
 
