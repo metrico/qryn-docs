@@ -139,7 +139,7 @@ processors:
         new_name: traces_spanmetrics_latency
 exporters:
   qryn:
-    dsn: tcp://clickhouse.ip:9000/qryn?username=default&password=PASSW0RD
+    dsn: n-tcp://clickhouse.ip:9000/qryn?username=default&password=PASSW0RD
     timeout: 10s
     sending_queue:
       queue_size: 100
