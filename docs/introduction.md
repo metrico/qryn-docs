@@ -62,4 +62,4 @@ Looking for a hosted qryn option? Gigapipe and qxip offer a fully managed, pay a
 
 <br> 
 
-<img src="https://user-images.githubusercontent.com/1423657/191464140-48851b2c-ada0-4cfb-b27d-315edc0ba890.gif">
+<img src="https://user-images.githubusercontent.com/1423657/218818279-3efff74f-0191-498a-bdc4-f2650c9d3b49.gif">
