@@ -28,6 +28,8 @@
   * [Performance](performance.md)
   * [Plugins](plugins.md)
   * [FAQ](faq.md)
+  * [Matrix Room](https://matrix.to/#/#qryn:matrix.org)
+
 
 * **Links**
   * [View](https://github.com/metrico/qryn-view)
