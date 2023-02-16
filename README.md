@@ -4,6 +4,7 @@
 Documentation for [qryn](https://github.com/metrico/qryn)
 
 ### Public Docs
+- [x] https://qryn.dev
 - [x] https://qryn.metrico.in
 - [x] https://metrico.github.io/qryn-docs/#/
 
