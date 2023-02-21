@@ -8,9 +8,10 @@
 
 > Protocol: HTTP/S
 
-ClickHouse `INSERT` performance reaches **~20k samples/thread/second** on _modest hardware_ using _qryn-js_
+ClickHouse `INSERT` performance reaches **~100k samples/thread/second** _modest hardware_ using _qryn-js_
 
-Use *pm2* or any other method to cluster `qryn-js` worker instances horizontally.
+- Use *pm2* or any other method to cluster `qryn-js` worker instances horizontally.
+- Use payload batches < 5MB for optimal ingestion performance 
 
 --------
 
