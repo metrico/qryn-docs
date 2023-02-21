@@ -13,7 +13,8 @@
 ClickHouse `INSERT` performance reaches **~100k samples/thread/second** _modest hardware_ using _qryn-js_
 
 - Use *pm2* or any other method to cluster `qryn-js` worker instances horizontally.
-- Use payload batches < 5MB for optimal ingestion performance 
+- Use async inserts in ClickHouse server.
+- Use payload batches < 5MB for optimal protobuf ingestion performance.
 
 --------
 
