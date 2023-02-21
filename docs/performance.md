@@ -5,6 +5,9 @@
 **qryn** is regularly tested using the Victoriametrics Prometheus benchmark and various LogQL benchmarks
 
 ### Writer Performance ([qryn-js](https://github.com/metrico/qryn))
+
+> Protocol: HTTP/S
+
 ClickHouse `INSERT` performance reaches **~20k samples/thread/second** on _modest hardware_ using _qryn-js_
 
 Use *pm2* or any other method to cluster `qryn-js` worker instances horizontally.
@@ -13,13 +16,16 @@ Use *pm2* or any other method to cluster `qryn-js` worker instances horizontally
 
 ### Writer Performance ([qryn-otel-collector](https://github.com/metrico/otel-collector))
 
+> Protocol: BINARY
+
 _T.B.D._ please share your performance reports!
 
 --------
 
 
 ### Writer Performance ([qryn-cloud](https://qryn.cloud))
-> qryn:cloud is developed in Go/Rust and available for integrators and resellers under a commercial license
+
+> Protocol: BINARY
 
 ClickHouse `INSERT` performance exceeds **~500k samples/thread/second** on _modest hardware_ using _qryn-go_
 
@@ -29,6 +35,7 @@ ClickHouse `INSERT` performance exceeds **~500k samples/thread/second** on _mode
 
 ![image](https://user-images.githubusercontent.com/1423657/187044346-cd3a6d66-0f05-4993-a6ba-b44727bbdc81.png)
 
+> qryn:cloud is developed in Go/Rust and available for integrators and resellers under a commercial license
 
 --------
 
