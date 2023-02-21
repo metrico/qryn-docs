@@ -4,7 +4,9 @@
 
 **qryn** is regularly tested using the Victoriametrics Prometheus benchmark and various LogQL benchmarks
 
-### Writer Performance ([qryn-js](https://github.com/metrico/qryn))
+### Writer Performance
+
+#### [qryn-js](https://github.com/metrico/qryn)
 
 > Protocol: HTTP/S
 
@@ -15,7 +17,7 @@ ClickHouse `INSERT` performance reaches **~100k samples/thread/second** _modest 
 
 --------
 
-### Writer Performance ([qryn-otel-collector](https://github.com/metrico/otel-collector))
+#### [qryn-otel-collector](https://github.com/metrico/otel-collector)
 
 > Protocol: BINARY
 
@@ -24,7 +26,7 @@ _T.B.D._ please share your performance reports!
 --------
 
 
-### Writer Performance ([qryn-cloud](https://qryn.cloud))
+#### [qryn-cloud](https://qryn.cloud)
 
 > Protocol: BINARY
 
