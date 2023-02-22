@@ -18,6 +18,8 @@ Install `qryn` as global package on your system using `npm` and `nodejs` _(14.x-
 sudo npm install -g qryn
 ```
 
+##### Single Instance
+
 Start `qryn` using [ENV](env.md) variables for its settings:
 
 ```bash
@@ -36,6 +38,32 @@ CLICKHOUSE_AUTH="admin:supersecretpassword" \
 CLICKHOUSE_DB="qryn" \
 qryn
 ```
+
+##### Cluster
+You can cluster multiple instance of `qryn` using pm2 clustering or other techniques:
+
+```
+//ecosystem.config.js
+module.exports = {
+  apps: [{
+    name: 'qryn',
+    script: 'qryn',
+    interpreter: '',
+    instances: 4,
+    exec_mode: "cluster",
+    env: {
+      CLICKHOUSE_SERVER: 'my.clickhouse.server',
+      CLICKHOUSE_PORT: 8123,
+      CLICKHOUSE_AUTH: 'default:password',
+      CLICKHOUSE_DB: 'qryn',
+      LABELS_DAYS: 7,
+      SAMPLES_DAYS: 7,
+      DEBUG: false
+    }
+  }]
+}
+```
+
 
 ?> That's it! You are ready to access the stack using qryn-view or Grafana
 
