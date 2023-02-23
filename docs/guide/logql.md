@@ -144,6 +144,56 @@ Return lines including the text "status 403" or "status 503" using regex
 
 We can use operations on both the log **stream selectors** and **filter expressions** to refine them.
 
+## ** Format Parsers **
+
+#### Parser Expression
+Parser expression can parse and extract labels from the log content. Those extracted labels can then be used for filtering using label filter expressions or for metric aggregations.
+
+##### json
+The json parser operates in two modes:
+
+* without parameters:
+  * Adding `| json` to your pipeline will extract all json properties as labels if the log line is a valid json document. Nested properties are flattened into label keys using the _ separator.
+  * ```{job="0.6611336793589486_json"} | json```
+
+* with parameters:
+  * Using `| json label="expression"` in your pipeline will extract only the specified json fields to labels. 
+  * ```{job="0.6611336793589486_json"} | json my_field="json_field"```
+
+##### logfmt
+The logfmt parser extracts any key=value pairs from the processed logs.
+
+##### regexp
+The regexp parser operates against log string and requires named groups for matching.
+
+Example: extract a new label named `token` from a string ie: `YYYY-MM-DDT00:00:00Z ... Reserving 1.1Mb of memory`
+ * ```{type="clickhouse"} |~"Reserving" | regexp "Reserving (?<token>\\d+.\\d+)"```
+
+--------------------
+#### Label Filter Expression
+Label filter expression allows filtering log line using their original and extracted labels. It can contain multiple predicates.
+
+A predicate contains a *label identifier*, an *operation* and a *value* to compare the label with.
+
+Label filters work like label matchers and use the same operations (`=`,`!=`,`=~`,`!~`).
+
+```
+{job="0.6611336793589486_json"} | json | my_field="VALUE"
+```
+
+--------------------
+#### Line Format Expression
+Line Format expression allows the re-formatting of parts of a log line. It can extract items from parsed json.
+
+To extract a *parameter* we use "{{}}" to surround it and extract it as the displayed log line as a result. Any thing can be added to this line format, to allow for additional notes or formatting.
+
+```
+{job="0.6611336793589486_json"} | json | line_format "My field : {{my_field}}"
+```
+
+Creates new log lines of the string "My field: VALUE"
+
+
 <!-- tabs:start -->
 
 ### ** Range Vectors **
