@@ -138,10 +138,6 @@ Return lines including the text "status 403" or "status 503" using regex
 
 -------
 
-
-<!-- tabs:end -->
-
-
 We can use operations on both the log **stream selectors** and **filter expressions** to refine them.
 
 ## ** Format Parsers **
@@ -193,6 +189,7 @@ To extract a *parameter* we use "{{}}" to surround it and extract it as the disp
 
 Creates new log lines of the string "My field: VALUE"
 
+<!-- tabs:end -->
 
 <!-- tabs:start -->
 
