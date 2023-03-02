@@ -2,6 +2,9 @@
   <a href="/#/">
     <img src="https://user-images.githubusercontent.com/1423657/218816262-e0e8d7ad-44d0-4a7d-9497-0d383ed78b83.png" width=120 />
   </a>
+  <br/>
+  <a href="https://qryn.cloud" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/top-post-topic-badge.svg?post_id=374769&theme=light&period=monthly&topic_id=93" alt="qryn - Polyglot&#0032;observability&#0032;for&#0032;logs&#0044;&#0032;metrics&#0032;and&#0032;traces | Product Hunt" style="width: 250px; height: 54px;" width="250" height="54" /></a>  
+  
 </p>
 
 * **[Cloud](https://qryn.cloud)**
