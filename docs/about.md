@@ -4,7 +4,9 @@
 
 ?> It's pronounced /ˈkwɪr..ɪŋ/ or _querying_
 
-Started in 2018 as a _proof-of-concept_ to demonstrate the vast capabilities of Clickhouse, it evolved through covid times 2020-2022 into an solid, fully featured polyglot stack for real-life workloads, leveraging the _lightness_ of NodeJS for its API and the _raw power_ of Clickhouse to perform heavy-duty tasks. For large scale deployments and cloud service integrations, the qryn:cloud stack is available for licensing.
+<a href="https://qryn.cloud" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/top-post-topic-badge.svg?post_id=374769&theme=light&period=monthly&topic_id=93" alt="qryn - Polyglot&#0032;observability&#0032;for&#0032;logs&#0044;&#0032;metrics&#0032;and&#0032;traces | Product Hunt" style="width: 250px; height: 54px;" width="250" height="54" /></a>  
+
+Started in 2018 as a _proof-of-concept_ to demonstrate the vast capabilities of Clickhouse, it evolved through covid times 2020-2022 into an solid, fully featured polyglot stack for real-life workloads, leveraging the _lightness_ of NodeJS for its API and the _raw power_ of Clickhouse to perform heavy-duty tasks. For large scale deployments and cloud service integrations, the [qryn.cloud](https://qryn.cloud) stack is available as a hosted service and for licensing.
 
 #### Contributors
 
