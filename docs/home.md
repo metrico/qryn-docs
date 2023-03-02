@@ -1,12 +1,9 @@
 <!-- <p id=start> -->
-  
+
 <h1 style="font-weight: normal;font-size: 30px;">
      <b>qryn</b>: <i>polyglot monitoring and observability</i><br/><br/>
-<!-- <img src="https://user-images.githubusercontent.com/1423657/191464140-48851b2c-ada0-4cfb-b27d-315edc0ba890.gif"> -->
      <img src="https://user-images.githubusercontent.com/1423657/218818279-3efff74f-0191-498a-bdc4-f2650c9d3b49.gif">
 </h1>
-
-<!-- </p> -->
 
 ?> ... it's pronounced /ˈkwɪr..ɪŋ/ or just _querying_
 
@@ -29,4 +26,3 @@ _**All the greatest observability formats and integrations you love, at once. Le
 <img src="https://user-images.githubusercontent.com/1423657/184494381-15d20f5d-3d52-411b-9064-dfd2ccea7c1c.png" width=50 />&nbsp;
 <img src="https://user-images.githubusercontent.com/1423657/184494438-17d7ceb0-a62a-4819-9b1c-43d7f0baf802.png" width=50 />&nbsp;
 <img src="https://avatars.githubusercontent.com/u/54801242?s=200&v=4" width=50 /> <!--<br/>--> &nbsp;
-<a href="https://www.producthunt.com/posts/qryn?utm_source=badge-top-post-topic-badge&utm_medium=badge&utm_souce=badge-qryn" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/top-post-topic-badge.svg?post_id=374769&theme=light&period=monthly&topic_id=93" alt="qryn - Polyglot&#0032;observability&#0032;for&#0032;logs&#0044;&#0032;metrics&#0032;and&#0032;traces | Product Hunt" style="width: 250px; height: 54px;" width="250" height="54" /></a>
