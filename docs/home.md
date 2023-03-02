@@ -2,7 +2,7 @@
 
 <h1 style="font-weight: normal;font-size: 30px;">
      <b>qryn</b>: <i>polyglot monitoring and observability</i><br/><br/>
-     <img src="https://user-images.githubusercontent.com/1423657/218818279-3efff74f-0191-498a-bdc4-f2650c9d3b49.gif">
+     <a href="https://qryn.cloud" target="_blank"><img src="https://user-images.githubusercontent.com/1423657/218818279-3efff74f-0191-498a-bdc4-f2650c9d3b49.gif"></a>
 </h1>
 
 ?> ... it's pronounced /ˈkwɪr..ɪŋ/ or just _querying_
