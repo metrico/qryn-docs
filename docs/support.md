@@ -86,3 +86,13 @@ At the time of writing this document **qryn** supports the following APIs:
 |----------------------|--------------------|----------------|----------------|---------------------------------|
 | Write                | POST               | 🟢             |🟢               | `/influx/api/v2/write`          |
 
+## Datadog API
+
+🟢 Supported 🟡 Partial Support 🔴 Not Supported
+
+| **Name**             | **Type**           | **QRYN**       | **QRYN Cloud** | **APIs.**                       |   
+|----------------------|--------------------|----------------|----------------|---------------------------------|
+| Series               | POST               | 🟡             |🟢               | `/api/v2/series?ddsource=data`  |
+| Insert (Cloudflare Format) | POST         | 🟡             |🟢               | `/cf/api/v1/insert?ddsource=cloudflare` |
+
+
