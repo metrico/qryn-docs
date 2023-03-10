@@ -11,26 +11,20 @@ The following protocols and APIs integrations are supported for ingesting Logs:
 
 This means _any Loki compatible client_ can be used with **qryn** without modifications! 🏁
 
-#### 🔻 [Grafana Agent](https://grafana.com/docs/grafana-cloud/data-configuration/logs/collect-logs-with-agent/)+ [Examples](https://grafana.com/docs/grafana-cloud/quickstart/logs_agent_linuxnode/)
-> Grafana Agent is a telemetry collector for sending metrics, logs, and trace data
-
-#### 🔻 [Vector](https://vector.dev/docs/reference/configuration/sinks/loki/) + [Examples](https://component-pages--vector-project.netlify.app/guides/integrate/sources/http/loki/)
-> Vector is a popular lightweight, ultra-fast tool for building observability pipelines
-
-#### 🔻 [Promtail](https://grafana.com/docs/grafana-cloud/data-configuration/logs/collect-logs-with-promtail/)
-> Promtail is an agent which ships the contents of local logs to LogQL APIs
-
-#### 🔻 [Fluentd](https://grafana.com/docs/loki/latest/clients/fluentd/) + [Examples](https://grafana.com/blog/2022/06/23/how-to-send-logs-to-grafana-loki-with-the-opentelemetry-collector-using-fluent-forward-and-filelog-receivers/#:~:text=Set%20up%20a%20Grafana%20Cloud,click%20the%20Send%20Logs%20button.)
-> Fluentd is an open source data collector for unified logging layer compatible with LogQL
-
-#### 🔻 [Logstash](https://grafana.com/docs/loki/latest/clients/logstash/)
-> Logstash is a data processing pipeline that ingests, transforms and sends data to Elastic and other systems
-
-#### 🔻 [paStash](https://github.com/sipcapture/paStash/wiki/Example:-Loki)
-> PaStasH is a NodeJS multi I/O processor supporting ingestion, decoding, interpolation and correlation of data
-
-#### 🔻 [Docker](https://grafana.com/docs/loki/latest/clients/docker-driver/)
-> Official Docker plugin to read logs from Docker containers and ship them to LogQL/Loki APIs
+| Client  | Logs  | Metrics | Traces  |
+|---|:-:|:-:|:-:|
+| [Grafana Agent](https://grafana.com/docs/grafana-cloud/data-configuration/logs/collect-logs-with-agent/)  | 🟢 | 🟢 | 🟢 |
+| [OpenTelemetry](https://github.com/metrico/otel-collector)  | 🟢 | 🟢 | 🟢 |
+| [Vector/Datadog](https://vector.dev/docs/reference/configuration/sinks/loki/)  | 🟢 | 🟢 |   |
+| [Telegraf/Influx](https://docs.influxdata.com/telegraf/v1.21/introduction/getting-started/)  | 🟢 | 🟢 |   |
+| [Logstash/Elastic](https://grafana.com/docs/loki/latest/clients/logstash/)  | 🟢 | 🟢 |   |
+| [paStash](https://github.com/sipcapture/paStash/wiki/Example:-Loki)  | 🟢 | 🟢 |   |
+| [Promtail](https://grafana.com/docs/grafana-cloud/data-configuration/logs/collect-logs-with-promtail/)  | 🟢 |   |   |
+| [Promtail Lambda](https://grafana.com/docs/loki/latest/clients/lambda-promtail/) | 🟢 |   |   |
+| [Fluentd](https://grafana.com/docs/loki/latest/clients/fluentd/)  | 🟢 |   |   |
+| [Docker](https://grafana.com/docs/loki/latest/clients/docker-driver/)  | 🟢 |   |   |
+| [Cloudflare Logpush](https://github.com/metrico/cloudflare-worker-logpush-loki) | 🟢  |   |   |
+| [Curl](https://github.com/metrico/qryn/wiki/HTTP-API#api-examples) | 🟢 | 🟢 | 🟢 |
 
 
 !> Is your favourite client not listed? please submit a suggestion and we'll add it 👍
