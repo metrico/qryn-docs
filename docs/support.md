@@ -70,12 +70,12 @@ At the time of writing this document **qryn** supports the following APIs:
 
 | **Name**             | **Type**           | **QRYN**      | **QRYN Cloud**| **APIs.**                   |  
 |----------------------|--------------------|---------------|---------------|-----------------------------|
-| Index                | POST               | 🟢             | 🟢            |  `/:target/_doc`            |
-| Index                | POST               | 🟢             | 🟢            | `/:target/_create/:id`      |
-| Index                | PUT                | 🟢             | 🟢            | `/:target/_doc/`            |
-| Index                | PUT                | 🟢             | 🟢            | `/:target/_create/:id`      | 
-| Bulk                 | POST               | 🟢             | 🟢            | `/_bulk`                    |
-| Bulk                 | POST               | 🟢             | 🟢            | `/:target/_bulk`            |
+| Index                | POST               | 🟢             | 🟢          |  `/:target/_doc`            |
+| Index                | POST               | 🟢             | 🟢          | `/:target/_create/:id`      |
+| Index                | PUT                | 🟢             | 🟢          | `/:target/_doc/`            |
+| Index                | PUT                | 🟢             | 🟢          | `/:target/_create/:id`      | 
+| Bulk                 | POST               | 🟢             | 🟢          | `/_bulk`                    |
+| Bulk                 | POST               | 🟢             | 🟢          | `/:target/_bulk`            |
 
 
 ## Influx API
@@ -84,7 +84,7 @@ At the time of writing this document **qryn** supports the following APIs:
 
 | **Name**             | **Type**           | **QRYN**       | **QRYN Cloud** | **APIs.**                       |   
 |----------------------|--------------------|----------------|----------------|---------------------------------|
-| Write                | POST               | 🟢             |🟢               | `/influx/api/v2/write`          |
+| Write                | POST               | 🟢             |🟢             | `/influx/api/v2/write`          |
 
 ## Datadog API
 
@@ -92,7 +92,10 @@ At the time of writing this document **qryn** supports the following APIs:
 
 | **Name**             | **Type**           | **QRYN**       | **QRYN Cloud** | **APIs.**                       |   
 |----------------------|--------------------|----------------|----------------|---------------------------------|
-| Series               | POST               | 🟡             |🟢               | `/api/v2/series?ddsource=data`  |
-| Insert (Cloudflare Format) | POST         | 🟡             |🟢               | `/cf/api/v1/insert?ddsource=cloudflare` |
+| Logs                 | POST               | 🟢             |🟢             | `/api/v2/logs` |
+| Series               | POST               | 🟢             |🟢             | `/api/v2/series`  |
+| Insert (Cloudflare Format) | POST         | 🟡             |🟢             | `/cf/api/v1/insert` |
 
+## Opentelemetry API
 
+Supported for ingestion using [qryn-opentelemetry-collector](https://github.com/metrico/otel-collector)
