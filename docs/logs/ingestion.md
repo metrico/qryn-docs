@@ -7,9 +7,9 @@ The following protocols and APIs integrations are supported for ingesting Logs:
 
 ![image](https://user-images.githubusercontent.com/1423657/184487816-fcc86e34-0395-4927-8ceb-33c2ad3e63d4.gif)
 
-?> **qryn** APIs are compatible with LogQL and [many ingestion formats](support.md)
+?> **qryn** APIs are compatible with [many observability ingestion formats](support.md)
 
-This means _any Loki compatible client_ can be used with **qryn** without modifications! 🏁
+This means _any compatible client_ can be used with **qryn** without plugins or modifications! 🏁
 
 | Client  | Logs  | Metrics | Traces  |
 |---|:-:|:-:|:-:|
