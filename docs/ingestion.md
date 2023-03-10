@@ -41,4 +41,21 @@ Missing an ingestion API? Open a [feature request](https://github.com/metrico/qr
 
 <!-- tabs:end -->
 
+?> **qryn** APIs are compatible with [many observability ingestion formats](support.md)
+
+| Client  | Logs  | Metrics | Traces  |
+|---|:-:|:-:|:-:|
+| [Grafana Agent](https://grafana.com/docs/grafana-cloud/data-configuration/logs/collect-logs-with-agent/)  | 🟢 | 🟢 | 🟢 |
+| [OpenTelemetry](https://github.com/metrico/otel-collector)  | 🟢 | 🟢 | 🟢 |
+| [Vector/Datadog](https://vector.dev/docs/reference/configuration/sinks/loki/)  | 🟢 | 🟢 |   |
+| [Telegraf/Influx](https://docs.influxdata.com/telegraf/v1.21/introduction/getting-started/)  | 🟢 | 🟢 |   |
+| [Logstash/Elastic](https://grafana.com/docs/loki/latest/clients/logstash/)  | 🟢 | 🟢 |   |
+| [paStash](https://github.com/sipcapture/paStash/wiki/Example:-Loki)  | 🟢 | 🟢 |   |
+| [Promtail](https://grafana.com/docs/grafana-cloud/data-configuration/logs/collect-logs-with-promtail/)  | 🟢 |   |   |
+| [Promtail Lambda](https://grafana.com/docs/loki/latest/clients/lambda-promtail/) | 🟢 |   |   |
+| [Fluentd](https://grafana.com/docs/loki/latest/clients/fluentd/)  | 🟢 |   |   |
+| [Docker](https://grafana.com/docs/loki/latest/clients/docker-driver/)  | 🟢 |   |   |
+| [Cloudflare Logpush](https://github.com/metrico/cloudflare-worker-logpush-loki) | 🟢  |   |   |
+| [Curl](https://github.com/metrico/qryn/wiki/HTTP-API#api-examples) | 🟢 | 🟢 | 🟢 |
+
 <img src="https://user-images.githubusercontent.com/1423657/184487816-fcc86e34-0395-4927-8ceb-33c2ad3e63d4.gif" width=600 />
