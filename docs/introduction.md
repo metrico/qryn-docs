@@ -52,9 +52,9 @@ Looking for a hosted ClickHouse option? There are many great companies we work w
 -->
 
 ### 👑 Polyglot Cloud
-Looking for a hosted qryn option? Gigapipe and qxip offer a fully managed, pay as you go **qryn** experience.
+Looking for a hosted qryn option? Gigapipe powers our fully managed, pay as you go **qryn** experience.
 
-💜 [Gigapipe](https://qryn.cloud) _(pay as you go, managed qryn and clickhouse services)_<br>
+💜 [qryn.cloud](https://qryn.cloud) _(pay as you go, managed qryn and clickhouse services)_<br>
 
 
 
