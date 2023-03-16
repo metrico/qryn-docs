@@ -6,7 +6,7 @@
 
 <a href="https://qryn.cloud" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/top-post-topic-badge.svg?post_id=374769&theme=light&period=monthly&topic_id=93" alt="qryn - Polyglot&#0032;observability&#0032;for&#0032;logs&#0044;&#0032;metrics&#0032;and&#0032;traces | Product Hunt" style="width: 250px; height: 54px;" width="250" height="54" /></a>  
 
-Started in 2018 as a _proof-of-concept_ to demonstrate the vast capabilities of Clickhouse, it evolved through covid times 2020-2022 into an solid, fully featured polyglot stack for real-life workloads, leveraging the _lightness_ of NodeJS for its API and the _raw power_ of Clickhouse to perform heavy-duty tasks. In 2023 qryn became part of the [Gigapipe](https://gigapipe.com) group powering the [qryn.cloud](https://qryn.cloud) observability service alongside dedicated licensing and support options for large scale deployments and commercial partner integrations.
+Started in 2018 as a _proof-of-concept_ to demonstrate the vast capabilities of Clickhouse, it evolved through covid times 2020-2022 into an solid, fully featured polyglot stack for real-life workloads, leveraging the _lightness_ of NodeJS for its API and the _raw power_ of Clickhouse to perform heavy-duty tasks. In 2023 qryn became part of the [Gigapipe](https://gigapipe.com) stack and we launched the [qryn.cloud](https://qryn.cloud) observability service with dedicated licensing and support options for SaaS users, large scale deployments and commercial partner integrations.
 
 #### Contributors
 
