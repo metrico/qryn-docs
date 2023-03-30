@@ -27,6 +27,6 @@ Run `qryntail` with the following `ENV` parameters:
 | Name | Default | Dscription                                          |
 | --- | --- |-----------------------------------------------------|
 | HOST | 127.0.0.1 | API Host to listen                                      |
-| PORT | 3000 | API Port to listen                                      |
+| PORT | 3100 | API Port to listen                                      |
 | LOGLEVEL | INFO | loglevel to write console logs (INFO, DEBUG, ERROR) |
 | APIURL | https://qryn.gigapipe.com/ | URL for qryn backend receiver for forward data |
