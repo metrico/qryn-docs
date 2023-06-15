@@ -96,6 +96,6 @@ At the time of writing this document **qryn** supports the following APIs:
 | Series               | POST               | 🟢             |🟢             | `/api/v2/series`  |
 | Insert (Cloudflare Format) | POST         | 🟡             |🟢             | `/cf/api/v1/insert` |
 
-## Opentelemetry API
+## OTEL Collector
 
-Supported for ingestion using [qryn-opentelemetry-collector](https://github.com/metrico/otel-collector)
+100s of ingestion formats supported via [qryn-collector](https://github.com/metrico/otel-collector)
