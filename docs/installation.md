@@ -2,7 +2,7 @@
 
 Let's install **qryn** in a snap. All you need is `NodeJS` [14.x-16.x](https://github.com/nodesource/distributions) or `Docker` installed.
 
-?> ClickHouse Server LTS version >22 and <=22.9 is suggested
+?> Using a ClickHouse LTS version is strongly suggested
 
 Configuration is performed using [ENV](env.md) parameters passed to the process or container.
 
@@ -13,7 +13,7 @@ Configuration is performed using [ENV](env.md) parameters passed to the process 
 
 ![image](https://user-images.githubusercontent.com/1423657/184507827-9087fc2d-457b-42cd-ae2e-1c894160745b.png ':size=100')
 
-Install `qryn` as global package on your system using `npm` and `nodejs` _(14.x-16.x)_
+Install `qryn` as global package on your system using `npm` and `nodejs` _(16.x-18.x)_
 ```bash
 sudo npm install -g qryn
 ```
