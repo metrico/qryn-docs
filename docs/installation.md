@@ -39,6 +39,23 @@ CLICKHOUSE_DB="qryn" \
 qryn
 ```
 
+#### ClickHouse Cluster
+To use `qryn` with a [Clickhouse Cluster](https://clickhouse.com/docs/en/architecture/cluster-deployment), include a `CLUSTER_NAME` ENV variable with the name of the [ClickHouse cluster](https://clickhouse.com/docs/en/architecture/cluster-deployment) you want to use.
+
+```
+CLICKHOUSE_SERVER="my.cloud.service" \
+CLICKHOUSE_PORT=9443 \
+CLICKHOUSE_PROTO="https" \
+CLICKHOUSE_AUTH="admin:supersecretpassword" \
+CLICKHOUSE_DB="qryn" \
+CLUSTER_NAME="mycluster" \
+qryn
+```
+
+If the variable is provided, the system automatically starts in the clustered clickhouse mode.
+Make sure that `internal_replication=1` option is set in your ClickHouse Server config.
+
+
 ##### Cluster
 You can cluster multiple instance of `qryn` using pm2 clustering or other techniques:
 
@@ -90,6 +107,20 @@ CLICKHOUSE_DB="qryn" \
 pm2 start qryn
 ```
 
+#### ClickHouse Cluster
+To use `qryn` with a [Clickhouse Cluster](https://clickhouse.com/docs/en/architecture/cluster-deployment), include a `CLUSTER_NAME` ENV variable with the name of the [ClickHouse cluster](https://clickhouse.com/docs/en/architecture/cluster-deployment) you want to use.
+
+```
+CLICKHOUSE_SERVER="my.cloud.service" \
+CLICKHOUSE_PORT=9443 \
+CLICKHOUSE_PROTO="https" \
+CLICKHOUSE_AUTH="admin:supersecretpassword" \
+CLICKHOUSE_DB="qryn" \
+CLUSTER_NAME="mycluster" \
+pm2 start qryn
+```
+
+
 Save your settings and install as a system service
 ```
 pm2 save
@@ -121,6 +152,19 @@ CLICKHOUSE_DB="qryn" \
 node qryn.js
 ```
 
+#### ClickHouse Cluster
+To use `qryn` with a [Clickhouse Cluster](https://clickhouse.com/docs/en/architecture/cluster-deployment), include a `CLUSTER_NAME` ENV variable with the name of the [ClickHouse cluster](https://clickhouse.com/docs/en/architecture/cluster-deployment) you want to use.
+
+```
+CLICKHOUSE_SERVER="my.cloud.service" \
+CLICKHOUSE_PORT=9443 \
+CLICKHOUSE_PROTO="https" \
+CLICKHOUSE_AUTH="admin:supersecretpassword" \
+CLICKHOUSE_DB="qryn" \
+CLUSTER_NAME="mycluster" \
+qryn
+```
+
 ?> That's it! You are ready to access the stack using qryn-view or Grafana
 
 #### ** Docker **
@@ -150,6 +194,13 @@ Use docker to get started in no time - use either a local or cloud ClickHouse in
       - CLICKHOUSE_PROTO=https
       - CLICKHOUSE_PORT=8443
       - CLICKHOUSE_DB=qryn
+```
+
+#### ClickHouse Cluster
+To use `qryn` with a [Clickhouse Cluster](https://clickhouse.com/docs/en/architecture/cluster-deployment), include a `CLUSTER_NAME` ENV variable with the name of the [ClickHouse cluster](https://clickhouse.com/docs/en/architecture/cluster-deployment) you want to use.
+
+```
+     - CLUSTER_NAME="mycluster"
 ```
 
 !> Refer to the [configuration](env.md) for a list of supported parameters
