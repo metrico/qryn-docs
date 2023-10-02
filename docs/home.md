@@ -12,7 +12,7 @@ _**All the greatest observability formats and integrations you love, at once. Le
 * Ingestion APIs transparently compatible with [Loki](logs/ingestion#logql), [Prometheus](metrics/ingestion#prometheus), [Tempo](telemetry/ingestion#zipkin), [InfluxDB](metrics/ingestion#influx), [Elastic](logs/ingestion#elastic) _and more_
 * Native Grafana and _[LogQL, PromQL, Tempo APIs](getting-started.md)_ for _querying, processing, ingesting, tracing and alerting_
 * Powerful Query pipeline to dynamically _[search, filter and extract data](getting-started.md) from logs, events, metrics and traces_
-* Ready to use with Agents such as _[Promtail, Grafana-Agent, Vector, Logstash, Telegraf](ingestion.md) and many more_
+* Ready to use with Agents such as _[Promtail, Grafana-Agent, Vector, Logstash, Telegraf](ingestion.md) and many others_
 * Built in _[Data Explorer](getting-started#view) and [LogQL CLI](getting-started#vlogql)_ for instantly _querying logs and extracting metrics_
 * Designed to be Cloud native for _serverless and stateless operations_ on top of [ClickHouse](https://clickhouse.com/clickhouse).
 
