@@ -1,6 +1,6 @@
 # 📦 Installation
 
-Let's install **qryn** in a snap. All you need is `NodeJS` [14.x-16.x](https://github.com/nodesource/distributions) or `Docker` installed.
+Let's install **qryn** in a snap. All you need is `NodeJS` [16.x-18.x](https://github.com/nodesource/distributions) or `Docker` installed.
 
 ?> Using a ClickHouse LTS version is strongly suggested
 
@@ -106,7 +106,7 @@ pm2 startup
 
 ![image](https://user-images.githubusercontent.com/1423657/184507866-9e43ae95-6974-4f0b-bdf3-7a8d05f43d8d.png ':size=100')
 
-Clone the qryn repository, install with `npm`and run using `nodejs` 14.x *(or higher)*
+Clone the qryn repository, install with `npm`and run using `nodejs` 16.x *(or higher)*
 ```bash
 git clone https://github.com/metrico/qryn && cd qryn
 npm install
