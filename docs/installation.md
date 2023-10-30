@@ -172,13 +172,24 @@ qryn
 
 ![image](https://user-images.githubusercontent.com/1423657/184507884-624b9598-62e1-413f-854e-8210ecac4e75.png ':size=300x100')
 
-Each release is automatically pushed to [docker hub](https://hub.docker.com/r/qxip/qryn/tags) and [ghcr](ghcr.io/metrico/qryn:2.1.11)
+Each release is automatically pushed to [docker hub](https://hub.docker.com/r/qxip/qryn/tags) and [ghcr](ghcr.io/metrico/qryn:latest)
+
+#### NodeJS runtime
 ```
 qxip/qryn:latest
 ```
 ```
 ghcr.io/metrico/qryn:latest
 ```
+
+#### Bun runtime
+```
+qxip/qryn:bun
+```
+```
+ghcr.io/metrico/qryn:bun
+```
+
 
 ##### Compose
 Use docker to get started in no time - use either a local or cloud ClickHouse instance.
@@ -477,13 +488,14 @@ Review all your App settings and launch in your preferred region
 
 ![image](https://user-images.githubusercontent.com/1423657/185789758-d7366d2f-7b59-4cda-8bf4-198214581dd6.png ':size=100')
 
-Use **bun** to install **qryn** _(nodejs still required until further development)_
+Use **bun** to install and execute **qryn 3.x**
 
 ?> Install [bun](https://bun.sh/) before proceeding!
 
-Install `qryn` as global package on your system using `bun`
+Install `qryn` from git and execute using `bun`
 ```bash
-bun install -g qryn
+git clone https://github.com/metrico/qryn && cd qryn
+bun install
 ```
 
 Start `qryn` using [ENV](env.md) variables for its settings:
@@ -492,7 +504,7 @@ Start `qryn` using [ENV](env.md) variables for its settings:
 CLICKHOUSE_SERVER="my.clickhouse.server" \
 CLICKHOUSE_AUTH="default:password" \
 CLICKHOUSE_DB="qryn" \
-qryn
+bun qryn.mjs
 ```
 
 ?> That's it! You are ready to use **qryn**
