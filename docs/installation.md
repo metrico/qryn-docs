@@ -270,7 +270,7 @@ spec:
               value: 8123
             - name: CLICKHOUSE_SERVER
               value: "clickhouse"
-          image: qxip/qryn
+          image: qxip/qryn:latest
           name: qryn
           ports:
             - containerPort: 3100
@@ -338,7 +338,7 @@ Here's the sample Task Definition
   "networkMode": "awsvpc",
   "containerDefinitions": [{
     "name": "<YOUR_CONTAINER_NAME>",
-    "image": "qryn:latest",
+    "image": "qxip/qryn:latest",
     "essential": true,
     "logConfiguration": {
       "logDriver": "awslogs",
@@ -372,7 +372,7 @@ Here's the sample Task Definition
     "FARGATE"
   ],
   "cpu": "256",
-  "memory": "512",
+  "memory": "2048",
   "executionRoleArn": "<YOUR_ECS_EXECUTION_ROLE_ARN>",
   "taskRoleArn": "<YOUR_ECS_TASK_ROLE_ARN>"
 }
@@ -409,7 +409,7 @@ Use `Google Compute Cloud` to deploy and scale `qryn` using a remote ClickHouse 
 Since Cloud Run only supports images from Google Container Registry (GCR) or Artifact Registry, we need to pull qryn image, tag it and push it in GCP using Cloud Shell. Here are some sample commands which you can execute in Cloud Shell.
 ```
 # pull latest qryn image
-docker pull qryn:latest
+docker pull qxip/qryn:latest
 ```
 ```
 # tag the image
