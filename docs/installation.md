@@ -1,6 +1,6 @@
 # 📦 Installation
 
-Let's install **qryn** in a snap. All you need is `NodeJS` [16.x-18.x](https://github.com/nodesource/distributions) or `Docker` installed.
+Let's install **qryn** in a snap. All you need is `NodeJS`, `Bun` or `Docker` to get started.
 
 ?> Using a ClickHouse LTS version is strongly suggested
 
