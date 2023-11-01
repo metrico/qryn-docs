@@ -11,9 +11,9 @@ Configuration is performed using [ENV](env.md) parameters passed to the process 
 #### ** Docker **
 <a id=docker name=docker></a>
 
-Get started in seconds using **qryn** with Docker - _batteries included!_
-
 ![image](https://user-images.githubusercontent.com/1423657/184507884-624b9598-62e1-413f-854e-8210ecac4e75.png ':size=300x100')
+
+Get started in seconds using **qryn** with Docker - _batteries included!_
 
 Each _qryn_ release is automatically pushed to [docker hub](https://hub.docker.com/r/qxip/qryn/tags) and [ghcr](ghcr.io/metrico/qryn:latest)
 
