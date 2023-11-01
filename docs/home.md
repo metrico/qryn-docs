@@ -9,12 +9,13 @@
 
 _**All the greatest observability formats and integrations you love, at once - LGTM Drop-in compatible. Let's get Polyglot.**_
 
-* Ingestion APIs transparently compatible with [Loki](logs/ingestion#logql), [Prometheus](metrics/ingestion#prometheus), [Tempo](telemetry/ingestion#zipkin), [InfluxDB](metrics/ingestion#influx), [Elastic](logs/ingestion#elastic) _and more_
-* Native Grafana and _[LogQL, PromQL, Tempo APIs](getting-started.md)_ for _querying, processing, ingesting, tracing and alerting_
-* Powerful Query pipeline to dynamically _[search, filter and extract data](getting-started.md) from logs, events, metrics and traces_
-* Ready to use with Agents such as _[Promtail, Grafana-Agent, Vector, Logstash, Telegraf](ingestion.md) and many others_
-* Built in _[Data Explorer](getting-started#view) and [LogQL CLI](getting-started#vlogql)_ for instantly _querying logs and extracting metrics_
-* Designed to be Cloud native for _serverless and stateless operations_ on top of [ClickHouse](https://clickhouse.com/clickhouse).
+* **Polyglot**: Use **LogQL**, **PromQL**, and **TempoQL** languages to _query, process and alert any data_
+* **Lightweight**: Powered by **ClickHouse** OLAP Engine + **Bun** the fast, all-in-one JavaScript runtime
+* **Voracious**: Ingestion compatible with _Opentelemetry, Loki, Prometheus, Influx, Datadog, Elastic + more_
+* **Versatile**: Explore data with qryn's **built-in Explorer** and CLI or native **Grafana** compatibility
+* **Secure**: Retain total control of data, using **ClickHouse** or **InfluxDB** IOx with **S3** object storage
+* **Unmetered**: Unlimited **FOSS** deployments or **qryn.cloud** option with advanced features and performance
+* **Indepentent**: Designed to be a _stand-alone, all-in-one Loki, Prometheus, Tempo drop-in alternative_
 
 <br>
 
