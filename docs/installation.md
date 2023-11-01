@@ -8,6 +8,73 @@ Configuration is performed using [ENV](env.md) parameters passed to the process 
 
 <!-- tabs:start -->
 
+#### ** Docker **
+<a id=docker name=docker></a>
+
+Get started in seconds using **qryn** with Docker - _batteries included!_
+
+![image](https://user-images.githubusercontent.com/1423657/184507884-624b9598-62e1-413f-854e-8210ecac4e75.png ':size=300x100')
+
+Each _qryn_ release is automatically pushed to [docker hub](https://hub.docker.com/r/qxip/qryn/tags) and [ghcr](ghcr.io/metrico/qryn:latest)
+
+#### NodeJS runtime
+```
+qxip/qryn:latest
+```
+```
+ghcr.io/metrico/qryn:latest
+```
+
+#### Bun runtime
+```
+qxip/qryn:bun
+```
+```
+ghcr.io/metrico/qryn:bun
+```
+
+
+##### Docker Compose
+Start qryn using a local ClickHouse instance: 
+
+```
+  qryn:
+    image: qxip/qryn:latest
+    ports:
+      - "3100:3100"
+    environment:
+      - CLICKHOUSE_SERVER=clickhouse.hosted
+      - CLICKHOUSE_AUTH=admin:supersecretpassword
+      - CLICKHOUSE_PROTO=https
+      - CLICKHOUSE_PORT=8443
+      - CLICKHOUSE_DB=qryn
+```
+```
+docker compose up -d
+```
+
+
+#### ClickHouse Cluster
+To use `qryn` with a [Clickhouse Cluster](https://clickhouse.com/docs/en/architecture/cluster-deployment), include a `CLUSTER_NAME` ENV variable with the name of the [ClickHouse cluster](https://clickhouse.com/docs/en/architecture/cluster-deployment) you want to use.
+
+```
+     - CLUSTER_NAME="mycluster"
+```
+
+!> Refer to the [configuration](env.md) for a list of supported parameters
+
+#### Polyglot Demo
+
+Want to see everything in action? 
+
+Get an instant [qryn polyglot demo](https://github.com/metrico/qryn-oss-demo) w/ sample logs, traces and metrics - _batteries included!_
+
+![image](https://user-images.githubusercontent.com/1423657/183257423-59ac2648-0627-4edc-99b0-eea42abc3ca1.png)
+
+
+?> That's it - demo logs included! Just access your stack using [qryn-view or Grafana](getting-started)
+
+
 #### ** NPM **
 <a id=npm name=npm></a>
 
@@ -167,63 +234,6 @@ qryn
 
 ?> That's it! You are ready to access the stack using qryn-view or Grafana
 
-#### ** Docker **
-<a id=docker name=docker></a>
-
-![image](https://user-images.githubusercontent.com/1423657/184507884-624b9598-62e1-413f-854e-8210ecac4e75.png ':size=300x100')
-
-Each release is automatically pushed to [docker hub](https://hub.docker.com/r/qxip/qryn/tags) and [ghcr](ghcr.io/metrico/qryn:latest)
-
-#### NodeJS runtime
-```
-qxip/qryn:latest
-```
-```
-ghcr.io/metrico/qryn:latest
-```
-
-#### Bun runtime
-```
-qxip/qryn:bun
-```
-```
-ghcr.io/metrico/qryn:bun
-```
-
-
-##### Compose
-Use docker to get started in no time - use either a local or cloud ClickHouse instance.
-
-```
-  qryn:
-    image: qxip/qryn:latest
-    ports:
-      - "3100:3100"
-    environment:
-      - CLICKHOUSE_SERVER=clickhouse.hosted
-      - CLICKHOUSE_AUTH=admin:supersecretpassword
-      - CLICKHOUSE_PROTO=https
-      - CLICKHOUSE_PORT=8443
-      - CLICKHOUSE_DB=qryn
-```
-
-#### ClickHouse Cluster
-To use `qryn` with a [Clickhouse Cluster](https://clickhouse.com/docs/en/architecture/cluster-deployment), include a `CLUSTER_NAME` ENV variable with the name of the [ClickHouse cluster](https://clickhouse.com/docs/en/architecture/cluster-deployment) you want to use.
-
-```
-     - CLUSTER_NAME="mycluster"
-```
-
-!> Refer to the [configuration](env.md) for a list of supported parameters
-
-#### Polyglot Demo
-
-Get started in seconds using the [qryn docker demo](https://github.com/metrico/qryn-oss-demo) w/ sample logs, traces and metrics - _batteries included!_
-
-![image](https://user-images.githubusercontent.com/1423657/183257423-59ac2648-0627-4edc-99b0-eea42abc3ca1.png)
-
-
-?> That's it - demo logs included! Just access your stack using [qryn-view or Grafana](getting-started)
 
 #### ** K8s **
 <a id=k8s name=k8s></a>
