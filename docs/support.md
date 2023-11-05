@@ -43,8 +43,8 @@ At the time of writing this document **qryn** supports the following APIs:
 |----------------------|--------------------|----------------|----------------|-----------------------------------|
 | Remote Write         | POST               | 🟢             | 🟢             | `/api/v1/prom/remote/write`       |
 | Remote Write         | POST               | 🟢             | 🟢             | `/api/prom/remote/write`          |
-| Query Range          | GET/POST           | 🟡             | 🟢             | `/api/v1/query_range`             |
-| Query                | GET/POST           | 🟡             | 🟢             | `/api/v1/query`                   |
+| Query Range          | GET/POST           | 🟢             | 🟢             | `/api/v1/query_range`             |
+| Query                | GET/POST           | 🟢             | 🟢             | `/api/v1/query`                   |
 | Labels               | GET/POST           | 🟢             | 🟢             | `/api/v1/labels`                  |
 | Label Values         | GET/POST           | 🟢             | 🟢             | `/api/v1/label/:name/values`      |
 | Format Query         | GET/POST           | 🔴             | 🔴             | `/api/v1/format_query`            |
