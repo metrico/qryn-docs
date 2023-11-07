@@ -77,18 +77,22 @@ qryn:
       - CLICKHOUSE_DB=qryn
 ```
 
-To use `qryn` with a [Clickhouse Cluster](https://clickhouse.com/docs/en/architecture/cluster-deployment), include a `CLUSTER_NAME` ENV variable with the name of the [ClickHouse cluster](https://clickhouse.com/docs/en/architecture/cluster-deployment) you want to use.
+To use `qryn` with a [Clickhouse Cluster](https://clickhouse.com/docs/en/architecture/cluster-deployment), include a `CLUSTER_NAME` ENV variable<br>
+with the name of the [ClickHouse cluster](https://clickhouse.com/docs/en/architecture/cluster-deployment) you want to use.
 
 ```
-     - CLUSTER_NAME="mycluster"
+      - CLUSTER_NAME="mycluster"
 ```
 
-Once ready, deploy your **qryn** instance:
+<br>
+
+Once all settings are ready, deploy your **qryn** instance:
 
 ```
 docker compose up -d
 ```
 
+<br>
 
 !> Refer to the [configuration](env.md) for a list of supported parameters
 
