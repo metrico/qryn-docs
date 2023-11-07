@@ -35,7 +35,8 @@ ghcr.io/metrico/qryn:bun
 
 
 ##### Docker Compose
-Start qryn using a local ClickHouse instance: 
+
+Start qryn using a bundled ClickHouse instance: 
 
 ```
   qryn:
@@ -43,23 +44,51 @@ Start qryn using a local ClickHouse instance:
     ports:
       - "3100:3100"
     environment:
-      - CLICKHOUSE_SERVER=clickhouse.hosted
-      - CLICKHOUSE_AUTH=admin:supersecretpassword
-      - CLICKHOUSE_PROTO=https
-      - CLICKHOUSE_PORT=8443
+      - CLICKHOUSE_SERVER=clickhouse-server
+      - CLICKHOUSE_AUTH=qryn:supersecretpassword
+      - CLICKHOUSE_DB=qryn
+  clickhouse-server:
+    image: clickhouse/clickhouse-server:latest
+    container_name: clickhouse-server
+    environment:
+      - CLICKHOUSE_USER=qryn
+      - CLICKHOUSE_PASSWORD=supersecretpassword
+    ports:
+      - 8123:8123
+    healthcheck:
+      test: ['CMD', 'wget', '--spider', '-q', '127.0.0.1:8123/ping']
+      interval: 1s
+      timeout: 1s
+      retries: 30
+```
+
+If you prefer using a _remote_ ClickHouse instance rather than a local one:
+
+```
+qryn:
+    image: qxip/qryn:latest
+    ports:
+      - "3100:3100"
+    environment:
+      - CLICKHOUSE_SERVER="my.clickhouse.service"
+      - CLICKHOUSE_PORT=9443
+      - CLICKHOUSE_PROTO="https"
+      - CLICKHOUSE_AUTH="admin:supersecretpassword"
       - CLICKHOUSE_DB=qryn
 ```
-```
-docker compose up -d
-```
 
-
-#### ClickHouse Cluster
 To use `qryn` with a [Clickhouse Cluster](https://clickhouse.com/docs/en/architecture/cluster-deployment), include a `CLUSTER_NAME` ENV variable with the name of the [ClickHouse cluster](https://clickhouse.com/docs/en/architecture/cluster-deployment) you want to use.
 
 ```
      - CLUSTER_NAME="mycluster"
 ```
+
+Once ready, deploy your **qryn** instance:
+
+```
+docker compose up -d
+```
+
 
 !> Refer to the [configuration](env.md) for a list of supported parameters
 
