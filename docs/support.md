@@ -41,8 +41,7 @@ At the time of writing this document **qryn** supports the following APIs:
 
 | **Name**             | **Type**           | **QRYN**       | **QRYN Cloud**| **APIs.**                       |
 |----------------------|--------------------|----------------|----------------|-----------------------------------|
-| Remote Write         | POST               | 🟢             | 🟢             | `/api/v1/prom/remote/write`       |
-| Remote Write         | POST               | 🟢             | 🟢             | `/api/prom/remote/write`          |
+| Remote Write         | POST               | 🟢             | 🟢             |  `/api/v1/prom/remote/write`<br>`/api/prom/remote/write`<br>`/prom/remote/write`<br>`/api/v1/write`       |
 | Query Range          | GET/POST           | 🟢             | 🟢             | `/api/v1/query_range`             |
 | Query                | GET/POST           | 🟢             | 🟢             | `/api/v1/query`                   |
 | Labels               | GET/POST           | 🟢             | 🟢             | `/api/v1/labels`                  |
