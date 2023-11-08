@@ -26,7 +26,9 @@ Why not? We're loving the challenge. Alternatives play an important role and can
 
 ?> What is the underlying design?
 
-**qryn** implements a complete LogQL API buffered by a fast bulking **LRU** sitting on top of **ClickHouse** tables and relying on its *columnar search and insert performance alongside solid distribution and clustering capabilities* for stored data. qryn does not parse or index incoming logs, but rather groups log streams using the same label system as Prometheus and supports LogQL, PromQL and Tempo APIs for querying data back.
+**qryn** is essentially a smart, fast transpiler built on top of **ClickHouse** tables and relying on its *columnar search and insert performance alongside solid distribution and clustering capabilities* for stored data. qryn does not parse or index incoming data and uses the same label and fingerprinting system as Prometheus and supports LogQL, PromQL and Tempo APIs for querying data back.
+
+All data in qryn belongs to the user and is accessible through APIs or directly through database queries. 
 
 On top of this dataset, multiple ingestion APIs and query languages are implemented, such as _PromQL, Tempo, Influx, Elastic and others._
 
@@ -101,13 +103,18 @@ Using the same labels for both causes no additional load in the fingerprint calc
 | Prometheus | 🟢 metrics       | 🟢 promql | remote_write ingestion, logql+promql querying |
 | Elastic    | 🟢 logs          | 👽 logql  | _index/bulk_ ingestion, logql querying |
 | Influx     | 🟢 logs, metrics | 👽 logql  | line protocol ingestion  |
-| OTLP/Zipkin| 🟢 traces, spans | 🟢 tempo  | zipking ingestion, tempo querying |
+| OTLP/Zipkin| 🟢 traces, spans | 🟢 tempoql  | zipking ingestion, tempo querying |
 
 ---
 
 ?> NodeJS is slow and _(insert argument)_ so _qryn_ must be slow and not serious.
 
-False. NodeJS can be very fast when used right as an API and in our stack, ClickHouse does all the heavy-lifting.<br>
+This is a common misconception. Consider the following:
+
+- Bun and NodeJS can be very fast when used right as API servers
+- WASM is used to bring features form qryn-go into qryn-js
+- ClickHouse OLAP does all the data heavy-lifting.<br>
+
 Since qryn is stateless it can easily be auto-scaled on top of CH at incredibly low cost and complexity.
 
 This said - there are limits! This is why our stack has a commercial high-performance version [for cloud integrators](mailto:info@qxip.net)
