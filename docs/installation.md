@@ -550,6 +550,17 @@ CLICKHOUSE_DB="qryn" \
 bun qryn.mjs
 ```
 
+### PM2
+
+To start **qryn** with PM2 and Bun as the interpreter, run the following command:
+
+```bash
+CLICKHOUSE_SERVER="my.clickhouse.server" \
+CLICKHOUSE_AUTH="default:password" \
+CLICKHOUSE_DB="qryn" \
+pm2 start --interpreter ~/.bun/bin/bun qryn
+```
+
 ?> That's it! You are ready to use **qryn**
 
 
