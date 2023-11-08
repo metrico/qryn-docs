@@ -232,6 +232,45 @@ pm2 startup
 ?> Intensive load? Run pm2 in `cluster` mode to leverage multiple cpu threads
 
 
+#### ** Bun **
+<a id=bun name=bun></a>
+
+![image](https://user-images.githubusercontent.com/1423657/185789758-d7366d2f-7b59-4cda-8bf4-198214581dd6.png ':size=100')
+
+Use **bun** to install and execute **qryn 3.x**
+
+?> Install [bun](https://bun.sh/) before proceeding!
+
+Install `qryn` from git and execute using `bun`
+```bash
+git clone https://github.com/metrico/qryn && cd qryn
+bun install
+```
+
+Start `qryn` using [ENV](env.md) variables for its settings:
+
+```bash
+CLICKHOUSE_SERVER="my.clickhouse.server" \
+CLICKHOUSE_AUTH="default:password" \
+CLICKHOUSE_DB="qryn" \
+bun qryn.mjs
+```
+
+### PM2
+
+To start **qryn** with PM2 and Bun as the interpreter, run the following command:
+
+```bash
+CLICKHOUSE_SERVER="my.clickhouse.server" \
+CLICKHOUSE_AUTH="default:password" \
+CLICKHOUSE_DB="qryn" \
+pm2 start --interpreter ~/.bun/bin/bun qryn
+```
+
+?> That's it! You are ready to use **qryn** with bun runtime
+
+
+
 #### ** GIT **
 <a id=git name=git></a>
 
@@ -525,43 +564,6 @@ Configure the ENV variables for connectivity, authentication, etc
 Review all your App settings and launch in your preferred region
 
 ?> That's it! You are ready to use **qryn** on DigitalOcean
-
-#### ** Bun **
-<a id=bun name=bun></a>
-
-![image](https://user-images.githubusercontent.com/1423657/185789758-d7366d2f-7b59-4cda-8bf4-198214581dd6.png ':size=100')
-
-Use **bun** to install and execute **qryn 3.x**
-
-?> Install [bun](https://bun.sh/) before proceeding!
-
-Install `qryn` from git and execute using `bun`
-```bash
-git clone https://github.com/metrico/qryn && cd qryn
-bun install
-```
-
-Start `qryn` using [ENV](env.md) variables for its settings:
-
-```bash
-CLICKHOUSE_SERVER="my.clickhouse.server" \
-CLICKHOUSE_AUTH="default:password" \
-CLICKHOUSE_DB="qryn" \
-bun qryn.mjs
-```
-
-### PM2
-
-To start **qryn** with PM2 and Bun as the interpreter, run the following command:
-
-```bash
-CLICKHOUSE_SERVER="my.clickhouse.server" \
-CLICKHOUSE_AUTH="default:password" \
-CLICKHOUSE_DB="qryn" \
-pm2 start --interpreter ~/.bun/bin/bun qryn
-```
-
-?> That's it! You are ready to use **qryn**
 
 
 #### ** RPi4 **
