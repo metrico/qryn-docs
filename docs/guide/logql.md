@@ -163,9 +163,17 @@ The json parser operates in two modes:
 ### ** logfmt **
 The logfmt parser extracts any `key=value` pairs from the processed logs.
 
-```
-YYYY-MM-DDT00:00:00Z ... name=qryn value=123 something=else
-```
+Example:
+
+##### Input
+* ```YYYY-MM-DDT00:00:00Z ... somelog name=qryn value=123 something=else```
+
+##### LogQL
+* ```{type="clickhouse"} |~"somelog" | logfmt```
+
+##### Extracted Labels
+* ```{ name: "qryn", value: 123, something: "else" }```
+
 
 ### ** regexp **
 The regexp parser operates against log string and requires named groups for matching.
