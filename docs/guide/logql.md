@@ -145,9 +145,11 @@ We can use operations on both the log **stream selectors** and **filter expressi
 <!-- tabs:start -->
 
 ### ** Parser Expression **
-Parser expressions can parse and extract labels from the log content. Those extracted labels can then be used for filtering using label filter expressions or for metric aggregations.
+Parser expressions can parse and extract labels from the log content. Those extracted labels can then be used for filtering using label filter expressions or for metric aggregations without bloating cardinality.
 
-### json
+<!-- tabs:start -->
+
+### ** json **
 The json parser operates in two modes:
 
 * without parameters:
@@ -158,20 +160,23 @@ The json parser operates in two modes:
   * Using `| json label="expression"` in your pipeline will extract only the specified json fields to labels. 
   * ```{job="0.6611336793589486_json"} | json my_field="json_field"```
 
-### logfmt
+### ** logfmt **
 The logfmt parser extracts any `key=value` pairs from the processed logs.
 
 ```
 YYYY-MM-DDT00:00:00Z ... name=qryn value=123 something=else
 ```
 
-### regexp
+### ** regexp **
 The regexp parser operates against log string and requires named groups for matching.
 
 Example: extract a new label named `token` from a string ie: 
 ```YYYY-MM-DDT00:00:00Z ... Reserving 1.1Mb of memory```
 
  * ```{type="clickhouse"} |~"Reserving" | regexp "Reserving (?<token>\\d+.\\d+)"```
+
+<!-- tabs:end -->
+
 
 #### ** Line Format **
 Line Format expression allows the re-formatting of parts of a log line. It can extract items from parsed json.
