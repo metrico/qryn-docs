@@ -140,7 +140,7 @@ Return lines including the text "status 403" or "status 503" using regex
 
 We can use operations on both the log **stream selectors** and **filter expressions** to refine them.
 
-## ** Filter Expressions  **
+## ** Parser  **
 
 <!-- tabs:start -->
 
