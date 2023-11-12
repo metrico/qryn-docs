@@ -2,9 +2,9 @@
 
 At the time of writing this document **qryn** supports the following APIs:
 
-## LogQL API
-
 🟢 Supported 🟡 Partial Support 🔴 Not Supported
+
+## LogQL API
 
 | **Name**             | **Type**         | **QRYN**      | **QRYN Cloud**      | **APIs.**                  |   
 |----------------------|------------------|---------------|---------------------|----------------------------|
@@ -20,8 +20,6 @@ At the time of writing this document **qryn** supports the following APIs:
 
 ## Tempo API
 
-🟢 Supported 🟡 Partial Support 🔴 Not Supported
-
 | **Name**             | **Type**           | **QRYN**            | **QRYN Cloud**| **APIs.**                   | 
 |----------------------|--------------------|---------------------|---------------|-----------------------------------|
 | Push (Tempo)         | POST               | 🟢                  | 🟢             | `/tempo/api/push`                 | 
@@ -35,9 +33,6 @@ At the time of writing this document **qryn** supports the following APIs:
 
 
 ## Prometheus API
-
-🟢 Supported 🟡 Partial Support 🔴 Not Supported
-
 
 | **Name**             | **Type**           | **QRYN**       | **QRYN Cloud**| **APIs.**                       |
 |----------------------|--------------------|----------------|----------------|-----------------------------------|
@@ -65,8 +60,6 @@ At the time of writing this document **qryn** supports the following APIs:
 
 ## Elastic API
 
-🟢 Supported 🟡 Partial Support 🔴 Not Supported
-
 | **Name**             | **Type**           | **QRYN**      | **QRYN Cloud**| **APIs.**                   |  
 |----------------------|--------------------|---------------|---------------|-----------------------------|
 | Index                | POST               | 🟢             | 🟢          |  `/:target/_doc`            |
@@ -79,8 +72,6 @@ At the time of writing this document **qryn** supports the following APIs:
 
 ## Influx API
 
-🟢 Supported 🟡 Partial Support 🔴 Not Supported
-
 | **Name**             | **Type**           | **QRYN**       | **QRYN Cloud** | **APIs.**                       |   
 |----------------------|--------------------|----------------|----------------|---------------------------------|
 | Write                | POST               | 🟢             |🟢             | `/influx/api/v2/write`<br>`/write`          |
@@ -90,8 +81,6 @@ At the time of writing this document **qryn** supports the following APIs:
 
 ## Datadog API
 
-🟢 Supported 🟡 Partial Support 🔴 Not Supported
-
 | **Name**             | **Type**           | **QRYN**       | **QRYN Cloud** | **APIs.**                       |   
 |----------------------|--------------------|----------------|----------------|---------------------------------|
 | Logs                 | POST               | 🟢             |🟢             | `/api/v2/logs` |
@@ -100,18 +89,14 @@ At the time of writing this document **qryn** supports the following APIs:
 
 ## NewRelic API
 
-🟢 Supported 🟡 Partial Support 🔴 Not Supported
-
 | **Name**             | **Type**           | **QRYN**       | **QRYN Cloud** | **APIs.**                       |   
 |----------------------|--------------------|----------------|----------------|---------------------------------|
-| [Logs](https://docs.newrelic.com/docs/logs/log-api/introduction-log-api/)| POST               | 🟢             |🟢             | `/log/v1` |
+| [Logs](https://docs.newrelic.com/docs/logs/log-api/introduction-log-api/)| POST               | 🟢             |🟡             | `/log/v1` |
 
 ## OTEL Collector
 
-🟢 Supported 🟡 Partial Support 🔴 Not Supported
-
 | **Name**             | **Type**           | **QRYN**       | **QRYN Cloud** | **APIs.**                       |   
 |----------------------|--------------------|----------------|----------------|---------------------------------|
-| OTLPPush             | POST               | 🟢             |🟢             | `/v1/traces` |
+| OTLPPush             | POST               | 🟢             |🟢              | `/v1/traces`         |
 
 * 100s of ingestion formats supported via [qryn-collector](https://github.com/metrico/otel-collector)
