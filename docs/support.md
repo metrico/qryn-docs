@@ -83,7 +83,10 @@ At the time of writing this document **qryn** supports the following APIs:
 
 | **Name**             | **Type**           | **QRYN**       | **QRYN Cloud** | **APIs.**                       |   
 |----------------------|--------------------|----------------|----------------|---------------------------------|
-| Write                | POST               | 🟢             |🟢             | `/influx/api/v2/write`          |
+| Write                | POST               | 🟢             |🟢             | `/influx/api/v2/write`<br>`/write`          |
+| Health               | GET                | 🟢             |🟢             | `/influx/health`<br>`/health`          |
+
+
 
 ## Datadog API
 
@@ -95,6 +98,20 @@ At the time of writing this document **qryn** supports the following APIs:
 | Series               | POST               | 🟢             |🟢             | `/api/v2/series`  |
 | Insert (Cloudflare Format) | POST         | 🟡             |🟢             | `/cf/api/v1/insert` |
 
+## NewRelic API
+
+🟢 Supported 🟡 Partial Support 🔴 Not Supported
+
+| **Name**             | **Type**           | **QRYN**       | **QRYN Cloud** | **APIs.**                       |   
+|----------------------|--------------------|----------------|----------------|---------------------------------|
+| [Logs](https://docs.newrelic.com/docs/logs/log-api/introduction-log-api/)| POST               | 🟢             |🟢             | `/log/v1` |
+
 ## OTEL Collector
 
-100s of ingestion formats supported via [qryn-collector](https://github.com/metrico/otel-collector)
+🟢 Supported 🟡 Partial Support 🔴 Not Supported
+
+| **Name**             | **Type**           | **QRYN**       | **QRYN Cloud** | **APIs.**                       |   
+|----------------------|--------------------|----------------|----------------|---------------------------------|
+| OTLPPush             | POST               | 🟢             |🟢             | `/v1/traces` |
+
+* 100s of ingestion formats supported via [qryn-collector](https://github.com/metrico/otel-collector)
