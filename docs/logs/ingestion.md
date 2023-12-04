@@ -409,7 +409,9 @@ curl -i -XPOST -H "Content-Type: application/json" http://127.0.0.1:3104/loki/ap
 
 ## ** Docker **
 
-Integrate **qryn** using the native docker logging driver
+<img src="https://user-images.githubusercontent.com/1423657/184507884-624b9598-62e1-413f-854e-8210ecac4e75.png" width=300 />
+
+Integrate Docker with **qryn** using the _native logging driver_
 
 ```
 version: '3.9'
