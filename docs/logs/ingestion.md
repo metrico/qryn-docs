@@ -173,7 +173,7 @@ curl -i -XPOST 'http://qryn:3100/influx/api/v2/write' \
 
 ?> That's it! You're now shipping logs straight off your bash scripts!
 
-## ** OTEL Collector **
+## ** OTEL **
 
 <a id=grafana name=grafana></a>
 
@@ -320,7 +320,7 @@ service:
 ?> _That's it!_ You're now _tracing spans to **qryn** using OTLP Collector! 
 
 
-## ** ClickHouse MV **
+## ** ClickHouse **
 
 <a id=clickhouse name=clickhouse></a>
 
@@ -406,6 +406,24 @@ curl -i -XPOST -H "Content-Type: application/json" http://127.0.0.1:3104/loki/ap
 !> Replace the **qryn** URL from the example to match your actual deployment!
 
 ?> _That's it!_ You are now inserting metrics throug Curl in **qryn**
+
+## ** Docker **
+
+Integrate **qryn** using the native docker logging driver
+
+```
+version: '3.9'
+
+services:
+  some-service:
+    image: 'some-service/image:latest'
+    ports:
+      - '80:80'
+    logging:
+      driver: loki
+      options:
+        loki-url: 'http://localhost:3100/loki/api/v1/push'
+```
 
 ## ** DEV **
 
