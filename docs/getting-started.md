@@ -176,7 +176,7 @@ datasources:
 
 ### ** View **
 
-### [🔎 Start using View]([telemetry/query](https://github.com/metrico/qryn-view))
+### [🔎 Start using View](https://github.com/metrico/qryn-view)
 
 Connect to **qryn** using **view**, our _built-in_ data exploration tool!
 
