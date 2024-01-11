@@ -24,6 +24,7 @@ The following `ENV` parameters can be used to control **qryn** parameters and it
 | CLICKHOUSE_AUTH  	     | default:  	    | Clickhouse Authentication (user:password) |
 | CLICKHOUSE_PROTO  	    | http  	    | Clickhouse Protocol (http, https) |
 | CLICKHOUSE_TIMEFIELD   | record_datetime    | Clickhouse DateTime column for native queries |
+| CLUSTER_NAME           | undefined | Clickhouse Cluster name |
 | BULK_MAXAGE  		        | 2000  	    | Max Age for Bulk Inserts  		|
 | BULK_MAXSIZE  	        | 5000  	    | Max Size for Bulk Inserts  		|
 | BULK_MAXCACHE  	       | 50000  	    | Max Labels in Memory Cache  		|
@@ -39,6 +40,7 @@ The following `ENV` parameters can be used to control **qryn** parameters and it
 | FASTIFY_REQUESTTIMEOUT | 0 | API Maximum Request Timeout in ms |
 | FASTIFY_MAXREQUESTS    | 0 | API Maximum Requests per socket |
 | FASTIFY_METRICS        | false | API /metrics exporter |
+| ADVANCED_PROMETHEUS_MAX_SAMPLES | 5000000 | Max samples per a promql request |
 | CORS_ALLOW_ORIGIN.     | * | CORS Allow Origin, default to any |
 | TEMPO_SPAN             | 24 | Default span for Tempo queries in hours |
 | TEMPO_TAGTRACE         | false | Optional tagging of TraceID (expensive) |
