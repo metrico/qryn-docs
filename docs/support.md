@@ -93,6 +93,16 @@ At the time of writing this document **qryn** supports the following APIs:
 |----------------------|--------------------|----------------|----------------|---------------------------------|
 | [Logs](https://docs.newrelic.com/docs/logs/log-api/introduction-log-api/)| POST               | 🟢             |🟡             | `/log/v1` |
 
+## Pyroscope API
+
+| **Name**             | **Type**           | **QRYN**       | **QRYN Cloud** | **APIs.**                       |   
+|----------------------|--------------------|----------------|----------------|---------------------------------|
+| [ProfileTypes](https://github.com/metrico/qryn/blob/master/pyroscope/proto/querier.proto#L10)| POST               | 🟢             |🟡             | `/querier.v1.QuerierService/ProfileTypes` |
+| [LabelValues](https://github.com/metrico/qryn/blob/master/pyroscope/proto/querier.proto#L12) | POST               | 🟢             |🟡             | `/querier.v1.QuerierService/LabelValues` |
+| [LabelNames](https://github.com/metrico/qryn/blob/master/pyroscope/proto/querier.proto#L14) | POST               | 🟢             |🟡             | `/querier.v1.QuerierService/LabelNames` |
+| [SelectSeries](https://github.com/metrico/qryn/blob/master/pyroscope/proto/querier.proto#L24) | POST               | 🟢             |🟡             | `/querier.v1.QuerierService/SelectSeries` |
+| [SelectMergeStacktraces](https://github.com/metrico/qryn/blob/master/pyroscope/proto/querier.proto#L18) | POST               | 🟢             |🟡             | `/querier.v1.QuerierService/SelectMergeStacktraces` |
+
 ## OTEL Collector
 
 | **Name**             | **Type**           | **QRYN**       | **QRYN Cloud** | **APIs.**                       |   
