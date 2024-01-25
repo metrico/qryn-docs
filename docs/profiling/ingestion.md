@@ -47,5 +47,17 @@ service:
 
 ?> _That's it!_ You're now ready to ingest _continuous profiling into **qryn** using OTLP Collector! 
 
+## ** Pyroscope Java **
+
+<a id=java name=java></a>
+
+You can use qryn with the [Pyroscope Java](https://github.com/grafana/pyroscope-java) client
+
+The agent is distributed as a single JAR file `pyroscope.jar` containing native async-profiler libraries for:
+
+* Linux on x64
+* Linux on ARM64
+* MacOS on x64
+* MacOS on ARM64
 
 <!-- tabs:end -->
