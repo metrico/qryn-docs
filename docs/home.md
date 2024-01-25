@@ -18,7 +18,7 @@ _**All the greatest observability formats and integrations you love, at once - L
 * **Versatile**: Explore data with qryn's **built-in Explorer** and CLI or native **Grafana** compatibility
 * **Secure**: Retain total control of data, using **ClickHouse** or **InfluxDB** IOx with **S3** object storage
 * **Unmetered**: Unlimited **FOSS** deployments or **qryn.cloud** option with advanced features and performance
-* **Indepentent**: Designed to be a _stand-alone, all-in-one Loki, Prometheus, Tempo drop-in alternative_
+* **Indepentent**: Designed as a _drop-in compatible Loki, Prometheus, Tempo, Pyroscope alternative_
 
 <br>
 
