@@ -6,7 +6,12 @@ In this section, we'll learn how to query and filter profiling data using **Pyro
 ### ** ⭐ Grafana Pyroscope **
 <a id=grafana></a>
 
-Let's **explore** profiling data using [Grafana](guide/datasources.md) and its _flame visualizations_
+Configure a new Pyroscope `datasource` using the Phlare format pointed at **qryn**
+
+![image](https://github.com/metrico/qryn-docs/assets/1423657/5c4f985c-c9fc-4676-8954-ac6973e77e9e)
+
+You are now ready to **explore** profiling data using Pyroscope and _flame visualizations_
+
 
 ### Pyroscope <!-- {docsify-ignore-all} -->
 #### Find Profiling data using Pyroscope 🧲
