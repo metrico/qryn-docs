@@ -17,6 +17,9 @@ This guide is based on the [qryn opentelemetry distribution](https://github.com/
 
 ### Examples
 
+![qryn_pyroscope_flow](https://github.com/metrico/qryn-docs/assets/1423657/e1d4232a-d2c4-467d-8b34-fae0ca95b42e)
+
+
 #### qryn collector
 ```
 otel-collector:
