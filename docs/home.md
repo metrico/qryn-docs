@@ -15,7 +15,7 @@ _**All the greatest observability formats and integrations you love, at once - L
 * **Polyglot**: All-in-one, Drop-in compatible with **Loki**, **Prometheus**, **Tempo**, **Pyroscope** 
 * **Lightweight**: Powered by **Bun** - the fast, all-in-one JavaScript runtime + ClickHouse **OLAP** Engine
 * **Familiar**: Use stable & popular **LogQL**, **PromQL**, **TempoQL** languages to _query and visualize data_
-* **Voracious**: Ingestion compatible with **Opentelemetry, Loki, Prometheus, Tempo, Influx, Datadog, Elastic** _& more_
+* **Voracious**: Ingest using **Opentelemetry, Loki, Prometheus, Tempo, Influx, Datadog, Elastic** _& more_
 * **Versatile**: Explore data with qryn's **built-in Explorer** and CLI or native **Grafana** datasource compatibility
 * **Secure**: Retain total control of data, using **ClickHouse**, **DuckDB** or **InfluxDB** IOx with **S3** object storage
 * **Unmetered**: Unlimited **FOSS** deployments or **qryn.cloud** option with advanced features and performance
