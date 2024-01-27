@@ -17,10 +17,12 @@ This guide is based on the [qryn opentelemetry distribution](https://github.com/
 
 ### Examples
 
+#### qryn otel-collector
+
 ![qryn_pyroscope_flow](https://github.com/metrico/qryn-docs/assets/1423657/e1d4232a-d2c4-467d-8b34-fae0ca95b42e)
 
+The qryn [otel-collector](https://github.com/metrico/otel-collector) supports ingestion of Pyroscope events alongside logs, metrics and traces.
 
-#### qryn collector
 ```
 otel-collector:
     container_name: otel-collector
@@ -32,8 +34,8 @@ otel-collector:
     restart: on-failure
 ```
 
-###### pyroscope `otel-collector-config.taml`
-The following example enables Pyroscope ingestion using the qryn-collector. Integrate in your existing configuration.
+##### pyroscope `otel-collector-config.taml`
+The following example enables Pyroscope ingestion using the qryn [otel-collector](Pyroscope). Integrate in your existing configuration.
 
 ```yml
 receivers:
