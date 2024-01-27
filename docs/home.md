@@ -12,13 +12,14 @@
 
 _**All the greatest observability formats and integrations you love, at once - LGTM Drop-in compatible. Let's get Polyglot.**_
 
-* **Polyglot**: Use **LogQL**, **PromQL**, and **TempoQL** languages to _query, process and alert any data_
-* **Lightweight**: Powered by **ClickHouse** OLAP Engine + **Bun** the fast, all-in-one JavaScript runtime
-* **Voracious**: Ingestion compatible with _Opentelemetry, Loki, Prometheus, Influx, Datadog, Elastic + more_
-* **Versatile**: Explore data with qryn's **built-in Explorer** and CLI or native **Grafana** compatibility
-* **Secure**: Retain total control of data, using **ClickHouse** or **InfluxDB** IOx with **S3** object storage
+* **Polyglot**: All-in-one, Drop-in compatible with **Loki**, **Prometheus**, **Tempo**, **Pyroscope** 
+* **Lightweight**: Powered by **Bun** - the fast, all-in-one JavaScript runtime + ClickHouse **OLAP** Engine
+* **Familiar**: Use stable & popular **LogQL**, **PromQL**, **TempoQL** languages to _query and visualize data_
+* **Voracious**: Ingestion compatible with **Opentelemetry, Loki, Prometheus, Tempo, Influx, Datadog, Elastic** _& more_
+* **Versatile**: Explore data with qryn's **built-in Explorer** and CLI or native **Grafana** datasource compatibility
+* **Secure**: Retain total control of data, using **ClickHouse**, **DuckDB** or **InfluxDB** IOx with **S3** object storage
 * **Unmetered**: Unlimited **FOSS** deployments or **qryn.cloud** option with advanced features and performance
-* **Indepentent**: Designed as a _drop-in compatible Loki, Prometheus, Tempo, Pyroscope alternative_
+* **Indepentent**: Opensource, Community powered, Anti lock-in alternative to Vendor controlled stacks
 
 <br>
 
