@@ -50,7 +50,7 @@ service:
       exporters: [clickhouseprofileexporter]
 ```
 
-?> _That's it!_ You're now ready to ingest _continuous profiling into **qryn** using OTLP Collector! 
+?> _That's it!_ You're now ready to ingest _continuous profiling_ into **qryn** using OTLP Collector! 
 
 ## ** Pyroscope Java **
 
