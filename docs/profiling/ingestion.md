@@ -22,19 +22,67 @@ This guide is based on the [qryn opentelemetry distribution](https://github.com/
 ![qryn_pyroscope_flow](https://github.com/metrico/qryn-docs/assets/1423657/e1d4232a-d2c4-467d-8b34-fae0ca95b42e)
 
 The qryn [otel-collector](https://github.com/metrico/otel-collector) supports ingestion of Pyroscope events alongside logs, metrics and traces.
+Here is the minimalistic docker-compose file for the profiles ingestion
+```yml
+version: '2.23'
 
-```
-otel-collector:
+services:
+  otel-collector:
     container_name: otel-collector
     image: ghcr.io/metrico/qryn-otel-collector:latest
     volumes:
       - ./otel-collector-config.yaml:/etc/otel/config.yaml
     ports:
-      - "8062 :8062 "   # Pyroscope gRPC receiver
+      - "8062:8062"
     restart: on-failure
+  clickhouse:
+    container_name: clickhouse
+    hostname: clickhouse
+    image: clickhouse/clickhouse-server:latest
+    restart: on-failure
+    ports:
+      - "8123:8123"
+      - "9000:9000"
+  qryn:
+    container_name: qryn
+    hostname: qryn
+    image: ghcr.io/metrico/qryn:latest
+    restart: on-failure
+    ports:
+      - "3100:3100"
+    environment:
+      - CLICKHOUSE_SERVER=clickhouse
+      - DEBUG=true
+      - CLICKHOUSE_DB=qryn
+    depends_on:
+      - clickhouse
+  grafana:
+    container_name: grafana
+    image: grafana/grafana:latest
+    restart: on-failure
+    hostname: grafana
+    volumes:
+      - ./datasource.yml:/etc/grafana/provisioning/datasources/datasource.yaml
+    ports:
+      - "3000:3000"
 ```
 
-##### pyroscope `otel-collector-config.taml`
+There should be two extra files in the folder with the docker-compose file. The first one is the `datasource.yml` for grafana:
+```yml
+# config file version
+apiVersion: 1
+
+datasources:
+  - name: Qryn-Prof
+    access: proxy
+    url: http://qryn:3100
+    editable: true
+    type: phlare
+```
+
+The second one is the `otel-collector-config.yaml`:
+
+##### pyroscope `otel-collector-config.yaml`
 The following example enables Pyroscope ingestion using the qryn [otel-collector](Pyroscope). Integrate in your existing configuration.
 
 ```yml
@@ -42,7 +90,7 @@ receivers:
   pyroscopereceiver:
 exporters:
   clickhouseprofileexporter:
-    dsn: clickhouse://localhost:9000/qryn
+    dsn: clickhouse://clickhouse:9000/qryn
 service:
   pipelines:
     logs:
