@@ -23,8 +23,8 @@ This guide is based on the [qryn opentelemetry distribution](https://github.com/
 
 The qryn [otel-collector](https://github.com/metrico/otel-collector) supports ingestion of Pyroscope events alongside logs, metrics and traces.
 Here is the minimalistic docker-compose file for the profiles ingestion
-```
-version: '2.1'
+```yml
+version: '2.23'
 
 services:
   otel-collector:
@@ -56,9 +56,33 @@ services:
       - CLICKHOUSE_DB=qryn
     depends_on:
       - clickhouse
+  grafana:
+    container_name: grafana
+    image: grafana/grafana:latest
+    restart: on-failure
+    hostname: grafana
+    volumes:
+      - ./datasource.yml:/etc/grafana/provisioning/datasources/datasource.yaml
+    ports:
+      - "3000:3000"
 ```
 
-##### pyroscope `otel-collector-config.taml`
+There should be two extra files in the folder with the docker-compose file. The first one is the `datasource.yml` for grafana:
+```yml
+# config file version
+apiVersion: 1
+
+datasources:
+  - name: Qryn-Prof
+    access: proxy
+    url: http://qryn:3100
+    editable: true
+    type: phlare
+```
+
+The second one is the `otel-collector-config.yaml`:
+
+##### pyroscope `otel-collector-config.yaml`
 The following example enables Pyroscope ingestion using the qryn [otel-collector](Pyroscope). Integrate in your existing configuration.
 
 ```yml
