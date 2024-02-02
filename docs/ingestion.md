@@ -48,6 +48,8 @@ Missing an ingestion API? Open a [feature request](https://github.com/metrico/qr
 
 <!-- tabs:end -->
 
+## 🔻 API Support
+
 <!-- tabs:start -->
 
 ## ** Loki **
