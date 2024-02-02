@@ -34,60 +34,6 @@ Any Loki compatible client can be used with qryn without modifications
 * Logstash
 * _others_
 
-
-## ** Prometheus **
-
-?> **qryn** implements a full **Prometheus/PromQL** API to ingest, query and manage Metrics
-
-##### API Endpoints
-
-| **Name**             | **Type**           | **QRYN**       | **QRYN Cloud**| **APIs.**                       |
-|----------------------|--------------------|----------------|----------------|-----------------------------------|
-| Remote Write         | POST               | 🟢             | 🟢             |  `/api/v1/prom/remote/write`<br>`/api/prom/remote/write`<br>`/prom/remote/write`<br>`/api/v1/write`       |
-| Query Range          | GET/POST           | 🟢             | 🟢             | `/api/v1/query_range`             |
-| Query                | GET/POST           | 🟢             | 🟢             | `/api/v1/query`                   |
-| Labels               | GET/POST           | 🟢             | 🟢             | `/api/v1/labels`                  |
-| Label Values         | GET/POST           | 🟢             | 🟢             | `/api/v1/label/:name/values`      |
-| Series Values        | GET/POST           | 🟢             | 🟢             | `/api/v1/series`                  |
-| Rules                | GET                | 🟢             | 🟢             | `/api/v1/rules`                   |
-
-##### Compatible Agents
-
-Any Prometheus compatible client can be used with qryn without modifications
-
-* Grafana Agent
-* Vector
-* Opentelemetry
-* Telegraf
-* _others_
-
-
-## ** Tempo **
-
-?> **qryn** implements the **Tempo/TempoQL** API to ingest, query and manage Traces
-
-##### API Endpoints
-
-| **Name**             | **Type**           | **QRYN**            | **QRYN Cloud**| **APIs.**                   | 
-|----------------------|--------------------|---------------------|---------------|-----------------------------------|
-| Push (Tempo)         | POST               | 🟢                  | 🟢             | `/tempo/api/push`                 | 
-| Push (Zipkin)        | POST               | 🟢                  | 🟢             | `/api/v2/spans`                   |
-| Push (OTLP)          | POST               | 🟢                  | 🟢             | `/v1/traces` (OTLP)               |
-| Query Traces         | GET                | 🟢                  | 🟢             | `/api/traces/{traceId}`           |
-| Query Traces (JSON)  | GET                | 🟢                  | 🟢             | `/api/traces/{traceId}/json`      |
-| Trace Tags           | GET                | 🟢                  | 🟢             | `/api/search/tags`                | 
-| Trace Tag Values     | GET                | 🟢                  | 🟢             | `/api/search/tag/{name}/values`   |
-| Push Cloud.          | POST               | 🟡                  | 🟢             | `/tempo/spans`                    |
-
-##### Compatible Agents
-
-Any Tempo/Jaeger compatible client can be used with qryn without modifications
-
-* Grafana Agent
-* Opentelemetry Collector
-* _others_
-
-
 ## ** OTel **
 
 ?> **qryn** implements the **Opentelemetry/OTLPPush** API to ingest Traces, Logs and Metrics
@@ -237,8 +183,6 @@ Either type will get converted to the following `LogQL` insert
 | [Logs](https://docs.newrelic.com/docs/logs/log-api/introduction-log-api/)| POST               | 🟢             |🟡             | `/log/v1` |
 
 <!-- tabs:end -->
-
-
 <!-- tabs:start -->
 
 ## ** Popular **
