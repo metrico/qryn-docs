@@ -1,6 +1,244 @@
 # 🔻 Log Ingestion
 
 The following protocols and APIs integrations are supported for ingesting Logs:
+
+<!-- tabs:start -->
+
+## ** Loki **
+
+?> **qryn** implements a full **Loki/LogQL** API to ingest, query and manage Logs
+
+##### API Endpoints
+
+| **Name**             | **Type**         | **QRYN**      | **QRYN Cloud**      | **APIs.**                  |   
+|----------------------|------------------|---------------|---------------------|----------------------------|
+| Push                 | POST             | 🟢             | 🟢             | `/loki/api/v1/push`        |
+| Query                | GET              | 🟢             | 🟢             | `/loki/api/v1/query`       |
+| Query Range          | GET              | 🟢             | 🟢             | `/loki/api/v1/query_range` | 
+| Labels               | GET              | 🟢             | 🟢             | `/loki/api/v1/label`       | 
+| Label Values         | GET              | 🟢             | 🟢             | `/loki/api/v1/label/name/values` | 
+| Tail                 | GET              | 🟢             | 🟢             | `/loki/api/v1/tail`        | 
+| Ready                | GET              | 🟢             | 🟢             | `/ready`                   | 
+
+
+##### Compatible Agents
+
+Any Loki compatible client can be used with qryn without modifications
+
+* Grafana Agent
+* Vector
+* Opentelemetry Collector
+* Logtail
+* Telegraf
+* Fluentd
+* Logstash
+* _others_
+
+
+## ** Prometheus **
+
+?> **qryn** implements a full **Prometheus/PromQL** API to ingest, query and manage Metrics
+
+##### API Endpoints
+
+| **Name**             | **Type**           | **QRYN**       | **QRYN Cloud**| **APIs.**                       |
+|----------------------|--------------------|----------------|----------------|-----------------------------------|
+| Remote Write         | POST               | 🟢             | 🟢             |  `/api/v1/prom/remote/write`<br>`/api/prom/remote/write`<br>`/prom/remote/write`<br>`/api/v1/write`       |
+| Query Range          | GET/POST           | 🟢             | 🟢             | `/api/v1/query_range`             |
+| Query                | GET/POST           | 🟢             | 🟢             | `/api/v1/query`                   |
+| Labels               | GET/POST           | 🟢             | 🟢             | `/api/v1/labels`                  |
+| Label Values         | GET/POST           | 🟢             | 🟢             | `/api/v1/label/:name/values`      |
+| Series Values        | GET/POST           | 🟢             | 🟢             | `/api/v1/series`                  |
+| Rules                | GET                | 🟢             | 🟢             | `/api/v1/rules`                   |
+
+##### Compatible Agents
+
+Any Prometheus compatible client can be used with qryn without modifications
+
+* Grafana Agent
+* Vector
+* Opentelemetry
+* Telegraf
+* _others_
+
+
+## ** Tempo **
+
+?> **qryn** implements the **Tempo/TempoQL** API to ingest, query and manage Traces
+
+##### API Endpoints
+
+| **Name**             | **Type**           | **QRYN**            | **QRYN Cloud**| **APIs.**                   | 
+|----------------------|--------------------|---------------------|---------------|-----------------------------------|
+| Push (Tempo)         | POST               | 🟢                  | 🟢             | `/tempo/api/push`                 | 
+| Push (Zipkin)        | POST               | 🟢                  | 🟢             | `/api/v2/spans`                   |
+| Push (OTLP)          | POST               | 🟢                  | 🟢             | `/v1/traces` (OTLP)               |
+| Query Traces         | GET                | 🟢                  | 🟢             | `/api/traces/{traceId}`           |
+| Query Traces (JSON)  | GET                | 🟢                  | 🟢             | `/api/traces/{traceId}/json`      |
+| Trace Tags           | GET                | 🟢                  | 🟢             | `/api/search/tags`                | 
+| Trace Tag Values     | GET                | 🟢                  | 🟢             | `/api/search/tag/{name}/values`   |
+| Push Cloud.          | POST               | 🟡                  | 🟢             | `/tempo/spans`                    |
+
+##### Compatible Agents
+
+Any Tempo/Jaeger compatible client can be used with qryn without modifications
+
+* Grafana Agent
+* Opentelemetry Collector
+* _others_
+
+
+## ** OTel **
+
+?> **qryn** implements the **Opentelemetry/OTLPPush** API to ingest Traces, Logs and Metrics
+
+⚡ qryn is officially integrated with opentelemetry supports any log, trace or metric format
+Ingested data can be queried using any of the avialable qryn APIs (LogQL, PromQL, TraceQL)
+
+##### API Endpoints
+
+| **Name**             | **Type**           | **QRYN**       | **QRYN Cloud** | **APIs.**                       |   
+|----------------------|--------------------|----------------|----------------|---------------------------------|
+| OTLPPush             | POST               | 🟢             |🟢             | `/v1/traces`         |
+
+#### OpenTelemetry Collector for qryn
+
+The [qryn otel-collector](https://github.com/metrico/otel-collector) is designed to store observability data _(Traces, Logs, Metrics)_ from multiple vendors/platforms into ClickHouse using qryn fingerprinting and table formats transparently accessible through qryn via _LogQL, PromQL, Tempo and Pyroscope_ queries.
+
+##### Compatible Agents
+
+Any Opentelemetry compatible collector can be used with qryn without modifications
+
+* Grafana Agent
+* Opentelemetry Collector
+* _others_
+
+
+## ** Influx **
+
+?> **qryn** implements the **Influx v2** Write API subset for ingestion of Logs _(and [metrics](metrics/ingestion#influx))_
+
+##### API Endpoints
+
+| **Name**             | **Type**           | **QRYN**       | **QRYN Cloud** | **APIs.**                       |   
+|----------------------|--------------------|----------------|----------------|---------------------------------|
+| Write                | POST               | 🟢             |🟢             | `/influx/api/v2/write`<br>`/write`          |
+| Health               | GET                | 🟢             |🟢             | `/influx/health`<br>`/health`          |
+
+
+##### Compatible Agents
+
+Any InfluxDB v2 compatible client can be used with qryn without modifications
+
+* Telegraf
+* _others_
+
+#### CURL Examples
+
+##### Logs
+```bash
+curl -i -XPOST 'http://qryn:3100/influx/api/v2/write' \
+  --data-raw 'syslog,appname=myapp,facility=console,host=myhost,hostname=myhost,severity=warning facility_code=14i,message="warning message here",severity_code=4i,procid="12345",timestamp=1434055562000000000,version=1'
+```  
+##### Metrics
+```bash
+curl -i -XPOST 'http://qryn:3100/influx/api/v2/write' \
+  --data-raw 'cpu_load_short,host=server01,region=us-west value=0.64 1434055562000000000'
+```  
+
+!> Replace the **qryn** URL from the example to match your actual deployment!
+
+?> That's it! You're now shipping logs straight off your bash scripts!
+
+## ** Datadog **
+
+?> **qryn** implements a **Datadog v2 Write** API subset for ingestion of Logs and Metrics
+
+##### API Endpoints
+
+| **Name**             | **Type**           | **QRYN**       | **QRYN Cloud** | **APIs.**                       |   
+|----------------------|--------------------|----------------|----------------|---------------------------------|
+| Logs                 | POST               | 🟢             |🟢             | `/api/v2/logs` |
+| Series               | POST               | 🟢             |🟢             | `/api/v2/series`  |
+| Insert (Cloudflare Format) | POST         | 🟡             |🟢             | `/cf/api/v1/insert` |
+
+
+## ** Elastic **
+
+?> **qryn** implements an basic **Elastic API** subset for ingestion of JSON objects as tagged logs.
+
+##### API Endpoints
+
+| **Name**             | **Type**           | **QRYN**      | **QRYN Cloud**| **APIs.**                   |  
+|----------------------|--------------------|---------------|---------------|-----------------------------|
+| Index                | POST               | 🟢             | 🟢          |  `/:target/_doc`            |
+| Index                | POST               | 🟢             | 🟢          | `/:target/_create/:id`      |
+| Index                | PUT                | 🟢             | 🟢          | `/:target/_doc/`            |
+| Index                | PUT                | 🟢             | 🟢          | `/:target/_create/:id`      | 
+| Bulk                 | POST               | 🟢             | 🟢          | `/_bulk`                    |
+| Bulk                 | POST               | 🟢             | 🟢          | `/:target/_bulk`            |
+
+?> The `_index` and `_id` tags are automatically added to each insert based on the API request
+
+#### Index API
+```bash
+curl -X POST "qryn:3100/test-index/_doc/1234" -H 'Content-Type: application/json' -d'
+```
+```json
+{
+  "message": "hello",
+  "user": "cloki"
+}
+```
+
+#### Bulk API
+```json
+{ "index" : { "_index" : "test-index", "_id" : "1234" } }
+{ "message" : "hello", "user": "qryn" }
+```
+```bash
+curl -s -H "Content-Type: application/x-ndjson" -XPOST http://qryn/_bulk --data-binary "@bulkreq"
+```
+
+!> Replace the **qryn** URL from the example to match your actual deployment!
+
+
+Either type will get converted to the following `LogQL` insert
+```json
+{
+      "stream": {
+        "_index": "test-index",
+        "_id": "1234",
+        "type": "elastic"
+      },
+      "values": [
+          [ "<unix epoch in nanoseconds>", "{\"message\": \"hello\", \"user\":\"qryn'"}" ]
+      ]
+    }
+```
+
+?> That's it! You're now shipping logs straight off your Elastic agents!
+
+
+##### Notes
+- _The implementation is not focused on speed. Bulking capacity depends on fastify settings._
+- _A static type tag is also attached to events ingested through the elastic compatible APIs_
+- _delete, update bulk actions and other APIs are not supported_
+
+
+## ** NewRelic **
+
+?> **qryn** implements an basic **NewRelic API** subset for ingestion of Logs
+
+##### API Endpoints
+
+| **Name**             | **Type**           | **QRYN**       | **QRYN Cloud** | **APIs.**                       |   
+|----------------------|--------------------|----------------|----------------|---------------------------------|
+| [Logs](https://docs.newrelic.com/docs/logs/log-api/introduction-log-api/)| POST               | 🟢             |🟡             | `/log/v1` |
+
+<!-- tabs:end -->
+
+
 <!-- tabs:start -->
 
 ## ** Popular **
