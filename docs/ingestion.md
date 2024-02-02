@@ -33,6 +33,10 @@ Get started using the [Telemetry Ingestion](telemetry/ingestion.md) section
 [![image](https://user-images.githubusercontent.com/1423657/184494438-17d7ceb0-a62a-4819-9b1c-43d7f0baf802.png ':size=100')](telemetry/ingestion#zipkin)
 [![image](https://avatars.githubusercontent.com/u/54801242?s=200&v=4 ':size=100')](telemetry/ingestion#clickhouse)
 
+#### ** Profiling **
+
+Get started using the Pyroscope [Continuous Profiling](profiling/ingestion.md) section
+
 #### ** Custom **
 
 Missing an ingestion API? Open a [feature request](https://github.com/metrico/qryn/issues) or a PR with your work.
