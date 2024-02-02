@@ -37,6 +37,9 @@ Get started using the [Telemetry Ingestion](telemetry/ingestion.md) section
 
 Get started using the Pyroscope [Continuous Profiling](profiling/ingestion.md) section
 
+[![image](https://github.com/metrico/qryn-docs/assets/1423657/4525cc49-1a5e-4714-aa16-088928d245ff ':size=100')](profiling/ingestion)
+
+
 #### ** Custom **
 
 Missing an ingestion API? Open a [feature request](https://github.com/metrico/qryn/issues) or a PR with your work.
