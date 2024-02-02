@@ -36,16 +36,10 @@ Any Loki compatible client can be used with qryn without modifications
 
 ## ** OTel **
 
-?> **qryn** implements the **Opentelemetry/OTLPPush** API to ingest Traces, Logs and Metrics
+?> **qryn** implements the **Opentelemetry/OTLPPush** API to ingest Logs
 
 ⚡ qryn is officially integrated with opentelemetry supports any log, trace or metric format
 Ingested data can be queried using any of the avialable qryn APIs (LogQL, PromQL, TraceQL)
-
-##### API Endpoints
-
-| **Name**             | **Type**           | **QRYN**       | **QRYN Cloud** | **APIs.**                       |   
-|----------------------|--------------------|----------------|----------------|---------------------------------|
-| OTLPPush             | POST               | 🟢             |🟢             | `/v1/traces`         |
 
 #### OpenTelemetry Collector for qryn
 
@@ -62,7 +56,7 @@ Any Opentelemetry compatible collector can be used with qryn without modificatio
 
 ## ** Influx **
 
-?> **qryn** implements the **Influx v2** Write API subset for ingestion of Logs _(and [metrics](metrics/ingestion#influx))_
+?> **qryn** implements the **Influx v2** Write API subset for ingestion of Logs
 
 ##### API Endpoints
 
@@ -98,7 +92,7 @@ curl -i -XPOST 'http://qryn:3100/influx/api/v2/write' \
 
 ## ** Datadog **
 
-?> **qryn** implements a **Datadog v2 Write** API subset for ingestion of Logs and Metrics
+?> **qryn** implements a **Datadog v2 Write** API subset for ingestion of Logs
 
 ##### API Endpoints
 
@@ -183,6 +177,10 @@ Either type will get converted to the following `LogQL` insert
 | [Logs](https://docs.newrelic.com/docs/logs/log-api/introduction-log-api/)| POST               | 🟢             |🟡             | `/log/v1` |
 
 <!-- tabs:end -->
+
+
+# 🔻 Log Agents
+
 <!-- tabs:start -->
 
 ## ** Popular **
