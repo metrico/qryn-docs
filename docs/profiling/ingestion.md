@@ -1,6 +1,22 @@
 # 🔻 Profiling Ingestion
 
-The following protocol APIs are supported for ingesting continuous profiling events:
+The following protocol APIs are supported for ingesting continuous profiling events with **qryn**:
+
+<!-- tabs:start -->
+
+## Pyroscope API
+
+| **Name**             | **Type**           | **QRYN**       | **QRYN Cloud** | **APIs.**                       |   
+|----------------------|--------------------|----------------|----------------|---------------------------------|
+| [ProfileTypes](https://github.com/metrico/qryn/blob/master/pyroscope/proto/querier.proto#L10)| POST               | 🟢             |🟡             | `/querier.v1.QuerierService/ProfileTypes` |
+| [LabelValues](https://github.com/metrico/qryn/blob/master/pyroscope/proto/querier.proto#L12) | POST               | 🟢             |🟡             | `/querier.v1.QuerierService/LabelValues` |
+| [LabelNames](https://github.com/metrico/qryn/blob/master/pyroscope/proto/querier.proto#L14) | POST               | 🟢             |🟡             | `/querier.v1.QuerierService/LabelNames` |
+| [SelectSeries](https://github.com/metrico/qryn/blob/master/pyroscope/proto/querier.proto#L24) | POST               | 🟢             |🟡             | `/querier.v1.QuerierService/SelectSeries` |
+| [SelectMergeStacktraces](https://github.com/metrico/qryn/blob/master/pyroscope/proto/querier.proto#L18) | POST               | 🟢             |🟡             | `/querier.v1.QuerierService/SelectMergeStacktraces` |
+
+<!-- tabs:end -->
+
+## 🔻 Profiling Agents
 
 <!-- tabs:start -->
 ## ** Continuous Profiling **
