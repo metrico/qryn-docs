@@ -5,28 +5,17 @@ The following protocol APIs are supported for ingesting continuous profiling eve
 <!-- tabs:start -->
 ## ** Continuous Profiling **
 
+### Application Performance Profiling
+Pyroscope is a continuous profiling format that allows you to analyze the performance of your applications. When sending profiles to qryn using the qryn otel-collector, you can choose between two primary methods: 
+
 ![qryn_pyroscope_flow](https://github.com/metrico/qryn-docs/assets/1423657/e1d4232a-d2c4-467d-8b34-fae0ca95b42e)
 
-### Application Performance Profiling
-Pyroscope is a continuous profiling format that allows you to analyze the performance of your applications. When sending profiles to qryn, you can choose between two primary methods: 
 
 #### SDK Instrumentation
-The Pyroscope SDKs provide you with the capability to directly instrument your application, enabling more accurate profiling. This feature is particularly useful when you desire complete control over the profiling process or when your application is written in a language supported by the SDKs, such as _Java, Python, .NET, and more_. To utilize Pyroscope SDKs effectively, follow these steps:
-
-1. Install the appropriate **Pyroscope SDK** for your application's programming language. This may involve installing a pip package, npm package, Ruby gem, or other relevant package.
-2. Employ the SDK to **instrument your application's code**, allowing it to capture the necessary profiling data.
-3. The SDK will automatically and periodically transmit the captured profiles to the qryn/opentelemetry collector for storage and analysis.
-
-By leveraging the Pyroscope SDKs, you gain the flexibility to tailor the profiling process to meet your application's specific requirements. You can selectively profile specific code sections or adjust the intervals at which profiles are sent, depending on your needs.
+The Pyroscope SDKs provide you with the capability to directly instrument your application, enabling more accurate profiling. This feature is particularly useful when you desire complete control over the profiling process or when your application is written in a language supported by the SDKs, such as _Java, Python, .NET, and more_. 
 
 #### Auto-Instrumentation using the Grafana agent
-Grafana agent can run alongside your application to collect profiling data at regular intervals. With the **eBPF** profiling option, things get even easier as there's no need for pull or push mechanisms. Here's how it works:
-
-1. Install and configure **Grafana Agent** on the same machine or container where your application is running.
-2. The agent will automatically fetch your application's performance profiling data, regardless of the language or technology stack it uses.
-3. The captured profiles are then sent to qryn/opentelemetry for storage and analysis.
-
-Grafana Agent is a hassle-free choice, especially when dealing with multiple applications or microservices and allows you to centralize the profiling process without making any changes to your application's codebase.
+Grafana agent can run alongside your application to collect profiling data at regular intervals. With the **eBPF** profiling option, things get even easier as there's no need for pull or push mechanisms.
 
 ## ** OTEL Collector **
 
@@ -125,9 +114,17 @@ service:
 
 ?> _That's it!_ You're now ready to ingest _continuous profiling_ into **qryn** using OTLP Collector! 
 
-## ** Pyroscope Java **
+## ** SDK Clients **
 
+<!-- tabs:start -->
+
+### ** Java **
 <a id=java name=java></a>
+
+![image](https://github.com/metrico/qryn-docs/assets/1423657/b65d9767-040f-423d-9bde-0a21c4bebb9c)
+
+[Documentation](https://grafana.com/docs/pyroscope/latest/configure-client/language-sdks/java/)
+[Examples](https://github.com/grafana/pyroscope/tree/main/examples/java/rideshare)
 
 You can use qryn with the [Pyroscope Java](https://github.com/grafana/pyroscope-java) client
 
@@ -137,5 +134,48 @@ The agent is distributed as a single JAR file `pyroscope.jar` containing native 
 * Linux on ARM64
 * MacOS on x64
 * MacOS on ARM64
+
+### ** Golang **
+<a id=java name=golang></a>
+
+![image](https://github.com/metrico/qryn-docs/assets/1423657/49df8fba-3f6e-4e3f-8790-307e5eaefcaf)
+
+[Documentation](https://grafana.com/docs/pyroscope/latest/configure-client/language-sdks/go_push/)
+[Examples](https://github.com/grafana/pyroscope/tree/main/examples/golang-push)
+
+### ** Python **
+<a id=java name=python></a>
+
+![image](https://github.com/metrico/qryn-docs/assets/1423657/488d0220-1bc9-479d-94c5-4a11668196f2)
+
+[Documentation](https://grafana.com/docs/pyroscope/latest/configure-client/language-sdks/python/)
+[Examples](https://github.com/grafana/pyroscope/tree/main/examples/python)
+
+### ** NodeJS **
+<a id=java name=nodejs></a>
+
+![image](https://github.com/metrico/qryn-docs/assets/1423657/dddb65eb-65a9-4b98-bfd9-d005e1e54fa8)
+
+[Documentation](https://grafana.com/docs/pyroscope/latest/configure-client/language-sdks/nodejs/)
+[Examples](https://github.com/grafana/pyroscope/tree/main/examples/nodejs/express)
+
+### ** Rust **
+<a id=java name=rust></a>
+
+![image](https://github.com/metrico/qryn-docs/assets/1423657/d7c29289-91a9-415a-9aa4-cf787868507b)
+
+[Documentation](https://grafana.com/docs/pyroscope/latest/configure-client/language-sdks/rust/)
+[Examples](https://github.com/grafana/pyroscope/tree/main/examples/rust/rideshare)
+
+### ** eBPF **
+<a id=java name=eBPF></a>
+
+![image](https://github.com/metrico/qryn-docs/assets/1423657/56d73c88-2d1b-4551-9f0c-d88951b3789e)
+
+[Documentation](https://grafana.com/docs/pyroscope/latest/configure-client/grafana-agent/ebpf)
+[Examples](https://github.com/grafana/pyroscope/tree/main/examples/ebpf)
+
+<!-- tabs:end -->
+
 
 <!-- tabs:end -->
