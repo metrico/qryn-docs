@@ -36,19 +36,7 @@ The Pyroscope SDKs provide you with the capability to directly instrument your a
 
 ## ** OTEL Collector **
 
-<a id=grafana name=grafana></a>
-
-![image](https://user-images.githubusercontent.com/1423657/196469086-3d85efd5-7ef9-4d42-a677-5591470b7cae.png ':size=200')
-
-The [OTEL Collector]([https://opentelemetry.io/docs/collector/](https://github.com/metrico/otel-collector)) offers a vendor-agnostic implementation of how to receive, process and export telemetry data. It removes the need to run, operate, and maintain multiple agents/collectors. 
-
-This works with improved scalability and supports a large variety of open-source observability data formats _(e.g. pprof, etc.)_ and allows aggregating and sending profiling data to **qryn** using the _Pyroscope API_
-
-This guide is based on the [qryn opentelemetry distribution](https://github.com/metrico/otel-collector) for qryn + clickhouse.
-
-### Examples
-
-#### qryn otel-collector
+<a id=otel name=otel></a>
 
 ![qryn_pyroscope_flow](https://github.com/metrico/qryn-docs/assets/1423657/e1d4232a-d2c4-467d-8b34-fae0ca95b42e)
 
@@ -153,7 +141,7 @@ The agent is distributed as a single JAR file `pyroscope.jar` containing native 
 * MacOS on ARM64
 
 ### ** Golang **
-<a id=java name=golang></a>
+<a id=golang name=golang></a>
 
 ![image](https://github.com/metrico/qryn-docs/assets/1423657/49df8fba-3f6e-4e3f-8790-307e5eaefcaf ':size=100')
 
@@ -161,7 +149,7 @@ The agent is distributed as a single JAR file `pyroscope.jar` containing native 
 - [Examples](https://github.com/grafana/pyroscope/tree/main/examples/golang-push)
 
 ### ** Python **
-<a id=java name=python></a>
+<a id=python name=python></a>
 
 ![image](https://github.com/metrico/qryn-docs/assets/1423657/488d0220-1bc9-479d-94c5-4a11668196f2 ':size=100')
 
@@ -169,7 +157,7 @@ The agent is distributed as a single JAR file `pyroscope.jar` containing native 
 - [Examples](https://github.com/grafana/pyroscope/tree/main/examples/python)
 
 ### ** NodeJS **
-<a id=java name=nodejs></a>
+<a id=nodejs name=nodejs></a>
 
 ![image](https://github.com/metrico/qryn-docs/assets/1423657/dddb65eb-65a9-4b98-bfd9-d005e1e54fa8 ':size=100')
 
@@ -177,7 +165,7 @@ The agent is distributed as a single JAR file `pyroscope.jar` containing native 
 - [Examples](https://github.com/grafana/pyroscope/tree/main/examples/nodejs/express)
 
 ### ** Rust **
-<a id=java name=rust></a>
+<a id=rust name=rust></a>
 
 ![image](https://github.com/metrico/qryn-docs/assets/1423657/d7c29289-91a9-415a-9aa4-cf787868507b ':size=100')
 
@@ -185,7 +173,7 @@ The agent is distributed as a single JAR file `pyroscope.jar` containing native 
 - [Examples](https://github.com/grafana/pyroscope/tree/main/examples/rust/rideshare)
 
 ### ** eBPF **
-<a id=java name=eBPF></a>
+<a id=eBPF name=eBPF></a>
 
 ![image](https://github.com/metrico/qryn-docs/assets/1423657/56d73c88-2d1b-4551-9f0c-d88951b3789e ':size=100')
 
@@ -193,6 +181,7 @@ The agent is distributed as a single JAR file `pyroscope.jar` containing native 
 - [Examples](https://github.com/grafana/pyroscope/tree/main/examples/ebpf)
 
 ### ** Ruby **
+<a id=ruby name=ruby></a>
 
 ![image](https://github.com/metrico/qryn-docs/assets/1423657/124fac51-7f17-4385-a8c4-f5711e634804 ':size=100')
 
@@ -200,6 +189,7 @@ The agent is distributed as a single JAR file `pyroscope.jar` containing native 
 - [Examples](https://github.com/grafana/pyroscope/tree/main/examples/ruby)
 
 ### ** Dotnet **
+<a id=dotnet name=dotnet></a>
 
 ![image](https://github.com/metrico/qryn-docs/assets/1423657/78059424-d4c1-4ff2-86e7-5c970efec97e ':size=100')
 
