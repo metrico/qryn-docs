@@ -25,14 +25,18 @@ The following protocol APIs are supported for ingesting continuous profiling eve
 Pyroscope is a continuous profiling format that allows you to analyze the performance of your applications.<br>
 Ingestion through the **qryn otel-collector** offers two primary methods: 
 
-![qryn_pyroscope_flow](https://github.com/metrico/qryn-docs/assets/1423657/e1d4232a-d2c4-467d-8b34-fae0ca95b42e)
-
-
 #### SDK Instrumentation
 The Pyroscope SDKs provide you with the capability to directly instrument your application, enabling more accurate profiling. This feature is particularly useful when you desire complete control over the profiling process or when your application is written in a language supported by the SDKs, such as _Java, Python, .NET, and more_. 
 
 #### Auto-Instrumentation
 [Grafana Agent](https://grafana.com/docs/pyroscope/latest/configure-client/grafana-agent/go_pull/) can run alongside your application to collect profiling data at regular intervals. With the **eBPF** profiling option, things get even easier as there's no need for pull or push mechanisms.
+
+#### Ingestion
+Both methods use the qryn [otel-collector](https://github.com/metrico/otel-collector) to ingest data to the database
+
+![qryn_pyroscope_flow](https://github.com/metrico/qryn-docs/assets/1423657/e1d4232a-d2c4-467d-8b34-fae0ca95b42e)
+
+
 
 ## ** OTEL Collector **
 
