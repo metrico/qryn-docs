@@ -3,6 +3,31 @@
 The following protocol APIs are supported for ingesting continuous profiling events:
 
 <!-- tabs:start -->
+## ** Continuous Profiling **
+
+![qryn_pyroscope_flow](https://github.com/metrico/qryn-docs/assets/1423657/e1d4232a-d2c4-467d-8b34-fae0ca95b42e)
+
+### Application Performance Profiling
+Pyroscope is a continuous profiling format that allows you to analyze the performance of your applications. When sending profiles to qryn, you can choose between two primary methods: 
+
+#### SDK Instrumentation
+The Pyroscope SDKs provide you with the capability to directly instrument your application, enabling more accurate profiling. This feature is particularly useful when you desire complete control over the profiling process or when your application is written in a language supported by the SDKs, such as _Java, Python, .NET, and more_. To utilize Pyroscope SDKs effectively, follow these steps:
+
+1. Install the appropriate **Pyroscope SDK** for your application's programming language. This may involve installing a pip package, npm package, Ruby gem, or other relevant package.
+2. Employ the SDK to **instrument your application's code**, allowing it to capture the necessary profiling data.
+3. The SDK will automatically and periodically transmit the captured profiles to the qryn/opentelemetry collector for storage and analysis.
+
+By leveraging the Pyroscope SDKs, you gain the flexibility to tailor the profiling process to meet your application's specific requirements. You can selectively profile specific code sections or adjust the intervals at which profiles are sent, depending on your needs.
+
+#### Auto-Instrumentation using the Grafana agent
+Grafana agent can run alongside your application to collect profiling data at regular intervals. With the **eBPF** profiling option, things get even easier as there's no need for pull or push mechanisms. Here's how it works:
+
+1. Install and configure **Grafana Agent** on the same machine or container where your application is running.
+2. The agent will automatically fetch your application's performance profiling data, regardless of the language or technology stack it uses.
+3. The captured profiles are then sent to qryn/opentelemetry for storage and analysis.
+
+Grafana Agent is a hassle-free choice, especially when dealing with multiple applications or microservices and allows you to centralize the profiling process without making any changes to your application's codebase.
+
 ## ** OTEL Collector **
 
 <a id=grafana name=grafana></a>
