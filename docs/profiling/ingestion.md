@@ -22,7 +22,8 @@ The following protocol APIs are supported for ingesting continuous profiling eve
 ## ** Continuous Profiling **
 
 ### Application Performance Profiling
-Pyroscope is a continuous profiling format that allows you to analyze the performance of your applications. When sending profiles to qryn using the qryn otel-collector, you can choose between two primary methods: 
+Pyroscope is a continuous profiling format that allows you to analyze the performance of your applications.<br>
+When sending profiles to **qryn** using the **qryn otel-collector**, you can choose between two primary methods: 
 
 ![qryn_pyroscope_flow](https://github.com/metrico/qryn-docs/assets/1423657/e1d4232a-d2c4-467d-8b34-fae0ca95b42e)
 
