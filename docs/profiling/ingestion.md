@@ -194,7 +194,7 @@ The agent is distributed as a single JAR file `pyroscope.jar` containing native 
 
 ### ** Ruby **
 
-![image](https://github.com/metrico/qryn-docs/assets/1423657/d4b53678-1834-4037-ba35-703c8afa5fe6 ':size=100')
+![image](https://github.com/metrico/qryn-docs/assets/1423657/124fac51-7f17-4385-a8c4-f5711e634804 ':size=100')
 
 - [Documentation](https://grafana.com/docs/pyroscope/latest/configure-client/language-sdks/ruby/)
 - [Examples](https://github.com/grafana/pyroscope/tree/main/examples/ruby)
