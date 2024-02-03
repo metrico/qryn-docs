@@ -131,15 +131,6 @@ service:
 - [Documentation](https://grafana.com/docs/pyroscope/latest/configure-client/language-sdks/java/)
 - [Examples](https://github.com/grafana/pyroscope/tree/main/examples/java/rideshare)
 
-You can use qryn with the [Pyroscope Java](https://github.com/grafana/pyroscope-java) client
-
-The agent is distributed as a single JAR file `pyroscope.jar` containing native async-profiler libraries for:
-
-* Linux on x64
-* Linux on ARM64
-* MacOS on x64
-* MacOS on ARM64
-
 ### ** Golang **
 <a id=golang name=golang></a>
 
