@@ -121,7 +121,7 @@ service:
 ### ** Java **
 <a id=java name=java></a>
 
-![image](https://github.com/metrico/qryn-docs/assets/1423657/b65d9767-040f-423d-9bde-0a21c4bebb9c)
+![image](https://github.com/metrico/qryn-docs/assets/1423657/b65d9767-040f-423d-9bde-0a21c4bebb9c ':size=200')
 
 [Documentation](https://grafana.com/docs/pyroscope/latest/configure-client/language-sdks/java/)
 [Examples](https://github.com/grafana/pyroscope/tree/main/examples/java/rideshare)
@@ -138,7 +138,7 @@ The agent is distributed as a single JAR file `pyroscope.jar` containing native 
 ### ** Golang **
 <a id=java name=golang></a>
 
-![image](https://github.com/metrico/qryn-docs/assets/1423657/49df8fba-3f6e-4e3f-8790-307e5eaefcaf)
+![image](https://github.com/metrico/qryn-docs/assets/1423657/49df8fba-3f6e-4e3f-8790-307e5eaefcaf ':size=200')
 
 [Documentation](https://grafana.com/docs/pyroscope/latest/configure-client/language-sdks/go_push/)
 [Examples](https://github.com/grafana/pyroscope/tree/main/examples/golang-push)
@@ -146,7 +146,7 @@ The agent is distributed as a single JAR file `pyroscope.jar` containing native 
 ### ** Python **
 <a id=java name=python></a>
 
-![image](https://github.com/metrico/qryn-docs/assets/1423657/488d0220-1bc9-479d-94c5-4a11668196f2)
+![image](https://github.com/metrico/qryn-docs/assets/1423657/488d0220-1bc9-479d-94c5-4a11668196f2 ':size=200')
 
 [Documentation](https://grafana.com/docs/pyroscope/latest/configure-client/language-sdks/python/)
 [Examples](https://github.com/grafana/pyroscope/tree/main/examples/python)
@@ -154,7 +154,7 @@ The agent is distributed as a single JAR file `pyroscope.jar` containing native 
 ### ** NodeJS **
 <a id=java name=nodejs></a>
 
-![image](https://github.com/metrico/qryn-docs/assets/1423657/dddb65eb-65a9-4b98-bfd9-d005e1e54fa8)
+![image](https://github.com/metrico/qryn-docs/assets/1423657/dddb65eb-65a9-4b98-bfd9-d005e1e54fa8 ':size=200')
 
 [Documentation](https://grafana.com/docs/pyroscope/latest/configure-client/language-sdks/nodejs/)
 [Examples](https://github.com/grafana/pyroscope/tree/main/examples/nodejs/express)
@@ -162,7 +162,7 @@ The agent is distributed as a single JAR file `pyroscope.jar` containing native 
 ### ** Rust **
 <a id=java name=rust></a>
 
-![image](https://github.com/metrico/qryn-docs/assets/1423657/d7c29289-91a9-415a-9aa4-cf787868507b)
+![image](https://github.com/metrico/qryn-docs/assets/1423657/d7c29289-91a9-415a-9aa4-cf787868507b ':size=200')
 
 [Documentation](https://grafana.com/docs/pyroscope/latest/configure-client/language-sdks/rust/)
 [Examples](https://github.com/grafana/pyroscope/tree/main/examples/rust/rideshare)
@@ -170,7 +170,7 @@ The agent is distributed as a single JAR file `pyroscope.jar` containing native 
 ### ** eBPF **
 <a id=java name=eBPF></a>
 
-![image](https://github.com/metrico/qryn-docs/assets/1423657/56d73c88-2d1b-4551-9f0c-d88951b3789e)
+![image](https://github.com/metrico/qryn-docs/assets/1423657/56d73c88-2d1b-4551-9f0c-d88951b3789e ':size=200')
 
 [Documentation](https://grafana.com/docs/pyroscope/latest/configure-client/grafana-agent/ebpf)
 [Examples](https://github.com/grafana/pyroscope/tree/main/examples/ebpf)
