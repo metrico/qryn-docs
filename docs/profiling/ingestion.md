@@ -31,8 +31,8 @@ Ingestion through the **qryn otel-collector** offers two primary methods:
 #### SDK Instrumentation
 The Pyroscope SDKs provide you with the capability to directly instrument your application, enabling more accurate profiling. This feature is particularly useful when you desire complete control over the profiling process or when your application is written in a language supported by the SDKs, such as _Java, Python, .NET, and more_. 
 
-#### Auto-Instrumentation using the Grafana agent
-Grafana agent can run alongside your application to collect profiling data at regular intervals. With the **eBPF** profiling option, things get even easier as there's no need for pull or push mechanisms.
+#### Auto-Instrumentation
+[Grafana Agent](https://grafana.com/docs/pyroscope/latest/configure-client/grafana-agent/go_pull/) can run alongside your application to collect profiling data at regular intervals. With the **eBPF** profiling option, things get even easier as there's no need for pull or push mechanisms.
 
 ## ** OTEL Collector **
 
@@ -191,6 +191,21 @@ The agent is distributed as a single JAR file `pyroscope.jar` containing native 
 
 - [Documentation](https://grafana.com/docs/pyroscope/latest/configure-client/grafana-agent/ebpf)
 - [Examples](https://github.com/grafana/pyroscope/tree/main/examples/ebpf)
+
+### ** Ruby **
+
+![image](https://github.com/metrico/qryn-docs/assets/1423657/d4b53678-1834-4037-ba35-703c8afa5fe6 ':size=100')
+
+- [Documentation](https://grafana.com/docs/pyroscope/latest/configure-client/language-sdks/ruby/)
+- [Examples](https://github.com/grafana/pyroscope/tree/main/examples/ruby)
+
+### ** Dotnet **
+
+![image](https://github.com/metrico/qryn-docs/assets/1423657/78059424-d4c1-4ff2-86e7-5c970efec97e ':size=100')
+
+- [Documentation](https://grafana.com/docs/pyroscope/latest/configure-client/language-sdks/dotnet/)
+- [Examples](https://github.com/grafana/pyroscope/tree/main/examples/dotnet)
+
 
 <!-- tabs:end -->
 
