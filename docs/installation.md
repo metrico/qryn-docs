@@ -2,7 +2,7 @@
 
 Let's install **qryn** in a snap. All you need is `NodeJS`, `Bun` or `Docker` to get started.
 
-?> Using a ClickHouse LTS version is strongly suggested
+?> Using a ClickHouse LTS version > 23.3 is required ⚠️
 
 Configuration is performed using [ENV](env.md) parameters passed to the process or container.
 
