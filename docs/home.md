@@ -10,7 +10,7 @@
 
 ?> ... it's pronounced /ˈkwɪr..ɪŋ/ or just _querying_
 
-_**All the greatest observability formats and integrations you love, at once - LGTM Drop-in compatible. Let's get Polyglot.**_
+_Get all the observability formats and integrations you love, at once - LGTM Drop-in compatible. Let's get Polyglot._
 
 * **Polyglot**: All-in-one, Drop-in compatible with **Loki**, **Prometheus**, **Tempo**, **Pyroscope** 
 * **Lightweight**: Powered by **Bun** - the fast, all-in-one JavaScript runtime + ClickHouse **OLAP** Engine
