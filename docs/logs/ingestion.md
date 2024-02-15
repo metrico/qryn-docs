@@ -34,7 +34,7 @@ Any Loki compatible client can be used with qryn without modifications
 * Logstash
 * _others_
 
-## ** OTel **
+## ** Opentelemetry **
 
 ?> **qryn** implements the **Opentelemetry/OTLPPush** API to ingest Logs
 
