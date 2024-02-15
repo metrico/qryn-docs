@@ -4,7 +4,7 @@
 
 **qryn** is a _fast, thin, all-in-one_ _**polyglot**_ observability stack built on top of _**ClickHouse**_
 
-_Logs, Metrics and Traces made simple, right out of the box - batteries included!_ 🔋
+_Designed from the ground up to handle infinite Logs, Metrics and Traces, right out of the box - batteries included!_ 🔋
 
 
 <!-- tabs:start -->
@@ -13,9 +13,9 @@ _Logs, Metrics and Traces made simple, right out of the box - batteries included
 
 🎉 _No custom formats to integrate_ 
 
-Ingestion APIs are transparently compatible with [Loki](logs/ingestion#logql), [Prometheus](metrics/ingestion#prometheus), [Tempo](telemetry/ingestion#zipkin), [InfluxDB](metrics/ingestion#influx), [Elastic](logs/ingestion#elastic) _and others_
+Our Ingestion APIs are transparently compatible with [Loki](logs/ingestion#logql), [Prometheus](metrics/ingestion#prometheus), [Tempo](telemetry/ingestion#zipkin), [InfluxDB](metrics/ingestion#influx), [Elastic](logs/ingestion#elastic) _and others_
 
-**qryn** is ready to use with Agents such as _[Promtail, Grafana-Agent, Vector, Logstash, Telegraf](ingestion.md) and many more_
+**qryn** is ready to use with a variery of Agents such as _[Promtail, Grafana-Agent, Vector, Logstash, Telegraf](ingestion.md) and many more_
 
 #### ** Querying **
 
