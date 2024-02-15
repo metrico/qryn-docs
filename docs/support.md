@@ -109,4 +109,4 @@ At the time of writing this document **qryn** supports the following APIs:
 |----------------------|--------------------|----------------|----------------|---------------------------------|
 | OTLPPush             | POST               | 🟢             |🟢              | `/v1/traces`         |
 
-* 100s of ingestion formats supported via [qryn-collector](https://github.com/metrico/otel-collector)
+* Any Log, Metric or Trace format supported via [qryn-collector](https://github.com/metrico/otel-collector)
