@@ -122,6 +122,9 @@ otel-collector:
       - "24224:24224".  # Fluent Forward
     restart: on-failure
 ```
+#### Inserts to ClickHouse
+
+Insert logs, metrics, traces and profiling data directly to ClickHouse bypassing the qryn ingestion APIs.
 
 ###### qryn collector `config.taml`
 The following example enables all the supported formats at once. Filter the required sections to build your configuration.
@@ -232,6 +235,77 @@ service:
       processors: [memory_limiter, resourcedetection/system, resource, batch]
       exporters: [qryn]
 ```
+
+#### Inserts to API
+
+Insert logs, metrics, traces and profiling data in ClickHouse through the qryn ingestion APIs.
+
+###### qryn collector `config.taml`
+The following example outlines the usage of exporters with the qryn or qryn.cloud endpoints.
+```
+receivers:
+  otlp:
+    protocols:
+      grpc:
+        endpoint: 0.0.0.0:4317
+      http:
+        endpoint: 0.0.0.0:4318
+  jaeger:
+    protocols:
+      grpc:
+        endpoint: 0.0.0.0:14250
+      thrift_http:
+        endpoint: 0.0.0.0:14268
+  zipkin:
+    endpoint: 0.0.0.0:9411
+  fluentforward:
+    endpoint: 0.0.0.0:24224
+  prometheus:
+    config:
+      scrape_configs:
+        - job_name: 'otel-collector'
+          scrape_interval: 5s
+          static_configs:
+            - targets: ['exporter:8080']
+
+exporters:
+  otlphttp:
+    endpoint: https://<API_KEY>:<API_SECRET>@qryn.gigapipe.com
+    timeout: 30s
+  loki:
+    endpoint: https://<API_KEY>:<API_SECRET>@qryn.gigapipe.com/loki/api/v1/push
+    timeout: 30s
+  prometheusremotewrite:
+    endpoint: https://<API_KEY>:<API_SECRET>@qryn.gigapipe.com/prom/remote/write
+    timeout: 30s
+processors:
+  attributes:
+    actions:
+      - action: insert
+        key: loki.attribute.labels
+        value: sender
+
+extensions:
+  health_check:
+  pprof:
+  zpages:
+  memory_ballast:
+    size_mib: 1000
+
+service:
+  pipelines:
+    traces:
+      receivers: [zipkin]
+      exporters: [otlphttp]
+    logs:
+      receivers: [loki]
+      processors: [attributes]
+      exporters: [loki]
+    metrics:
+      receivers: [hostmetrics]
+      exporters: [prometheusremotewrite]
+```
+
 
 ?> _That's it!_ You're now _tracing spans to **qryn** using OTLP Collector! 
 
