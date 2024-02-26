@@ -3,7 +3,6 @@
 <h1 style="font-weight: normal;font-size: 30px;">
      <b>qryn</b>: <i>all-in-one polyglot monitoring and observability</i><br/>
      <a href="https://qryn.cloud" target="_blank">
-          <!-- <img src="https://user-images.githubusercontent.com/1423657/218818279-3efff74f-0191-498a-bdc4-f2650c9d3b49.gif"> -->
           <img src="https://github.com/metrico/qryn-docs/assets/1423657/a5164f98-d3ed-4638-afe5-c87d252c74af">
      </a>
 </h1>
