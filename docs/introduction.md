@@ -38,7 +38,6 @@ Want more than our APIs offer? Access your data using pure ClickHouse SQL _for f
 Looking for a hosted ClickHouse option? There are many great companies we work with delivering _state-of-the-art_ managed service instances and great benchmark results with predictable costs at any scale - all backed by extremely skilled technical teams, and compatible with _qryn_
 
 💜 [Gigapipe](https://gigapipe.com) _(featuring a hosted qryn:cloud integration)_<br>
-💛 [ClickHouse](https://clickhouse.com) _(fully compatible for production and development)_<br>
 💙 [Altinity](https://altinity.com) _(supporting the community and many of our customers)_<br>
 💚 [DoubleCloud](https://double.cloud/) _(very kind sponsor of our public demo resources)_<br>
 
