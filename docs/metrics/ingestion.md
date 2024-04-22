@@ -242,6 +242,8 @@ The following example enables all the supported formats at once. Filter the requ
 
 ```yml
 receivers:
+  fluentforward:
+    endpoint: 0.0.0.0:24224
   otlp:
     protocols:
       grpc:
@@ -256,8 +258,6 @@ receivers:
         endpoint: 0.0.0.0:14268
   zipkin:
     endpoint: 0.0.0.0:9411
-  fluentforward:
-    endpoint: 0.0.0.0:24224
   prometheus:
     config:
       scrape_configs:
@@ -265,6 +265,28 @@ receivers:
           scrape_interval: 5s
           static_configs:
             - targets: ['exporter:8080']
+connectors:
+  servicegraph:
+    latency_histogram_buckets: [ 100us, 1ms, 2ms, 6ms, 10ms, 100ms, 250ms ]
+    dimensions: [ cluster, namespace ]
+    store:
+      ttl: 2s
+      max_items: 1000
+    cache_loop: 2m
+    store_expiration_loop: 2s
+    virtual_node_peer_attributes:
+      - db.name
+      - rpc.service
+  spanmetrics:
+    namespace: span.metrics
+    exemplars:
+      enabled: false
+    dimensions_cache_size: 1000
+    aggregation_temporality: 'AGGREGATION_TEMPORALITY_CUMULATIVE'
+    metrics_flush_interval: 30s
+    metrics_expiration: 5m
+    events:
+      enabled: false
 processors:
   batch:
     send_batch_size: 10000
@@ -282,17 +304,6 @@ processors:
       - key: service.name
         value: "serviceName"
         action: upsert
-  spanmetrics:
-    metrics_exporter: otlp/spanmetrics
-    latency_histogram_buckets: [100us, 1ms, 2ms, 6ms, 10ms, 100ms, 250ms]
-    dimensions_cache_size: 1500
-  servicegraph:
-    metrics_exporter: otlp/spanmetrics
-    latency_histogram_buckets: [100us, 1ms, 2ms, 6ms, 10ms, 100ms, 250ms]
-    dimensions: [cluster, namespace]
-    store:
-      ttl: 2s
-      max_items: 200
   metricstransform:
     transforms:
       - include: calls_total
@@ -313,7 +324,7 @@ exporters:
       max_interval: 30s
       max_elapsed_time: 300s
     logs:
-       format: json
+      format: raw
   otlp/spanmetrics:
     endpoint: localhost:4317
     tls:
@@ -322,8 +333,6 @@ extensions:
   health_check:
   pprof:
   zpages:
-  memory_ballast:
-    size_mib: 1000
 
 service:
   extensions: [pprof, zpages, health_check]
@@ -334,15 +343,10 @@ service:
       exporters: [qryn]
     traces:
       receivers: [otlp, jaeger, zipkin]
-      processors: [memory_limiter, resourcedetection/system, resource, spanmetrics, servicegraph, batch]
-      exporters: [qryn]
-    # for align with https://grafana.com/docs/tempo/latest/metrics-generator/span_metrics/#how-to-run
-    metrics/spanmetrics:
-      receivers: [otlp]
-      processors: [metricstransform]
-      exporters: [qryn]
+      processors: [memory_limiter, resourcedetection/system, resource, batch]
+      exporters: [qryn, spanmetrics, servicegraph]
     metrics:
-      receivers: [prometheus]
+      receivers: [prometheus, spanmetrics, servicegraph]
       processors: [memory_limiter, resourcedetection/system, resource, batch]
       exporters: [qryn]
 ```
