@@ -387,7 +387,7 @@ otel-collector:
     restart: on-failure
 ```
 
-###### qryn collector `config.taml`
+###### qryn collector `config.yaml`
 The following example enables all the supported formats at once. Filter the required sections to build your configuration.
 
 ```yml

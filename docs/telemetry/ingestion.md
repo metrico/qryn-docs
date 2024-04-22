@@ -244,7 +244,7 @@ service:
 
 Insert logs, metrics, traces and profiling data in ClickHouse through the qryn ingestion APIs.
 
-###### qryn collector `config.taml`
+###### qryn collector `config.yaml`
 The following example outlines the usage of exporters with the qryn or qryn.cloud endpoints.
 ```
 receivers:
