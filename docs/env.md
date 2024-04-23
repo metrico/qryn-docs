@@ -25,6 +25,7 @@ The following `ENV` parameters can be used to control **qryn** parameters and it
 | CLICKHOUSE_PROTO  	    | http  	    | Clickhouse Protocol (http, https) |
 | CLICKHOUSE_TIMEFIELD   | record_datetime    | Clickhouse DateTime column for native queries |
 | CLUSTER_NAME           | undefined | Clickhouse Cluster name |
+| STORAGE_POLICY           | undefined | Clickhouse Cluster storage policy |
 | BULK_MAXAGE  		        | 2000  	    | Max Age for Bulk Inserts  		|
 | BULK_MAXSIZE  	        | 5000  	    | Max Size for Bulk Inserts  		|
 | BULK_MAXCACHE  	       | 50000  	    | Max Labels in Memory Cache  		|
