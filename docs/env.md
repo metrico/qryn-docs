@@ -50,6 +50,9 @@ The following `ENV` parameters can be used to control **qryn** parameters and it
 | HASH                   | xxhash64 | Hash function using for fingerprints. Currently supported `short-hash` and `xxhash64` (xxhash64 function)
 | ALERTMAN_URL           | false      | Alertmanager API URL, ie: `http://my_alertmanager_url:1234` |
 | ADVANCED_SAMPLES_ORDERING | timestamp_ns | Specify the 'ORDER BY' your samples table should use (for multiple use comma-separated list fingerprint,timestamp_ns) |
+| BULK_MAX_SIZE_BYTE |  | max size of the bulk in bytes _(empty = infinite)_ |
+| BULK_MAX_AGE_MS | 100  | max age of the bulk in milliseconds. Minimum value 100ms |
+| MODE | all  | `all`, `writer`, `reader`, `init_only` _(init db and exit)_
 
 #### Node Parameters
 For memory intensive executions, fine tune the NodeJS settings using `NODE_OPTIONS  `
