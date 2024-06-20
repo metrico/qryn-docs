@@ -100,6 +100,8 @@ The following `ENV` parameters can be used to configure and control **qryn:cloud
 | QRYN_SYSTEM_SETTINGS_CPU_MAX_PROCS | 0 | Set the limit of CPUs to be used by the prefork setting (Child processes), 0 indicates to use all available CPUs |
 | QRYN_SYSTEM_SETTINGS_CHANNELS_TIMESERIES | 16 | Set Channels for Time Series Data (Please do not modify unless directed) |
 | QRYN_SYSTEM_SETTINGS_CHANNELS_SAMPLE | 16 | Set Channels for Sample Data (Please do not modify unless directed) |
+|  |  |   |
+| QRYN_MULTITENANCE_SETTINGS_ENABLED | true | Enable Partitioning by OrgID. Requires mandatory `X-Scope-OrgID` |
 
 ?> The license is added without quotes. QRYNCLOUD_LICENSE=XXXXXX-XXXXXX-XXXXX
 
