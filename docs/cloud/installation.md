@@ -66,12 +66,18 @@ services:
       - QRYN_DATABASE_DATA_0_USER=default
       - QRYN_DATABASE_DATA_0_PASS=qryn1234
       - QRYN_DATABASE_DATA_0_DEBUG=true
+      - QRYN_DATABASE_DATA_0_TTL_DAYS=7
       - QRYN_DATABASE_DATA_0_SECURE=false
       - QRYN_DATABASE_DATA_0_ASYNC_INSERT=false
     command:
       - sh
       - -c
       - ./qryn-ctrl -initialize_db
+    logging:
+      driver: "local"
+      options:
+        max-size: "10m"
+        max-file: "5"
       
   qryn-writer:
     image: qxip/qryn-writer-cloud:latest
@@ -88,21 +94,18 @@ services:
       - QRYN_DATABASE_DATA_0_PORT=9000
       - QRYN_DATABASE_DATA_0_USER=default
       - QRYN_DATABASE_DATA_0_PASS=qryn1234
-      - QRYN_DATABASE_DATA_0_DEBUG=true
-      - QRYN_DATABASE_DATA_0_SECURE=false
-      - QRYN_DATABASE_DATA_0_ASYNC_INSERT=false
       - QRYN_HTTP_SETTINGS_PORT=3100
-      - QRYN_SYSTEM_SETTINGS_DB_TIMER=0.5
-      - QRYN_SYSTEM_SETTINGS_DB_BULK=1000
       - QRYN_LOG_SETTINGS_STDOUT=true
+      - QRYN_LOG_SETTINGS_LEVEL=info
       - QRYNCLOUD_LICENSE=XXXXXXXXX-XXXXXXXXXXXX-XXXXXXXX
-    command:
-      - sh
-      - -c
-      - ./cloki-writer
     depends_on:
       qryn-ctrl:
         condition: service_completed_successfully
+    logging:
+      driver: "local"
+      options:
+        max-size: "10m"
+        max-file: "5"
 
   qryn-go:
     image: qxip/qryn-go-cloud:latest
@@ -123,13 +126,17 @@ services:
       - QRYN_DATABASE_DATA_0_HTTPS=false
       - QRYN_DATABASE_DATA_0_DEBUG=true
       - QRYN_HTTP_SETTINGS_PORT=3200
-      - QRYN_SYSTEM_SETTINGS_DB_TIMER=0.5
-      - QRYN_SYSTEM_SETTINGS_DB_BULK=1000
       - QRYN_LOG_SETTINGS_STDOUT=true
+      - QRYN_LOG_SETTINGS_LEVEL=info
       - QRYNCLOUD_LICENSE=XXXXXXXXX-XXXXXXXXXXXX-XXXXXXXX
     depends_on:
       qryn-ctrl:
-        condition: service_completed_successfully  
+        condition: service_completed_successfully
+    logging:
+      driver: "local"
+      options:
+        max-size: "10m"
+        max-file: "5"
 ```
 
 ##### Run Compose
@@ -387,11 +394,11 @@ systemctl start qryn-go
 ## Data Rotation
 <a id="data-rotation" name="data-rotation"></a>
 
-*Requires qryn-writer v1.9.65 or higher*
+*Requires qryn-ctrl*
 
 ### Time based rotation
 
-The default rotation mechanism is configured in amount via amount of days for each node of the database configuration.
+The default rotation mechanism is configured via amount of days for each node of the database configuration.
 
 ##### JSON
 ```
@@ -411,7 +418,7 @@ QRYN_DATABASE_DATA_0_TTL_DAYS = 10
 
 ### Space based rotation
 
-To force data rotateion before the HD is full, admins can use the emergency sweeper settings, in charge of deleting the oldest partitions in the database if the overall size of all the tables is more than the configured value. 
+To force data rotation before the HD is full, admins can use the emergency sweeper settings, in charge of deleting the oldest partitions in the database if the overall size of all the tables is more than the configured value. 
 
 ##### JSON
 ```
@@ -587,13 +594,13 @@ The corresponding environment option is `QRYN_WRITER_WRITE_STATS=true`.
 After the configuration is on, the statistics start being written into the configured database.
 Scaling of the writer with this option on is not suggested as it can lead to the clickhouse CPU overhead.
 
-  ## Syncronous and asyncronous inserts
+  ## Synchronous and asynchronous inserts
   
   *since qryn-writer v1.9.84.beta-1*
   
-  In order to minimize the ingestion time qryn-writer includes the feature of asyncronous ingestion into the database.
+  In order to minimize the ingestion time qryn-writer includes the feature of asynchronous ingestion into the database.
   
-  Writer in the asyncronous insert mode returns 2XX code immediately after the data was sent into the db. 
+  Writer in the asynchronous insert mode returns 2XX code immediately after the data was sent into the db. 
   It doesn't wait for the database to approve an insert request. 
   The insert request lasts for 5 seconds waiting for bigger amount of data to be sent to the DB. 
   Then the insert request is finished. If an error appeared at the finishing stage of the request, all the data is lost.
@@ -633,6 +640,6 @@ Scaling of the writer with this option on is not suggested as it can lead to the
   
   `curl .... -H "X-Async-Insert: 0" ....` to force syncronous inserts
   
-  `curl .... -H "X-Async-Insert: 1" ....` to force asyncronous inserts  
+  `curl .... -H "X-Async-Insert: 1" ....` to force asynchronous inserts  
  <!-- tabs:end -->
   
