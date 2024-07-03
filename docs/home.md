@@ -28,3 +28,8 @@
 <img src="https://user-images.githubusercontent.com/1423657/184494381-15d20f5d-3d52-411b-9064-dfd2ccea7c1c.png" width=50 />&nbsp;
 <img src="https://user-images.githubusercontent.com/1423657/184494438-17d7ceb0-a62a-4819-9b1c-43d7f0baf802.png" width=50 />&nbsp;
 <img src="https://avatars.githubusercontent.com/u/54801242?s=200&v=4" width=50 /> <!--<br/>--> &nbsp;
+
+<br>
+
+### Help this project stay strong! 💪
+**qryn** is used daily by thousands of developers and engineers. Long nights x years were spent keeping this project strong and independent with no funding or investors. If your company uses qryn or if you love our work please consider supporting the project by becoming a [Github Sponsor](https://github.com/sponsors/QXIP) or by considering our [commercially supported edition](https://qryn.cloud).
