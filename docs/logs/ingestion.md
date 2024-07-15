@@ -36,7 +36,7 @@ Any Loki compatible client can be used with qryn without modifications
 
 ## ** Opentelemetry **
 
-?> **qryn** implements the **Opentelemetry/OTLPPush** API to ingest Logs
+?> **qryn** implements the **Opentelemetry/OTLPLogPush** API to ingest Logs
 
 ⚡ qryn is officially integrated with opentelemetry supports any log, trace or metric format
 Ingested data can be queried using any of the avialable qryn APIs (LogQL, PromQL, TraceQL)
@@ -44,6 +44,42 @@ Ingested data can be queried using any of the avialable qryn APIs (LogQL, PromQL
 #### OpenTelemetry Collector for qryn
 
 The [qryn otel-collector](https://github.com/metrico/otel-collector) is designed to store observability data _(Traces, Logs, Metrics)_ from multiple vendors/platforms into ClickHouse using qryn fingerprinting and table formats transparently accessible through qryn via _LogQL, PromQL, Tempo and Pyroscope_ queries.
+
+#### OTLP Log Push Example
+```yml
+receivers:
+  journald:
+    directory: /var/log/journal
+
+processors:
+  batch:
+    send_batch_size: 10000
+    timeout: 5s
+  memory_limiter:
+    check_interval: 2s
+    limit_mib: 1800
+    spike_limit_mib: 500
+  attributes:
+    actions:
+      - key: instance
+        action: insert
+        value: local2
+
+exporters:
+  otlphttp:
+    endpoint: "http://qryn:3100"
+
+extensions:
+  health_check:
+  pprof:
+  zpages:
+
+service:
+    logs:
+      receivers: [journald]
+      processors: [batch, attributes]
+      exporters: [otlphttp]
+```
 
 ##### Compatible Agents
 
