@@ -108,6 +108,6 @@ At the time of writing this document **qryn** supports the following APIs:
 | **Name**             | **Type**           | **QRYN**       | **QRYN Cloud** | **APIs.**                       |   
 |----------------------|--------------------|----------------|----------------|---------------------------------|
 | OTLPPush             | POST               | 🟢             |🟢              | `/v1/traces`         |
-| OTLPLogPush          | POST               | 🟢             |🟢              | `/v1/logs`         |
+| OTLPLogPush          | POST               | 🟢             |🟡              | `/v1/logs`         |
 
 * Any Log, Metric or Trace format supported via [qryn-collector](https://github.com/metrico/otel-collector)
