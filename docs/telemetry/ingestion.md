@@ -271,7 +271,40 @@ receivers:
           scrape_interval: 5s
           static_configs:
             - targets: ['exporter:8080']
-
+connectors:
+  servicegraph:
+    latency_histogram_buckets: [ 100us, 1ms, 2ms, 6ms, 10ms, 100ms, 250ms, 500ms, 1000ms, 1500ms, 2000ms, 5s, 10s, 30s, 60s ]
+    dimensions: [ cluster, namespace ]
+    store:
+      ttl: 2s
+      max_items: 1000
+    cache_loop: 2m
+    store_expiration_loop: 2s
+    virtual_node_peer_attributes:
+      - db.name
+      - rpc.service
+  spanmetrics:
+    namespace: span.metrics
+    exemplars:
+      enabled: false
+    dimensions_cache_size: 1000
+    aggregation_temporality: 'AGGREGATION_TEMPORALITY_CUMULATIVE'
+    metrics_flush_interval: 30s
+    metrics_expiration: 5m
+    events:
+      enabled: false
+processors:
+  attributes:
+    actions:
+      - action: insert
+        key: loki.attribute.labels
+        value: sender
+extensions:
+  health_check:
+  pprof:
+  zpages:
+  memory_ballast:
+    size_mib: 1000
 exporters:
   otlphttp:
     endpoint: https://<API_KEY>:<API_SECRET>@qryn.gigapipe.com
@@ -282,31 +315,18 @@ exporters:
   prometheusremotewrite:
     endpoint: https://<API_KEY>:<API_SECRET>@qryn.gigapipe.com/prom/remote/write
     timeout: 30s
-processors:
-  attributes:
-    actions:
-      - action: insert
-        key: loki.attribute.labels
-        value: sender
-
-extensions:
-  health_check:
-  pprof:
-  zpages:
-  memory_ballast:
-    size_mib: 1000
-
 service:
+  extensions: [pprof, zpages, health_check]
   pipelines:
     traces:
       receivers: [zipkin]
-      exporters: [otlphttp]
+      exporters: [otlphttp, spanmetrics, servicegraph]
     logs:
-      receivers: [loki]
+      receivers: [fluentforward, otlp]
       processors: [attributes]
       exporters: [loki]
     metrics:
-      receivers: [hostmetrics]
+      receivers: [prometheus, spanmetrics, servicegraph]
       exporters: [prometheusremotewrite]
 ```
 
