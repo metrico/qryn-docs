@@ -44,7 +44,7 @@ docker pull qxip/qryn-cloud-collector
 Define a docker compose file to configure each element.
 
 ```yml
-version: '3.1'
+version: '3.8'
 
 services:
    qryn-collector:

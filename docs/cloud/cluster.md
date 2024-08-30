@@ -21,14 +21,14 @@ The distribution/sharding is `fingerprint` based to consist session to the same 
 1. Create a compose yaml file with two clickhouse servers:
 
 ```yaml
-version: '2.1'
+version: '3.8'
 networks:
   common:
     driver: bridge
 
 services:
   clickhouse:
-    image: clickhouse/clickhouse-server:22.6.4.35
+    image: altinity/clickhouse-server:23.8.11.29.altinitystable
     container_name: clickhouse.min.deploy
     hostname: clickhouse.min.deploy
     domainname: clickhouse.min.deploy
@@ -40,7 +40,7 @@ services:
       - ./config.xml:/etc/clickhouse-server/config.xml
       - ./_clickhouse-data:/var/lib/clickhouse
   clickhouse2:
-    image: clickhouse/clickhouse-server:22.6.4.35
+    image: altinity/clickhouse-server:23.8.11.29.altinitystable
     container_name: clickhouse2.min.deploy
     hostname: clickhouse2.min.deploy
     domainname: clickhouse2.min.deploy
@@ -55,7 +55,7 @@ services:
 
 2. Export the default config.xml file from clickhouse server docker image:
 ```
-docker run -it clickhouse/clickhouse-server:22.6.4.35 cat /etc/clickhouse-server/config.xml >config.xml
+docker run -it clickhouse/clickhouse-server cat /etc/clickhouse-server/config.xml >config.xml
 ```
 
 3. `vi config.xml` or use your preferred text editor
