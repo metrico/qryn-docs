@@ -20,6 +20,20 @@ The following `ENV` parameters can be used to configure and control **qryn:cloud
 
 <!-- tabs:start -->
 
+#### ** qryn-ctrl **
+<a id=ctrl name=ctrl></a>
+| ENV   	                |Default   	|Usage   	|
+|------------------------|---	    |---		|
+| QRYN_DATABASE_DATA_0_NAME | qryn | qryn DB name |
+| QRYN_DATABASE_DATA_0_HOST | "http://localhost" | Clickhouse Server address |
+| QRYN_DATABASE_DATA_0_PORT | 9000 | Clickhouse Binary Port |
+| QRYN_DATABASE_DATA_0_USER | default | Clickhouse Username |
+| QRYN_DATABASE_DATA_0_PASS | qryn | Clickhouse Password |
+| QRYN_DATABASE_DATA_0_DEBUG | false | Set to true to see debug messages about database in log |
+| QRYN_DATABASE_DATA_0_TTL_DAYS | 0 | Set the data rotation policy - aka for how long to keep data before pruning it. Most be overrided. |
+| QRYN_DATABASE_DATA_0_SECURE | false | Set to true when Clickhouse is hosted on HTTPS (optional) |
+| QRYN_DATABASE_DATA_0_ASYNC_INSERT | false | Set to true if you want to ingest data into the DB asyncronously to data being received |
+
 #### ** qryn-go **
 <a id=api name=api></a>
 

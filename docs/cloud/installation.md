@@ -8,7 +8,7 @@
 
 !> qryn:cloud requires activation & pull tokens! Please [contact us](mailto:info@qxip.net) to obtain a license.
 
-?> ClickHouse Server LTS version >=22 and <=22.9 is suggested. _22.10+ not yet supported._
+?> ClickHouse Server LTS version >=23 is suggested.
 
 ## 📦 Installation
 
@@ -52,7 +52,7 @@ Define a docker compose file to configure each element.
 ?> Adjust the clickhouse server and authentication details to match your setup
 
 ```yml
-version: '3.1'
+version: '3.8'
 
 services:
    qryn-ctrl:
@@ -161,6 +161,10 @@ Install qryn on your system using `kubernetes`
 Use `Kubernetes` and `helm` to get started using either a local or cloud ClickHouse instance.
 
 ?> You need to have a Kubernetes cluster, and the kubectl command-line tool must be configured to communicate with your cluster. It is recommended to run this tutorial on a cluster with at least two nodes that are not acting as control plane hosts.
+
+Follow this [guide](https://github.com/metrico/qryn-cloud-helm) to get started with K8s helm charts.
+
+**Any other steps below show you how to run Qryn in K8s without Helm.**
 
 ##### Pull the qryn service containers
 ```bash
@@ -342,7 +346,10 @@ dpkg -i qryn-writer-cloud_vx.x.x_amd64.deb
 dpkg -i qryn-go-cloud_vx.x.x_amd64.deb
 ```
 ##### Configure
+Configure per [here](./config.md)
 ```bash
+vim /etc/qryn-writer/qryn-writer.json
+vim /etc/qryn-go/qryn-go.json
 ```
 ##### Run
 ```bash
@@ -372,7 +379,7 @@ dpkg -i qryn-writer-cloud_vx.x.x_x86_64.rpm
 dpkg -i qryn-go-cloud_vx.x.x_x86_64.rpm
 ```
 ##### Configure
-Configure per [here](/cloud/config.md)
+Configure per [here](./config.md)
 ```bash
 vim /etc/qryn-writer/qryn-writer.json
 vim /etc/qryn-go/qryn-go.json
@@ -414,7 +421,7 @@ The default rotation mechanism is configured via amount of days for each node of
 QRYN_DATABASE_DATA_0_TTL_DAYS = 10
 ```
 
-?> The default days value is "7"
+?> The default days value is "0". It **must** be configured during the setup.
 
 ### Space based rotation
 
