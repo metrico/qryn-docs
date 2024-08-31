@@ -150,6 +150,8 @@ Ingested data can be queried using any of the avialable qryn APIs (LogQL, PromQL
 | **Name**             | **Type**           | **QRYN**       | **QRYN Cloud** | **APIs.**                       |   
 |----------------------|--------------------|----------------|----------------|---------------------------------|
 | OTLPPush             | POST               | 🟢             |🟢             | `/v1/traces`         |
+| OTLPLogPush          | POST               | 🟢             |🟡              | `/v1/logs`         |
+
 
 #### OpenTelemetry Collector for qryn
 
