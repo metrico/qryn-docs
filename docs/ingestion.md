@@ -2,9 +2,7 @@
 
 Ingesting data with **qryn** is easy and painless thanks to our **polyglot** design. 
 
-_Choose a supported integration and start shipping using your preferred agent or library._
-
-> [Supported APIs](https://qryn.metrico.in/#/support) include: _Loki, Datadog, Elastic Prometheus, Tempo, Graphite, Pyroscope and others_
+Use any **Agent** or **Library** compatible with _Opentelemetry, Loki, Datadog, Elastic, Prometheus, Tempo, Graphite, Pyroscope & more_
 
 <!-- tabs:start -->
 
