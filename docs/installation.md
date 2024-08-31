@@ -312,85 +312,111 @@ qryn
 
 ![image](https://user-images.githubusercontent.com/1423657/184507942-cb195a16-b6d1-451a-9d80-00550f261048.png ':size=100')
 
-Each release is automatically pushed to [docker hub](https://hub.docker.com/r/qxip/qryn/tags) and [ghcr](ghcr.io/metrico/qryn:2.1.11)
+## Requirements
+- Kubernetes 1.19+
+- Helm 3.7+
 
-```
-qxip/qryn:latest
-```
-```
-ghcr.io/metrico/qryn:latest
-```
+## Install Chart Repository
 
-##### Helm
-Use `Kubernetes` and `helm` to get started using either a local or cloud ClickHouse instance.
-
-?> You need to have a Kubernetes cluster, and the kubectl command-line tool must be configured to communicate with your cluster. It is recommended to run this tutorial on a cluster with at least two nodes that are not acting as control plane hosts.
-
-Follow this [guide](https://github.com/metrico/qryn-k8s) to get started.
-
-##### Rapid Example
 ```bash
-kubectl apply -f qryn-service.yaml,qryn-deployment.yaml
+helm repo add qryn-helm https://metrico.github.io/qryn-helm/
+helm repo update
 ```
 
-###### `qryn-deployment.yml`
-```yaml
-apiVersion: apps/v1
-kind: Deployment
-metadata:
-  name: qryn
-  labels:
-    io.metrico.service: qryn
-spec:
-  replicas: 1
-  selector:
-    matchLabels:
-      io.metrico.service: qryn
-  strategy: {}
-  template:
-    metadata:
-      annotations:
-        qryn.cmd: qryn.dev
-      creationTimestamp: null
-      labels:
-        io.metrico.service: qryn
-    spec:
-      containers:
-        - env:
-            - name: CLICKHOUSE_AUTH
-              value: "default:password"
-            - name: CLICKHOUSE_PORT
-              value: 8123
-            - name: CLICKHOUSE_SERVER
-              value: "clickhouse"
-          image: qxip/qryn:latest
-          name: qryn
-          ports:
-            - containerPort: 3100
-          resources: {}
-      restartPolicy: Always
-status: {}
+See [helm repository](https://helm.sh/docs/helm/helm_repo/) for command documentation.
+
+## Install Chart
+To deploy [qryn](https://github.com/metrico/qryn) using this Helm chart, use the following command:
+
+```bash
+helm repo add qryn-helm https://metrico.github.io/qryn-helm/
+helm install [RELEASE_NAME] qryn-helm/qryn-helm --version 0.1.1
 ```
 
-###### `qryn-service.yml`
-```yaml
-apiVersion: v1
-kind: Service
-metadata:
-  creationTimestamp: null
-  labels:
-    io.metrico.service: qryn
-  name: qryn
-spec:
-  ports:
-    - name: "3100"
-      port: 3100
-      targetPort: 3100
-  selector:
-    io.metrico.service: qryn
-status:
-  loadBalancer: {}
-```
+## Documentation
+
+See [helm install](https://helm.sh/docs/helm/helm_install/) for further documentation.
+
+For customization, you can provide a `values.yaml` file or use `--set` flags to override specific configurations during installation.
+
+Feel free to modify the configurations based on your requirements and environment.
+
+## Global parameters
+
+| Parameter                | Value         |
+|--------------------------|---------------|
+| kubernetesClusterDomain  | cluster.local |
+
+## Common parameters
+
+| Parameter                              | Value         |
+|----------------------------------------|---------------|
+| nameOverride                           | ""            |
+| fullnameOverride                       | ""            |
+| imageCredentials                        | {}            |
+| replicas                               | 1             |
+| service.type                           | ClusterIP     |
+| service.port                           | 3100          |
+| podAnnotations                         | {}            |
+| podLabels                              | qryn          |
+| nodeSelector                           | {}            |
+| tolerations                            | []            |
+| affinity                               | {}            |
+| resources.limits.cpu                   | 200m          |
+| resources.limits.memory                | 256Mi         |
+| resources.requests.cpu                 | 100m          |
+| resources.requests.memory              | 128Mi         |
+| autoscaling.enabled                    | true          |
+| autoscaling.minReplicas                | 1             |
+| autoscaling.maxReplicas                | 5             |
+| autoscaling.targetCPUUtilizationPercentage | 80        |
+| autoscaling.targetMemoryUtilizationPercentage | 80      |
+| securityContext                        | {}            |
+| ingress.enabled                        | false         |
+| ingress.className                      | ""            |
+| ingress.annotations                    | {}            |
+| ingress.hosts                          | []            |
+| ingress.tls                            | []            |
+
+## Qryn image parameters
+
+| Environment Variable             | Default        | Usage                                     |
+|---------------------------------|----------------|-------------------------------------------|
+| CLICKHOUSE_SERVER               | localhost      | Clickhouse Server address                |
+| CLICKHOUSE_PORT                 | 8123           | Clickhouse Server port                   |
+| CLICKHOUSE_DB                   | qryn           | Clickhouse Database Name                 |
+| CLICKHOUSE_AUTH                 | default:       | Clickhouse Authentication (user:password)|
+| CLICKHOUSE_PROTO                | http           | Clickhouse Protocol (http, https)        |
+| CLICKHOUSE_TIMEFIELD            | record_datetime| Clickhouse DateTime column for native queries|
+| CLUSTER_NAME                    | undefined      | Clickhouse Cluster name                  |
+| BULK_MAXAGE                     | 2000           | Max Age for Bulk Inserts                 |
+| BULK_MAXSIZE                    | 5000           | Max Size for Bulk Inserts                |
+| BULK_MAXCACHE                   | 50000          | Max Labels in Memory Cache               |
+| LABELS_DAYS                     | 7              | Max Days before Label rotation           |
+| SAMPLES_DAYS                    | 7              | Max Days before Timeseries rotation      |
+| HOST                            | 0.0.0.0        | HTTP API IP                               |
+| PORT                            | 3100           | HTTP API PORT                             |
+| QRYN_LOGIN                      | undefined      | Basic HTTP Username                       |
+| QRYN_PASSWORD                   | undefined      | Basic HTTP Password                       |
+| READONLY                        | false          | Readonly Mode, no DB Init                 |
+| OMIT_CREATE_TABLES              | false          | Omit database provisioning on startup. Dangerous.|
+| FASTIFY_BODYLIMIT               | 5242880        | API Maximum payload size in bytes        |
+| FASTIFY_REQUESTTIMEOUT          | 0              | API Maximum Request Timeout in ms        |
+| FASTIFY_MAXREQUESTS             | 0              | API Maximum Requests per socket           |
+| FASTIFY_METRICS                 | false          | API /metrics exporter                     |
+| ADVANCED_PROMETHEUS_MAX_SAMPLES | 5000000        | Max samples per a promql request         |
+| CORS_ALLOW_ORIGIN               | *              | CORS Allow Origin, default to any         |
+| TEMPO_SPAN                      | 24             | Default span for Tempo queries in hours  |
+| TEMPO_TAGTRACE                  | false          | Optional tagging of TraceID (expensive)  |
+| DEBUG                           | false          | Debug Mode (for backwards compatibility) |
+| LOG_LEVEL                       | info           | Log Level                                 |
+| HASH                            | xxhash64       | Hash function using for fingerprints. Currently supported short-hash and xxhash64 (xxhash64 function)|
+| ALERTMAN_URL                    | false          | Alertmanager API URL, i.e., http://my_alertmanager_url:1234|
+| ADVANCED_SAMPLES_ORDERING       | timestamp_ns   | Specify the 'ORDER BY' your samples table should use (for multiple use comma-separated list fingerprint,timestamp_ns)|
+
+## ENV Settings
+For more information about qryn environment variables, visit [qryn Environments](https://qryn.metrico.in/#/env).
+
 
 ?> That's it - demo logs included! Just access your stack using qryn-view or Grafana
 
