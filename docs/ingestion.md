@@ -1,6 +1,10 @@
 # 🔻 Data Ingestion
 
-Ingesting data with **qryn** is easy and painless. _Choose a supported integration and start shipping._
+Ingesting data with **qryn** is easy and painless thanks to our **polyglot** design. 
+
+_Choose a supported integration and start shipping using your preferred agent or library._
+
+> [Supported APIs](https://qryn.metrico.in/#/support) include: _Loki, Datadog, Elastic Prometheus, Tempo, Graphite, Pyroscope and others_
 
 <!-- tabs:start -->
 
