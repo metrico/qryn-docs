@@ -113,12 +113,15 @@ Get an instant [qryn polyglot demo](https://github.com/metrico/qryn-oss-demo) w/
 
 ![image](https://github.com/user-attachments/assets/9d041e13-9b2a-4f03-89bb-f9e208525e7e ':size=400')
 
+Get started in seconds using **qryn** with Docker - _batteries included!_
 
-## Requirements
+Each _qryn_ release is automatically pushed to [docker hub](https://hub.docker.com/r/qxip/qryn/tags) and [ghcr](ghcr.io/metrico/qryn:latest)
+
+### Requirements
 - Kubernetes 1.19+
 - Helm 3.7+
 
-## Install Chart Repository
+### Install Chart Repository
 
 ```bash
 helm repo add qryn-helm https://metrico.github.io/qryn-helm/
@@ -127,7 +130,7 @@ helm repo update
 
 See [helm repository](https://helm.sh/docs/helm/helm_repo/) for command documentation.
 
-## Install Chart
+### Install Chart
 To deploy [qryn](https://github.com/metrico/qryn) using this Helm chart, use the following command:
 
 ```bash
@@ -135,7 +138,7 @@ helm repo add qryn-helm https://metrico.github.io/qryn-helm/
 helm install [RELEASE_NAME] qryn-helm/qryn-helm --version 0.1.1
 ```
 
-## Documentation
+#### Documentation
 
 See [helm install](https://helm.sh/docs/helm/helm_install/) for further documentation.
 
@@ -143,13 +146,13 @@ For customization, you can provide a `values.yaml` file or use `--set` flags to 
 
 Feel free to modify the configurations based on your requirements and environment.
 
-## Global parameters
+### Global parameters
 
 | Parameter                | Value         |
 |--------------------------|---------------|
 | kubernetesClusterDomain  | cluster.local |
 
-## Common parameters
+## global parameters
 
 | Parameter                              | Value         |
 |----------------------------------------|---------------|
@@ -180,7 +183,7 @@ Feel free to modify the configurations based on your requirements and environmen
 | ingress.hosts                          | []            |
 | ingress.tls                            | []            |
 
-## Qryn image parameters
+### qryn container parameters
 
 | Environment Variable             | Default        | Usage                                     |
 |---------------------------------|----------------|-------------------------------------------|
@@ -220,7 +223,7 @@ Feel free to modify the configurations based on your requirements and environmen
 For more information about qryn environment variables, visit [qryn Environments](https://qryn.metrico.in/#/env).
 
 
-?> That's it - demo logs included! Just access your stack using qryn-view or Grafana
+?> That's it - you're ready to run qryn in Kubernetes! Access your stack using qryn-view or Grafana
 
 
 
