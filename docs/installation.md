@@ -226,7 +226,6 @@ For more information about qryn environment variables, visit [qryn Environments]
 ?> That's it - you're ready to run qryn in Kubernetes! Access your stack using qryn-view or Grafana
 
 
-
 #### ** NPM **
 <a id=npm name=npm></a>
 
@@ -332,53 +331,6 @@ pm2 startup
 
 ?> Intensive load? Run multiple process instances for ingestion and querying
 
-
-<!--
-#### ** PM2 **
-<a id=pm2 name=pm2></a>
-
-![image](https://user-images.githubusercontent.com/1423657/184507827-9087fc2d-457b-42cd-ae2e-1c894160745b.png ':size=100')
-
-Install `qryn` and `pm2` as global packages on your system using `npm`
-
-```bash
-sudo npm install -g qryn pm2
-```
-
-Start `qryn` using [ENV](env.md) variables for its settings:
-```bash
-CLICKHOUSE_SERVER="my.clickhouse.server" \
-CLICKHOUSE_AUTH="default:password" \
-CLICKHOUSE_DB="qryn" \
-pm2 start qryn
-```
-
-#### ClickHouse Cluster
-To use `qryn` with a [Clickhouse Cluster](https://clickhouse.com/docs/en/architecture/cluster-deployment), include a `CLUSTER_NAME` ENV variable with the name of the [ClickHouse cluster](https://clickhouse.com/docs/en/architecture/cluster-deployment) you want to use.
-
-```
-CLICKHOUSE_SERVER="my.cloud.service" \
-CLICKHOUSE_PORT=9443 \
-CLICKHOUSE_PROTO="https" \
-CLICKHOUSE_AUTH="admin:supersecretpassword" \
-CLICKHOUSE_DB="qryn" \
-CLUSTER_NAME="mycluster" \
-pm2 start qryn
-```
-
-
-Save your settings and install as a system service
-```
-pm2 save
-pm2 startup
-```
-
-?> That's it! You are ready to access the stack using qryn-view or Grafana
-
-?> Intensive load? Run pm2 in `cluster` mode to leverage multiple cpu threads
-
--->
-
 #### ** Bun **
 <a id=bun name=bun></a>
 
@@ -415,46 +367,6 @@ pm2 start --interpreter ~/.bun/bin/bun qryn
 ```
 
 ?> That's it! You are ready to use **qryn** with bun runtime
-
-
-<!--
-
-#### ** GIT **
-<a id=git name=git></a>
-
-![image](https://user-images.githubusercontent.com/1423657/184507866-9e43ae95-6974-4f0b-bdf3-7a8d05f43d8d.png ':size=100')
-
-Clone the qryn repository, install with `npm`and run using `nodejs` 16.x *(or higher)*
-```bash
-git clone https://github.com/metrico/qryn && cd qryn
-npm install
-```
-
-Start `qryn` using [ENV](env.md) variables for its settings:
-
-```bash
-CLICKHOUSE_SERVER="my.clickhouse.server" \
-CLICKHOUSE_AUTH="default:password" \
-CLICKHOUSE_DB="qryn" \
-node qryn.js
-```
-
-#### ClickHouse Cluster
-To use `qryn` with a [Clickhouse Cluster](https://clickhouse.com/docs/en/architecture/cluster-deployment), include a `CLUSTER_NAME` ENV variable with the name of the [ClickHouse cluster](https://clickhouse.com/docs/en/architecture/cluster-deployment) you want to use.
-
-```
-CLICKHOUSE_SERVER="my.cloud.service" \
-CLICKHOUSE_PORT=9443 \
-CLICKHOUSE_PROTO="https" \
-CLICKHOUSE_AUTH="admin:supersecretpassword" \
-CLICKHOUSE_DB="qryn" \
-CLUSTER_NAME="mycluster" \
-qryn
-```
-
-?> That's it! You are ready to access the stack using qryn-view or Grafana
-
--->
 
 #### ** ECS **
 <a id=aws name=aws></a>
