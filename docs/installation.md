@@ -544,10 +544,10 @@ Review all your App settings and launch in your preferred region
 
 <img src="https://j6z7x9q7.rocketcdn.me/wp-content/uploads/2019/09/Heatsink-case-goud-1.jpg" width=150 />
 
-Install a full **qryn** stack on **aarch64** platforms
+Install a full **qryn** stack on any tiny **aarch64** platform
 
 ### Requirements
-- RPI 4 (aarch64)
+- RPI 4 or similar (aarch64)
 - ARMv8 64-Bit OS (DietPI or Raspbian)
 
 #### Install ClickHouse (aarch64)
