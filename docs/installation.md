@@ -111,7 +111,8 @@ Get an instant [qryn polyglot demo](https://github.com/metrico/qryn-oss-demo) w/
 #### ** K8s **
 <a id=k8s name=k8s></a>
 
-![image](https://user-images.githubusercontent.com/1423657/184507942-cb195a16-b6d1-451a-9d80-00550f261048.png ':size=100')
+![image](https://github.com/user-attachments/assets/9d041e13-9b2a-4f03-89bb-f9e208525e7e ':size=400'))
+
 
 ## Requirements
 - Kubernetes 1.19+
