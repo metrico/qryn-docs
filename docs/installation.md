@@ -274,8 +274,17 @@ qryn
 If the variable is provided, the system automatically starts in the clustered clickhouse mode.
 Make sure that `internal_replication=1` option is set in your ClickHouse Server config.
 
+#### PM2
 
-##### Cluster
+Start `qryn` using pm2 and [ENV](env.md) variables for its settings:
+```bash
+CLICKHOUSE_SERVER="my.clickhouse.server" \
+CLICKHOUSE_AUTH="default:password" \
+CLICKHOUSE_DB="qryn" \
+pm2 start qryn
+```
+
+##### PM2 Cluster
 You can cluster multiple instance of `qryn` using pm2 clustering or other techniques:
 
 ```
@@ -300,13 +309,31 @@ module.exports = {
 }
 ```
 
+To use `qryn` with a [Clickhouse Cluster](https://clickhouse.com/docs/en/architecture/cluster-deployment), include a `CLUSTER_NAME` ENV variable with the name of the [ClickHouse cluster](https://clickhouse.com/docs/en/architecture/cluster-deployment) you want qryn to use.
+
+```
+CLICKHOUSE_SERVER="my.cloud.service" \
+CLICKHOUSE_PORT=9443 \
+CLICKHOUSE_PROTO="https" \
+CLICKHOUSE_AUTH="admin:supersecretpassword" \
+CLICKHOUSE_DB="qryn" \
+CLUSTER_NAME="mycluster" \
+pm2 start qryn
+```
+
+Save your pm2 settings and install as a system service
+```
+pm2 save
+pm2 startup
+```
+
 
 ?> That's it! You are ready to access the stack using qryn-view or Grafana
 
 ?> Intensive load? Run multiple process instances for ingestion and querying
 
 
-
+<!--
 #### ** PM2 **
 <a id=pm2 name=pm2></a>
 
@@ -350,6 +377,7 @@ pm2 startup
 
 ?> Intensive load? Run pm2 in `cluster` mode to leverage multiple cpu threads
 
+-->
 
 #### ** Bun **
 <a id=bun name=bun></a>
@@ -389,6 +417,7 @@ pm2 start --interpreter ~/.bun/bin/bun qryn
 ?> That's it! You are ready to use **qryn** with bun runtime
 
 
+<!--
 
 #### ** GIT **
 <a id=git name=git></a>
@@ -424,6 +453,8 @@ qryn
 ```
 
 ?> That's it! You are ready to access the stack using qryn-view or Grafana
+
+-->
 
 #### ** ECS **
 <a id=aws name=aws></a>
