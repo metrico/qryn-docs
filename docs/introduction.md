@@ -8,7 +8,7 @@ _Designed from the ground up to handle infinite Logs, Metrics, Traces and Profil
 
 > The project started in 2018 as "cLoki" and gradually evolved from a prototype into a mature, stable and independent observability stack able to act as a _drop-in alternative_ to Grafana Cloud/LGTM and API compatible with multiple query and ingestion formats from popular observability vendors such as _Opentelemetry, InfluxDB, Elastic, Datadog and many more_. The beauty of qryn is in its simplicity, acting as a _lightweight transpiler_ on top of OLAP SQL storage without reinventing the wheel and offering its users performance, security and full ownership and control of their data without limitations and without obscure formats. _Less is more, without giving up any feature._
 
-**qryn** is actively developed, maintained and trusted by thousands of integrators. qryn is here to stay._
+👇 **qryn** is actively developed, maintained and trusted by thousands of integrators. qryn is here to stay._ 👇
 
 <img src="https://camo.githubusercontent.com/0dd3a1ac0a2e9672c2f7b660982a2ef16de9568f6124afb78ca4f3a15ed84c50/68747470733a2f2f6170692e737461722d686973746f72792e636f6d2f7376673f7265706f733d6d65747269636f2f7172796e26747970653d54696d656c696e65" />
 
