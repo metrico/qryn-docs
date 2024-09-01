@@ -4,8 +4,13 @@
 
 **qryn** is a _fast, thin, all-in-one_ _**polyglot**_ observability stack built on top of _**ClickHouse**_
 
-_Designed from the ground up to handle infinite Logs, Metrics and Traces, right out of the box - batteries included!_ 🔋
+_Designed from the ground up to handle infinite Logs, Metrics, Traces and Profiles right out of the box - batteries included!_ 🔋
 
+> The project started in 2018 as "cLoki" and gradually evolved from a prototype into a mature, stable and independent observability stack able to act as a _drop-in alternative_ to Grafana Cloud/LGTM and API compatible with multiple query and ingestion formats from popular observability vendors such as _Opentelemetry, InfluxDB, Elastic, Datadog and many more_. The beauty of qryn is in its simplicity, acting as a _lightweight transpiler_ on top of OLAP SQL storage without reinventing the wheel and offering its users performance, security and full ownership and control of their data without limitations and without obscure formats. _Less is more, without giving up any feature._
+
+**qryn** is actively developed, maintained and trusted by thousands of integrators. qryn is here to stay._
+
+<img src="https://camo.githubusercontent.com/0dd3a1ac0a2e9672c2f7b660982a2ef16de9568f6124afb78ca4f3a15ed84c50/68747470733a2f2f6170692e737461722d686973746f72792e636f6d2f7376673f7265706f733d6d65747269636f2f7172796e26747970653d54696d656c696e65" />
 
 <!-- tabs:start -->
 
@@ -13,7 +18,7 @@ _Designed from the ground up to handle infinite Logs, Metrics and Traces, right 
 
 🎉 _No custom formats to integrate_ 
 
-Our Ingestion APIs are transparently compatible with [Loki](logs/ingestion#logql), [Prometheus](metrics/ingestion#prometheus), [Tempo](telemetry/ingestion#zipkin), [InfluxDB](metrics/ingestion#influx), [Elastic](logs/ingestion#elastic) _and others_
+Our Ingestion APIs are transparently compatible with [Loki](logs/ingestion#logql), [Prometheus](metrics/ingestion#prometheus), [Tempo](telemetry/ingestion#zipkin), [Pyroscope](https://qryn.metrico.in/#/profiling/ingestion), [InfluxDB](metrics/ingestion#influx), [Elastic](logs/ingestion#elastic) _and others_
 
 **qryn** is ready to use with a variery of Agents such as _[Promtail, Grafana-Agent, Vector, Logstash, Telegraf](ingestion.md) and many more_
 
@@ -21,7 +26,7 @@ Our Ingestion APIs are transparently compatible with [Loki](logs/ingestion#logql
 
 🎉 _No custom query languages to learn_ 
 
-Start querying logs, metrics and traces instantly using [LogQL, PromQL, Flux or Tempo/Zipkin](getting-started.md)
+Start querying logs, metrics and traces instantly using [LogQL, PromQL, TempoQL, Pyroscope](getting-started.md)
 
 **qryn** is ready to use with [Grafana datasources](guide/datasources) or using the integrated [View UI](getting-started?id=view) and [CLI](getting-started?id=cli)
 
@@ -61,4 +66,4 @@ Looking for a hosted qryn option? Gigapipe powers our fully managed, pay as you 
 
 <br> 
 
-<img src="https://user-images.githubusercontent.com/1423657/218818279-3efff74f-0191-498a-bdc4-f2650c9d3b49.gif">
+<img src="https://github.com/metrico/qryn-docs/assets/1423657/a5164f98-d3ed-4638-afe5-c87d252c74af">
