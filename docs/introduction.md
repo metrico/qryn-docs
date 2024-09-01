@@ -1,6 +1,6 @@
 # 👋 Introduction
  
-?> ... it's pronounced /ˈkwɪr..ɪŋ/ or just _querying_ 
+?> ... it's pronounced /ˈkwɪr..ɪŋ/ or just **_querying_**
 
 **qryn** is a _fast, thin, all-in-one_ _**polyglot**_ observability stack built on top of _**ClickHouse**_
 
