@@ -45,6 +45,7 @@ Looking for a hosted ClickHouse option? There are many great companies we work w
 💜 [Gigapipe](https://gigapipe.com) _(featuring a hosted qryn:cloud integration)_<br>
 💙 [Altinity](https://altinity.com) _(supporting the community and many of our customers)_<br>
 💚 [DoubleCloud](https://double.cloud/) _(very kind sponsor of our public demo resources)_<br>
+🟨 [Clickhouse Cloud](https://clickhouse.com/) _(popular with users, free trials)_<br>
 
 
 #### ** Hosted **
@@ -56,9 +57,9 @@ Looking for a hosted ClickHouse option? There are many great companies we work w
 -->
 
 ### 👑 Polyglot Cloud
-Looking for a hosted qryn option? Gigapipe powers our fully managed, pay as you go **qryn** experience.
+Looking for a hosted qryn option? Gigapipe powers our fully managed, flat priced **qryn** experience.
 
-💜 [qryn.cloud](https://qryn.cloud) _(pay as you go, managed qryn and clickhouse services)_<br>
+💜 [qryn.cloud](https://qryn.cloud) _(fixed cost, managed qryn + clickhouse services)_<br>
 
 
 
