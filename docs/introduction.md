@@ -20,9 +20,7 @@ _Designed from the ground up to handle infinite Logs, Metrics, Traces, Profiles 
 
 🎉 _No custom formats to integrate_ 
 
-Our Ingestion APIs are transparently compatible with [Loki](logs/ingestion#logql), [Prometheus](metrics/ingestion#prometheus), [Tempo](telemetry/ingestion#zipkin), [Pyroscope](https://qryn.metrico.in/#/profiling/ingestion), [InfluxDB](metrics/ingestion#influx), [Elastic](logs/ingestion#elastic) _and others_
-
-**qryn** is ready to use with a variery of Agents such as _[Promtail, Grafana-Agent, Vector, Logstash, Telegraf](ingestion.md) and many more_
+Our Ingestion APIs are transparently compatible with [Loki](logs/ingestion#logql), [Prometheus](metrics/ingestion#prometheus), [Tempo](telemetry/ingestion#zipkin), [Pyroscope](https://qryn.metrico.in/#/profiling/ingestion), [InfluxDB](metrics/ingestion#influx), [Elastic](logs/ingestion#elastic) _and others_, ready to use with a variery of Agents such as _[Promtail, Grafana-Agent, Vector, Logstash, Telegraf](ingestion.md) and many more_
 
 #### ** Querying **
 
