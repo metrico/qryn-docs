@@ -29,7 +29,7 @@ At the time of writing this document **qryn** supports the following APIs:
 | Query Traces (JSON)  | GET                | 🟢                  | 🟢             | `/api/traces/{traceId}/json`      |
 | Trace Tags           | GET                | 🟢                  | 🟢             | `/api/search/tags`                | 
 | Trace Tag Values     | GET                | 🟢                  | 🟢             | `/api/search/tag/{name}/values`   |
-| Push Cloud.          | POST               | 🟡                  | 🟢             | `/tempo/spans`                    |
+| Push Cloud           | POST               | 🟢                  | 🟢             | `/tempo/spans`                    |
 
 
 ## Prometheus API
