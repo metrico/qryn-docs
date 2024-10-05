@@ -31,5 +31,9 @@
 
 <br>
 
+<iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7134953034576502786?compact=1" height="399" width="710" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
+
+<br>
+
 ### Help this project stay strong! 💪
 **qryn** is used daily by thousands of developers and engineers. Long nights x years were spent keeping this project strong and independent with no funding or investors. If your company uses qryn or if you love our work please consider supporting the project by becoming a [Github Sponsor](https://github.com/sponsors/QXIP) or by considering our [commercial edition](https://qryn.cloud).
