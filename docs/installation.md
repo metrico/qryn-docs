@@ -124,7 +124,7 @@ Each _qryn_ release is automatically pushed to [docker hub](https://hub.docker.c
 ### Install Chart Repository
 
 ```bash
-helm repo add qryn-helm https://metrico.github.io/qryn-helm/
+helm repo add qryn-helm https://metrico.github.io/gigapipe-helm/
 helm repo update
 ```
 
@@ -134,8 +134,8 @@ See [helm repository](https://helm.sh/docs/helm/helm_repo/) for command document
 To deploy [qryn](https://github.com/metrico/qryn) using this Helm chart, use the following command:
 
 ```bash
-helm repo add qryn-helm https://metrico.github.io/qryn-helm/
-helm install [RELEASE_NAME] qryn-helm/qryn-helm --version 0.1.1
+helm repo add gigapipe-helm https://metrico.github.io/gigapipe-helm/
+helm install [RELEASE_NAME] gigapipe-helm/gigapipe-helm --version 0.1.1
 ```
 
 #### Documentation
